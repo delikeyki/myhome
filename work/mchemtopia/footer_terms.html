@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ChemTopia</title>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="shortcut icon" type="image/x-icon"  href="assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+</head>
+<body>
+  <div class="wrap" data-role="page">
+    <header class="gnb" data-role="header">
+      <button type="button" data-role="button" class="gnb_menu"><i class="fa fa-bars"><span class="txt_hidden">menu</span></i></button>
+      <a href="./index.html" class="ui-btn home">ChemTopia</a>
+
+      <a href="#N"><img src="assets/images/@profile.jpg" alt="profile photo" class="gnb_profile" /></a>
+      <a href="forum_search.html" class="total_search"><i class="fa fa-search"><span class="txt_hidden">search</span></i></a>
+      <a href="#N" class="signin">Sign In</a>
+
+      <!-- left sub layer -->
+      <nav class="gnb_menu_list left_menu">
+        <span class="gnb_arrow">
+          <svg
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="16px" height="8px">
+            <image x="0px" y="0px" width="16px" height="8px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQBAMAAACFLmBqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEXe4OLe4OLe4OLe4OL09PX09PX09fXe4OLe4OL09fX////fhibJAAAACnRSTlMAM63fmZiaNK6Zmwi43wAAAAFiS0dECmjQ9FYAAAAHdElNRQfhCh4OJwA74cXlAAAAYElEQVQY02NggAAhRQYUwGgSLIAiIOy11BBFgdmqVShKhLNWrUJWAlKAogSkYNWqJXAl7GAFq1Y5w5QUZ0EEYEpgCuBKYApgShAKoEoQCoBKzFEVAJUUoCgAK+lchQI8AJ4wUTFfQKKKAAAAAElFTkSuQmCC" />
+            </svg>
+        </span>
+        <ul>
+          <li>
+            <a href="index.html" class="forum-child">Forum</a> <button type="button" class="gnb_forum"><i class="fa fa-angle-down"></i></button>
+            <ul class="forum_sub">
+              <li><a href="#">Proposal</a></li>
+              <li><a href="#">Publicize</a></li>
+              <li><a href="#">Question</a></li>
+              <li><a href="#">Others</a></li>
+              <li><a href="#">Conference</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cheminfo.html">Cheminfo <i class="fa fa-desktop"></i></a>
+          </li>
+          <li>
+            <a href="proleaders.html">Proleaders</a>
+          </li>
+          <li>
+            <a href="module.html">Modules <i class="fa fa-desktop"></i></a>
+          </li>
+          <li>
+            <a href="about.html">About ChemTopia</a>
+          </li>
+        </ul>
+        <div class="goto_pc">
+          <h1>The Chemical universe</h1>
+          <p>You can use more of Chemtopia's services<br />in the pc version.</p>
+          <a href="http://www.chemtopia.com" target="_blank" class="btn_goto_pc">Go to Chemtopia PC ver.</a>
+        </div>
+        <div class="footer" data-role="footer">
+          <ul class="link_sns">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i><span class="txt_hidden">facebook</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i><span class="txt_hidden">twitter</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus"></i><span class="txt_hidden">google-plus</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i><span class="txt_hidden">instagram</span></a>
+            </li>
+          </ul>
+          <address>&#169; 2017 ChemEssen, Inc. All rights reserved.</address>
+          <ul class="terms">
+            <li>
+              <a href="footer_terms.html">Terms of Service</a>
+            </li>
+            <li>
+              <a href="footer_privacy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="footer_membership.html">Membership</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- //left sub layer -->
+
+      <!-- right sub layer -->
+      <div class="gnb_menu_list right_menu">
+        <span class="gnb_arrow right_arrow">
+          <svg
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="16px" height="8px">
+            <image x="0px" y="0px" width="16px" height="8px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQBAMAAACFLmBqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEXe4OLe4OLe4OLe4OL09PX09PX09fXe4OLe4OL09fX////fhibJAAAACnRSTlMAM63fmZiaNK6Zmwi43wAAAAFiS0dECmjQ9FYAAAAHdElNRQfhCh4OJwA74cXlAAAAYElEQVQY02NggAAhRQYUwGgSLIAiIOy11BBFgdmqVShKhLNWrUJWAlKAogSkYNWqJXAl7GAFq1Y5w5QUZ0EEYEpgCuBKYApgShAKoEoQCoBKzFEVAJUUoCgAK+lchQI8AJ4wUTFfQKKKAAAAAElFTkSuQmCC" />
+            </svg>
+        </span>
+        <ul>
+          <li>
+            <a href="mypage.html" class="gnb_forum">My page</a>
+          </li>
+          <li>
+            <a href="#N" class="btn_password">Change your password</a>
+          </li>
+          <li>
+            <a href="#">Sign out</a>
+          </li>
+        </ul>
+      </div>
+      <!-- //right sub layer -->
+    </header>
+
+  <main class="bg-white" data-role="main">
+    <section class="wrap_terms">
+
+      <div class="terms-wrap terms-wrap-policy">
+        <h1>Terms of Service</h1>
+
+        <div class="terms-paragraph">
+          Thanks for using Chemtopia.com and Chemtopia Service. By using the Chemtopia Service and products, you agree to these Terms of Service. <br />
+          Please take the time and read this document carefully. Note: These terms are legally binding.
+          <p class="text-addition">Effective Date : January 01, 2017</p>
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>1. Preface</h2>
+
+          <h3>1.1 Purpose</h3>
+          <p class="inner-paragraph">
+            The purpose of Chemtopia is to allow chemical experts and workers in relevant fields to exchange knowledge or obtain useful information from the service. Chemtopia allows users to share ideas with other experts, collaborate on group projects, and share employment opportunities with a talented expert community.
+          </p>
+
+          <h3>1.2 Consent of User</h3>
+          <p class="inner-paragraph">
+            If the user uses Chemtopia service, <strong>he/she agrees to be legally bounded by the Terms of Service. The user also agrees to our Company’s *<em><a href="footer_privacy.html">Private Information Handling Policy</a></em> <br />
+            which provides guidelines for collecting, using, sharing and storing the user's personal information.</strong>
+          </p>
+          <p class="inner-paragraph">
+            If a user clicks "Sign Up” and accesses or uses our Service (hereinafter, all content or information collectively referred to as “Service”), the user acknowledges that he/she agrees to be legally bounded by these Terms of Service (even if the user uses this Service on behalf of a company).<br />
+            The user's agreement is with Chemtopia (individually “Chemtopia” or the “Company”), whether the user resides within the Republic of Korea (“Korea”), or outside of Korea.
+          </p>
+          <p class="inner-paragraph">
+            This “Terms of Service” includes all the terms and conditions of the Service, Private Information Handling Policy, and other terms and conditions. These terms are updated occasionally. If the user does not agree to all the terms and conditions, then the user may not access or use any of our Service, or click “Sign Up”.
+          </p>
+          <!--
+          <p class="inner-paragraph">
+            User who registered for our Service is considered as “Member” of our company, and who did not register is considered as “visitor”.  This Terms of Service will apply to all members and visitors.
+          </p>
+          -->
+          <p class="inner-paragraph">
+            <strong>Any user who registered for the Service is considered a “Member” of Chemtopia, and any user who did not register is considered a “visitor”. This Terms of Service will apply to all members and visitors.</strong>
+          </p>
+          <h3>1.3 Validity and Amendment</h3>
+          <p class="inner-paragraph">
+            Chemtopia may add new services or amend this Terms of Service for members without any prior notice, and the amended terms of Service will be posted on the site to inform members. When the amended terms of service are posted on the site, they will take effect forthwith. <br />
+            If a user does not agree to the amended terms of service, the user may have his/her account shut down.  If a user continues to use this Service after the amended terms of service are posted, then the user agrees to the amendment.
+          </p>
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>2. Obligations</h2>
+
+          <h3>2.1 Eligibility of Service</h3>
+          <p class="inner-paragraph">
+            <strong>The following is about the user’s obligation to the Company and eligibility to use the service.</strong>
+          </p>
+          <div class="inner-paragraph">
+            Before using the Service, a user must agree to the following:
+            <ol>
+              <li>The user must own a Chemtopia account registered under the user's name.</li>
+              <li>The user is not restricted from using the Service by Chemtopia.</li>
+            </ol>
+          </div>
+          <!--
+          <h3>2.2 Membership of User</h3>
+          <div class="inner-paragraph">
+            <strong>The user shall keep his/her password secure. User shall not share the account with any other person, and will comply with the regulations of the Company. The user maintains ownership of his/her account, even when other people use it.</strong><br/>
+            User shall:
+            <ol>
+              <li>Choose a strong password</li>
+              <li>Keep the password secure and safe,</li>
+              <li></li>
+            </ol>
+            Basically, children younger than 13 cannot use this Service.
+          </div>
+          -->
+          <h3>2.2 Membership of User</h3>
+          <div class="inner-paragraph">
+            <strong>The user shall keep his/her password secure. User shall not share the account with any other person, and will comply with the regulations of the Company. The user maintains ownership of his/her account, even when other people use it.</strong><br />
+            User shall:
+            <ol>
+              <li>Choose a strong password</li>
+              <li>Keep the password secure and safe,</li>
+              <li>Not transfer any part of the account, and</li>
+              <li>Notify Chemtopia of any suspected illegal use of the account</li>
+              <li>Be held responsible for all account activity. The user is not held responsible only when the user closes the account or when the account is used illegally by a third-party without the user's permission.</li>
+              <li>Shall not transfer any parts of the accounts, and</li>
+              <li>Agree to comply with the laws of what to do and what not to do, as stated below. Except that cases that the user closes its account or reports the use of account by other person, the user shall be responsible for all things happened through its account, and if the user finds out that its account is illegally used, he/she shall notify Chemtopia of the fact immediately.</li>
+            </ol>
+          </div>
+
+          <h3>2.3 Notification and Service Message</h3>
+          <p class="inner-paragraph">
+            <strong>The user permits the Company to deliver important notifications to the user via the ChemTopia website and the user's contact email. The Terms of Service apply to any mobile version of the Service developed in the future.</strong>
+          </p>
+          <div class="inner-paragraph">
+            <strong>The user permits certain additional information to be shared with Chemtopia. If the user's contact information is not up-to-date, he/she may not receive notifications from the Service.</strong>
+            <ol>
+              <li>Webpage banner</li>
+              <li>Email the user. User agrees to constantly upgrade his/her contact information.</li>
+            </ol>
+          </div>
+
+          <h3>2.4. Limitations on Use of Service</h3>
+          <ul>
+            <li>The Service will be provided continuously throughout the year with the exception of downtime for occasional maintenance or technical problems for Chemtopia.</li>
+            <li>
+              Chemtopia may restrict or suspend the Service in case any of the following events occur:
+              <ul>
+                <li>Regular maintenance, repair and replacement of telecommunications facilities</li>
+                <li>Inevitable circumstances such as suspension of telecommunication service by the infrastructure service provider</li>
+                <li>State of national emergency, failure in service facilities or traffic flooding</li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>2.5. Email and Disclosure</h3>
+          <div class="inner-paragraph">
+            <strong>Other users and visitors may refer to, copy, and use information disclosed by the user on Chemtopia</strong><br />
+            Visitors may refer to any information and content a user opens to other members or people. The Company is not obliged to post any information or content within the Service, and the Company may delete the information or content at its sole discretion with/without the notification.
+          </div>
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>3. Rights and Restriction</h2>
+
+          <h3>Chemtopia Content Policy</h3>
+          <p class="inner-paragraph">
+            Chemtopia includes a Forum where a user can communicate, express himself/herself, and present various opinions. Using the Chemtopia Service, the user may share information, promote sound debate, and communicate with other people in new ways. Censorship is contrary to the spirit of the Service of Chemtopia, which is based on the freedom of expression. But to prevent any abuse of the Service, Chemtopia prohibits certain content from being posted. These prohibitions will comply with legal requirements and enhance the overall Service quality.
+          </p>
+          <!--
+          <p class="inner-paragraph">
+            To protect such value, Chemtopia prevents any abuse of the Service, which compromises the freedom of expression. As one of such efforts, Chemtopia applies prohibited use to some types of content which might be posted on Chemtopia. Prohibited use will comply with legal requirements and the enhancement of overall service quality.
+          </p>
+          -->
+          <h3>Scope of Content</h3>
+          <p class="inner-paragraph">
+            Chemtopia’s content policy is very important in maintaining a sound user environment. The content policy can change from time to time, so please access this page periodically to stay up-to-date with the current version. Exceptions to the policy may be made for scientific reasons and/or if the public benefits. Please comply with the following guidelines.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Adult Content</strong> : Chemtopia does not allow the user to upload any image or video that includes body exposure, sex, and/or any adult content. This action is to protect all users.
+          </p>
+          <div class="inner-paragraph">
+            Chemtopia’s adult content policy includes the following provisions:
+            <ul>
+              <li>Using Chemtopia to generate profits from adult content is prohibited. For example, you cannot create any content containing advertisements or links to commercial a pornography site.</li>
+              <li>Sexual content containing illegal content such as images, video, or text describing or inducing sexual abuse, incest, sodomy, and/or necrophilia is prohibited.</li>
+              <li>Distribution of any image or video showing private exposure or sexual images without the agreement between the concerned parties is prohibited. If the user becomes aware of any person uploading private or sexually exposing image or video, the user should report to Chemtopia by clicking <a href="http://www.chemtopia.com/help/contactus" target="_blank">here</a>.</li>
+            </ul>
+          </div>
+          <div class="terms-paragraph">
+            <strong>Child protection</strong> : Chemtopia never allows the user to upload child abuse related content. And such content includes:
+            <ul>
+              <li><strong>Imagery of sexual abuse involving a child</strong> : If Chemtopia detects the upload or distribution of any sexual image involving a child, Chemtopia will terminate the concerned account and report the account holder to the competent authority.</li>
+              <li><strong>Pedophilia</strong> : Content inducing or encouraging people to see a child as a sexual object is prohibited.</li>
+            </ul>
+          </div>
+          <p class="inner-paragraph">
+            <strong>Expression of hatred</strong> : The user may express diverse opinions on Chemtopia. However, any content encouraging or tolerating violence to an individual or group for the reasons of race, ethnic group, religion, handicap, gender, age, nationality, military service, sexual orientation, or gender identity shall be prohibited.  This includes content containing any intention of inducing hatred based on these characteristics. Even if it is difficult to distinguish, any content attacking these protected groups shall be prohibited.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Content going against public sentiment</strong> : Shocking or offensive content shall be prohibited. For example, posting a close-up image of a gunshot wound or the scene of an accident without supplementary context or explanation will go against the policy.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Violence</strong> : Any content threatening other people shall be prohibited. For example, content making death threats or encouraging readers to conduct violence to a certain person or group shall be prohibited.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Harassment</strong> : Acts of harassing or bullying other people shall be prohibited. If you upload such content, it will be removed and you may be permanently restricted from accessing the site. Acts of online bullying are defined as illegal in many regions, and may cause severe consequences offline too.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Copyright</strong> : If suspected copyright infringement is expressly reported, Chemtopia will take action under our policy. For more information on copyright-related procedures, please refer to <a href="footer_membership.html#anchor-copyright">here</a>.
+            In addition, you should not provide links to any website where you can illegally download other people’s content.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Personal and confidential information</strong> : Posting personal and/or confidential information of other people is prohibited. For example, you should not post the credit card number, ID number, private phone number, or driver’s license number of a person. In addition, posting or distributing images or video of a minor without the consent of his/her legal representative is prohibited.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Misrepresentation</strong> : The act of pretending to be a different person or represent a certain organization will be prohibited. This does not prohibit any parody or satire, but prohibits any content which may mislead the readers regarding identity of the person.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Unlawful act</strong> : The user should not be engaged in illegal acts and should not encourage harmful illegal acts using Chemtopia. For example, the user may not post any content encouraging drunk driving, and may not sell or publicize illegal drugs on Chemtopia. Chemtopia may delete such content, and report serious accidents such as child abuse to the competent authority.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Controlled products and services</strong> : The user may not sell or publicize controlled products and/or services including alcoholic liquor, gambling, medicine, unapproved health supplements, tobacco, fire crackers, arms, health/medical devices, etc.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Spam</strong> : If you send spam mail using Chemtopia, your account or posting may be deleted regardless of the type of spam. For example, creating a topic within the forum to manipulate the rankings, posting a comment to the content of other users to publicize a site or product, and/or scrapping the existing content from other sources to generate profits or interests is prohibited.
+          </p>
+          <p class="inner-paragraph">
+            <strong>Malware and Virus</strong> : You may not send a virus, create a pop-up, or try to install any software without the consent of the reader, or create any content that damages the readers with malware. Such acts are strictly prohibited on Chemtopia.
+          </p>
+
+          <p class="inner-paragraph">
+            <strong>Report Inappropriate Content</strong>
+          </p>
+          <p class="inner-paragraph">
+            Chemtopia is a platform where users can express diverse opinions freely. Accordingly, Chemtopia does not monitor users’ posts or mediate disputes. If a user suspects an author’s post violates the Terms of Service or Privacy Policy, the user may contact the author directly if the author has available contact information.  The user may request that the author delete or change the content of the post.
+          </p>
+          <p class="inner-paragraph">
+            If the user tries to contact the author but fails to resolve the issue, he/she should please contact the Company <a href="http://www.chemtopia.com/help/contactus" target="_blank">here</a>. Chemtopia considers violations of the Terms of Service and Chemtopia Privacy Policy seriously.
+          </p>
+          <!--
+          <div class="terms-paragraph">
+            Even though you try to contact the author who is suspected to violate the Terms of Service or Content Policy, if you fail to resolve the issue, please contact the <a href="footer_membership.html">Membership</a> by selecting the type of violation, or refer to the content report system.
+            <ul>
+              <li>In case other person copies my content or there is other legal issue : Violation of copyright</li>
+              <li>Publicity of controlled items and service : </span>Violation of copyright</li>
+              <li>Expression of hatred and violent content or content going against public sentiment : </span>violent content</li>
+              <li>Child safety, excessive exposure, or adult content and pornography : </span>pornography, child safety content</li>
+              <li>Spam, phishing : Spam, phishing</li>
+              <li>In case someone posts my personal information without my consent : disclosure of personal information, and stolen of user account</li>
+              <li>In case someone assumes my name : defamation, infringement of privacy</li>
+            </ul>
+          </div>
+          -->
+
+          <h3>3.1. License to Chemtopia</h3>
+          <p class="inner-paragraph">
+            <strong>The user owns the content, feedback, and personal information that he/she provides to our Company, but the user gives an exclusive license to the Company to use such content, feedback, and personal information. The Company respects the user’s decision regarding to whom he/she discloses this information and content. The user agrees to provide only true and correct information for which he/she has ownership. This includes information related to the user’s registered profile on Chemtopia.</strong>
+          </p>
+          <p class="inner-paragraph">
+            The user retains the rights to personal information or any content and information the user posts on the Service, and the user grants Chemtopia the following exclusive rights to use them. Chemtopia may use, copy, modify, distribute, post and process such information and content that the user provides to the Service, without additional consent, notification and/or compensation to the user or other person.  The rights which can be transferred and sublicensed will be limited as follows:
+          </p>
+
+          <div class="terms-paragraph">
+            <ol class="list-alpha-upper">
+              <li>
+                User may terminate the license to use a certain piece of content by deleting the content on the Service or by closing the account, except in the cases that:
+                <ol class="list-alpha-lower">
+                  <li>Another person copies or stores the content that the user shared with that person as a part of the service</li>
+                  <li>The deletion of the content on a backup system or other system would take an unreasonable amount of time.</li>
+                </ol>
+              </li>
+              <li>
+                The Company will not use the content of the user for advertising products and services of other companies without the separate consent of the user. However, the Company has the rights to post advertisements on the Service near the user’s content and information without compensation to the user or other people, and the user’s comment on the sponsored content may be disclosed to the public as set forth in the Privacy Policy.
+              </li>
+              <li>
+                The Company will obtain consent from the user if it desires to transfer to another person the right to post the user’s content to an area other than the Service. However, other members and/or visitors may refer to and share the user’s content and information following the decision of the user.
+              </li>
+              <li>
+                The Company may edit the content of the user and modify its format (translation of content, size, layout or file format change, or deletion of meta-data, etc.), but it will conform to the intention of the user.
+              </li>
+              <li>
+                Content and information of the user will belong to the user, and the Company has the exclusive right to them. Accordingly, the user may allow other people to use the content and information of the user based on this Terms of Service.
+              </li>
+              <li>
+                If a user applies to be a Proleader, the approval process may be cancelled and the user disqualified if:
+                <ol class="list-alpha-lower">
+                  <li>Any information provided upon application is misrepresented</li>
+                  <li>The user violates any of this Terms of Service</li>
+                  <li>Chemtopia considers it necessary</li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+          <p class="inner-paragraph">
+            The user agrees that the Company may refer to, store and use all information provided by the user in accordance with the terms and conditions of the <a href="footer_privacy.html">Private Information Handling Policy</a> and the user’s account settings on personal information.
+          </p>
+          <p class="inner-paragraph">
+            By sending any suggestion or feedback to Chemtopia regarding our Service, the user agrees that the Company may (without obligation) use and share such feedback for any purposes without making any compensation to the user.
+          </p>
+          <p class="inner-paragraph">
+            The user agrees to provide the content or information which is not contrary to law and does not infringe on other people’s rights (e.g.: not infringe on intellectual rights or agreements). The user also agrees to enter correct and accurate information on his/her profile. Chemtopia may be required to delete certain information or content under the law in some countries.
+          </p>
+          <p class="inner-paragraph">
+            <strong>The Company may change or suspend all of our Service. The Company cannot guarantee that all information and content posted by the user will be stored or continuously presented.</strong>
+          </p>
+          <p class="inner-paragraph">
+            The Company may change, suspend, or terminate all Service, and may change and modify the content of the Service at its own discretion. To the extent permitted by law, such change will take effect immediately after the user is notified.
+          </p>
+          <p class="inner-paragraph">
+            The Service we provide does not include content storage service. The user agrees that the Company has no obligation to store or manage the content or information that the Company provides to the user or other person, or provide the copies of such content or information to the user except when it is required by applicable laws, and is stipulated in Article 3.1 of our Privacy Policy.
+          </p>
+
+          <h3>3.2. Other Content, Site and Apps</h3>
+          <p class="inner-paragraph">
+            <strong>When the user refers to content and information another person posted on the Service, the user shall take any and all liabilities. Another company may provide its products and services through Chemtopia, but Chemtopia does not take any liability for such activities.</strong>
+          </p>
+          <p class="inner-paragraph">
+            In the course of using the Service, the user may be exposed to inaccurate, incomplete, outdated, misleading, illegal, unpleasant, and harmful content. In general, Chemtopia does not censor the content provided by our members. The user agrees that the Company will not be liable for any damages which may occur due to the use of content or information of another company (including another member) by the user.
+          </p>
+          <p class="inner-paragraph">
+            The user shall be liable for his/her decision to use other company’s apps linked on the Service or to access other sites. If the user allows other company’s apps or sites to cite the user or to be connected to the user’s Chemtopia account, then such apps or sites may access the Chemtopia information related to the user and the user’s personal relationship. Other company’s apps and sites will apply their own legally binding terms and conditions and Privacy Policy, and the user may allow the other company to use the user’s information in different ways from those used by our Company. Except in the limited cases covered under applicable laws, Chemtopia is not liable for these sites and apps, and the user shall take sole liability and responsibility for the use of apps and sites of another company.
+          </p>
+
+          <h3>3.3 Restriction</h3>
+          <p class="inner-paragraph">
+            The Company retains the rights to restrict the method with which the user builds relationships and communicates with other people within the Service of Chemtopia.
+          </p>
+          <p class="inner-paragraph">
+            <strong>The Company notifies the user of the intellectual property rights of the Company. </strong><br />
+            The Company reserves the right to restrict the user from using our Service including functions with which the user can reach his/her followers and other members. If the Company considers that the user violates this Terms of Service or law or misuses this Service, the Company has a right to restrict, suspend or terminate the account of the user.
+          </p>
+          <p class="inner-paragraph">
+            Chemtopia reserves all intellectual property rights to the Service. For example, Chemtopia’s logo and other trademarks, service marks, graphics and/or logos used in connection with Chemtopia are Chemtopia trademarks or registered trademarks. Other trademarks and logos used in connection with the Service may be owned by each owner.
+          </p>
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>4. Disclaimers and Limitation of Liability</h2>
+
+          <h3>4.1. No Guarantee</h3>
+          <p class="inner-paragraph">
+            The Company is not liable for the quality, safety, or credibility of the Service.
+          </p>
+          <div class="inner-paragraph">
+            To the extent permitted by the applicable law, Chemtopia (and any person who cooperates with Chemtopia for the provision of Service):
+            <ol class="list-alpha-upper">
+              <li>shall be indemnified from and against all implied guarantee and representation (e.g.: commerciality, appropriateness for special purposes, data correctness and non-infringement),</li>
+              <li>shall not guarantee seamless or infallible operation of the Service, and</li>
+              <li>provides the Service (including content and information) “as is” and in “available condition”.</li>
+            </ol>
+          </div>
+          <p class="inner-paragraph">
+            If a certain indemnity is not allowed under specific laws, part or whole of such indemnity may not be applied to the user.
+          </p>
+
+          <h3>4.2. Limitation of Liability</h3>
+          <p class="inner-paragraph">
+            Legal liability of the Company to the user shall be limited as follows.
+          </p>
+          <p class="inner-paragraph">
+            To the extent permitted by law (and in case the user does not agree to other terms and conditions that Chemtopia provides as an alternative to this Terms of Service), any group and/or company which cooperates with Chemtopia for the provision of Service shall be indemnified from and against any indirect, collateral, special, consequential or punitive damage or data loss, opportunity loss, defamation, profit loss or revenue loss related to the Service (e.g.: humiliating or shameful remarks, suspension of business or loss, use or change of user information or content) to the user or other person.
+          </p>
+          <p class="inner-paragraph">
+            This provision applies to the transaction between the user and Chemtopia, and even if Chemtopia is notified of the possibility of such damage or even if a remedy for such incidents does not satisfy its purpose, it shall apply to all disputes arising related to the liability (e.g.: warranty, illegal acts, negligence, agreement, law).
+          </p>
+          <p class="inner-paragraph">
+            As this limitation of liability or indemnity is not allowed under specific laws, part or whole of such limitation may not be applied to the user.
+          </p>
+
+          <h3>4.3. Compensation for Damage and Indemnification</h3>
+          <p class="inner-paragraph">
+            While the Service is provided for free, Chemtopia is not liable for any damages to the members relating to the use of Service.
+          </p>
+          <ol class="list-alpha-lower">
+            <li>In case Chemtopia cannot provide normal Service due to an emergency situation such as a natural disaster, terror threat, blackout, error in the Service facilities, traffic flooding on the Service, or other reason, Chemtopia is not liable to provide the Service.</li>
+            <li>Chemtopia is not liable for any damages that occur to the members due to the data posted on the Service.</li>
+            <li>Chemtopia is not liable for any damages that occur to the members related to the use of Service.</li>
+          </ol>
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>5. Rights to Suspend the Use</h2>
+
+          <p class="inner-paragraph">
+            <strong>Either the Company or the user may terminate this Terms of Service at any time.</strong>
+          </p>
+          <p class="inner-paragraph">
+            Chemtopia and the user may terminate this Terms of Service at any time with notice to the other party. Upon termination, the user will lose the right to access or use the Service. The following will survive even after the termination:
+          </p>
+          <ul>
+            <li>Right to use and disclose the feedback of the user;</li>
+            <li>Right that the member and/or the visitor can share the content and information posted on the Service by the user;</li>
+            <li>Article 4, Article 6 and Article 7 of this Terms of Service,</li>
+          </ul>
+          <p class="inner-paragraph">
+            Please access <a href="footer_membership.html">Membership</a> for information on how to terminate the Chemtopia account.
+          </p>
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>6. Dispute Resolution</h2>
+
+          <p class="inner-paragraph">
+            <strong>In case any legal dispute occurs between the Company and the user, it shall be submitted to a court that applies the laws of the Republic of Korea.</strong><br />
+            The user agrees that the laws of the Republic of Korea (except in the case of conflict of interest) shall govern any and all disputes arising related to this Terms and Service and/or the Service. The Company and the user agree that such disputes will be handled with the court having jurisdiction over the case, and agree to the personal jurisdiction of the court.
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>7. General Terms and Conditions</h2>
+
+          <p class="inner-paragraph">
+            <strong>The following are important to understand this Terms of Service.</strong>
+          </p>
+          <p class="inner-paragraph">
+            If the court having jurisdiction over this Terms of Service rules that some of the Terms of Service can be enforceable, the user and the Company agree to change the concerned parts so that they can be enforced to the extent that the court rules that they do not violate the intent of this Terms of Service. If the court fails to do so, the user and the Company request the court to delete the unenforceable part, and agree to enforce the remaining part of this Terms of Service. To the extent permitted by laws, only the English version of this Terms of Service shall be legally binding, and the translated version is just for convenience. This Terms of Service (including other Terms of Service that the Company may provide when the user uses the functions of the Service) is the single agreement between the user and the Company related to the Service, and it prevails over all the previous terms and conditions on the Service.
+          </p>
+          <p class="inner-paragraph">
+            Even if the Company fails to take any measures against the violation on this Terms of Service, the Company does not waive its right to enforce this Terms of Service. The user may not grant or transfer this Terms of Service (or the user’s membership or the use of Service) to another person without the consent of the Company. However, the user agrees that Chemtopia grants this Terms of Service to its affiliates or the person who buys this Terms of Service without the consent of the user.
+          </p>
+          <p class="inner-paragraph">
+            Any third-party beneficiary is not designated for this Terms of Service.
+          </p>
+          <p class="inner-paragraph">
+            The Company has the right to amend this Terms of Service, and upon amendment, the Company will notify the user, and any amendment will not retroactively apply. If the user does not agree to such amendment, the user should suspend the use of Service.
+          </p>
+          <p class="inner-paragraph">
+            The user agrees that he/she can send the legal notice only to the address stated in Article 10 hereof.
+          </p>
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>8. “What to do” and “What not to do” for Chemtopia Member</h2>
+
+          <h3>8.1. The user who is obliged to comply with this ‘what to do’ section agrees to comply with:</h3>
+          <ul>
+            <li>All applicable laws including, but not limited to, the Personal Information Act, Intellectual Property Right Protection Act, Spam Act, Export Control Act, Tax Act and legal requirements.</li>
+            <li>Provision of accurate information to the Company, update of such information (upon registration, the user should enter correct and accurate information and maintain correct and accurate information) and non-disclosure of personal account (real name, email, password, etc.) to any third-party person</li>
+            <li>Use of real name in the profile</li>
+            <li>Proper use of Service</li>
+          </ul>
+
+          <h3>8.2. The user who is obliged to comply with this ‘what not to do’ section agrees to abstain from the following acts:</h3>
+          <ul>
+            <li>Posting inappropriate, incorrect or unlawful content;</li>
+            <li>Presenting a dishonest and/or unprofessional attitude;</li>
+            <li>Adding content in undesignated locations (e.g.: entering a telephone number in the text box designated for ‘Skills & Expertise’);</li>
+            <li>Using another person’s photo for the profile picture;</li>
+            <li>Using a photo showing body parts other than the face for the profile picture;</li>
+            <li>Forging an identity on Chemtopia;</li>
+            <li>Making false entries regarding current or previous titles and qualifications;</li>
+            <li>Making false entries regarding a certain person or group of the past or present;</li>
+            <li>Making a false identity for the user including, but not limited to, an alias;</li>
+            <li>Creating a profile under the name of members other than the user (not the actual person);</li>
+            <li>Inviting an unknown person to register with the user’s network;</li>
+            <li>Using or trying to use another person’s account;</li>
+            <li>Bullying, swearing or harming another person;</li>
+            <li>Sending spam mails or other unsolicited mail to another person;</li>
+            <li>Scrapping or copying another person’s profile and information in any way (including crawler, browser plug-in and other functions, technologies, or handwork);</li>
+            <li>Illegal slandering, insulting, using indecent words, discriminating, or performing other unpleasant acts;</li>
+            <li>Disclosing information (including confidential information of another person (including employer)) to which the user has no right;</li>
+            <li>Infringing on another person’s patent right, trademark, trade secret, copyright or intellectual property rights (IPR) including other ownership;</li>
+            <li>Posting unsolicited or unapproved advertisements, “junk mail”, “spam mail”, “chain letter”, “network marketing”, or other types of content that Chemtopia has not approved;</li>
+            <li>Posting content containing software viruses, worms or other malware;</li>
+            <li>Manipulating identifier to disguise the original copy of the email sent through the Service;</li>
+            <li>Creating a profile inducing people to access pornography, prostitution sites or escort services;</li>
+            <li>Engaging in or commencing network marketing, fraud or other similar activities;</li>
+            <li>Copying or using information, content, or data of other people posted on the Service (except in the case that it is expressly approved);</li>
+            <li>Copying or using information, content, or data posted on Chemtopia related to the service of other competitors (services that Chemtopia considers to be competitors);</li>
+            <li>Copying, modifying, or creating derivative works of Chemtopia, this Service or other related technologies (except the case it is expressly approved by Chemtopia);</li>
+            <li>Trying to extract this Service, related technologies, or source code used to provide parts of the Service by means of reverse engineering, de-compile, disassemble, decoding or others;</li>
+            <li>Indicating or stating that the user signed a partnership with Chemtopia or that the user is warranted by Chemtopia without the express consent of Chemtopia;</li>
+            <li>Leasing, lending, trading, selling/reselling the rights to use the Service or other related information or data;</li>
+            <li>Selling, sponsoring, or commercializing Chemtopia groups or other functions of this Service without the consent of Chemtopia;</li>
+            <li>Removing any notification about copyrights, trademark or other ownership to the Service;</li>
+            <li>Removing, hiding or concealing any types of advertisement contained in the Service;</li>
+            <li>Collecting, using, copying or sending information obtained on Chemtopia without the consent of Chemtopia;</li>
+            <li>Sharing or disclosing another person’s information without the express consent of that person;</li>
+            <li>Using a manual or automatic software, device, script robot, and/or other method or process in order to access, “scrap”, “crawl”, or “spider” the Service and/or other related data or information;</li>
+            <li>Using a bot or other automated method in order to access the Service, add or download a contact number, or send/resend email;</li>
+            <li>Monitoring availability, performance, or functions of the Service for competition;</li>
+            <li>Simulating the Service or functions by means of “framing”, “mirroring” or other methods;</li>
+            <li>Accessing the Service by means other than the interface clearly provided by Chemtopia;</li>
+            <li>Redefining the security function of the Service;</li>
+            <li>Disturbing operation of the Service or causing unreasonable overload (e.g.: spam email, attack to service, virus, game algorithm)</li>
+          </ul>
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>9. Complaint over Content</h2>
+          <p class="inner-paragraph">
+            The Company respects people’s intellectual property rights (IPR). The Company requests that the user post correct and accurate information so that he/she does not infringe on other people’s IPR or other rights. Complaints related to the content posted by our members can be sent <a href="http://www.chemtopia.com/help/contactus" target="_blank">here</a>.
+          </p>
+        </div>
+
+        <div class="terms-paragraph">
+          <h2>10. How to Contact</h2>
+          <p class="inner-paragraph">
+            Online : <a href="http://www.chemtopia.com/help/contactus"  target="_blank">http://www.chemtopia.com/help/contactus</a>
+          </p>
+          <p class="inner-paragraph">
+            By Mail :<br />
+            Users residing in Korea can contact the address below:
+          </p>
+          <p class="inner-paragraph">
+            <strong>KOREA</strong> <br />
+            ChemEssen, Inc. 812, 8th Flr. AceHighTechCity 2-Cha, 25 Seonyu-ro 13-gil, Yeongdeungpo-gu, 150-096 Seoul, Republic of Korea. BN: 105-86-89148<br />
+            <strong>T</strong>: +82-2-3143-5933 <br />
+            <strong>F</strong>: +82-2-3143-5920 <br />
+            <strong>E</strong>: <a href="mailto:koreahelp@chemtopia.com">koreahelp@chemtopia.com</a>
+          </p>
+          <p class="inner-paragraph">
+            For user residing outside Korea, please contact the below address.
+          </p>
+          <p class="inner-paragraph">
+            <strong>USA</strong> <br />
+            ChemEssen, INC. 14781 Memorial Dr. &#35;1677, Houston, TX 77079 U.S.<br />
+            <strong>T</strong>: +1-800-413-5613 <br />
+            <strong>F</strong>: +1-800-413-5613 <br />
+            <strong>E</strong>: <a href="mailto:usahelp@chemtopia.com">usahelp@chemtopia.com</a>
+          </p>
+          <p class="inner-paragraph">
+            <strong>CHINA</strong> <br />
+            KOTRA 3110, Maxdo Center, 8 Xingyi-Road, Shanghai, China<br />
+            <strong>T</strong>: +86-21-5108-8771(Ext.170) <br />
+            <strong>F</strong>: +86-151-2118-1868 <br />
+            <strong>E</strong>: <a href="mailto:chinahelp@chemtopia.com">chinahelp@chemtopia.com</a>
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+      <button type="button" class="btn_top"><i class="fa fa-angle-up"></i></button>
+      <div class="page_ws"></div>
+    </div><!-- //wrap close -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/ui.min.js"></script>
+
+
+</body>
+</html>

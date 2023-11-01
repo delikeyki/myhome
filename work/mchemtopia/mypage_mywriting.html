@@ -1,0 +1,530 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChemTopia</title>
+    <link rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="shortcut icon" type="image/x-icon"  href="assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="wrap" data-role="page">
+      <header class="gnb" data-role="header">
+        <button type="button" data-role="button" class="gnb_menu"><i class="fa fa-bars"><span class="txt_hidden">menu</span></i></button>
+        <a href="./index.html" class="ui-btn home">ChemTopia</a>
+
+        <a href="#N"><img src="assets/images/@profile.jpg" alt="profile photo" class="gnb_profile" /></a>
+        <a href="forum_search.html" class="total_search"><i class="fa fa-search"><span class="txt_hidden">search</span></i></a>
+        <a href="#N" class="signin">Sign In</a>
+
+        <!-- left sub layer -->
+        <nav class="gnb_menu_list left_menu">
+          <span class="gnb_arrow">
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               width="16px" height="8px">
+              <image x="0px" y="0px" width="16px" height="8px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQBAMAAACFLmBqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEXe4OLe4OLe4OLe4OL09PX09PX09fXe4OLe4OL09fX////fhibJAAAACnRSTlMAM63fmZiaNK6Zmwi43wAAAAFiS0dECmjQ9FYAAAAHdElNRQfhCh4OJwA74cXlAAAAYElEQVQY02NggAAhRQYUwGgSLIAiIOy11BBFgdmqVShKhLNWrUJWAlKAogSkYNWqJXAl7GAFq1Y5w5QUZ0EEYEpgCuBKYApgShAKoEoQCoBKzFEVAJUUoCgAK+lchQI8AJ4wUTFfQKKKAAAAAElFTkSuQmCC" />
+              </svg>
+          </span>
+          <ul>
+            <li>
+              <a href="index.html" class="forum-child">Forum</a> <button type="button" class="gnb_forum"><i class="fa fa-angle-down"></i></button>
+              <ul class="forum_sub">
+                <li><a href="#">Proposal</a></li>
+                <li><a href="#">Publicize</a></li>
+                <li><a href="#">Question</a></li>
+                <li><a href="#">Others</a></li>
+                <li><a href="#">Conference</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="cheminfo.html">Cheminfo <i class="fa fa-desktop"></i></a>
+            </li>
+            <li>
+              <a href="proleaders.html">Proleaders</a>
+            </li>
+            <li>
+              <a href="module.html">Modules <i class="fa fa-desktop"></i></a>
+            </li>
+            <li>
+              <a href="about.html">About ChemTopia</a>
+            </li>
+          </ul>
+          <div class="goto_pc">
+            <h1>The Chemical universe</h1>
+            <p>You can use more of Chemtopia's services<br />in the pc version.</p>
+            <a href="http://www.chemtopia.com" target="_blank" class="btn_goto_pc">Go to Chemtopia PC ver.</a>
+          </div>
+          <div class="footer" data-role="footer">
+            <ul class="link_sns">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i><span class="txt_hidden">facebook</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i><span class="txt_hidden">twitter</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-google-plus"></i><span class="txt_hidden">google-plus</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i><span class="txt_hidden">instagram</span></a>
+              </li>
+            </ul>
+            <address>&#169; 2017 ChemEssen, Inc. All rights reserved.</address>
+            <ul class="terms">
+              <li>
+                <a href="footer_terms.html">Terms of Service</a>
+              </li>
+              <li>
+                <a href="footer_privacy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="footer_membership.html">Membership</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- //left sub layer -->
+
+        <!-- right sub layer -->
+        <div class="gnb_menu_list right_menu">
+          <span class="gnb_arrow right_arrow">
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               width="16px" height="8px">
+              <image x="0px" y="0px" width="16px" height="8px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQBAMAAACFLmBqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEXe4OLe4OLe4OLe4OL09PX09PX09fXe4OLe4OL09fX////fhibJAAAACnRSTlMAM63fmZiaNK6Zmwi43wAAAAFiS0dECmjQ9FYAAAAHdElNRQfhCh4OJwA74cXlAAAAYElEQVQY02NggAAhRQYUwGgSLIAiIOy11BBFgdmqVShKhLNWrUJWAlKAogSkYNWqJXAl7GAFq1Y5w5QUZ0EEYEpgCuBKYApgShAKoEoQCoBKzFEVAJUUoCgAK+lchQI8AJ4wUTFfQKKKAAAAAElFTkSuQmCC" />
+              </svg>
+          </span>
+          <ul>
+            <li>
+              <a href="mypage.html" class="gnb_forum">My page</a>
+            </li>
+            <li>
+              <a href="#N" class="btn_password">Change your password</a>
+            </li>
+            <li>
+              <a href="#">Sign out</a>
+            </li>
+          </ul>
+        </div>
+        <!-- //right sub layer -->
+      </header>
+
+  <main data-role="main">
+    <section class="mypage_top">
+      <a href="#N" class="change_profile">
+        <span class="active_profile">
+          <span class="active_txt">
+            <i class="icon-camera"></i>Update <br />Profile Picture
+          </span>
+          <span class="active_layer"></span>
+        </span>
+        <img src="../assets/images/@profile.jpg" alt="" class="img_profile" />
+      </a>
+      <span class="profile_name">Profile Name</span>
+      <a href="mailto:test@test.com" class="profile_email">test@test.com</a>
+    </section>
+
+    <nav class="forum_menu mypage_menu">
+      <ul>
+        <li><a href="mypage.html">Bookmark</a></li>
+        <li><a href="mypage_mywriting.html" class="active">My Writing</a></li>
+      </ul>
+    </nav>
+
+    <!-- list 1 set -->
+    <article class="forum_article">
+      <!-- person infomation -->
+      <div class="inner_padding">
+        <p class="status_writing">You've written a opinion</p>
+        <div class="info_profile">
+          <img src="assets/images/@profile.jpg" alt="" class="icon_profile" />
+        </div>
+        <div class="info_writer">
+          <span class="writer_name">user name user name user name user name</span>
+          <span class="write_date">February 3, 2017 9:28 AM</span>
+          <i class="divide_dot"></i>
+          <span class="write_state">Share</span>
+          <i class="divide_dot"></i>
+          <span class="write_case"><i class="icon-globe"></i></span>
+        </div>
+      </div>
+      <!-- //person infomation -->
+      <a href="forum_view.html" class="link_article">
+        <div class="inner_padding">
+          <h1>
+            Chemists unveil versatile new method for making chiral the most popular smartphone... <!-- byte 체크로 잘라야함 -->
+          </h1>
+          <p class="txt_content">
+            Chemists at The Scripps Research Institute (TSRI) have invented  Research Institutehemists at The Scripps Research Institute... <!-- byte 체크로 잘라야함 -->
+          </p>
+        </div>
+        <img src="assets/images/@article_img.jpg" alt="" class="article_img" />
+      </a>
+      <div class="icon_set inner_padding">
+        <ul>
+          <li>
+            <a href="#" class="like-btn-toggle"><i class="fa fa-heart-o"></i> <span>30</span></a>
+          </li>
+          <li>
+            <a href="#" class="share-btn-toggle haslayer"><i class="icon-share"></i> <span>26</span></a>
+            <div class="layer_share">
+              <h2>Share on</h2>
+              <a href="#N" class="share_facebook"><i class="fa fa-facebook"></i><span class="txt_hidden">facebook</span></a>
+              <a href="#N" class="share_google"><i class="fa fa-google-plus"></i><span class="txt_hidden">google-plus</span></a>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o"></i></a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn_opinion">Opinion</button>
+      </div>
+    </article>
+    <!-- //list 1 set -->
+
+    <!-- list 1 set -->
+    <article class="forum_article">
+      <div class="inner_padding">
+        <p class="status_writing">You've written a comment</p>
+        <div class="info_profile">
+          <img src="assets/images/@profile.jpg" alt="" class="icon_profile" />
+        </div>
+        <div class="info_writer">
+          <span class="writer_name">user name</span>
+          <span class="write_date">February 3, 2017 5:08 PM</span>
+          <i class="divide_dot"></i>
+          <span class="write_state">Question</span>
+          <i class="divide_dot"></i>
+          <span class="write_case"><i class="icon-globe"></i></span>
+        </div>
+      </div>
+      <a href="forum_view.html" class="link_article">
+        <div class="inner_padding">
+          <h1>
+            Chemists unveil versatile new method for making chiral <!-- byte 체크로 잘라야함 -->
+          </h1>
+          <p class="txt_content">
+            Chemists at The Scripps Research Institute (TSRI) have invented  Research <!-- byte 체크로 잘라야함 -->
+          </p>
+        </div>
+        <img src="assets/images/@article_img.jpg" alt="" class="article_img" />
+      </a>
+      <div class="icon_set inner_padding">
+        <ul>
+          <li>
+            <a href="#" class="like-btn-toggle"><i class="fa fa-heart-o"></i> <span>30</span></a>
+          </li>
+          <li>
+            <a href="#" class="share-btn-toggle haslayer"><i class="icon-share"></i> <span>26</span></a>
+            <div class="layer_share">
+              <h2>Share on</h2>
+              <a href="#N" class="share_facebook"><i class="fa fa-facebook"></i><span class="txt_hidden">facebook</span></a>
+              <a href="#N" class="share_google"><i class="fa fa-google-plus"></i><span class="txt_hidden">google-plus</span></a>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o"></i></a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn_opinion">Opinion</button>
+      </div>
+    </article>
+    <!-- //list 1 set -->
+
+  </main>
+
+  <!-- profile change layer -->
+
+  <div class="modal modal_profile layer_wrap">
+
+    <div class="modal_wrap">
+
+      <div class="modal_head">
+
+        <h1>Update Profile Picture</h1>
+
+      </div>
+
+      <div class="modal_body">
+
+        <div>
+
+          <img src="../assets/images/@profile.jpg" alt="" class="img_profile"><!-- noimage case : default_profile.png -->
+
+        </div>
+
+        <button type="button" class="btn_trash"><i class="fa fa-trash-o"></i> Delete</button>
+
+        <div class="wrap_align_center">
+
+          <span class="input_img">
+
+            <button type="button" class="btn btn_round">Choose Image</button>
+
+            <input type="file">
+
+          </span>
+
+          <button type="button" class="btn btn_default btn_save">Save</button>
+
+        </div>
+
+      </div>
+
+      <button type="button" class="layer_close"><i class="icon-cross"></i></button>
+
+    </div>
+
+    <div class="bg_layer"></div>
+
+  </div>
+
+  <!-- //profile change layer -->
+
+
+      <button type="button" class="btn_top"><i class="fa fa-angle-up"></i></button>
+      <div class="page_ws"></div>
+    </div><!-- //wrap close -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/ui.min.js"></script>
+
+  <!-- signIn layer -->
+  <div class="layer_wrap layer_sign">
+    <div class="layer_header">
+      <h1 class="tit_layer tit_sign">Sign In</h1>
+      <p class="sign_status">Connect now using</p>
+    </div>
+    <div class="layer_body">
+      <form>
+        <a href="#" class="sign_sns sign_facebook"><i class="fa fa-facebook"></i><span class="txt_hidden">facebook</span></a>
+        <a href="#" class="sign_sns sign_google"><i class="fa fa-google-plus"></i><span class="txt_hidden">google-plus</span></a>
+        <div class="txt_or">Or</div>
+        <div class="input_wrap">
+          <input type="text" class="input_base input_sign" placeholder="Enter email" />
+          <i class="icon-mail"></i>
+        </div>
+        <div class="input_wrap">
+          <input type="password" class="input_base input_sign" placeholder="Password (6 or more characters)" />
+          <i class="icon-lock"></i>
+        </div>
+        <div class="check_wrap">
+          <input type="checkbox" id="check1" class="check_input" checked /><label for="check1" class="check_label">Auto sign in</label>
+          <input type="checkbox" id="check2" class="check_input" /><label for="check2" class="check_label">Remember account</label>
+        </div>
+        <button type="button" class="btn btn_default btn_wide">Sign In</button>
+      </form>
+      <a href="#" class="txt_forgot">Forgot your password?</a>
+      <div class="txt_signup">
+        Don't have an account? <a href="#N" class="alink_signup">Sign Up</a>
+      </div>
+    </div>
+
+    <button type="button" class="layer_close"><i class="icon-cross"></i></button>
+  </div>
+  <!-- //signIn layer -->
+
+  <!-- signUp layer -->
+  <div class="layer_wrap layer_signup">
+    <div class="layer_header">
+      <h1 class="tit_layer tit_sign">Sign Up</h1>
+      <p class="sign_status">Sign up with social account</p>
+    </div>
+    <div class="layer_body">
+      <form>
+        <a href="#" class="sign_sns sign_facebook"><i class="fa fa-facebook"></i><span class="txt_hidden">facebook</span></a>
+        <a href="#" class="sign_sns sign_google"><i class="fa fa-google-plus"></i><span class="txt_hidden">google-plus</span></a>
+        <div class="txt_or">Or</div>
+        <p class="notice_signup">
+          When you create a Chemtopia account,<br />
+          we'll send a verification link to the email address<br />
+          you used to create the account.
+        </p>
+        <div class="input_wrap">
+          <input type="text" class="input_base input_sign" placeholder="Enter your name" />
+          <i class="icon-head"></i>
+        </div>
+        <div class="input_wrap">
+          <input type="text" class="input_base input_sign" placeholder="Enter email" />
+          <i class="icon-mail"></i>
+        </div>
+        <div class="input_wrap">
+          <input type="password" class="input_base input_sign" placeholder="Password (6 or more characters)" />
+          <i class="icon-lock"></i>
+        </div>
+        <button type="button" class="btn btn_default btn_wide btn_signup_next">Next</button>
+      </form>
+      <p class="txt_agree">
+        By clicking Sign up, you agree to the<br />
+        <a href="footer_terms.html">Terms of Service</a> and <a href="footer_privacy.html">Privacy Policy.</a>
+      </p>
+      <div class="txt_signup">
+        Already with Chemtopia? <a href="#N" class="signin">Sign In</a>
+      </div>
+    </div>
+
+    <button type="button" class="layer_close"><i class="icon-cross"></i></button>
+  </div>
+  <!-- //signUp layer -->
+
+  <!-- interest check layer -->
+  <div class="layer_wrap layer_interest">
+    <div class="layer_header">
+      <h1 class="tit_layer tit_sign">Sign Up</h1>
+      <p class="sign_status">Which chemistry fields interest you?</p>
+      <p class="txt_choose">Choose up to five.</p>
+    </div>
+    <div class="layer_body">
+      <form>
+        <ul class="check_wrap">
+          <li>
+            <input type="checkbox" id="choose1" class="check_input" checked /><label for="choose1" class="check_label">Petro-Chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose2" class="check_input" /><label for="choose2" class="check_label">Energy-chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose3" class="check_input" /><label for="choose3" class="check_label">Nuclear Chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose4" class="check_input" /><label for="choose4" class="check_label">Environment</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose5" class="check_input" /><label for="choose5" class="check_label">Waste-chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose6" class="check_input" /><label for="choose6" class="check_label">Materials-chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose7" class="check_input" /><label for="choose7" class="check_label">Astro-chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose8" class="check_input" /><label for="choose8" class="check_label">Mechanic chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose9" class="check_input" /><label for="choose9" class="check_label">Agro-chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose10" class="check_input" /><label for="choose10" class="check_label">Medical chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose11" class="check_input" /><label for="choose11" class="check_label">Food-chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose12" class="check_input" /><label for="choose12" class="check_label">Manufacturing process-chem</label>
+          </li>
+          <li>
+            <input type="checkbox" id="choose13" class="check_input check_other" /><label for="choose13" class="check_label">Other <span>(Chemistry)</span></label>
+          </li>
+        </ul>
+        <button type="button" class="btn btn_default btn_wide">Sign Up</button>
+      </form>
+    </div>
+
+    <button type="button" class="layer_close"><i class="icon-cross"></i></button>
+  </div>
+  <!-- //interest check layer -->
+
+  <!-- interest check : other layer -->
+  <div class="modal modal_other layer_wrap">
+    <div class="modal_wrap">
+      <div class="modal_head modal_head2">
+        <h1>What is your interest?</h1>
+      </div>
+      <div class="modal_body">
+        <form>
+          <input type="text" class="input_base input_sign" placeholder="Enter your directly" />
+          <div class="wrap_align_center">
+            <button type="button" class="btn btn_default btn_wide">Confirm</button>
+          </div>
+        </form>
+      </div>
+      <button type="button" class="sign_close"><i class="icon-cross"></i></button>
+    </div>
+    <div class="bg_layer"></div>
+  </div>
+  <!-- //interest check : other layer -->
+
+  <!-- forgot password layer -->
+  <div class="modal modal_forgot layer_wrap">
+    <div class="modal_wrap">
+      <div class="modal_head modal_head2">
+        <h1>Forgot your password?</h1>
+        <p class="txt_agree">
+          No worries! Type in your email address <br />
+          and we'll send you an email to reset <br />
+          your password.
+        </p>
+      </div>
+      <div class="modal_body">
+        <form>
+          <div class="input_wrap">
+            <input type="text" class="input_base input_sign" placeholder="Enter email" />
+            <i class="icon-mail"></i>
+          </div>
+          <div class="wrap_align_center">
+            <button type="button" class="btn btn_default btn_wide btn_reset_link">Send Reset link</button>
+            <!-- <p class="txt_agree">
+              Back to <a href="#">Sign in</a>
+            </p> -->
+          </div>
+        </form>
+      </div>
+      <button type="button" class="sign_close"><i class="icon-cross"></i></button>
+    </div>
+    <div class="bg_layer"></div>
+  </div>
+  <!-- //forgot password layer -->
+
+  <!-- valid email address layer -->
+  <div class="modal modal_valid layer_wrap">
+    <div class="modal_wrap">
+      <div class="modal_head modal_head2">
+        <h1>Valid email address</h1>
+        <p class="txt_agree">
+          Please verify e-mail we sent<br />
+          for your approval. <br />
+          We hope you enjoy Chemtopia
+        </p>
+      </div>
+      <div class="modal_body">
+        <div class="wrap_align_center">
+          <button type="button" class="btn btn_default btn_wide btn_confirm">Confirm</button>
+          <p class="notice_signup txt_valid">
+            If you do not verify your email<br />
+            within 48 hours, you must sign up again<br />
+            as a new member
+          </p>
+        </div>
+      </div>
+      <button type="button" class="sign_close"><i class="icon-cross"></i></button>
+    </div>
+    <div class="bg_layer"></div>
+  </div>
+  <!-- //valid email address layer -->
+
+  <!-- change password layer -->
+  <div class="layer_wrap layer_password">
+    <div class="layer_header">
+      <h1 class="tit_layer">Change your password</h1>
+    </div>
+    <div class="box_password">
+      <form>
+        <input type="text" class="input_base" placeholder="Old Password" />
+        <input type="text" class="input_base" placeholder="New Password" />
+        <input type="text" class="input_base" placeholder="Confirm Password" />
+        <button type="button" class="btn btn_default btn_wide">Change Password</button>
+      </form>
+    </div>
+
+    <button type="button" class="layer_close"><i class="icon-cross"></i></button>
+  </div>
+  <!-- //change password layer -->
+
+</body>
+</html>

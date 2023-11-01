@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="now">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>PANTECH</title>
+  <link rel="SHORTCUT ICON" href="img/favicon.ico">
+  <link type="text/css" rel="stylesheet" href="common/css/default.css">
+  <script type="text/javascript" src="common/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="common/js/ui.js"></script>
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="common/css/ie8.css">
+  <![endif]-->
+ </head>
+ <body>
+	<a href="#content" class="skip">skip navigation</a>
+	<div id="body_wrap" class="en">
+
+	<!-- Header -->
+		<!-- gnb menu -->
+		<div id="head_wrap">
+			<div class="gnb_wrap">
+				<div class="gnb">
+					<h1 class="logo"><a href="/en/index.do"><img src="img/common/logo.png" alt="Pantech"></a></h1>
+					<ul class="gnb_menu">
+						<li class="g1dep">
+							<a href="/en/comInfo/greetCeo.do" class="gm gm0">CORPORATE</a>
+							<ul class="g2dep">
+								<li><a href="/en/comInfo/greetCeo.do">CEO</a></li>
+								<li>
+									<a href="#" class="has_list">Corporate Information <span class="ico_close"><span class="htxt">Open the sub menu</span></span></a>
+									<ul class="g3dep">
+										<li><a href="/en/comInfo/summary.do">Summary</a></li>
+										<li><a href="/en/comInfo/philosophy.do">Corporate Philosophy</a></li>
+										<li><a href="/en/comInfo/ci.do">CI</a></li>
+									</ul>
+								</li>
+								<li><a href="/en/comInfo/history.do">History</a></li>
+								<li>
+									<a href="#" class="has_list">Business Network <span class="ico_close"><span class="htxt">Open the sub menu</span></span></a>
+									<ul class="g3dep">
+										<li><a href="/en/comInfo/business.do">Overview</a></li>
+										<li><a href="/en/comInfo/technology.do">Technology</a></li>
+									</ul>
+								</li>
+								<li><a href="/en/comInfo/companyMap.do">Location</a></li>
+							</ul>
+						</li>
+						<li class="g1dep">
+							<a href="/en/prod/productList.do?gbrand=VEGA" class="gm gm1">Product</a>
+							<ul class="g2dep">
+								<li><a href="/en/prod/productList.do?gbrand=VEGA">Domestic</a></li>
+								<li><a href="/en/prod/productList.do?gbrand=PANTECH">Overseas</a></li>
+								<li><a href="/en/prod/productList.do?gbrand=IOT">IoT</a></li>
+							</ul>
+						</li>
+						<li class="g1dep">
+							<a href="/en/mngInfo/ecoPolicy.do" class="gm gm2">Environmental Management</a>
+							<ul class="g2dep">
+								<li><a href="/en/mngInfo/ecoPolicy.do">Environmental Management Policy</a></li>
+								<li><a href="/en/mngInfo/ecoSystem.do">Environmental Management System</a></li>
+								<li><a href="/en/mngInfo/ecoToxic.do">Hazardous Substances Management</a></li>
+								<li><a href="/en/mngInfo/ecoSupply.do">Supply Chain Substance Management</a></li>
+								<li><a href="/en/mngInfo/ecoDesign.do">Eco Design</a></li>
+								<li><a href="/en/mngInfo/ecoFriendly.do">Environment friendly Products</a></li>
+								<!-- <li><a href="/">Product Eco Declaration</a></li> -->
+								<li><a href="/en/mngInfo/ecoRecycle.do">Product Recycling</a></li>
+							</ul>
+						</li>
+						<li class="g1dep">
+							<a href="/en/promotion/noticeBoard.do" class="gm gm3">Press Center</a>
+							<ul class="g2dep">
+								<li><a href="/en/promotion/noticeBoard.do">Notice</a></li>
+								<li><a href="/en/promotion/coverage.do">Press Release</a></li>
+								<li>
+									<a href="#" class="has_list">Advertising <span class="ico_close"><span class="htxt">Open the sub menu</span></span></a>
+									<ul class="g3dep">
+										<li><a href="/en/promotion/tvAdvert.do">TV AD</a></li>
+										<li><a href="/en/promotion/printAdvert.do">PRINT</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<div class="gnb_info">
+						<div class="language">
+							<a href="/comInfo/greetCeo.do" title="Korean">KO</a>
+						</div>
+						<div class="total_sch">
+							<button type="button" class="btn_tsch"><span class="htxt">Set the search form</span></button>
+						</div>
+					</div>
+
+					<div class="main_prd"><a href="#"><img src="img/dummy/@100x130.png" alt="Im100"><span class="mp_txt">ImSky product name</span></a></div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- 검색 레이어 -->
+		<div id="ly_tsch_wrap" class="">
+			<form id="searchFrm" method="post" action="/pantech/en/search/searchList.do" name="searchFrm"  onSubmit="searchFrmChk();return false;">
+				<input type="hidden" name="searchKeyword" id="searchKeyWord">
+				<fieldset>
+					<legend class="htxt">Search</legend>
+					<div class="box_tsch">
+						<input type="text" name="searchKeyword1" id="searchKeyWord1" class="input_keyword" size="30" placeholder="Please enter your search term">
+						<button type="submit" class="btn_schgo" onSubmit="searchFrmChk();return false;"><span class="htxt">Search</span></button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+
+		<!-- 로케이션 바 -->
+		<div class="location_wrap">
+			<div class="location">
+				<a href="/index.do" class="gohome"><img src="img/common/ico_home.png" alt="home"></a>
+				<div class="loca_select">
+					<div class="loca_depth">Corporate</div>
+					<ul class="loca_sub">
+						<li><a href="#">Product</a></li>
+						<li><a href="#">Environmental Management</a></li>
+						<li><a href="#">Press Center</a></li>
+					</ul>
+				</div>
+				<div class="loca_select">
+					<div class="loca_depth">Corporate Information</div>
+					<ul class="loca_sub">
+						<li><a href="#">CEO</a></li>
+						<li><a href="#">Corporate Information</a></li>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Business Networtk</a></li>
+						<li><a href="#">Location</a></li>
+					</ul>
+				</div>
+				<div class="loca_select loca_end">
+					<div class="loca_depth">Summary</div>
+					<ul class="loca_sub">
+						<li><a href="#">Summary</a></li>
+						<li><a href="#">Corporate Philosophy</a></li>
+						<li><a href="#">CI</a></li>
+					</ul>
+				</div>
+				<!-- <span class="mylocation">Summary</span> -->
+			</div>
+		</div>
+		<hr class="hide">
+	<!-- //Header -->
+<script type="text/javascript">
+//검색
+var searchFrmChk = function(){
+
+	if($("#searchKeyWord1").val() == ""){
+		alert("Please enter your search term.");
+		$("#searchKeyWord1").focus();
+		return false;
+	}  else{
+		var search = jQuery('#searchKeyWord1').val();
+		jQuery('#searchKeyWord').val(search);
+		searchFrm.submit();
+	}
+}
+</script>
+
+		<!-- content -->
+		<div id="content_wrap">
+
+			<div id="tit_cont0" class="tit_cont_wrap">
+				<div class="tit_cont"><h2 class="tit_page">Corporate</h2><p class="txt_addition">PANTECH led to changes in the world market</p></div>
+			</div>
+
+
+			<div id="content" class="content">
+				<h3 class="tit_ty">CEO</h3>
+				<p class="txt_copy">Let us introduce the CEO of Pantech,<br> a global leading company<br> in the Intelligent Mobile Device industry</p>
+				<div class="txt_description">
+					<p><span class="txt_strong">Since its founding in 1991,</span> Pantech has achieved remarkable growth by highly improving convenience in our day to day lives.
+					<br>Thanks to their state-of-the-art technologies in the IT industry, Pantech has been enjoying their status as a telecommunications leader over the past 20 years.
+					</p>
+
+					<br>
+					<p class="txt_light">Meanwhile, Pantech has had to face a series of crises due to rapidly evolving technologies and a paradigm shift in the telecommunication industry; however, Pantech’s constant innovation and challenging spirit have enabled them to find new opportunities in such times of crisis.
+					</p>
+
+					<br>
+					<p class="txt_light">Since Pantech was always one step ahead of their competitors in the new smartphone competition, their innovative products have enabled Pantech to become firmly positioned as a premium class smartphone manufacturer. In addition, Pantech has strategically released differentiated products in overseas markets such North America and Japan in order to strengthen their market share and penetrate into other markets like Europe and China.<br>Pantech’s achievements and technical progress however, would not have been possible had there not been loyalty from their customers. </p>
+
+					<p>In return for all the attention we have received, we, the executives and staff members, will come up with a practical alternative which will be suitable for the new market environment through continuous training and research. By nurturing our strengths, including <span class="txt_strong">our challenging spirit, our innovation skills, good judgment and new ideas for finding capabilities,</span> we will dedicate our best efforts in making Pantech a long-living corporation.  </p>
+
+					<br>
+					<p class="txt_strong">We will prove that Pantech can channel its potential into mainstream success
+					<br> as a global IMD enterprise and provide what customers need most in the future.
+					<br>Thank you</p>
+					<p class="txt_sign tar">Chung Joon, CEO of Pantech<br>Moon Ji-wook, President of Pantech</p>
+				</div>
+			</div>
+		</div>
+		<hr class="hide">
+		<!-- //content -->
+
+
+		<!-- footer -->
+		<div id="footer_wrap">
+			<div class="footer">
+				<div class="foot_logo"><a href="#"><img src="img/common/logo_gray.png" alt="Pantech"></a></div>
+				<div class="foot_info">
+					<ul class="foot_menu">
+						<li><a href="#">Legal</a></li>
+						<li><a href="#" class="txt_privacy">Privacy Policy</a></li>
+						<li><a href="#">Location</a></li>
+						<li><a href="#">Sitemap</a></li>
+					</ul>
+					<address class="txt_address">Pantech R&D Center, I-2, DMC Sangam-dong Mapo-go, Seoul, Korea.</address>
+					<p class="txt_copyright">COPYRIGHT BY PANTECH ALL RIGHTS RESERVED.</p>
+				</div>
+			</div>
+			<button class="btn-top">Top</button>
+		</div>
+		<!-- //footer -->
+
+	</div>
+ </body>
+</html>

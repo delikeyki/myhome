@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/*  다중배경 수정 */
+#head_wrap .gnb_wrap_on {background:url('../../img/common/bg_header_w.png') repeat-x 0 0;border-bottom:2px solid #666}
+.main_wrap #head_wrap .gnb_main_top.gnb_wrap_on {background:url('../../img/main/bg_header.png') repeat-x 0 0;}
+.list_bn li.bn01 {background:url('../../img/main/bg_bn01.png') no-repeat center left;border-bottom:1px dotted #fff}
+.list_bn li.bn02 {background:url('../../img/main/bg_bn02.png') no-repeat center left;border-bottom:1px dotted #fff}
+.list_bn li.bn03 {background:url('../../img/main/bg_bn03.png') no-repeat center left;}

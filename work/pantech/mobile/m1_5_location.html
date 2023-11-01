@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<title>Pentech</title>
+	<meta name="Description" content="Intelligent Mobile Device 전문기업, 팬택, 팬택 기업사이트, I'm Back,Sky, IM-100">
+	<link rel="stylesheet" href="common/css/default.css">
+	<script src="common/js/jquery-1.11.3.min.js"></script>
+	<script src="common/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+<div class="body_wrap">
+	<header>
+		<h1 class="logo"><a href="layout_main.html"><span class="htxt">Pantech</span></a></h1>
+		<a id="nav_open" href="#0"><span class="htxt">menu</span><span class="nav_icon nav_sticky"></span></a>
+	</header>
+
+	<nav id="nav_wrap">
+		<h2>전체메뉴</h2>
+		<ul class="nav_list">
+			<li class="m1dep">
+				<a href="#0">기업정보</a>
+				<ul class="m2dep">
+					<li id="menu0"><a href="m1_1_ceo.html">CEO인사말</a></li>
+					<li id="menu1"><a href="m1_2_intro.html">회사소개</a></li>
+					<li id="menu2"><a href="m1_3_history.html">연혁</a></li>
+					<li id="menu3"><a href="m1_4_business.html">사업소개</a></li>
+					<li id="menu4"><a href="m1_5_location.html">회사위치</a></li>
+				</ul>
+			</li>
+			<li class="m1dep">
+				<a href="#0">제품정보</a>
+				<ul class="m2dep">
+					<li id="menu5"><a href="m2_product_list.html">국내모델</a></li>
+					<li id="menu6"><a href="m2_product_list.html">해외모델</a></li>
+					<li id="menu7"><a href="m2_product_list.html">IoT</a></li>
+				</ul>
+			</li>
+			<li class="m1dep">
+				<a href="#0">채용정보</a>
+				<ul class="m2dep">
+					<li id="menu8"><a href="m3_1_talent.html">인재상</a></li>
+					<li id="menu9"><a href="m3_2_personnel.html">인사제도</a></li>
+					<li id="menu10"><a href="m3_3_duty.html">직무소개</a></li>
+					<li id="menu11"><a href="#0">채용공고</a></li>
+				</ul>
+			</li>
+			<li class="m1dep">
+				<a href="#0">홍보센터</a>
+				<ul class="m2dep">
+					<li id="menu12"><a href="m4_1_board.html">공지사항</a></li>
+					<li id="menu13"><a href="m4_2_coverage.html">보도자료</a></li>
+					<li id="menu14"><a href="m4_2_coverage_view.html">팬택스토리</a></li>
+					<li id="menu15"><a href="m4_4_brandstory.html">브랜드스토리</a></li>
+					<li id="menu16"><a href="m4_5_1_tvcf.html">Advertising</a></li>
+				</ul>
+			</li>
+		</ul>
+		<a class="nav_close" href="#0">전체메뉴 닫기</a>
+	</nav>
+
+	<div class="content" id="p4">
+
+		<!-- menu1_2 content -->
+		<main class="">
+			<h1 class="sub_tit"><a href="#0">회사위치</a></h1>
+			<ul class="submenu">
+				<li><a href="m1_1_ceo.html">CEO인사말</a></li>
+				<li><a href="m1_2_intro.html">회사소개</a></li>
+				<li><a href="m1_3_history.html">연혁</a></li>
+				<li><a href="m1_4_business.html">사업소개</a></li>
+				<li><a href="m1_5_location.html">회사위치</a></li>
+			</ul>
+
+			<section class="cont_wrap">
+
+				<h2 class="sub_copy">시대의 변화에 대응하며 팬택인의 모든 열정과 노력이 담긴 현장을 소개합니다.</h2>
+
+				<h3 class="tit_ty1">상암사옥(팬택계열R&D센터)</h3>
+				<p class="paragraph">팬택은 2007년 4월 상암동으로 사옥을 이전하며 상암동시대를 맞이하였습니다. 이곳에서 팬택의 전 구성원은 모든 열정과 노력을 담아 최고의 제품을 연구개발하고 있습니다.</p>
+
+				<!-- STR: DAUM API -->
+				<div id="map" class="map_view"></div>
+				<script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=4cb3be72c04ae476cb5f47806592d8ea"></script>
+				<script>
+				$(function() {
+				//<!--
+				var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+				mapOption = {
+				center: new daum.maps.LatLng(37.5762013, 126.8986717), // 지도의 중심좌표
+				level: 4 // 지도의 확대 레벨
+				};
+
+				var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+				// 마커가 표시될 위치입니다
+				var markerPosition  = new daum.maps.LatLng(37.5762013, 126.8986717);
+
+				// 마커를 생성합니다
+				var marker = new daum.maps.Marker({
+				position: markerPosition
+				});
+
+				// 마커가 지도 위에 표시되도록 설정합니다
+				marker.setMap(map);
+
+				var iwContent = '<div style="width:130px;padding:2px;">팬택R&D Center<br><a href="http://map.daum.net/link/to/Hello World!,37.576763,126.898850" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다 <a href="http://map.daum.net/link/map/Hello World!,33.450701,126.570667" style="color:blue" target="_blank">큰지도보기</a>
+				iwPosition = new daum.maps.LatLng(37.5762013, 126.8986717); //인포윈도우 표시 위치입니다
+
+				// 인포윈도우를 생성합니다
+				var infowindow = new daum.maps.InfoWindow({
+				position : iwPosition,
+				content : iwContent
+				});
+
+				// 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+				//infowindow.open(map, marker);
+
+				// 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+				var mapTypeControl = new daum.maps.MapTypeControl();
+
+				// 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+				// daum.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+				map.addControl(mapTypeControl, daum.maps.ControlPosition.TOPRIGHT);
+
+				// 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+				var zoomControl = new daum.maps.ZoomControl();
+				map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
+				})
+				//-->
+				</script>
+				<!-- END: DAUM API -->
+
+				<p class="paragraph">주소 : 서울특별시 마포구 성암로 179 팬택빌딩<br><span class="by_subway">서울 지하철 6호선 디지털미디어시티역 2번 출구</span></p>
+
+				<h3 class="tit_ty1">미국</h3>
+				<div class="map_view map_usa"><span class="htxt">미국 법인 지도</span></div>
+
+				<ul class="address_list">
+					<li>
+						<h4 class="tit">법인(아틀란타)</h4>
+						<p class="paragraph">5607 Glenridge Drive, Suite 500, Atlanta, GA 30342, USA<br>T. 1-678-681-6300</p>
+					</li>
+					<li>
+						<h4 class="tit">지역사무소(뉴저지)</h4>
+						<p class="paragraph">5607 Glenridge Drive, Suite 500, Atlanta, GA 30342, USA<br>T. 1-678-681-6300</p>
+					</li>
+					<li>
+						<h4 class="tit">지역사무소(달라스)</h4>
+						<p class="paragraph">(물류)5201 Alliance Gateway Suite#150 Fort Worth Texas 75081, USA<br>T. 1-678-681-6382</p>
+					</li>
+					<li>
+						<h4 class="tit">CS</h4>
+						<p class="paragraph">959 E. Collins Blvd Suite#120 Richardson Texas 75081, USA<br>T. 1-678-681-6390</p>
+					</li>
+				</ul>
+
+			</section>
+		</main>
+		<!-- //menu1_2 content -->
+
+		<footer>
+			<span>COPYRIGHT BY PANTECH ALL RIGHTS RESERVED.</span>
+			<a href="http://www.pantech.co.kr/index.do?ctype=PC">PC버전</a>
+		</footer>
+		<button class="btn-top"><span class="htxt">Top</span></button>
+	</div>
+</div>
+</body>
+</html>

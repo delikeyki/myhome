@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>숫자 맞추기 게임</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>1~100 숫자맞추기 게임</h1>
+            <div id="result-area"></div><!-- 결과 내용 -->
+            <h2 id="chance-area">남은 기회:5번</h2>
+            <input type="number" id="user-input" placeholder="1부터 100까지 숫자를 입력" />
+            <button id="play-button">Go!!</button>
+            <button id="button-reset">게임 시작</button>
+        </div>
+        
+        <script>
+          //1. 랜덤숫자 구하기 
+          //2. 인풋에 값을 입력
+          //3. 숫자 비교 인풋이 크면 down출력 인풋값이 작으면 up, 같으면 정답 출력
+          //4. 찬스는 5회에서 -1씩 감소. 찬스를 다 쓰면 게임 종료 
+          //5. 공백이거나 1보다 작거나 100보다 크면 안됨
+          //6. 인풋값이 이전에 입력한 값이면 찬스 차감 안함 
+          
+          let computerNum = 0;
+          function randomNum() {
+            computerNum = Math.floor(Math.random() * 100) + 1;
+            console.log(computerNum)
+          }
+          
+          randomNum() //랜덤숫자 생성
+
+          let userInput = document.getElementById("user-input")
+          let result = document.getElementById("result-area")
+          let chanceArea = document.getElementById("chance-area")
+          let playButton = document.getElementById("play-button")
+          let playResetButton = document.getElementById("button-reset")
+          let chances = 5;
+          let gameOver = false;
+          let userValueArr = []
+
+          playButton.addEventListener("click", play)
+
+          //버튼을 누르면 실행되는 함수
+          function play(){
+            let userValue = userInput.value;
+
+            if(userValue == '' || userValue < 1 || userValue > 100) {
+              result.textContent = "1부터 100까지의 숫자를 입력하세요"
+              return
+            }
+
+            if(userValueArr.includes(userValue)){
+              result.textContent = "같은 값을 입력하셨습니다."
+              return 
+            }
+
+            userValueArr.push(userValue)
+            console.log(userValueArr)
+            chances--;
+            chanceArea.innerHTML = `남은 기회:${chances}번`
+            if(chances == 0) {
+              result.innerText = "게임오버"
+              playButton.disabled = true;
+              return 
+            }
+
+            if (userValue > computerNum) {
+              result.textContent = "Down!"
+            } else if (userValue < computerNum) {
+              result.textContent = "Up!"
+            } else if (userValue == computerNum) {
+              result.textContent = "정답입니다!"
+              playButton.disabled = true;
+            }
+          }
+
+          //게임 재시작 함수
+          function gameReset(){
+            randomNum()
+            playButton.disabled = false;
+            result.textContent = "새롭게 도전하세요"
+            chances = 5;
+            chanceArea.innerHTML = `남은 기회:${chances}번`
+            emptyVale()
+            userValueArr = []
+          }
+
+          //버튼 입력 후 포커스 될때 값 지워지기 
+          userInput.addEventListener("focus", emptyVale)
+
+          function emptyVale(){
+            userInput.value = ''
+          }
+
+          //재시작버튼 누르면 재시작 함수 호출
+          playResetButton.addEventListener("click", gameReset)
+        </script>
+    </body>
+</html>

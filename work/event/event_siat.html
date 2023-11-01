@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta name="description" content="인적성검사 SIAT 출시기념 무료체험 이벤트" >
+  <meta http-equiv="Content-Type" content="text/html;charset=euc-kr" >
+  <meta http-equiv="Content-Language" content="ko-KR" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge; requiresActiveX=true;" >
+  <title>인적성검사 SIAT 출시기념 무료체험 이벤트</title><meta property="og:site_name" content="사람인" >
+  <meta property="og:title" content="인적성검사 SIAT 출시기념 무료체험 이벤트" >
+  <meta property="og:description" content="새로운 인적성검사 &quot;SiAT&quot; 출시를 기념하여 사람인이 기업회원 여러분의 인재채용을 지원합니다.\n인적성검사 SiAT(씨앗)으로 기업 경쟁력의 씨앗이 될 적합한 인재를 꼭 채용하세요." >
+  <meta property="fb:app_id" content="137906922916817" >
+  <meta property="og:image" content="http://www.saraminimage.co.kr/ui/event/150915_free/facebook_403403.png" >
+  <meta property="og:url" content="http://www.saramin.co.kr/zf_user/event/index/siat-event" >
+  <link href="siat.css?v=20151209" media="screen, print" rel="stylesheet" type="text/css" >
+  <link href="http://www.saraminimage.co.kr/favicon.ico" rel="favicon" ><script type="text/javascript" src="http://www.saramin.co.kr/js/libs/jqGrid-4.3.2/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="http://www.saramin.co.kr/js/event/easing.js"></script>
+  <script type="text/javascript">
+    //<!--
+
+    var endDate = '12/31/2015 23:59:59';
+
+    var now       = new Date();
+    var EndTime   = Math.floor(new Date(endDate).getTime() / 1000);
+    var StartTime = Math.floor(now.getTime() / 1000);
+    var SetTime   = EndTime - StartTime;
+    var tid;
+
+    function showTimeMessage() {
+
+      var D = Math.floor(SetTime / 86400);
+      var H = Math.floor((SetTime - D * 86400) / 3600 % 3600);
+      var M = Math.floor((SetTime - H * 3600) / 60 % 60);
+      var S = Math.floor((SetTime - M * 60) % 60);
+
+      var day = '';
+
+      if ( D > 0 ) {
+        day = D + '일 ';
+      }
+      var time = padZero(H,2) + '시간 ' + padZero(M,2) + '분 ' + padZero(S,2) + '초';
+      $('#day').html(day);
+      $('#time').html(time);
+
+      SetTime--;     // 1초씩 감소
+
+      if ( SetTime < 0 ) {   // 시간이 종료 되었으면..
+        clearInterval(tid);  // 타이머 해제
+      }
+    }
+
+    function padZero(num, leng) {
+      var zero = leng - ("" + num).length;
+      if ( typeof(num) == 'number' && zero > 0 ) {
+        var tmp = "";
+        for ( var i = 0; i < zero; i++ ) {
+          tmp+="0";
+        }
+        return tmp + num;
+      } else {
+        return num;
+      }
+    }
+
+    $( document ).ready(function() {
+
+      if ( !$('#day') ) return false;
+
+      showTimeMessage();
+      tid = setInterval('showTimeMessage()', 1000);
+
+      //page scroll,Top button
+      var elScrollTop = $('#scrollTop');
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 600) {
+          elScrollTop.fadeIn("fast");
+        } else {
+          elScrollTop.fadeOut("fast");
+        }
+      });
+
+    });
+
+    //-->
+  </script></head>
+<body>
+<p id="accessibility"><a href="#container">메뉴 건너뛰기</a></p>
+<div id="event_wrap">
+  <!-- event header -->
+  <div id="header" class="header">
+    <div class="h_wrap">
+      <h1><a href="/zf_user/"><img src="http://www.saraminimage.co.kr/ui/event/common/logo_top.png" alt="방문자수 1위 사람인 www.saramin.co.kr"></a></h1>
+      <div class="gnb">
+        <ul class="gnb_list">
+          <li><a href="/zf_user/memcom/index/main" target="_blank" title="My 사람인">MY 사람인</a></li>
+          <li><a href="/zf_user/company/recruit-manage" target="_blank" title="채용정보/지원자관리">채용정보/지원자관리</a></li>
+          <li><a href="/zf_user/talent" target="_blank" title="인재정보">인재정보</a></li>
+          <li class="end"><a href="/zf_user/help" target="_blank" title="고객센터">고객센터</a></li>
+        </ul>
+
+                <span class="btn_area">
+                                    <button class="btn_logout" type="button" title="로그아웃" onclick="document.location.href='/zf_user/auth/logout?redirect=%2Fzf_user%2Fevent%2Findex%2Fsiat-event';">로그아웃</button>
+                                                    <a href="https://www.facebook.com/share.php?api_key=137906922916817&amp;display=popup&amp;u=http%3A%2F%2Fwww.saramin.co.kr%2Fzf_user%2Fevent%2Findex%2Fsiat-event" onclick="window.open(this.href, this.target, 'width=578,height=380'); return false;" class="btn_facebook_top">페이스북</a>
+                    <a href="https://twitter.com/share?url=http%3A%2F%2Fwww.saramin.co.kr%2Fzf_user%2Fevent%2Findex%2Fsiat-event&amp;text=%EC%9D%B8%EC%A0%81%EC%84%B1%EA%B2%80%EC%82%AC%20SIAT%20%EC%B6%9C%EC%8B%9C%EA%B8%B0%EB%85%90%20%EB%AC%B4%EB%A3%8C%EC%B2%B4%ED%97%98%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%23kjob" onclick="window.open(this.href, this.target, 'width=554,height=454'); return false;" class="btn_twitter_top">트위터</a>
+                                </span>
+      </div>
+    </div>
+  </div>
+  <!--// event header -->
+
+  <!-- event container -->
+  <div id="container" class="container">
+
+
+
+    <div class="sec01">
+      <div class="sec01_cont">
+        <h2><img src="http://www.saraminimage.co.kr/ui/event/150915_free/img01-8.png" alt="인적성검사 SIAT &#91;씨앗&#93; 출시기념 무료체험 이벤트" /></h2>
+      </div>
+      <div class="sec01_link">
+        <!-- wmg_8023 추가 및 태그 이동~ -->
+        <div class="txt_hurryup">
+          <span class="blind">무료체험 기회 딱</span> <span id="day2">00</span> <span class="blind">일 남았습니다.</span>
+        </div>
+        <div class="blind">
+          <p>새로운 인적성검사 SIAT 출시를 기념하여 사람인이 기업회원 여러분의 인재채용을 지원합니다.<br />인적성검사 SIAT으로 기업 경쟁력의 씨앗이 될 적합한 인재를 꼭 채용하세요</p>
+          <ul>
+            <li>대상: 사람인 기업회원 전체</li>
+            <li>기간: 2015년 10월 21일 (수) ~ 12월 31일 (목)</li>
+            <li>참여방법: 무료체헙 상품 구매 후 인적성검사 체험</li>
+          </ul>
+        </div>
+        <!-- //~wmg_8023 추가 및 태그 이동 -->
+        <a href="#howTo" class="view_detail">자세히보기</a>
+        <a href="/zf_user/service-guide/siat" target="_blank" title="새창" class="btn_start">씨앗 무료체험시작</a>
+      </div>
+    </div>
+
+
+    <div class="sec02">
+      <div class="sec02_cont">
+        <!-- wmg_8023 수정 및 추가 -->
+        <h3><img src="http://www.saraminimage.co.kr/ui/event/150915_free/img02_151209.png" alt="인적성검사, 내부직원 대상과 채용과정에 활용해보세요!" /></h3>
+
+        <div class="wrap_tab_ex">
+          <h4 class="view1 view_on" rel="ex_view1">
+            <img src="http://www.saraminimage.co.kr/ui/event/150915_free/tab1.gif" alt="직원대상 검사활용" style="display:none;" />
+            <img src="http://www.saraminimage.co.kr/ui/event/150915_free/tab1_on.gif" alt="직원대상 검사활용"  />
+          </h4>
+          <div class="ex_box" id="ex_view1">
+            <div class="ex05">
+              <h5>누가 우리회사의 우수직원일까요?</h5>
+              <ul>
+                <li>인적성검사는 과학적인 평가방법 입니다.성실성, 대인관계성, 정직성, 정서안정성 등 성격이나 행동에 관련된 인성요인과 문제해결력, 언어논리력, 창의력 등 직무수행과 관련된 능력을 검사하는 적성요인을 과학적으로 평가합니다.</li>
+                <li>(사례) 모 기업의 인사고과와 인적성검사 간의 점수 관계, 인사고과가 높은 집단이 낮은 집단보다 인적성검사 평균점수가 높은 것이 확인됩니다.</li>
+                <li>인적성검사를 이렇게 활용해 보세요
+                  <ol>
+                    <li>직원들의 종합적 평가 및 부서배치에 활용</li>
+                    <li>집단 내의 순위 비교</li>
+                    <li>높은 성과자 예측</li>
+                    <li>이상징후자 판별</li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <h4 class="view2" rel="ex_view2">
+            <img src="http://www.saraminimage.co.kr/ui/event/150915_free/tab2.gif" alt="채용과정 검사활용"  />
+            <img src="http://www.saraminimage.co.kr/ui/event/150915_free/tab2_on.gif" alt="채용과정 검사활용"  style="display:none;" />
+          </h4>
+          <div class="ex_box" id="ex_view2" style="display:none;">
+            <div class="ex06">
+              채용과정에서 인적성검사 왜 필요할까요?
+              Q.반사회적 성격결함자, 신경성질환자, 정신질환자, 정서불안 등 과연 면접에서 직접 판별할 수 있을까요?
+              A.아니오, 그렇지 않습니다. 하지만 과학적 바탕의 인적성검사를 통해 면접 전 미리 지원자의 인성과 적성을 파악하여 판별할 수는 있습니다.
+            </div>
+            <p class="ex02">인적성검사를 통해 잘못된 채용으로 소용되는 시간과 비용을 줄일 수 있습니다!</p>
+          </div>
+        </div>
+
+        <script>
+          //contents tab
+          $(".wrap_tab_ex h4").on('click', function(){
+            var thisEl = $(this),
+                sibling_h4 = thisEl.siblings('h4');
+
+            thisEl.parent().find('h4 img').hide();
+
+            thisEl.addClass("view_on").find("img").eq(1).show();
+            thisEl.next('div.ex_box').show();
+
+            sibling_h4.removeClass("view_on").find("img").eq(0).show();
+            sibling_h4.next('div.ex_box').hide();
+          });
+        </script>
+        <!-- //~wmg_8023 수정 및 추가 -->
+
+        <div class="question">
+          <p class="blind">검사결과는 어떻게 활용할 수 있을까요?</p>
+          <a href="/zf_user/service-guide/siat#utilize" target="_blank" title="새창" class="direct_go">바로확인하기</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec03">
+      <div class="sec03_cont">
+        <a href="/zf_user/service-guide/siat" target="_blank" title="새창">씨앗 무료체험 시작</a>
+      </div>
+    </div>
+
+    <div class="sec04">
+      <div class="sec04_cont">
+        <div class="blind">
+          <h3>새로운 인적성검사 SIAT &#91;씨앗&#93;을 소개합니다.</h3>
+          <p>씨앗은 사람인에서 제공하는 인적성검사 서비스의 새로운 브랜드입니다.<br />인적성검사를 비롯한 다양한 검사를 합리적인 가격으로 이용하실 수 있습니다.</p>
+          <ul>
+            <li>
+              <h4>휴노: 글로벌 검사 서비스1위 SHL사의 국내 단독 파트너</h4>
+              <ul>
+                <li>인적성검사 <s>18,000원</s> 0원</li>
+                <li>직무성격검사 <s>16,000원</s> 0원</li>
+                <li>무료체험 인적성검사Lite <s>7,000원</s> 0원</li>
+                <li>무료체험 직무성격검사Lite <s>5,000원</s> 0원</li>
+              </ul>
+            </li>
+            <li>
+              <h4>VQ: 국내 유수 기업의 인적성 컨설팅 및 검사개발 다년 경력</h4>
+              <ul>
+                <li>직종별 인적성검사 20,000원</li>
+                <li>인적성검사 18,000원</li>
+                <li>인성역량검사 16,000원</li>
+                <li>인성검사 10,000원</li>
+                <li>무료체험 인성검사Lite <s>5,000원</s> 0원</li>
+              </ul>
+            </li>
+            <li>
+              <h4>KAC: 심리학 전문가들로 구성된 인사선발 및 평가분야 전문 컨설팅기관</h4>
+              <ul>
+                <li>프리미엄 인적성검사 30,000원</li>
+                <li>직종별 인적성검사 20,000원</li>
+                <li>무료체험 인성역량검사 <s>16,000원</s> 0원</li>
+                <li>무료체험 인성검사 <s>10,000원</s> 0원</li>
+                <li>무료체험 텔러마케터 선발검사<s>9,000원</s> 0원</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="question">
+        <p class="blind">검사 종류가 많은데 어떤 검사를 이용해야할까요?</p>
+        <a href="/zf_user/service-guide/siat#kind" target="_blank" title="새창" class="direct_go">바로확인하기</a>
+      </div>
+    </div>
+
+    <div class="sec05">
+      <div class="sec05_cont">
+        <a href="/zf_user/service-guide/siat" target="_blank" title="새창">씨앗 무료체험 시작</a>
+      </div>
+    </div>
+
+    <div class="sec02" id="howTo">
+      <div class="sec02_cont">
+        <h3 class="tit02">씨앗 무료체험 참여방법</h3>
+        <div class="ex_box">
+          <div class="ex03">
+            <div class="blind">
+              <h4>채용공고 지원자의 검사 진행할 경우</h4>
+              <ol>
+                <li>무료체험상품구매</li>
+                <li>채용공고 등록</li>
+                <li>지원자 관리</li>
+                <li>검사등록</li>
+                <li>검사결과 확인</li>
+              </ol>
+              <h4>검사만 진행할 경우</h4>
+              <ol>
+                <li>무료체험상품구매</li>
+                <li>검사,응시자 등록</li>
+                <li>검사결과 확인</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <p class="ex04">무료체험상품구매: 하단의 SIAT &#91;씨앗&#93; 무료체험 버튼 클릭 후 &#91;상품종류 및 선택&#93;의 0원 상품 선택 후 0원 결제 진행</p>
+        <div class="question ques2">
+          <p class="blind">인적성검사는 어떻게 이용할수 있나요?</p>
+          <a href="/zf_user/service-guide/siat#process" target="_blank" title="새창" class="direct_go">바로확인하기</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec06">
+      <div class="sec06_cont">
+        <a href="/zf_user/service-guide/siat" target="_blank" title="새창">씨앗 무료체험 시작</a>
+      </div>
+    </div>
+    <div class="sec07">
+      <div class="sec07_cont">
+        <p class="blind">이미 수 천 기업이 인적성 검사를 이용하고 있습니다. 씨앗 인적성검사를 활용하시면 불필요한 채용과정을 반복하지 않으셔도 됩니다.</p>
+        <div class="remain">
+          마지막 무료체험 기회 <span id="day">00일</span> <em id="time">00시간 00분 00초</em> 남았습니다.
+          <p>이 기회를 놓치지 마세요!</p>
+        </div>
+        <a href="/zf_user/service-guide/siat" target="_blank" title="새창" class="btn_start">씨앗 무료체험 시작</a>
+      </div>
+    </div>
+
+    <div class="sec08">
+      <div class="sec_caution">
+        <h3><img src="http://www.saraminimage.co.kr/ui/event/150915_free/img13-1.gif" alt="꼭! 읽어주세요"></h3>
+        <ul class="list">
+          <li>본 이벤트는 기업회원 대상으로 이벤트 기간동안 해당 상품에 한해 무료로 구매하실 수 있습니다. (0원 결제)</li>
+          <li>무료로 구매한 상품은 이벤트 기간 동안에만 이용 가능하며, 무료 구매 보유 상품은 이벤트 종료 시 일괄 삭제됩니다.</li>
+          <li>기타 이벤트 문의 <a href="mailto:event@saramin.co.kr" title="이메일 보내기">event@saramin.co.kr</a> </li>
+        </ul>
+      </div>
+    </div>
+
+    <ul class="layer_fixed_sns">
+      <li><a href="https://www.facebook.com/share.php?api_key=137906922916817&amp;display=popup&amp;u=http%3A%2F%2Fwww.saramin.co.kr%2Fzf_user%2Fevent%2Findex%2Fsiat-event" onclick="window.open(this.href, this.target, 'width=578,height=380'); return false;"><img src="http://www.saraminimage.co.kr/ui/event/150915_free/btn_fb.png" alt="페이스북 공유하기" width="48" height="48"></a></li>
+      <li><a href="https://twitter.com/share?url=http%3A%2F%2Fwww.saramin.co.kr%2Fzf_user%2Fevent%2Findex%2Fsiat-event&amp;text=%EC%9D%B8%EC%A0%81%EC%84%B1%EA%B2%80%EC%82%AC%20SIAT%20%EC%B6%9C%EC%8B%9C%EA%B8%B0%EB%85%90%20%EB%AC%B4%EB%A3%8C%EC%B2%B4%ED%97%98%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%23kjob" onclick="window.open(this.href, this.target, 'width=554,height=454'); return false;"><img src="http://www.saraminimage.co.kr/ui/event/150915_free/btn_tw.png" alt="트위터 공유하기" width="48" height="48"></a></li>
+      <li><a href="#" id="scrollTop" style="display:none;"><img src="http://www.saraminimage.co.kr/ui/event/150915_free/btn_top3.png" alt="페이지 상단으로" width="48" height="49"></a></li>
+    </ul>
+
+    <script type="text/javascript">
+    </script>
+  </div>
+  <!--// event container -->
+
+  <!-- event footer -->
+  <div id="footer" class="footer">
+    <div class="copyright">
+      <a href="/zf_user/" class="ci"><img src="http://www.saraminimage.co.kr/ui/footer/footer_ci.png" alt="사람인HR"></a>
+      <img src="http://www.saraminimage.co.kr/ui/footer/copyright_201510.png" class="desc" alt="(주)사람인HR, 우 : 152-050, 서울 구로구 구로동 187-10 코롱싸이언스밸리 1차 201호, 대표 : 이정근, 개인정보 관리책임자 : 강봉관, 사업자등록 : 113-86-00917, 직업정보제공사업 : 서울 관악 제 2005-6호, 통신판매업 : 제 2339호, Copyright (c) (주)사람인HR. All rights reserved.">
+    </div>    </div>
+  <!-- event footer -->
+</div>
+
+
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=eaEGj1agtu00gJ" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  </body>
+</html>

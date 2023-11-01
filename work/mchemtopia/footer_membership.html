@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ChemTopia</title>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="shortcut icon" type="image/x-icon"  href="assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+</head>
+<body>
+  <div class="wrap" data-role="page">
+    <header class="gnb" data-role="header">
+      <button type="button" data-role="button" class="gnb_menu"><i class="fa fa-bars"><span class="txt_hidden">menu</span></i></button>
+      <a href="./index.html" class="ui-btn home">ChemTopia</a>
+
+      <a href="#N"><img src="assets/images/@profile.jpg" alt="profile photo" class="gnb_profile" /></a>
+      <a href="forum_search.html" class="total_search"><i class="fa fa-search"><span class="txt_hidden">search</span></i></a>
+      <a href="#N" class="signin">Sign In</a>
+
+      <!-- left sub layer -->
+      <nav class="gnb_menu_list left_menu">
+        <span class="gnb_arrow">
+          <svg
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="16px" height="8px">
+            <image x="0px" y="0px" width="16px" height="8px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQBAMAAACFLmBqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEXe4OLe4OLe4OLe4OL09PX09PX09fXe4OLe4OL09fX////fhibJAAAACnRSTlMAM63fmZiaNK6Zmwi43wAAAAFiS0dECmjQ9FYAAAAHdElNRQfhCh4OJwA74cXlAAAAYElEQVQY02NggAAhRQYUwGgSLIAiIOy11BBFgdmqVShKhLNWrUJWAlKAogSkYNWqJXAl7GAFq1Y5w5QUZ0EEYEpgCuBKYApgShAKoEoQCoBKzFEVAJUUoCgAK+lchQI8AJ4wUTFfQKKKAAAAAElFTkSuQmCC" />
+            </svg>
+        </span>
+        <ul>
+          <li>
+            <a href="index.html" class="forum-child">Forum</a> <button type="button" class="gnb_forum"><i class="fa fa-angle-down"></i></button>
+            <ul class="forum_sub">
+              <li><a href="#">Proposal</a></li>
+              <li><a href="#">Publicize</a></li>
+              <li><a href="#">Question</a></li>
+              <li><a href="#">Others</a></li>
+              <li><a href="#">Conference</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cheminfo.html">Cheminfo <i class="fa fa-desktop"></i></a>
+          </li>
+          <li>
+            <a href="proleaders.html">Proleaders</a>
+          </li>
+          <li>
+            <a href="module.html">Modules <i class="fa fa-desktop"></i></a>
+          </li>
+          <li>
+            <a href="about.html">About ChemTopia</a>
+          </li>
+        </ul>
+        <div class="goto_pc">
+          <h1>The Chemical universe</h1>
+          <p>You can use more of Chemtopia's services<br />in the pc version.</p>
+          <a href="http://www.chemtopia.com" target="_blank" class="btn_goto_pc">Go to Chemtopia PC ver.</a>
+        </div>
+        <div class="footer" data-role="footer">
+          <ul class="link_sns">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i><span class="txt_hidden">facebook</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i><span class="txt_hidden">twitter</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus"></i><span class="txt_hidden">google-plus</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i><span class="txt_hidden">instagram</span></a>
+            </li>
+          </ul>
+          <address>&#169; 2017 ChemEssen, Inc. All rights reserved.</address>
+          <ul class="terms">
+            <li>
+              <a href="footer_terms.html">Terms of Service</a>
+            </li>
+            <li>
+              <a href="footer_privacy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="footer_membership.html">Membership</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- //left sub layer -->
+
+      <!-- right sub layer -->
+      <div class="gnb_menu_list right_menu">
+        <span class="gnb_arrow right_arrow">
+          <svg
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="16px" height="8px">
+            <image x="0px" y="0px" width="16px" height="8px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQBAMAAACFLmBqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEXe4OLe4OLe4OLe4OL09PX09PX09fXe4OLe4OL09fX////fhibJAAAACnRSTlMAM63fmZiaNK6Zmwi43wAAAAFiS0dECmjQ9FYAAAAHdElNRQfhCh4OJwA74cXlAAAAYElEQVQY02NggAAhRQYUwGgSLIAiIOy11BBFgdmqVShKhLNWrUJWAlKAogSkYNWqJXAl7GAFq1Y5w5QUZ0EEYEpgCuBKYApgShAKoEoQCoBKzFEVAJUUoCgAK+lchQI8AJ4wUTFfQKKKAAAAAElFTkSuQmCC" />
+            </svg>
+        </span>
+        <ul>
+          <li>
+            <a href="mypage.html" class="gnb_forum">My page</a>
+          </li>
+          <li>
+            <a href="#N" class="btn_password">Change your password</a>
+          </li>
+          <li>
+            <a href="#">Sign out</a>
+          </li>
+        </ul>
+      </div>
+      <!-- //right sub layer -->
+    </header>
+
+<main class="bg-white" data-role="main">
+  <section class="wrap_terms">
+    <div class="terms-wrap terms-wrap-policy">
+      <h1>Membership Agreement</h1>
+
+      <div class="terms-paragraph">
+        Welcome, and thanks for using chemtopia.com.<br />
+        When you use our services, you're agreeing to our terms. Please read these Terms carefully, and contact us if you have any questions.
+        <p class="text-addition">Effective Date : January 01, 2017</p>
+      </div>
+
+      <div class="terms-paragraph">
+        <h2>1. Membership Policy</h2>
+
+        <h3>1.1 New Member<br />E-mail Address for New Member Subscription</h3>
+        <p class="inner-paragraph">
+          When subscribing to become a Member, you must designate an e-mail address because it is needed when you use Chemtopia websites and engage in activities. Chemtopia will accept your e-mail address as your authentic e-mail address.
+        </p>
+
+        <h3>1.2 Members Passwords</h3>
+        <p class="inner-paragraph">
+          Even Chemtopia’s staff cannot identify the passwords of Members because Chemtopia strictly safeguards and manages private information (by encrypting the information, etc.).
+        </p>
+
+        <h3>1.3 Wrong Information Submitted in the Course of Membership Subscription</h3>
+        <p class="inner-paragraph">
+          Please check if you are already a Member of Chemtopia, if you see a message that says the submitted e-mail address belongs to an existing Member, while subscribing for Membership. If you are not a Member of Chemtopia at the time, the submitted e-mail address might have been stolen by others. In such case, please contact us at the <a href="http://www.chemtopia.com/help/contactus" target="_blank">Contact Us</a> section of the Chemtopia website. Chemtopia will review your inquiry, and take appropriate action.
+        </p>
+
+        <h3>1.4 How to Modify Your Member Information</h3>
+        <p class="inner-paragraph">
+          You can modify the information you submitted in the My Page section of Chemtopia.
+        </p>
+
+        <h3>1.5 Changing Your Password</h3>
+        <p class="inner-paragraph">
+          You may change your password at any time.<br />
+          Once you have changed your password, you can only sign in with the new password.
+        </p>
+
+        <h3>1.6 Finding Your Password</h3>
+        <div class="terms-paragraph">
+          <strong>Resetting Passwords</strong><br />
+          You may reset your password on the Sign In page.
+          <ol>
+            <li>Click the ‘Forgot your password?’ button below the password field.</li>
+            <li>Enter the e-mail address you registered to your account.</li>
+            <li>Chemtopia will send you an e-mail containing a link. You will be able to reset your password by clicking the link.</li>
+            <li>Check the e-mail Chemtopia sends and follow instructions therein.</li>
+          </ol>
+        </div>
+        <p class="inner-paragraph">
+          <strong>Integration or Closing of Overlapped Accounts</strong>
+        </p>
+        <p class="inner-paragraph">
+          Sometimes a user may have multiple accounts on Chemtopia.<br />
+          If you receive an email notification stating that your email address is used by another user, it means you have multiple email accounts. That might happen when one user is using several email addresses.
+        </p>
+
+        <h3>Intergration or Closing of Overlapped Accounts</h3>
+        <p class="inner-paragraph">
+          Sometimes, user may have multiple number of accounts on Chemtopia.<br />
+          If you receive an email notifying that your email address is used by other user, then it means you have multiple number of email accounts. That might happen when one user is using several email addresses.
+        </p>
+        <div class="terms-paragraph">
+          When you want to integrate multiple email accounts into one:
+          <ol>
+            <li>Sign in to the account to be closed on the Sign In page.</li>
+            <li>Move to the footer on the homepage and select ‘Membership’.</li>
+            <li>Click the button “Shut down the account” located near the middle of the webpage</li>
+            <li>Follow the instructions on the screen to finish closing the account</li>
+            <li>Log on to the remaining account after closing other accounts.</li>
+          </ol>
+        </div>
+        <div class="terms-paragraph">
+          Once you shut down an account, the profile will be permanently deleted and you cannot check your Chemtopia information on the Chemtopia website. Please note the following things when closing the account.
+          <ul>
+            <li>If you shut down your account, all related profile data will be deleted.</li>
+            <li>Your profile will not be disclosed on Chemtopia website.</li>
+            <li>Your profile may still appear on search results like Google, Yahoo, Naver, etc. for some time after you close the account. The exact amount of time would depend on data collection and management method of the site.<br /><br />
+              <p class="inner-paragraph">
+                <strong>Profile misrepresented in search results</strong><br />
+                Any information appearing on Google, Yahoo, Naver, etc., has been collected and updated solely by the respective search engine, and not by Chemtopia. The time at which your information is updated or deleted is determined by each search engine’s updating schedule.
+              </p>
+              <p class="inner-paragraph">
+                *Your Chemtopia account will be shut down immediately after you close it. However, it may take up to 14 days before your public profile is deleted from Chemtopia.<br />
+                If any of your information is misrepresented in the search site, then please contact the concerned site and request deletion.
+              </p>
+              <p class="inner-paragraph">
+                For information about how to delete your information from Google search results, please access the following website.<br /><a href="https://support.google.com/webmasters/answer/6332384?visit_id=1-636129660929082842-1430627148&rd=1&hl=en" target="_blank">https://support.google.com/webmasters/answer/6332384?visit_id=1-636129660929082842-1430627148&rd=1&hl=en</a><br />
+                You may have detailed information about how to change the method of disclosing your profile on the public web search site.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="terms-paragraph">
+          If you want to shut down your Chemtopia account:
+          <ol>
+            <li>Sign in to the account to be closed on the Sign In page.</li>
+            <li>Move to the footer on the homepage and select ‘Membership’.</li>
+            <li>Click the button “Shut down the account” located near the middle of the webpage</li>
+            <li>Follow the instructions on the screen to finish closing the account</li>
+            <li>Log on to the remaining account after closing other accounts.</li>
+          </ol>
+        </div>
+
+        <h3>Public Profile and Setting File Disclosure</h3>
+        <div class="terms-paragraph">
+          If any user searches your profile in search engines like Google, Yahoo, Naver, etc., your available profile may be disclosed. You may correct your profile information on the Chemtopia My Page section.
+          <span class="terms-font-underline">How to disclose personal information or how to change the disclosed item</span>
+          <ol>
+            <li>Go to the My Page section of Chemtopia</li>
+            <li>You can go to My Page upper side home page, and click the item that you select out of Who can see things on my files section.<br />
+            <li>
+              The personal files you upload may be disclosed to:
+              <ul>
+                <li>All users (all users may access)</li>
+                <li>Only to the followers (only followers of the disclosing user can access)</li>
+                <li>No one (only the disclosing user can access)</li>
+              </ul>
+            </li>
+            <li>Please define the scope of disclosure in each Topic of the Forum showing your user name</li>
+            <li>
+              The posting you upload may be disclosed in 2 ways:
+              <ul>
+                <li>To all users (all users may access)</li>
+                <li>only to the followers (only followers of the disclosing user can access)</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+
+        <!-- 로그인 상태일때만 노출 -->
+        <div class="terms-paragraph">
+          <h3>Withdrawing from Membership</h3>
+          <p class="inner-paragraph">
+            <span class="terms-font-brand">How do I delete my account?</span> <br />
+            If you want to shut down your Chemtopia account:
+          </p>
+          <div class="inner-paragraph">
+            <ol>
+              <li>Sign in to the account to be closed on the Sign In page.</li>
+              <li>Move to the footer on the homepage and select ‘Membership’.</li>
+              <li>Click the button “Shut down the account” located near the middle of the webpage</li>
+              <li>Follow the instructions on the screen to finish closing the account</li>
+            </ol>
+          </div>
+          <p class="inner-paragraph">
+            Member’s account can be recovered up to 14 days after cancellation. After 14 days, the Member’s account information will be deleted by Chemtopia and cannot be recovered.
+          </p>
+          <button type="button" class="btn">Shut down the account</button>
+        </div>
+        <!-- //로그인 상태일때만 노출 -->
+
+        <h3>1.7 Arrangement for Members who did not sign in for 1 Year</h3>
+        <p class="inner-paragraph">
+          If you do not sign in to Chemtopia websites or use their services for 1 year, Chemtopia will automatically cancel your membership after sending you a 30-day’s prior notice e-mail.<br />
+          If you do not sign in within 30 days of receiving the e-mail, your membership will be automatically cancelled and the e-mail address you have used will not be accepted when you re-subscribe for membership.
+        </p>
+
+        <h3>1.8 Sanctions against Members</h3>
+        <p class="inner-paragraph">
+          If a Member conducts himself/herself inappropriately or makes malicious postings to cause harm to others and Chemtopia, that Member will be deemed a bad Member. Chemtopia’s administrator may expel that Member as prescribed by the provisions in Chemtopia Terms of Service.<br />
+          When a member is expelled the e-mail address he or she has registered to Chemtopia will not be accepted.
+        </p>
+      </div>
+
+      <div class="terms-paragraph">
+        <h2>2. Policies on Operation of Chemtopia Forum</h2>
+
+        <div class="terms-paragraph">
+          The Chemtopia Forum aims to advance the chemical industry by sharing information and expert knowledge that Members possess.  It also aims to facilitate mutually beneficial personal and joint research projects, academic activities, and other business activities. The Forum is linked to profiles of Members, who will be subjected to the following guidelines when they use the Forum:
+          <ul>
+            <li>the rights to the contents posted by a Member in Chemtopia’s posting platform will remain with the Member. The rights to original copies of registered postings shall also belong to the Member;</li>
+            <li>when a Member wishes to delete content from the Chemtopia platform, he or she can delete his/her content directly, including comments;</li>
+            <li>if a Member cancels his/her membership, the Member can contact Chemtopia to have all of his/her posts deleted</li>
+            <li>a member shall note that his/her postings may be disclosed and shared;</li>
+            <li>a member shall not repeatedly post the same content over and over again;</li>
+            <li>any malicious posting irrelevant to a topic and intended to interrupt an on-going discussion will be deleted;</li>
+            <li>discussions on political or policy issues related to chemistry are encouraged. However, excessively political debate must be avoided;</li>
+            <li>discussions on religious topics which are irrelevant to chemistry, or general slander on religions shall be avoided;</li>
+            <li>any posting that mentions a person’s name must be backed by indisputable evidence of the person’s identity;</li>
+            <li>
+              any statement that exposes another person’s personal information will be deleted;
+              <ul>
+                <li>postings related to employment announcements or opportunities are not suitable to Chemtopia’s posting platform; (Click <a href="http://www.chemtopia.com/chemcast/#chemcast-tab" target="_blank">here</a> to find out more about jobs.)</li>
+              </ul>
+            </li>
+            <li>members shall always act as experts and not make any misleading, deceptive, lewd, threatening, averse, defaming, discriminatory, or illegal posting;</li>
+            <li>
+              a Member shall be entirely responsible for any and all outcomes (including the damage the Member caused to others and suffered as a result of using Chemtopia Services) from the contents of his or her postings;
+              <ul>
+                <li>when a Member violates the Chemtopia Terms of Service, Chemtopia may place restrictions on, suspend, or terminate the Member’s Chemtopia account or cancel the Member’s postings (for more information on this matter, please refer to the Chemtopia <a href="footer_terms.html">Terms of Service</a>)</li>
+              </ul>
+            </li>
+            <li>Chemtopia will terminate the Chemtopia Terms of Service with a Member if he or she is found to have used contents that violate Chemtopia Terms of Service.</li>
+          </ul>
+        </div>
+        <div class="terms-paragraph">
+          Never share content that you are not entitled to share. This includes other person’s postings, content you discovered on the Internet, and content owned by your company that you do not have ownership of. Since most of the content made accessible on the Internet is owned by others, you should not include online content in your postings unless you are explicitly granted a right to use them by the contents’ respective owners. If you own an original piece of content, you may post that content to Chemtopia even if you have previously posted them on other websites.
+          <ul>
+            <li>Please click the following links to find out more about Chemtopia’s policies and procedures related to how copyrights are handled:
+              <ul>
+                <li>Chemtopia Copyright Handling Policy (Please refer to 3. Copyright Handling Policy below.)</li>
+                <li>Raising Objections against Copyright Infringement (You can raise objections at the Contact Us section of Chemtopia.)</li>
+                <li>Raising Objections against Contents (You can raise objections at the Contact Us section of Chemtopia.)</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <h3>Notices to Members</h3>
+        <div class="inner-paragraph">
+          <ul>
+            <li>When Chemtopia notifies a Member, it may send the notice to the point of contact the Member provided to Chemtopia as a part of his/her private information (e-mail address, telephone number, or facsimile number).</li>
+            <li>When Chemtopia sends a notification to many unspecified users, it may post the notice to the Chemtopia website instead of sending to each user.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="terms-paragraph" id="anchor-copyright">
+        <h2>3. Copyright Handling Policy</h2>
+
+        <h3>Raising Objections with Regards to Contents Posted on Chemtopia Websites</h3>
+        <p class="inner-paragraph">
+          Chemtopia respects intellectual property rights of others, and strives to maintain an infringement-free website. Members must make accurate and legal postings that comply with the Chemtopia Terms of Service, and such postings must not infringe upon the intellectual property rights of any third party. Thus, Chemtopia has established a set of procedures for objecting to potentially copyright-infringing content in a Member’s post. Please refer to the following provisions to find out more about Chemtopia’s policies and procedures related to how copyrights are handled:<br /><br />
+          Chemtopia may take any reasonable, good faith action to deliver a written notice to any member accused of posting copyright-infringing content.  This notification would include contact details of the person who raised an objection. Chemtopia may choose to suspend or delete the piece of content from being accessed.  Chemtopia will place restrictions on or suspend a Member’s account, if the Member make postings which infringe or are likely to infringe others’ rights repeatedly, and other illegal contents. These actions would be taken following the applicable policies of Chemtopia under applicable circumstances at Chemtopia’s appropriate discretion.<br /><br />
+          Please note that a notice or response a user submits must be trustworthy, and the user will be subjected to punishment if the notice or response contains any false statement. A user may become legally liable for any false notice or response, and Chemtopia recommends the user to seek for legal advices before sending or responding to a notice.
+        </p>
+
+        <h3>Raising an Objection Related to Copyright Infringement</h3>
+        <p class="inner-paragraph">
+          Copyright Infringement Notice<br />
+          If a user believes in good faith that his/her copyright has been infringed, the user may submit a written statement stating the following (through the Contact Us section of Chemtopia):
+        </p>
+        <ol>
+          <li>description of works for which a copyright claims to have been infringed;</li>
+          <li>description of exactly where in Chemtopia websites the alleged infringement took place; and</li>
+          <li>the Member’s e-mail address, mail address, or telephone number.
+            <p class="inner-paragraph">
+              <strong>Response:</strong><br />
+              If a user believes that a copyright infringement is inappropriately claimed against him/her, the user may submit his/her response. In such a case, the user shall submit his/her response stating the following (through the Contact Us section of Chemtopia):
+            </p>
+          </li>
+        </ol>
+        <ol>
+          <li>fact that applicable content had been removed or can no longer be accessed;</li>
+          <li>specific facts that shows the user believes in good faith that the information has been mistakenly removed or made unavailable, or the information had been misunderstood as other information;</li>
+          <li>the user’s e-mail address, mail address or telephone number.<br /><br />
+            <p class="inner-paragraph">
+              <strong>KOREA</strong> <br />
+              ChemEssen, Inc. 812, 8th Flr. AceHighTechCity 2-Cha, 25 Seonyu-ro 13-gil, Yeongdeungpo-gu, 150-096 Seoul, Republic of Korea. BN: 105-86-89148<br />
+              <strong>T</strong>: +82-2-3143-5933 <br />
+              <strong>F</strong>: +82-2-3143-5920 <br />
+               <strong>E</strong>: <a href="mailto:koreahelp@chemtopia.com">koreahelp@chemtopia.com</a>
+            </p>
+            <p class="inner-paragraph">
+              <strong>USA</strong> <br />
+              ChemEssen, INC. 14781 Memorial Dr. &#35;1677, Houston, TX 77079 U.S.<br />
+              <strong>T</strong>: +1-800-413-5613 <br />
+               <strong>F</strong>: +1-800-413-5613 <br />
+               <strong>E</strong>: <a href="mailto:usahelp@chemtopia.com">usahelp@chemtopia.com</a>
+            </p>
+            <p class="inner-paragraph">
+              <strong>CHINA</strong> <br />
+              KOTRA 3110, Maxdo Center, 8 Xingyi-Road, Shanghai, China<br />
+              <strong>T</strong>: +86-21-5108-8771(Ext.170) <br />
+              <strong>F</strong>: +86-151-2118-1868 <br />
+              <strong>E</strong>:  <a href="mailto:chinahelp@chemtopia.com">chinahelp@chemtopia.com</a>
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+</main>
+    <button type="button" class="btn_top"><i class="fa fa-angle-up"></i></button>
+    <div class="page_ws"></div>
+  </div><!-- //wrap close -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/ui.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>IT예산관리 시스템</title>
+  <meta name="description" content="IT예산 관리시스템">
+  <meta name="author" content="SaraminHR Technology Strategy Team">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="default.css" />
+  <link href="//sri-its.saraminhr.co.kr/s/ko_KR-aqio4c-1988229788/6262/13/_/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <script src="//www.saraminimage.co.kr/js/libs/jquery-1.8.3.min.js"></script>
+  <script src="ui.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <h1>IT예산관리 전산화 시스템</h1>
+    <nav>
+      <ul>
+        <li><a href="cont1.php">연간현황</a></li>
+        <li><a href="cont2.php">월별현황</a></li>
+        <li><a href="cont3.php">통계(연간)</a></li>
+        <li><a href="cont4.php">통계(월별)</a></li>
+        <li><a href="cont5.php">신규등록</a></li>
+        <li>
+          <a href="cont6.php">관리자</a>
+          <ul class="cont_sub" id="cont6_sub" style="display:none">
+            <li><a href="cont6.php">담당자 관리</a></li>
+            <li><a href="cont6_2.php">항목(계정) 관리</a></li>
+            <li><a href="cont6_3.php">초기 예산 관리</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>

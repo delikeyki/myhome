@@ -1,0 +1,72 @@
+/**
+ * Swiper 3.3.1
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ *
+ * http://www.idangero.us/swiper/
+ *
+ * Copyright 2016, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us/
+ *
+ * Licensed under MIT
+ *
+ * Released on: February 7, 2016
+ */
+.swiper-container{width:100%;height:100%;margin:0 auto;position:relative;overflow:hidden;z-index:1;background-color:#fff;z-index:1;}
+.swiper-container img {width:100%;display:block;}
+
+/* 메인CSS */
+/* 상단 visual */
+#story_area.swiper-container {background-color:#303841}
+.bxslider li .mv_txt_wrap {position:absolute;top:130px;left:27px;margin-right:27px;color:#fff;z-index:4;}
+.bxslider li .mv_txt_wrap p {font-size:1.200em;line-height:1em}
+.bxslider li .mv_txt_wrap strong {display:block;font-size:1.800em;margin-bottom:15px;padding-bottom:20px;background:url('../../img/common/bg_nav_tit.png') no-repeat bottom left;background-size:25px 1px;}
+.bxslider li:nth-child(2) .mv_txt_wrap p {color:#170e2e;}
+.bxslider li:nth-child(2) .mv_txt_wrap strong {color:#170e2e;background-image:url('../../img/common/bg_nav_tit2.png')}
+.bx-pager-item {float:left;margin-left:10px;}
+.bx-pager {position:absolute;top:110px;right:20px;z-index:3;}
+.bx-pager a {width:10px;height:10px;display:inline-block;border-radius:100%;background:#000;opacity:.3;font-size:0;}
+.bx-pager a.active {background:#fff;opacity:1;}
+
+/* 상단 공지사항 */
+.notice {position:absolute;left:0;width:100%;height:40px;background-color:rgba(0, 0, 0, 0.7);border-top:1px solid #1b1b1b;font-size:0.846em;z-index:4}
+.notice h3 {float:left;width:20%;height:40px;text-align:center;border-right:1px solid #1b1b1b;padding:8px 0;color:#fff}
+.notice p {float:right;width:80%;padding:8px 8px 0;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#fff}
+.notice p:before {content:'- '}
+.notice a {color:#fff}
+
+/* Business */
+.sec_tit {margin-bottom:20px;padding-bottom:30px;background:url('../../img/common/bg_nav_tit.png') no-repeat bottom center;background-size:25px 1px;font-size:1.308em;color:#fff;font-weight:600;}
+.sec_bn {padding:40px 25px;background:url('../../img/main/bg_bn.jpg') no-repeat 0 0;background-size:cover;text-align:center;}
+.sec_bn li {margin-bottom:34px;}
+.sec_bn li:last-child {margin-bottom:0;}
+.sec_bn h4 {margin:17px 0 5px;font-size:1.154em;}
+.bn_icon {display:inline-block;width:90px;height:90px;border-radius:45px;background:#fff url('../../img/main/icon_bn01.png') no-repeat center 30%;background-size:27px 44px;padding-top:60px;font-size:0.923em;}
+.bn_ty01 {color:#ff8a00;}
+.bn_ty02 {color:#516eef;}
+.bn_ty02 .bn_icon {background-image:url('../../img/main/icon_bn02.png');background-size:33px 42px;}
+.bn_ty03 {color:#f74ced;}
+.bn_ty03 .bn_icon {background-image:url('../../img/main/icon_bn03.png');background-size:37px 37px;}
+.sec_bn p {font-size:0.923em;word-break:keep-all;color:#fff;}
+
+/* News */
+.sec_news {padding:40px 25px;background:url('../../img/main/bg_about.jpg') no-repeat 0 0;background-size:cover;text-align:center;}
+.sec_news h4 {margin-top:5px;font-size:1.231em;color:#222;}
+.sec_news .box_ty1 {margin-bottom:30px;padding-bottom:15px;}
+.sec_news .swiper-container-horizontal>.swiper-pagination-bullets {top:initial;left:0;bottom:0;text-align:center}
+.sec_news .swiper-slide {padding-bottom:20px;}
+.sec_news .swiper-pagination-bullet-active {background-color:#0082a1}
+.main .list_benefit {margin:0;padding-left:2px;}
+.main .list_benefit li {width:50.1%;margin:0 0 -1px -1px;opacity:0.9}
+.main .list_benefit span {margin:10px auto 5px;background-image:url('../../img/main/bg_about.png')}
+.main .list_benefit em {color:#0082a1;font-size:0.923em}
+.main .list_benefit li a, .sec_news .swiper-slide a {display:block;}
+
+/* 메인 레이어 팝업 */
+.ly_notice {position:absolute;top:10%;left:5%;width:90%;height:100%;z-index:21;}
+.ly_notice .ly_cont {background:#fff;overflow:hidden;}
+.ly_notice .ly_cont img {display:block;width:100%;padding:10px;}
+.ly_notice .wrap_today {padding-left:10px;height:36px;line-height:36px;border-top:1px solid #dcdcdd;background-color:#f2f2f2;font-size:0.867em}
+.ly_notice .wrap_today label {float:left;}
+.ly_notice .wrap_today input {float:left;width:15px;height:15px;margin:11px 5px 0 0;}
+.ly_notice .wrap_today button {float:right;width:66px;height:36px;padding:0 20px;background-color:#202020;color:#fff}

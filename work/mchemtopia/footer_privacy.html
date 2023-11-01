@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ChemTopia</title>
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="shortcut icon" type="image/x-icon"  href="assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+</head>
+<body>
+  <div class="wrap" data-role="page">
+    <header class="gnb" data-role="header">
+      <button type="button" data-role="button" class="gnb_menu"><i class="fa fa-bars"><span class="txt_hidden">menu</span></i></button>
+      <a href="./index.html" class="ui-btn home">ChemTopia</a>
+
+      <a href="#N"><img src="assets/images/@profile.jpg" alt="profile photo" class="gnb_profile" /></a>
+      <a href="forum_search.html" class="total_search"><i class="fa fa-search"><span class="txt_hidden">search</span></i></a>
+      <a href="#N" class="signin">Sign In</a>
+
+      <!-- left sub layer -->
+      <nav class="gnb_menu_list left_menu">
+        <span class="gnb_arrow">
+          <svg
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="16px" height="8px">
+            <image x="0px" y="0px" width="16px" height="8px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQBAMAAACFLmBqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEXe4OLe4OLe4OLe4OL09PX09PX09fXe4OLe4OL09fX////fhibJAAAACnRSTlMAM63fmZiaNK6Zmwi43wAAAAFiS0dECmjQ9FYAAAAHdElNRQfhCh4OJwA74cXlAAAAYElEQVQY02NggAAhRQYUwGgSLIAiIOy11BBFgdmqVShKhLNWrUJWAlKAogSkYNWqJXAl7GAFq1Y5w5QUZ0EEYEpgCuBKYApgShAKoEoQCoBKzFEVAJUUoCgAK+lchQI8AJ4wUTFfQKKKAAAAAElFTkSuQmCC" />
+            </svg>
+        </span>
+        <ul>
+          <li>
+            <a href="index.html" class="forum-child">Forum</a> <button type="button" class="gnb_forum"><i class="fa fa-angle-down"></i></button>
+            <ul class="forum_sub">
+              <li><a href="#">Proposal</a></li>
+              <li><a href="#">Publicize</a></li>
+              <li><a href="#">Question</a></li>
+              <li><a href="#">Others</a></li>
+              <li><a href="#">Conference</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="cheminfo.html">Cheminfo <i class="fa fa-desktop"></i></a>
+          </li>
+          <li>
+            <a href="proleaders.html">Proleaders</a>
+          </li>
+          <li>
+            <a href="module.html">Modules <i class="fa fa-desktop"></i></a>
+          </li>
+          <li>
+            <a href="about.html">About ChemTopia</a>
+          </li>
+        </ul>
+        <div class="goto_pc">
+          <h1>The Chemical universe</h1>
+          <p>You can use more of Chemtopia's services<br />in the pc version.</p>
+          <a href="http://www.chemtopia.com" target="_blank" class="btn_goto_pc">Go to Chemtopia PC ver.</a>
+        </div>
+        <div class="footer" data-role="footer">
+          <ul class="link_sns">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i><span class="txt_hidden">facebook</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i><span class="txt_hidden">twitter</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus"></i><span class="txt_hidden">google-plus</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i><span class="txt_hidden">instagram</span></a>
+            </li>
+          </ul>
+          <address>&#169; 2017 ChemEssen, Inc. All rights reserved.</address>
+          <ul class="terms">
+            <li>
+              <a href="footer_terms.html">Terms of Service</a>
+            </li>
+            <li>
+              <a href="footer_privacy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="footer_membership.html">Membership</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- //left sub layer -->
+
+      <!-- right sub layer -->
+      <div class="gnb_menu_list right_menu">
+        <span class="gnb_arrow right_arrow">
+          <svg
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="16px" height="8px">
+            <image x="0px" y="0px" width="16px" height="8px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQBAMAAACFLmBqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAIVBMVEXe4OLe4OLe4OLe4OL09PX09PX09fXe4OLe4OL09fX////fhibJAAAACnRSTlMAM63fmZiaNK6Zmwi43wAAAAFiS0dECmjQ9FYAAAAHdElNRQfhCh4OJwA74cXlAAAAYElEQVQY02NggAAhRQYUwGgSLIAiIOy11BBFgdmqVShKhLNWrUJWAlKAogSkYNWqJXAl7GAFq1Y5w5QUZ0EEYEpgCuBKYApgShAKoEoQCoBKzFEVAJUUoCgAK+lchQI8AJ4wUTFfQKKKAAAAAElFTkSuQmCC" />
+            </svg>
+        </span>
+        <ul>
+          <li>
+            <a href="mypage.html" class="gnb_forum">My page</a>
+          </li>
+          <li>
+            <a href="#N" class="btn_password">Change your password</a>
+          </li>
+          <li>
+            <a href="#">Sign out</a>
+          </li>
+        </ul>
+      </div>
+      <!-- //right sub layer -->
+    </header>
+
+<main class="bg-white" data-role="main">
+  <section class="wrap_terms">
+    <div class="terms-wrap terms-wrap-policy">
+      <h1>Privacy Policy</h1>
+
+      <div class="terms-paragraph">
+        Chemtopia is a space for you to reach the world of chemistry for exchange of information
+        <p class="text-addition">Effective Date : January 01, 2017</p>
+      </div>
+
+      <div class="terms-paragraph">
+        <h2>Introduction</h2>
+
+        <p class="inner-paragraph">
+          <strong>Chemtopia is a space for you to reach the world of chemistry and exchange information.</strong>
+        </p>
+        <p class="inner-paragraph">
+          Chemtopia aims to advance the ecosphere of chemistry and achieve successful results by using collective intelligence. The members of Chemtopia (hereinafter, “Member”) may exchange thoughts, information, and ideas with others, and search for employment opportunities by using the services provided by Chemtopia. Most of the services provided by Chemtopia are available to non-Members (hereinafter, “Visitor”). Chemtopia will strive to provide services that will enable each Member to efficiently search for chemical substance information, create information, and freely discuss ideas. Chemtopia aims at becoming the “Utopia of Chemicals”.
+        </p>
+        <p class="inner-paragraph">
+          <strong>Chemtopia protects private information based on standard business practices.</strong>
+        </p>
+        <div class="terms-paragraph">
+          <strong>Members of Chemtopia may disclose their private information under their consent or applicable law, and Chemtopia must notify its Members when its privacy policy is significantly amended.</strong><br />
+          Thus, Chemtopia implements the following policies to protect private information of Members and act upon its principle of remaining trustworthy to its customers:
+          <ul>
+            <li>
+              Chemtopia will protect private information of Members, and disclose private information to a third party only when:
+              <ol>
+                <li>the Members authorize Chemtopia to do so;</li>
+                <li>it is necessary for Chemtopia to carry out requests of Members;</li>
+                <li>it is necessary for Chemtopia to provide its services;</li>
+                <li>it is necessary for Chemtopia to provide its services;</li>
+                <li>it is necessary for Chemtopia to do so as required by legal procedures, such as law, subpoena, and so on;</li>
+                <li>it is necessary to protect the rights, properties, and safety of Chemtopia, Members, Visitors, and the public; and</li>
+              </ol>
+            </li>
+            <li>Chemtopia will abide by a set of security rules established according to the standard industry practices to protect the private information of Members.</li>
+          </ul>
+        </div>
+        <p class="inner-paragraph">
+          The aforementioned privacy policy applies to Chemtopia.com, Chemtopia mobile service (to be available), Chemtopia platform, and other products and services (hereinafter, collectively referred to as “Chemtopia Services”). The privacy policy may be amended as necessary. When major issues are amended, Chemtopia will disclose the amendments using Chemtopia Services, so that Members will be notified before they continue to use Chemtopia Services.
+          <strong>Any Member who does not accept the amendment can terminate his or her membership. Once the amendments are disclosed and notified, a Member who continues to use Chemtopia Services will be deemed to have accepted the amendments.</strong>
+        </p>
+      </div>
+
+      <div class="terms-paragraph">
+        <h2>1. Type of Private Information Collected</h2>
+
+        <h3>1.1 Data Manager</h3>
+        <p class="inner-paragraph">
+          <strong>The privacy policy will apply to all Members and Visitors. Chemtopia collects information to provide services related to Members, such as building a chemical property database, offering a personal network, and providing employment opportunities.</strong><br />
+          You are advised not to become a Member or use Chemtopia Services if you are concerned about:
+        </p>
+        <ul>
+          <li>providing private information to Chemtopia; </li>
+          <li>your private information being displayed on the website of Chemtopia;</li>
+          <li>your private information being used under Chemtopia’s privacy policy and agreement on the use of Chemtopia Services (hereinafter, “Chemtopia Terms of Service”)</li>
+        </ul>
+        <p class="inner-paragraph">
+          If you are already a Member, you may terminate your Chemtopia Terms of Service if you become concerned about these things.
+        </p>
+
+        <h3>1.2 Subscription for Membership</h3>
+        <p class="inner-paragraph">
+          <strong>When you become a Member, your private information, including, but not limited to, name, e-mail address, and password, will be collected.</strong><br />
+          When you create a Chemtopia account, you must enter your name, e-mail address, and password, and agree to the Chemtopia Terms of Service and Chemtopia’s privacy policy. You may enter additional information, such as job type, current workplace, etc., when subscribing for Chemtopia Membership.  Chemtopia can use this additional information to provide customized services such as updates, employment opportunity announcements, etc. You are hereby informed that others will be able to recognize you through your Chemtopia profile once you create an account.
+        </p>
+
+        <h3>1.3 Profile Information</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia collects private information when you fill out your profile. The profile may contain information related to your job title, educational background, areas of expertise, etc., which can be viewed by other Members.</strong><br />
+          You may additionally describe your area of expertise, career experience, educational background, etc. in detail in the Chemtopia profile after you create a Chemtopia account. You may also add other information (awards, Chemtopia bookmarks, data users directly uploaded, Chemtopia Members following you, etc.) to your profile. The additional information in your profile will help you build and use business networks, find information you are interested in, and discover new opportunities. Adding more information to your profile will allow others to effectively approach you for employment or business opportunities.
+        </p>
+
+        <h3>1.4 Other Services Linked to Chemtopia</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia collects private information when a Member saves private information, uploads a post, participates in a survey, and/or shares an article in Chemtopia. Private information can be deleted at any time.</strong><br />
+          Chemtopia saves Member information to successfully provide its services to Members. Chemtopia also uses private information of Members to enhance the quality of Chemtopia’s services, such as growing a personal network, finding people, sending messages, finding experts, searching for chemical property information, etc.<br /><br />
+          When a Member sends a message to someone to create a personal network, the Member’s profile becomes visible to the message recipient.<br /><br />
+          <strong>All information a Member uploads is handled as described in the Chemtopia Terms of Service and Chemtopia’s privacy policy. A Member can delete his or her private information at any time, as prescribed by this privacy policy.</strong>
+        </p>
+
+        <h3>1.5 All Information Submitted to Contact Us Is Saved</h3>
+        <p class="inner-paragraph">
+          When a Member contacts Chemtopia on the Contact Us page, Chemtopia may view his or her postings, sort inquiries, and answer them. Also, Chemtopia may collect information required to investigate whether a Member violated Chemtopia’s Service Agreement or Chemtopia’s privacy policy. Such information will only be used to improve services, and will not be shared with others.
+        </p>
+
+        <h3>1.6 Use of Chemtopia Website</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia collects information when a Member uses the Chemtopia website</strong><br />
+          Chemtopia also collects information when a Member or Visitor uses the Chemtopia website, source technology inside the Chemtopia platform (chemical compound search, various simulations, etc.), or other services.
+        </p>
+        <!--
+        <h3>1.7 Using Services and Visiting Websites of Others</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia collects information when a Member logs on to or certifies his or her identity to others’ websites or applications, and visits a website where Chemtopia plug-in is installed.</strong><br />
+          Members are responsible for safeguarding their log on information. When a Member logs on to Chemtopia and visits others’ websites where Chemtopia expert plug-in, such as “Share in Chemtopia,” is installed, Chemtopia also collects information that such websites were loaded in the Member’s web browser. Such information will be used to provide services related to the Member, and for the customizing function Chemtopia provides through other parties’ websites. The aforementioned function includes, but not limited to, providing information related to personal network, and sharing personal network and information. Details related to storing such information is described in Article 3.2 below. Chemtopia may provide a comprehensive report to a company that intends to measure the website traffic, using Chemtopia plug-in and other similar technologies. A Member may receive record of his or her visit to websites of Chemtopia’s official partners where Chemtopia cookie or other similar technologies are applied, and information related to his or her activities in such websites. The Member may choose not to be subjected to such functions, if he or she wishes so. On-line service agreements between Visitors and applicable Chemtopia’s official partners shall apply to Visitors.<br />
+          <strong>Chemtopia always endeavors to provide innovative services and introduce improvements.</strong>
+        </p>
+        -->
+      </div>
+
+      <div class="terms-paragraph">
+        <h2>2. Use of Private Information</h2>
+
+        <h3>2.1 Consent to Chemtopia’s Handling of Private Information</h3>
+        <p class="inner-paragraph">
+          <strong>You, as a Member, agree that others may view information you registered as your profile, and that Chemtopia may use such information as prescribed by the Chemtopia Terms of Service or Chemtopia’s privacy policy.</strong><br />
+          Your private information provided to Chemtopia may be disclosed to other Members, which may cause your information to be selectively disclosed. (For example, when a person’s name and photograph is registered, one might infer his or her gender.) When you fill out or update your profile or engage in other activities, you will be deemed to have agreed to the Chemtopia Terms of Service, and Chemtopia may process your private information as prescribed by Chemtopia’s privacy policy. Provision of information that can be deemed to be sensitive is made solely by a Member’s voluntary decision.
+          <strong> A Member may withdraw his or her consent on how Chemtopia collects and processes private information by deleting his or her profile information or shutting down his or her account.</strong>
+        </p>
+
+        <h3>2.2 Chemtopia Communication</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia may communicate with its Members through Chemtopia message, personal e-mail, etc. to discuss issues with service availability, security, and other function-related matters.</strong><br />
+          Chemtopia communicates with its Members through e-mail, announcements posted on Chemtopia, message service, notifications, etc. You may not refuse to receive the service mail Chemtopia sends.
+        </p>
+
+        <h3>2.3 Member Communication</h3>
+        <p class="inner-paragraph">
+          <strong>The information a Member registers in his or her profile is used to customize services as much as possible.</strong><br />
+          By using the information provided by Members to study the status of and improve services and the rate of participation, Chemtopia strives to create efficient and intuitive user experiences for Members and Visitors, and to provide opportunities suitable to the people engaged in the area of chemistry around the world.
+        </p>
+
+        <h3>2.4 Sharing Information with Others</h3>
+        <p class="inner-paragraph">
+          Members agree that Chemtopia may share information Members provide with Chemtopia’s affiliates, partner companies, or content providers to provide its services.  Chemtopia and its partner companies internally integrate and use the information for various services.
+        </p>
+        <p class="inner-paragraph">
+          <strong>The information registered in a Member’s profile and registered to Chemtopia can be viewed online by others using a search engine or social media account registered to a Chemtopia account. Chemtopia does not disclose private information of Members to others without Members’ consent, unless legally required to do so.</strong>
+        </p>
+        <p class="inner-paragraph">
+          Chemtopia does not sell or lease private information Members provide to Chemtopia, except for the cases prescribed by Chemtopia’s privacy policy. Chemtopia only discloses the private information of Members with registered profiles.  Chemtopia does not disclose activity involving other Members conducted as a result of using services unless requested or approved to do so by the Member, except for the cases where it is deemed necessary to do so by the law or by Chemtopia, such as Chemtopia must:
+        </p>
+        <ol>
+          <li>comply with legal regulations or procedures, such as a court warrant or other (legal) obligation to disclose information;</li>
+          <li>comply with requirements by privacy policy or Chemtopia Terms of Service;</li>
+          <li>respond to a person’s rights violation claim;</li>
+          <li>respond to service inquiries of Members; or</li>
+          <li>protect the public rights, property rights, and safety. For more information on complying with regulations on legal requirements, please refer to Article 2.8 below.</li>
+        </ol>
+        <p class="inner-paragraph">
+          Chemtopia supports a middleware supplier who supplies data storage solutions to a company that complies with data storage regulations. Some private information may emerge outside Chemtopia because it is distributed by Chemtopia’s sharing function or when other companies integrate their functions. For example, when you make a posting open to all, pieces of information related to the posting, such as your name, may be searched by search engines.
+        </p>
+
+        <h3>2.5 Voting and Survey</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia may conduct surveys and collect information through other companies for the purpose of market studies. Members have sole discretion over their participation in polls or surveys. Members may choose to not receive survey invitation e-mails.</strong><br />
+          Chemtopia, Chemtopia Members, and other companies may initiate votes and surveys. Other companies may implement advertisements targeted to certain Members, using the results of surveys. Chemtopia may offer rewards to Members who participated in polls or surveys through other companies. When contact details are necessary to deliver the reward, Chemtopia may ask Members for their private information, which will be used only for the purposes of providing rewards and confirming contact details. Members have sole discretion over provision of such private information or receipt of rewards. The party that initiates the poll or survey will clearly ask for Members’ consent on use of private information for purposes indicated as the part of the poll or survey.
+        </p>
+
+        <h3>2.6 Search</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia provides a service where chemical property information, expert information, contents (postings in Forums, etc.), employment opportunity announcements, etc. are searched.</strong><br />
+          A Member may search for other Members, employment opportunity announcements, chemical property information and other contents. As an example, a Member may search for other Members who have expertise and career experiences related to a certain issue, and who are in the same trade. Members may also search for employment opportunity announcements and company information. Members may also search through a vast amount of chemical property data. <br />
+          Chemtopia uses private information (such as Member profile, postings, company website, etc.) of its Members while providing its services.
+        </p>
+
+        <h3>2.7 Forum</h3>
+        <p class="inner-paragraph">
+          <strong>Members are responsible for all information they post in the websites of Chemtopia, and such information may be viewed by others.</strong><br />
+          A Member must be aware that other Members (who could be a developer, other company, advertiser, etc.) may read, collect, or use any and all information the Member discloses through websites of Chemtopia in the course of participating in Forums, sharing topics or retrieving other contents. Chemtopia is not responsible for information Members post. In general, postings in Chemtopia’s websites can be searched, unless the Member designates his or her postings to not be disclosed. Of course, the postings directly posted by Members can be deleted at any time. However, until they are deleted, the information shared by Members can be copied and used by others.
+        </p>
+
+        <h3>2.8 Compliance to Legal Proceedings and Other Notices</h3>
+        <div class="inner-paragraph">
+          <strong>When Chemtopia deems it necessary to comply with laws, subpoena or other legal proceedings, or to perform its obligations under the Chemtopia Terms of Service, Chemtopia will disclose private information of Members.</strong><br />
+          Upon receiving reasonable inquiry by law, subpoena, or other legal proceedings, Chemtopia may disclose private information or information related to activities of Chemtopia Members to:
+          <ol>
+            <li>investigate, prevent or take action against any activity suspected to be or actually is illegal;</li>
+            <li>cooperate with a government body;</li>
+            <li>thoroughly comply with the Chemtopia Terms of Service;</li>
+            <li>investigate and defend Chemtopia against claims of others;</li>
+            <li>protect the security and integrity of Chemtopia Services;</li>
+            <li>protect Chemtopia, Members, and other persons related to Chemtopia and their assets; and</li>
+            <li>exercise the rights of Chemtopia, Members, and other persons related to Chemtopia. </li>
+          </ol>
+        </div>
+        <p class="inner-paragraph">
+          Chemtopia, at its own discretion, will give its best efforts to notify applicable Member about legally demanded disclosure of private information, unless the applicable law or court order prohibits doing so, or the disclosure was urgently demanded. When Chemtopia determines according to its own principles that a demand for disclosure of private information is excessive, vague or lacks authority, Chemtopia may object to such demand. However, Chemtopia will not raise objection against all demands. For more information on Chemtopia’s policy on responding to demand for data by government bodies, please refer to the Policy on Responding to Demand for Data.
+        </p>
+        <p class="inner-paragraph">
+          <strong>Chemtopia’s Guidelines on Legally Authorized Demand for Data</strong><br />
+          Members wish for Chemtopia to protect their private information and assure transparency, even when disclosure of private information is demanded by legally authorized institutions. Chemtopia complies with all applicable laws, and notifies Members when their private information is demanded. Chemtopia complies with appropriate legal proceedings when the demand for disclosure is not prohibited by law or denied by a court.
+        </p>
+        <p class="inner-paragraph">
+          <strong>Details on Chemtopia’s Guidelines</strong><br />
+          Legal compliance: Unless the private information is urgently required, the government institution demanding private information of Members must comply with the laws of the Republic of Korea.<br /><br/>
+          Search warrant, court order, or subpoena: Conditions of disclosure are stricter than those applicable to other types of information.  Information related to Members, such as e-mails, messages exchanged in Chemtopia, and the follower list, are disclosed only upon presentation of a search warrant duly issued by an applicable legal institution.<br /><br />
+          When a demand for disclosure is made by an institution of countries other than the Republic of Korea, such demand must be accompanied by duly prepared letters rogatory or official request for cooperation prescribed by Mutual Legal Assistance Treaty.
+        </p>
+        <div class="inner-paragraph">
+          <strong>How Do Legally Authorized Institutions Demand Information?</strong><br />
+          All demands must include: real names and e-mail accounts of Members, and either
+          <ol>
+            <li>names of Members and e-mail addresses registered in their accounts, or</li>
+            <li>Chemtopia profile URL. </li>
+          </ol>
+          Demand for information can be made by facsimile (+82-2-3143-5920), certified mail, or courier service, or by personally visiting Chemtopia’s office.
+        </div>
+
+        <h3>2.9 Notices Made upon Change of Chemtopia’s Management Rights or Business Transfer</h3>
+        <p class="inner-paragraph">
+          <strong>When Chemtopia’s management rights are changed in part or whole, Chemtopia may disclose private information of Members to those who are granted rights to use such private information under Chemtopia’s policy on handling private information.</strong><br />
+          Chemtopia may also disclose private information of Members to others because of:
+        </p>
+        <div class="inner-paragraph">
+          <ul>
+            <li>sale of Chemtopia or assets of Chemtopia’s business departments;</li>
+            <li>change of management rights of Chemtopia or its subsidiaries;</li>
+            <li>preparations for such change.</li>
+          </ul>
+        </div>
+        <p class="inner-paragraph">
+          The others who acquire or purchase Chemtopia’s assets are entitled to use private and other information Members provide, as prescribed by Chemtopia’s privacy policy.
+        </p>
+
+        <h3>2.10 Service Providers</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia may hire others to provide services.</strong><br />
+          Chemtopia may also hire other companies or persons to conduct the following activities:
+        </p>
+        <div class="inner-paragraph">
+          <ul>
+            <li>maintenance &amp; repair</li>
+            <li>analysis</li>
+            <li>audit</li>
+            <li>marketing</li>
+            <li>development.</li>
+          </ul>
+        </div>
+        <p class="inner-paragraph">
+          The hired company or person is given access to some private information, strictly for the purpose of carrying out its businesses on behalf of Chemtopia, and obligated not to use or disclose private information for any other purposes.
+        </p>
+
+        <h3>2.11 Offshore Data Processing</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia may process private information of Members in a location where Members do not reside.</strong><br />
+          Private information of Members may be transferred to and processed in a country where Members do not reside and Chemtopia, its affiliates or service providers operates.
+        </p>
+      </div>
+
+      <div class="terms-paragraph">
+        <h2>3. Members’ Selection of Information</h2>
+
+        <h3>3.1 Rights to Access, Change or Delete Members’ Private Information, and to Terminate Chemtopia Terms of Service</h3>
+        <div class="inner-paragraph">
+          <strong>Members may change their private information posted in Chemtopia at any time by deleting their profile or postings or terminating their Chemtopia Terms of Service. Members may additionally inquire for detailed information about their accounts.</strong><br />
+          Members are entitled to:
+          <ol>
+            <li>search, change, correct or delete private information controlled by Chemtopia related to their profile;</li>
+            <li>change or delete postings they made; or</li>
+            <li>terminate their Chemtopia Terms of Service.</li>
+          </ol>
+        </div>
+        <p class="inner-paragraph">
+          Members may also use the Contact Us page to request private information from Chemtopia not registered in their profiles or not easily searched, such as IP logs. When a Member’s Chemtopia Terms of Service is terminated, Chemtopia will delete the Member’s account information within 14 days from the date of termination, except for the cases described below, and treat the log or other information so that they will not be identifiable.
+        </p>
+        <p class="inner-paragraph">
+          Note: Personal network update, information shared with others through postings sharing, postings others copied, etc. may still be displayed even after the Chemtopia Terms of Service is terminated or the original information is deleted. A piece of a Member’s information copied by other Members or stored externally cannot be searched, corrected or deleted. A Member’s profile may appear in a search engine’s search results until the cache is updated.
+        </p>
+
+        <h3>3.2 Data Storage</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia keeps the private information of a Member when his or her Chemtopia Terms of Service is effective or for a period Chemtopia deems necessary. For example, Chemtopia may keep certain information after the Member terminates his or her Chemtopia Terms of Service if it is necessary to comply with legal obligations, comply with applicable regulations, resolve disputes, prevent fraud, perform regulations, etc.</strong>
+          Chemtopia keeps the private information of a Member while his or her Chemtopia Terms of Service is effective or if it is necessary to do so to provide services. Chemtopia may keep private information of Members even after they terminate their Chemtopia Terms of Service to:
+        </p>
+        <div class="inner-paragraph">
+          <ul>
+            <li>comply with legal obligations and regulations</li>
+            <li>resolve disputes between Members</li>
+            <li>prevent fraud or abuse;</li>
+            <li>enforce provisions of Chemtopia’s privacy policy and Chemtopia Terms of Service</li>
+          </ul>
+        </div>
+        <p class="inner-paragraph">
+          Chemtopia may keep private information for a certain period, when it is required for enforcement of law. Chemtopia’s Customer Support Team may keep information only when it is necessary to generate reports and analyze trends related to customer support activities. However, Chemtopia must delete the data associated with the accounts of Members who terminated their Chemtopia Terms of Service, or convert the data into an aggregated data within 14 days from termination of the Chemtopia Terms of Service, so that no information of a specific person can be identified. (30 days of web server logs will be kept for the purposes of security, debugging, and stabilizing websites.)
+        </p>
+      </div>
+
+      <div class="terms-paragraph">
+        <h2>4. Important Information</h2>
+
+        <h3>4.1 Amendment of Privacy Policy</h3>
+        <p class="inner-paragraph">
+          <strong>When Chemtopia’s privacy policy is amended, Members will receive notice of the amendment.</strong><br />
+          Chemtopia may amend its privacy policy as necessary. When there are any major changes to Chemtopia’s privacy policy or actual practices related to handling of private information, Chemtopia will notify Members through notification or e-mail, etc. Please pay close attention to the amendments. Your continued use of services will be deemed as your consent to the amendments. If you do not agree with the amendments and do not wish to use Chemtopia Services any longer, you may terminate your account. Unless specifically addressed otherwise, Chemtopia’s privacy policy applies to all information Chemtopia possesses in association with its Members. After the amendment notification is delivered to Members or the amendments are disclosed through Chemtopia websites, members’ use of Chemtopia will be deemed as agreement to the amendments.
+        </p>
+
+        <h3>4.2 Security</h3>
+        <p class="inner-paragraph">
+          <strong>Chemtopia strictly safeguards private information - it applies SSL access for mobile devices and HTTPS (HTTPS user settings) access. The Internet is not a safe place - you must be careful at all times, and create stronger passwords.</strong><br />
+          Chemtopia implements measures that comply with industry standards to protect Members’ private information. You must enter passwords to use the Member data in Chemtopia websites, and HTTPS will be applied when you access Chemtopia.com. To protect the private information of Members stored in its servers, Chemtopia regularly inspects its system to identify vulnerabilities and prevent attacks, and uses the highest-rated data center in terms of safe access. However, Chemtopia cannot guarantee the safety of all information it receives, because the Internet is not 100% safe. Members are responsible for safeguarding their log-in information. e-mails, messages exchanged through messengers, and other similar means of communication with other Members that are not encrypted.  Chemtopia strongly recommends not to send any sensitive information through these forms of communication. Chemtopia also recommends creating highly secure passwords.
+        </p>
+
+        <h3>Chemtopia’s Contact Numbers</h3>
+        <div class="inner-paragraph">
+          <strong>If you have any questions or suggestions regarding Chemtopia’s privacy policy, please click HERE, or direct them to the following contact numbers:</strong>
+          <ul>
+            <li>Members residing in Republic of Korea:
+              <p class="inner-paragraph">
+                <strong>KOREA</strong> <br />
+                ChemEssen, Inc. 812, 8th Flr. AceHighTechCity 2-Cha, 25 Seonyu-ro 13-gil, Yeongdeungpo-gu, 150-096 Seoul, Republic of Korea. BN: 105-86-89148<br />
+                <strong>T</strong>: +82-2-3143-5933 <br />
+                <strong>F</strong>: +82-2-3143-5920 <br />
+                <strong>E</strong>: <a href="mailto:koreahelp@chemtopia.com">koreahelp@chemtopia.com</a>
+              </p>
+            </li>
+            <li>Chemtopia records the information of a device (including the IP address) a member uses to log-in to its service, even if the Member did not log-in.
+              <p class="inner-paragraph">
+                <strong>USA</strong> <br />
+                ChemEssen, INC. 14781 Memorial Dr. &#35;1677, Houston, TX 77079 U.S.<br />
+                <strong>T</strong>: +1-800-413-5613 <br />
+                <strong>F</strong>: +1-800-413-5613 <br />
+                <strong>E</strong>: <a href="mailto:usahelp@chemtopia.com">usahelp@chemtopia.com</a>
+              </p>
+              <p class="inner-paragraph">
+                <strong>CHINA</strong> <br />
+                KOTRA 3110, Maxdo Center, 8 Xingyi-Road, Shanghai, China<br />
+                <strong>T</strong>: +86-21-5108-8771(Ext.170) <br /><strong>F</strong>: +86-151-2118-1868 <br />
+                <strong>E</strong>: <a href="mailto:chinahelp@chemtopia.com">chinahelp@chemtopia.com</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+    <button type="button" class="btn_top"><i class="fa fa-angle-up"></i></button>
+    <div class="page_ws"></div>
+  </div><!-- //wrap close -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/ui.min.js"></script>
+
+
+</body>
+</html>

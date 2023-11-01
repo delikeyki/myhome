@@ -1,0 +1,116 @@
+@charset "EUC-KR";
+/* CSS Reset
+-------------------------------------------------------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, strong, small, dl, dt, dd, ol, ul, li, fieldset, form, input, button {margin:0;padding:0;font-size:100%;}
+img, fieldset, button{border:0;}
+body, input, button, textarea, select, table{line-height:1;font-family:'dotum',µ¸¿ò,Helvetica,sans-serif;font-size:12px;color:#000;}
+ol, ul{list-style:none;}
+button, label{cursor:pointer;}
+button {overflow:visible;background-color:transparent;}
+caption, legend{width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;visibility:hidden;}
+button::-moz-focus-inner, input::-moz-focus-inner{padding:0;border:0;}
+input[type="checkbox"],
+input[type="radio"] {display:inline-block;width:12px;height:12px;vertical-align:-1px;*vertical-align:2px;}
+img{ vertical-align: top;}
+a:link{color:#999999;text-decoration:none;}
+a:visited{color:#999999;text-decoration:none;}
+a:active{color:#999999;text-decoration:none;}
+a:hover{color:#999999;text-decoration:underline;}
+#accessibility {position:absolute;width:0;height:1px;margin:0;padding:0;overflow:hidden;}
+
+/* Reserved Class
+-------------------------------------------------------------- */
+.hid_txt {width:1px;height:1px;font-size:1px;line-height:3px;overflow:hidden;}
+.wrap_event{ overflow-x: hidden;min-width:960px; width: 100%;} /* mobile pc view */
+/* header,footer layout */
+.header{position:relative;width:100%;background:#fff;z-index:20;}
+.header .h_wrap{width:960px;height:66px;margin:0 auto;position:relative}
+.header .h_wrap h1{position:absolute;top:0;left:0}
+.header .h_wrap .gnb{position:absolute;top:20px;right:0}
+.header .h_wrap .gnb_list {height:15px;margin-right:10px;padding-top:8px;float:left;overflow:hidden}
+.header .h_wrap .gnb_list li{height:15px;letter-spacing:-0.08em;padding-right:11px;margin-right:10px;background:url('http://www.saraminimage.co.kr/ui/event/common/bg_event_gnb.png') no-repeat 100% 1px;float:left;line-height:15px;}
+.header .h_wrap .gnb_list li a {color:#444;}
+.header .h_wrap .gnb_list li.end{padding:0;background:none}
+.header .h_wrap .gnb .btn_area {float:left;overflow:hidden;}
+.header .h_wrap .gnb .btn_area a,
+.header .h_wrap .gnb .btn_area button {float:left;display:block;text-indent:-3000em;}
+.header .h_wrap .gnb button{cursor:pointer;vertical-align:0}
+.header .btn_login{width:69px;height:29px;margin-right:6px;background:url('http://www.saraminimage.co.kr/ui/event/common/btn_login.png') no-repeat 0 0;}
+.header .btn_logout{width:69px;height:29px;margin-right:6px;background:url('http://www.saraminimage.co.kr/ui/event/common/btn_logout.png') no-repeat 0 0;}
+.header .btn_registration{width:69px;height:29px;margin-right:6px;background:url('http://www.saraminimage.co.kr/ui/event/common/btn_registration.png') no-repeat 0 0;}
+.header .btn_facebook_top {width:21px;height:29px;margin:0 5px 0 14px;_margin-left:7px;background:url('http://www.saraminimage.co.kr/ui/event/common/btn_sns_top.png') no-repeat 0 -30px;}
+.header .btn_twitter_top {width:21px;height:29px;background:url('http://www.saraminimage.co.kr/ui/event/common/btn_sns_top.png') no-repeat 0 0;}
+
+.container{overflow:hidden;position:relative;width:100%;min-width:960px;font-family:malgun Gothic, "¸¼Àº °íµñ"}
+.container .layer_fixed_sns{position:fixed;top:455px;right:50%;margin-right:-524px;z-index:10;}
+.footer{width:960px;margin:0 auto;background-color: #fff;}
+.footer .copyright {position: relative;padding: 19px 0 0 198px;width: 100%;height: 68px;text-align: left;box-sizing: border-box;}
+.footer .copyright .ci {position:absolute; top: 18px;left: 61px;}
+
+/* event content */
+.sec01 {position:relative;width:100%;height:1083px;margin:0 auto;padding-bottom:10px;background:#ffd333 url('http://www.saraminimage.co.kr/ui/event/wmg_7912/bg_sec01v2.png') no-repeat 50% 0}
+.sec01_cont {width:960px;margin:0 auto;overflow:hidden;text-align:center}
+.sec01_cont h2 {margin:30px 0 51px}
+.sec01_cont h3 {margin:35px 0 9px}
+
+.toapply {position:relative;width:315px;margin:13px auto 0;text-align:left;}
+.toapply .takone {display:inline-block;position:relative;width:170px;height:60px;margin-left:10px;overflow:hidden;}
+.toapply .takone_ty01 {width:110px}
+.toapply .takone input {position:absolute;z-index:2}
+.toapply .takone label {position:absolute;z-index:3;height:38px;padding-left:40px;line-height:38px;background:url('http://www.saraminimage.co.kr/ui/event/wmg_7912/bg_radio_off.gif') no-repeat 0 0;}
+.toapply .takone label img {margin-top:13px;}
+.toapply .takone label.on {background:url('http://www.saraminimage.co.kr/ui/event/wmg_7912/bg_radio_on.gif') no-repeat 0 0}
+.toapply .txt_login {position:absolute;top:123px;right:-99px;}
+.toapply button {display:inline-block;margin:0 auto 90px;}
+
+.sec02 {position:relative;margin:0 auto;padding:140px 0 57px;background:#f6f2ef url('//www.saraminimage.co.kr/ui/event/wmg_7912/bg_sec02.png') no-repeat 50% 0}
+.sec02_cont {width:960px;margin:0 auto;overflow:hidden;text-align:center}
+.sec02_cont .go_wrap {position:relative}
+.sec02_cont .go_wrap a {position:absolute;top:-53px;right:23px}
+.sec02_cont h4 {margin:20px 0 30px;}
+.sec02_cont h4.tit_ty01 {margin-top:90px;}
+
+.sec03 {position:relative;margin:0 auto;padding:135px 0 65px;background:#686158 url('//www.saraminimage.co.kr/ui/event/wmg_7912/bg_sec03.png') no-repeat 50% 0;overflow:hidden}
+.sec03_cont {width:960px;margin:0 auto;overflow:hidden}
+.sec03_cont h3 {float:left;margin:0 30px 0 88px}
+.sec03_cont .list {float:left}
+.sec03_cont .list li {font-size:14px;line-height:26px;color:#cfb19d;letter-spacing:-1px}
+.sec03_cont .list li:before{content:'- '}
+.sec03_cont .list li strong {color:#fff;font-weight:normal}
+.sec03_cont .list li a {color:#cfb19d;letter-spacing:0}
+.sec03_cont .list li span {display:block;padding-left:12px}
+
+/* login layer */
+.dimmed_layer { position: fixed; top: 0; left: 0; z-index: 10; width: 100%; height: 100%; background: url('http://www.saraminimage.co.kr/ui/event/wmg_7912/bg_dimm.png') repeat; }
+
+.layer_login { position: fixed; top: 50%; left: 50%; z-index: 9; margin-top: -120px; margin-left: -244px; width: 478px; height: 230px; font-family: dotum, sans-serif; background-color: #FFF; border: 1px solid #52545a; }
+.layer_login p { margin: 0; }
+.layer_login .login_txt { font-size: 16px; font-family: "dotum", "µ¸¿ò"; color: #555; text-align: left; letter-spacing: -1px; line-height: 25px; padding: 32px 0 0 48px; }
+.layer_login .login_txt span { font-size: 16px; font-weight:bold; color:#555; }
+.layer_login .login_input_list { padding: 0 48px; margin-top: 13px; background-color: #FFF; }
+.layer_login .input_idpw { overflow: hidden; }
+.layer_login .input_idpw .wrap_placeholder { position: relative; }
+.layer_login .input_idpw .wrap_placeholder .pseudo_placeholder { position: absolute; top: 50%; left: 12px; margin-top: -7px; width: 100px; line-height: 14px; font-size: 14px; font-weight: bold; color: #959595; }
+.layer_login .input_idpw .input_area { float: left; width: 279px; }
+.layer_login .input_idpw .input_area > div { position: relative; padding-bottom: 9px;}
+.layer_login .input_idpw .input_area > div.on p { background: #f6f9ff; border-top: 1px solid #e4e6ec; border-left: 1px solid #e4e6ec; }
+.layer_login .input_idpw .input_area .input_text { display: block; overflow: hidden; width: 100%; height: 42px; line-height: 44px; font-size: 14px; font-weight: bold; font-family: gulim, '±¼¸²'; color: #555; text-align: left; padding-left: 12px; background: #fafafa; border: 1px solid #b1b1b1; cursor: text; box-sizing: border-box; }
+.layer_login .input_idpw .input_area .input_text:focus { border-color: #ffc600; background: #fff; color:#000;}
+
+.layer_login .input_idpw .input_area .input_text::-webkit-input-placeholder { color:#bbb; }
+.layer_login .input_idpw .input_area .input_text::-moz-placeholder { color:#bbb; }
+.layer_login .input_idpw .input_area .input_text:-ms-input-placeholder { color:#bbb; }
+.layer_login .input_idpw .input_area .input_text:-moz-placeholder { color:#bbb; }
+
+.layer_login .input_idpw .int_img { float: right; width:96px; height:93px; font-size:15px; cursor:pointer; background:#ffc900; color:#fff; font-weight:bold; text-align: center;  }
+.layer_login .save_util { overflow: hidden; text-align: left; line-height:1.6; margin:10px 0 0 0; }
+.layer_login .save_util a { display: inline-block; font-weight: bold; color: #222; padding:0 3px; }
+.layer_login .save_util a.btn01 { font-weight: normal;  padding:0 2px 0 0; margin-right: 2px;}
+.layer_login .close_login { position: absolute; top: 20px; right: 18px; }
+
+/* summit layer */
+.lay_success {position:fixed;top:50%;left:50%;z-index:9;margin-top:-256px;margin-left:-298px;width:597px;height:399px;padding:60px 0 52px;background-color:#f6f2ef;border:3px solid #59402b;border-radius:16px;text-align:center;}
+.lay_success ul {width:360px;margin:50px auto;}
+.lay_success li {color:#624014;font-size:14px;line-height:22px;text-align:left;letter-spacing:-1px;}
+.lay_success li:before{content:'- '}
+.lay_success .close_success {position:absolute;top:20px;right:18px}
