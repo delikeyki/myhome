@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<body>
+
+<style>
+.big-box {
+  width: 100%;
+  background-color: gray;
+  height: 100vh;
+  border-top: 1px solid black;
+}
+</style>
+
+<h1>feature 기능 테스트 </h1>
+
+<h2>브랜치 커밋 테스트 </h2>
+
+<h3>깃헙 연동 커밋 테스트 </h3>
+
+<h4>회사에서도 되냐?</h4>
+
+
+<div class='big-box'></div>
+
+<!-- 스크롤 시 내용 추가 -->
+<script type="text/javascript">
+var addTag = "<div class='big-box'></div>";
+$(window).scroll(function () {
+	if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+			$("body").append(addTag);
+    }
+});
+</script>
+
+<!-- 모바일 접속 여부 -->
+<script type="text/javascript">
+var filter = "win16|win32|win64|mac|macintel";
+
+if(navigator.platform){
+  if(0 > filter.indexOf(navigator.platform.toLowerCase())){
+    alert("Mobile");
+  }else{
+    alert("PC");
+  }
+}
+</script>
+
+
+
+</body>
+</html>
