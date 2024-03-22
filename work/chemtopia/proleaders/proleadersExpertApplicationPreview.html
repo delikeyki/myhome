@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>캠토피아</title>
+    <link href="../assets/css/theme.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <div class="modal fade" id="lnbInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-lnb">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <aside class="lnb">
+                <div class="lnb-notification">
+            			<p class="lnb-title">Notification</p>
+                  <ul class="lnb-menu">
+              			<li><a href="#" class="lnbbtn sub-disc" data-lnblink="lnb-sub-msg" >Message<span class="count">17</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-foll" data-lnblink="lnb-sub-fourm" >Chem Info / Forum<span class="count"></span></a></li>
+                    <li><a href="#" class="lnbbtn sub-sug" data-lnblink="lnb-sub-foll" >Follow<span class="count">3</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-msg" data-lnblink="lnb-sub-other" >Other<span class="count">99+</span></a></li>
+                  </ul>
+            		</div>
+                <div class="lnb-sub-wrap">
+                  <div class="lnb-sub lnb-sub-msg lnb-slide-out">
+                			<p class="lnb-title">Message</p>
+                      <ul class="lnb-sub-list">
+                        <li>
+                          <a class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong>Joel King</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a>
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong>sujin Seo</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a>
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a>
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                      </ul>
+                      <button class="btn btn-brand-dark-gray btn-viewall">View All</button>
+              		</div>
+                  <div class="lnb-sub lnb-sub-fourm lnb-slide-out">
+                    <p class="lnb-title">Chem Info / Forum</p>
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-bg-myfourm">
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Minimizing the environmental...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-following">
+                        <a class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Tamas Mihalovits</strong>
+                            <span>Added an Topic.</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Minimizing the environmental...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Minimizing the environmental...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn btn-brand-dark-gray btn-viewall">View All</button>
+                  </div>
+                  <div class="lnb-sub lnb-sub-foll lnb-slide-out">
+                    <p class="lnb-title">Follow</p>
+                    <ul class="lnb-sub-list">
+                      <li>
+                        <a class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn btn-brand-dark-gray btn-viewall">View All</button>
+                  </div>
+                  <div class="lnb-sub lnb-sub-other lnb-slide-out">
+                    <p class="lnb-title">Other</p>
+                    <ul class="lnb-sub-list">
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Joel King</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>sujin Seo</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">Yesterday</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Kyunga Kim</strong> is now following you<br />
+                          Nice to meet you. look on the bright...<br />
+                          <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn btn-brand-dark-gray btn-viewall">View All</button>
+                  </div>
+                </div>
+              </aside>
+            </div>
+            <button type="button" class="close" id="lnb-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+
+      <!-- new header start -->
+      <header class="main-header-fixed light">
+        <div class="header-wrap">
+        <h1 class="logo"><a href="#">chemtopia</a></h1>
+        <div class="gm-wrap">
+          <div class="gm">
+            <ul>
+              <li><a href="#" class="gm-link">Home</a></li>
+              <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link" data-toggle="dropdown" href="#">ChemCast</a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-m-gmmenu">
+                      <ul>
+                        <li><a href="#">Chemical Process Reports</a></li>
+                        <li><a href="#">Cast Leading</a></li>
+                        <li><a href="#">VOD</a></li>
+                        <li><a href="#">Job</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link" data-toggle="dropdown" href="#">Break Time</a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-gmmenu">
+                      <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Game</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="gnb-wrap">
+          <div class="gnb">
+            <ul>
+              <li><a href="#">Chem Info</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">Proleaders</a></li>
+              <li><a href="#">Modules</a></li>
+            </ul>
+          </div>
+
+          <div class= "snb-wrap">
+            <!-- 로그인 후 -->
+            <ul class="after-snb">
+              <li>
+              <div class="dropdown">
+                <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#">
+                  <img class="user-photo" alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg3.jpg" />
+                  Jaehee Kwon<span class="caret"></span></a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-snbmenu">
+                      <div class="user-menu">
+                        <img class="user-photo" alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg3.jpg" />
+                        <p class="user-name">Jaehee Kwon</p>
+                        <p class="user-mail"><a href="#" class="gnb-mail-link">yunakim@naver.com</a></p>
+                      </div>
+                      <ul class="snb-dropmenu">
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a data-toggle="modal" href="#lnbInModal"><i class="fa fa-bell-o"></i><span class="badge-cust">99</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </header>
+      <!-- // end new header -->
+
+      <section class="main-section">
+        <article class="main-article">
+          <div class="search-box-lg search-box-proleaders">
+            <div class="inner-search-box">
+              <p class="search-desc background-desc">
+                <span class="search-desc-title">wanna become a Proleader?</span>
+                <span class="search-desc-text">How would you like to be registered?</span>
+              </p>
+              <div  class="tabpanel tab-set1">
+                <ul class="nav">
+                  <li class="active"><a href="#apply" data-toggle="tab">Apply</a></li>
+                  <li><a href="#recommend" data-toggle="tab">Recommend</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- //end chemcast-search -->
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="apply">
+              <div class="radiogroup">
+                <input checked="checked" id="complete-write" class="css-radio" name="radio" type="radio" value="1">
+                <label for="complete-write" class="css-radio-label">Write</label>
+                <input id="complete-upload" class="css-radio" name="radio" type="radio" value="2">
+                <label for="complete-upload" class="css-radio-label">Upload</label>
+                <input id="complete-link" class="css-radio" name="radio" type="radio" value="3">
+                <label for="complete-link" class="css-radio-label">Link</label>
+
+                <div class="radiopanel complete-write">
+                  <!-- 전문가 신청 미리보기 -->
+                  <div class="myp-contents myp-contents-full">
+                    <div class="sub-box user-profile-preview">
+                      <!-- 이름이 63자 이상일 경우는 말줄임표시 -->
+                      <h1>Bradley</h1>
+                      <h1>Charles Cooper</h1>
+                      <div class="my-location">
+                        <span class="my-country">Seoul,</span>
+                        <span class="my-city">Republic of Korea</span>
+                      </div>
+                      <dl class="my-introduce">
+                        <dt>Research area</dt>
+                        <dd>
+                          <!-- 161028 수정 -->
+                          <span class="my-country"><span>Choose area</span>
+                          </span><span>,</span>
+                          <span class="my-research"><span>Detail description about Research area</span>
+                          </span>
+                          <!-- //161028 수정 -->
+                        </dd>
+                        <dt>Company Name</dt> <!-- 161212 text 수정 -->
+                        <dd>
+                          <div>+ Add Company Name/Institute Name</div> <!-- 161212 text 수정 -->
+                        </dd>
+                        <!-- 161028 삭제
+                        <dt>Position</dt>
+                        <dd><a href="">+ Add Position</a>
+                        </dd>
+                        -->
+                        <dt>Url</dt>
+                        <dd><a href="#">+ Add Url</a></dd>
+                      </dl>
+                    </div>
+
+                    <div class="sub-box res-career">
+                      <h2>Education</h2>
+                      <div class="res-career-view res-career-view-show">
+                        <div class="gray-box res-career-box">
+                          <p class="res-box-years">
+                            <span class="res-years">2015 May</span> <!-- 161013  -->
+                          </p>
+                          <dl>
+                            <dt>School name</dt>
+                            <dd>Prestigious Award for distinguished researcher 2015, Scientific </dd>
+                            <dt>Subject</dt>
+                            <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration.</dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="sub-box res-career">
+                      <h2>Research Career</h2>
+                      <div class="res-career-view res-career-view-show">
+                        <div class="gray-box res-career-box">
+                          <p class="res-box-years">
+                            <span class="res-years">2015 May</span> ~<br />  <!-- 161013  -->
+                            <span class="res-years">In progress</span>
+                          </p>
+                          <dl>
+                            <dt>Position</dt>
+                            <dd>Head of Departmenty</dd>
+                            <dt>Description</dt>
+                            <dd>In small, focused research groups, students and faculty within WPI’s Chemical Engineering Department go beyond the classroom to solve real-world problems, continuing to make discoveries in areas like environmental protection.</dd>
+                            <dt>Location</dt>
+                            <dd>Jordan, Zarqa</dd>
+                          </dl>
+                        </div>
+                        <div class="res-career-view res-career-view-show">
+                          <div class="gray-box res-career-box">
+                            <!-- 161013  -->
+                            <p class="res-box-years">
+                              <span class="res-years">2012 May</span> ~<br />
+                              <span class="res-years">2016 Aug</span><br />
+                              <span class="res-years-total">(10 Month)</span>
+                            </p>
+                            <dl>
+                              <dt>Position</dt>
+                              <dd>Head of Departmenty</dd>
+                              <dt>Description</dt>
+                              <dd>A chemical engineering degree develops technical and transferable skills that ... Check out the careers section of company websites for more information.</strong</dd>
+                              <dt>Location</dt>
+                              <dd>Seoul, Korea</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="sub-box res-career">
+                      <h2>Funded Project</h2>
+                      <div class="res-career-view res-career-view-show">
+                        <div class="gray-box res-career-box">
+                          <p class="res-box-years">
+                            <span class="res-years">2015 Aug</span> ~<br /> <!-- 161013  -->
+                            <span class="res-years">In progress</span>
+                          </p>
+                          <dl>
+                            <dt>Research institutions</dt>
+                            <dd>Seoul National University</dd>
+                            <dt>Title</dt>
+                            <dd>chemical engineering research</dd>
+                            <dt>Description</dt>
+                            <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                            <dt>Ordering organization</dt>
+                            <dd>Seoul National University</dd>
+                            <dt>Joint researches</dt>
+                            <dd>Seoul National University, Brad Pitt</dd>
+                            <dt>URL</dt>
+                            <dd><a href="http://www.jordantimes.com/us-university-scholarships-hashemite-university-students">http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</a></dd>
+                          </dl>
+                        </div>
+                        <div class="gray-box res-career-box">
+                          <p class="res-box-years">
+                            <span class="res-years">2015 Aug</span> ~<br /><!-- 161013  -->
+                            <span class="res-years">In progress</span>
+                          </p>
+                          <dl>
+                            <dt>Research institutions</dt>
+                            <dd>Seoul National University</dd>
+                            <dt>Title</dt>
+                            <dd>chemical engineering research</dd>
+                            <dt>Description</dt>
+                            <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                            <dt>Ordering organization</dt>
+                            <dd>Seoul National University</dd>
+                            <dt>Joint researches</dt>
+                            <dd>Seoul National University, Brad Pitt</dd>
+                            <dt>URL</dt>
+                            <dd><a href="http://www.jordantimes.com/us-university-scholarships-hashemite-university-students">http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</a></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="sub-box res-career">
+                      <h2>Honors &amp; Awards</h2>
+                      <div class="res-career-view res-career-view-show">
+                        <div class="gray-box res-career-box">
+                          <p class="res-box-years">
+                            <span class="res-years">2015 May</span><!-- 161013  -->
+                          </p>
+                          <dl>
+                            <dt>Title</dt>
+                            <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                            <dt>Description</dt>
+                            <dd>In small, focused research groups, students and faculty within WPI’s Chemical Engineering Department go beyond the classroom to solve real-world problems, continuing to make discoveries in areas like environmental protection.</dd>
+                          </dl>
+                        </div>
+                        <div class="res-career-view res-career-view-show">
+                          <div class="gray-box res-career-box">
+                            <p class="res-box-years">
+                              <span class="res-years">2015 May</span><!-- 161013  -->
+                            </p>
+                            <dl>
+                              <dt>Contents</dt>
+                              <dd>Head of Departmenty</dd>
+                              <dt>Description</dt>
+                              <dd>A chemical engineering degree develops technical and transferable skills that ... Check out the careers section of company websites for more information.</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="sub-box res-career">
+                      <h2>Writing Career</h2>
+                      <div class="res-career-view res-career-view-show">
+                        <div class="gray-box res-career-box">
+                          <p class="res-box-years">
+                            <span class="res-years">2015 May</span><!-- 161013  -->
+                          </p>
+                          <dl>
+                            <dt>Type of study</dt>
+                            <dd>Chemical engineering</dd>
+                            <dt>Title</dt>
+                            <dd>Effective Chemical engineering</dd>
+                            <dt>Description</dt>
+                            <dd>Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a ﬁne balance between hydrology, ecology and land-scape morphology (Page et al., 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.</dd>
+                            <dt>Co-Author</dt>
+                            <dd>Micheal Jonas Korse</dd>
+                            <dt>URL</dt>
+                            <dd><a href="http://www.micheal_chemworld.com">http://www.micheal_chemworld.com</a></dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="sub-box res-career">
+                      <h2>Certificate</h2>
+                      <div class="res-career-view res-career-view-show">
+                        <div class="gray-box res-career-box">
+                          <p class="res-box-years">
+                            <span class="res-years">2015 May</span><!-- 161013  -->
+                          </p>
+                          <dl>
+                            <dt>Certificate type</dt>
+                            <dd>Chemical engineering</dd>
+                            <dt>Description</dt>
+                            <dd>Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a ﬁne balance between hydrology, ecology and land-scape morphology (Page et al., 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.</dd>
+                            <dt>Certificate issuer</dt>
+                            <dd>Micheal Jonas Korse</dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="sub-box tech-res tech-res-preview">
+                      <h2>Advisory Area</h2>
+                      <ul class="tech-res-list tech-res-list-view">
+                        <li>
+                          <span class="tech-like-num">Environment</span>
+                          Formulas and manufacturing recipes
+                        </li>
+                        <li>
+                          <span class="tech-like-num">Manufacturing process-chem</span>
+                          Formulas and manufacturing recipes
+                        </li>
+                        <li>
+                          <span class="tech-like-num">Nuclear Chem</span>
+                          Formulas and manufacturing recipes
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="sub-box tech-res tech-res-preview">
+                      <h2>Language</h2>
+                      <ul class="tech-res-list tech-res-list-view">
+                        <li>Korean</li>
+                        <li>Spanish</li>
+                        <li>English</li>
+                      </ul>
+                    </div>
+
+                    <p class="write-notice bg-w">
+                      <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                      The process of becoming an expert of approval may take a minimum of 5 working days and we will send you the notification when all the process is over.<br />
+                      If you have any questions regarding our policy simply click on <a href="">Contact Us</a>.</p><!-- 161028  customer center를 Contact Us로 수정 -->
+
+                    <div class="btn-send-box">
+                      <button type="button" class="btn-base btn-brand-gray btn-edit">Edit</button>
+                      <button type="reset" class="btn-base btn-brand-gray-b btn-delete">Cancel</button> <!-- 161013 -->
+                      <button type="submit" class="btn-base btn-brand-blue btn-send">Submit Application</button>
+                    </div>
+                  </div><!-- /.myp-contents -->
+
+
+                </div><!-- /.complete-write -->
+
+                <div class="radiopanel complete-upload">
+
+                </div><!-- /.complete-upload -->
+
+                <div class="radiopanel complete-link">
+
+                </div><!-- /.complete-link -->
+
+              </div>
+            </div><!-- /#apply -->
+
+            <div class="tab-pane" id="recommend">
+
+            </div><!-- /#recommend -->
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="footerInner">
+          <strong>Copyright © 2016 <a href="#">Chemtopia</a>.</strong> All rights reserved.
+        </div>
+      </footer>
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+
+  </body>
+</html>

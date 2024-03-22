@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>캠토피아</title>
+    <link href="../assets/css/theme.css" rel="stylesheet">
+    <link href="../assets/css/jquery-confirm.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="modal fade" id="lnbInModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"><!-- 161013 수정 -->
+        <div class="modal-lnb">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <aside class="lnb">
+                <div class="lnb-notification">
+                  <p class="lnb-title">Notification</p>
+                  <ul class="lnb-menu">
+                    <li><a href="#" class="lnbbtn sub-disc" data-lnblink="lnb-sub-msg">Message<span class="count">17</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-foll" data-lnblink="lnb-sub-fourm">Chem Info / Forum<span class="count">2</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-sug" data-lnblink="lnb-sub-foll">Follow<span class="count"></span></a></li>
+                    <li><a href="#" class="lnbbtn sub-msg" data-lnblink="lnb-sub-other">Other<span class="count">99+</span></a></li>
+                  </ul>
+                </div>
+                <div class="lnb-sub-wrap">
+                  <div class="lnb-sub lnb-sub-msg lnb-slide-out">
+                      <p class="lnb-title">Message</p>
+                      <ul class="lnb-sub-list">
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- 161130 div,p 추가 -->
+                      <div class="btn-viewall-wrap">
+                        <!-- 스크롤이 생기면 btn-desc 노출 -->
+                        <p class="btn-desc">To see more of notifications, click "View all"</p>
+                        <a href="notificationsMessage.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                      </div>
+                      <!-- //161130 div,p 추가 -->
+                  </div>
+                  <!-- 161101 수정
+      
+                    // 1. 이름 추가, 내용변경
+                    // 이름, 내용 한줄(27자)이상일 경우 말줄임표시
+                    // lnb-bg-myfourm - fourm일 경우 클래스
+                    // lnb-bg-following  - following일 경우 클래스
+                    // lnb-bg-cheminf  - cheminfg일 경우 클래스
+                  -->
+      
+                  <div class="lnb-sub lnb-sub-fourm lnb-slide-out">
+                    <p class="lnb-title">Chem Info / Forum</p>
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-bg-myfourm">
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Cyrus Helf</strong>
+                            <span>Added 3 Opinions on your post.</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-following">
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>Tamas Mihalovits</strong><!-- 161025 span 추가 -->
+                            <span>Added a topic</span> <!-- 161212 text 수정 -->
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-following">
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>Tamas Mihalovits</strong><!-- 161025 span 추가 -->
+                            <span>Added a Chem Info.</span> <!-- 161212 text 수정 -->
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Minimizing the environmental...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Simulation...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="btn-viewall-wrap">
+                      <!-- 스크롤이 생기면 btn-desc 노출 -->
+                      <p class="btn-desc">To see more of notifications, click "View all"</p>
+                      <a href="notificationsCheminfoForum.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                    </div>
+                  </div>
+                  <!-- //161101 수정 -->
+                  <div class="lnb-sub lnb-sub-foll lnb-slide-out">
+                    <p class="lnb-title">Follow</p>
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-nodata">
+                        <span><i class="icon-bell"></i>No notifications to show</span>
+                      </li>
+                    </ul>
+                    <div class="btn-viewall-wrap">
+                      <!-- 스크롤이 생기면 btn-desc 노출 -->
+                      <p class="btn-desc">To see more of notifications, click "View all"</p>
+                      <a href="notificationsFollow.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                    </div>
+                  </div>
+                  <div class="lnb-sub lnb-sub-other lnb-slide-out">
+                    <p class="lnb-title">Other</p>
+                    <ul class="lnb-sub-list">
+                      <li>
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Joel King</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>sujin Seo</strong> is now following you<br /><!-- 161025 span 추가 -->
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>Terry Park</strong> is now following you<br /><!-- 161025 span 추가 -->
+                            <span class="lnb-time">Yesterday</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Kyunga Kim</strong> is now following you<br />
+                          Nice to meet you. look on the bright...<br />
+                          <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="btn-viewall-wrap">
+                      <!-- 스크롤이 생기면 btn-desc 노출 -->
+                      <p class="btn-desc">To see more of notifications, click "View all"</p>
+                      <a href="notificationsOther.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                    </div>
+                  </div>
+      
+                  <!--<div class="lnb-sub lnb-slide-out">
+                    <p class="lnb-title">Other</p>
+      
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-nodata">
+                        <span><i class="icon-bell"></i>No notifications to show</span>
+                      </li>
+                    </ul>
+                  </div> 알림없는 케이스 -->
+                </div>
+              </aside>
+            </div>
+            <button type="button" class="close" id="lnb-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+      <!-- new header start -->
+      <header class="main-header-fixed light">
+        <div class="header-wrap">
+        <h1 class="logo"><a href="../index.html">chemtopia</a></h1>
+        <div class="gm-wrap">
+          <div class="gm">
+            <a href="../footer/about.html" class="text-what text-upper">What's ChemTopia?</a>
+            <ul>
+              <li><a href="../index.html" class="gm-link text-upper">Home</a></li>
+              <!-- <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link" data-toggle="dropdown" href="#">Chemcast</a>
+      
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-m-gmmenu">
+                      <ul>
+                        <li><a href="#">Chemical Process Reports</a></li>
+                        <li><a href="#">Cast Leading</a></li>
+                        <li><a href="#">VOD</a></li>
+                        <li><a href="#">Job</a></li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                </div>
+              </li> -->
+              <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link text-upper" data-toggle="dropdown" href="#">Break Time</a>
+      
+                  <!--
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-gmmenu">
+                      <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Game</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  -->
+      
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="gnb-wrap">
+          <div class="gnb">
+            <ul>
+              <li><a href="../cheminfo/cheminfoMain.html">Chem Info</a></li>
+              <li><a href="../forum/forumMain.html">Forum</a></li>
+              <li><a href="../proleaders/proleadersMaincard.html">Proleaders</a></li>
+              <li><a href="../module/module-main.html">Modules</a></li>
+              <li><a href="../chemcast/chemcastMain.html">ChemCast</a></li>
+            </ul>
+          </div>
+      
+          <div class="snb-wrap">
+            <!-- 로그인 전
+             <ul class="befor-snb">
+               <li><a href="membership/signUpFirst.html" class="btn-base btn-brand-orange btn-snb">Sign Up</a></li>
+              <li><a data-toggle="modal" href="#signInModal">Sign In</a></li>
+            </ul>
+            -->
+      
+            <!-- 로그인 후 -->
+            <!-- 161207 수정 -->
+            <ul class="after-snb">
+              <li>
+                <!-- 일반 사용자 일때  시작 -->
+                <div class="dropdown">
+                  <!-- 이름이 7자 이상일 경우 말줄임표시 -->
+                  <a class="dropdown-toggle dropdown-menu-title " data-toggle="dropdown" href="#">
+                    <span class="profile-picture-exsmall"><img src="../assets/images/sample-img/gnb_navi_testimg3.jpg" /></span>
+                    <!-- <span>Jaehee Kwon</span> --><span class="caret"></span> <!-- 161219 추가 -->
+                  </a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-snbmenu">
+                      <div class="user-menu">
+                        <!-- <span class="profile-picture-large"><img src="assets/images/sample-img/gnb_navi_testimg3.jpg" /></span> -->
+                        <!-- 이름이 35자 이상일 경우 말줄임표시 -->
+                        <p class="user-name"><a href="#">Jaehee Kwon Jaehee Kwon Jaehee Kwon</a></p>
+                      </div>
+                      <ul class="snb-dropmenu">
+                        <!-- <li><p class="user-mail"><a href="#" class="gnb-mail-link">dfdfafdferwrwrerererererererde68@yahoo.co.kr</a></p></li> -->
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 일반 사용자 일때  끝 -->
+                <!-- 전문가 사용자 일때  시작
+                <div class="dropdown">
+                  <a class="dropdown-toggle dropdown-menu-title " data-toggle="dropdown" href="#">
+                    <span class="profile-picture-exsmall"><img src="assets/images/sample-img/gnb_navi_testimg3.jpg" /></span>
+                    Jaehee Kwon<span class="caret"></span>
+                  </a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-snbmenu">
+                      <div class="user-menu">
+                        <span class="profile-picture-large"><img src="assets/images/sample-img/gnb_navi_testimg3.jpg" /></span>
+                        <p class="user-name">Jaehee Kwon</p>
+                      </div>
+                      <ul class="snb-dropmenu">
+                        <li><p class="user-mail"><a href="#" class="gnb-mail-link">dfdfafdferwrwrerererererererde68@yahoo.co.kr</a></p></li>
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">My Proleaders</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                // 전문가 사용자 일때  끝 -->
+            </li>
+            <li><a data-toggle="modal" href="#lnbInModal"><i class="fa fa-bell-o"></i><span class="badge-cust">99</span></a></li>
+            <!-- 알람 뱃시 숫자가 3자리 일때 시작 -->
+            <!-- <li><a data-toggle="modal" href="#lnbInModal"><i class="fa fa-bell-o"></i><span class="badge-cust-3">959</span></a></li> -->
+            <!-- 알람 뱃시 숫자가 3자리 일때 끝 -->
+          </ul>
+          <!-- //161207 수정 -->
+          </div>
+        </div>
+      </div>
+      </header>
+      <!-- // end new header -->
+      
+
+      <section class="main-section-dsc">
+        <article class="main-article-cheminfo">
+
+          <div class="module-top-area">
+            <div class="inner-visual-bg">
+              <div class="inner-width">
+                <h1 class="inner-title">MODULES</h1>
+                <p class="inner-description">For professional chemical applications</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="break-main-content">
+            <!-- 탭 메뉴 -->
+            <div class="tabpanel tab-set1">
+              <ul class="nav">
+                <li class="active"><a href="#simulation" data-toggle="tab">Unit operation</a></li>
+                <li><a href="#pressure" data-toggle="tab">Packed Bed Pressure Drop</a></li><!-- 170517 추가 -->
+                <li><a href="#source-code" data-toggle="tab">Source Code</a></li>
+                <li><a href="#other-file" data-toggle="tab">Other file</a></li>
+              </ul>
+            </div>
+          </div><!-- //break-main-content -->
+
+          <!-- tab-content -->
+          <div class="tab-content">
+
+            <!-- tab#1 : simulation -->
+            <div role="tabpanel" class="tab-pane active" id="simulation">
+              <h2 class="text-hide">Unit operation</h2><!-- 170517 추가 -->
+              <div class="simulation-wrap">
+                <div class="source-info">
+                  <button class="link-howto" onclick="popupLink(664,1180,'module-howto.html','How to use Unit Operation')"><i class="fa fa-play-circle" aria-hidden="true"></i>How to use Unit Operation</button><!-- 170517 동영상 onclick 수정 -->
+                </div>
+                <!-- 로그인 전 케이스 추가 161213 -->
+                <div class="simulation-need-login">
+                  <h2>NOT SIGNED IN</h2>
+                  <p>Please Sign in to continue to Unit operation</p>
+                  <button type="button" class="btn-base btn-brand-blue">Sign in</button>
+                </div>
+                <!-- //로그인 전 케이스 추가 161213 -->
+                <!-- 로그인후 <iframe src="http://chemtopia.devone.co.kr/apps/Chemtopia/" title="simulation"></iframe> -->
+              </div>
+            </div>
+            <!-- //tab#1 : simulation -->
+
+            <!-- tab#2 : Packed Bed Pressure Drop 170517  -->
+            <div role="tabpanel" class="tab-pane" id="pressure">
+              <h2 class="text-hide">Packed Bed Pressure Drop</h2>
+              <div class="source-wrap">
+                <div class="source-inner">
+                  <div class="source-info">
+                    <button class="link-howto" onclick="popupLink(664,1180,'pressure-howto.html','Packed Bed Pressure Drop movie')"><i class="fa fa-play-circle" aria-hidden="true"></i>What’s Packed Bed Pressure Drop?</button>
+                  </div>
+                  <!-- left area -->
+                  <div class="pressure-left">
+                    <!-- pressure -->
+                    <div class="card-pressure text-center">
+                      <div class="pd-value">
+                        <div class="pd-inout-text">Pressure</div>
+                        <span class="number-psi">156 psi</span>
+                        <span class="number-temperature">120K</span>
+                      </div>
+                      <div class="pd-img">
+                        <div class="pd-Lv"><span class="pd-Lv-text">Reactor Length (Lv)<span class="pd-Lv-num">11,000m</span></span></div>
+                        <div class="pd-Dv">
+                          <span class="pd-Lv-text pd-Dv-text">Reactor Diameter (Dv)</span>
+                          <span class="pd-Lv-num">11,000m</span>
+                        </div>
+                        <div class="pd-shape">
+                          <div class="pd-shape-text">ΔP</div>
+                          <span class="pd-Lv-num">348</span>
+                        </div>
+                      </div>
+                      <div class="pd-value">
+                        <div class="pd-inout-text">Output Pressure</div>
+                        <span class="pd-output">847.4</span>
+                      </div>
+                    </div>
+                    <!-- //pressure -->
+                    <!-- result -->
+                    <div class="pressure-result">
+                      <h4 class="pd-result-title">Result value</h4>
+                      <table class="pd-result-table">
+                        <tbody>
+                          <tr>
+                            <th scope="row">Pressure In</th>
+                            <td><span>2848</span>psi</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Pressure Drop Out</th>
+                            <td><span>848.87</span>psi</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Pressure Drop (ΔP)</th>
+                            <td><span>89</span>psi</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- //result -->
+                  </div>
+                  <!-- //left area -->
+                  <!-- right area -->
+                  <form>
+                    <div class="card-pressure card-pressure-right">
+                      <h3 class="pd-item-title">1. Feed Information</h3>
+                      <div class="pd-input-wrap">
+                        <label for="input-temperature" class="pd-input-name">Temperature</label>
+                        <input type="text" id="input-temperature" class="input-base pd-input-value" placeholder="Please enter temperature" >
+                        <span class="pd-input-unit">K</span>
+                      </div>
+
+                      <div class="pd-input-wrap">
+                        <label for="input-pressure" class="pd-input-name">Pressure</label>
+                        <input type="text" id="input-pressure" class="input-base pd-input-value" placeholder="Please enter pressure" >
+                        <span class="pd-input-unit">psi</span>
+                      </div>
+
+                      <div class="pd-input-wrap">
+                        <h4 class="pd-input-name">Compound Stock</h4>
+                        <div class="pd-input-compound">
+                          <table class="pd-input-table pd-add-feed">
+                            <colgroup>
+                              <col class="pd-col1" /><col class="pd-col2" /><col class="pd-col3" /><col class="pd-col4" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col" class="text-formula">Formula</th>
+                                <th scope="col">Structure</th>
+                                <th scope="col">Mass Flowrate (kg/s)</th>
+                                <th scope="col" class="text-hide">delete</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Feed</th>
+                                <td class="td-compound">
+                                  <!-- <input type="text" id="input-pd-structure1" class="input-base" placeholder="Compound Search">
+                                  <button type="button" class="glyphicon glyphicon-search" data-toggle="modal" data-target="#pd-compound-search" title="search"></button> -->
+                                  <div class="select-keyword">
+                                    <img src="//static.chemtopia.com/files/cheminfo/compound/CT1001431854.png" alt="" /> Benzen
+                                  </div>
+                                </td>
+                                <td>
+                                  <input type="text" id="input-pd-mass1" class="input-base" placeholder="Please enter a value">
+                                </td>
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Feed</th>
+                                <td class="td-compound">
+                                  <input type="text" id="input-pd-structure2" class="input-base" placeholder="Compound Search">
+                                  <button type="button" class="glyphicon glyphicon-search" data-toggle="modal" data-target="#pd-compound-search" title="search"></button>
+                                </td>
+                                <td>
+                                  <input type="text" id="input-pd-mass2" class="input-base" placeholder="Please enter a value">
+                                </td>
+                                <td>
+                                  <button type="button" class="btn-base btn-brand-gray btn-article-close btn-rt btn-feed"><span aria-hidden="true" title="delete">×</span></button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <button class="btn-base btn-add-data"><i class="icon-add-data">+</i>Add Feed</button>
+                        </div>
+                      </div>
+
+                      <h3 class="pd-item-title">2. Pellet Shape</h3>
+                      <div class="radiogroup shape-wrap">
+                        <div class="select-shape">
+                          <input checked="checked" id="shape-Sphere" class="css-radio" name="radio" type="radio" value="1">
+                          <label for="shape-Sphere" class="css-radio-label radio-shape">Sphere<img src="../assets/images/module/icon-sphere.png"  alt="" /></label>
+                        </div>
+                        <div class="select-shape">
+                          <input id="shape-Cylinder" class="css-radio" name="radio" type="radio" value="2">
+                          <label for="shape-Cylinder" class="css-radio-label radio-shape">Cylinder<img src="../assets/images/module/icon-cylinder.png"  alt="" /></label>
+                        </div>
+                        <div class="select-shape">
+                          <input id="shape-Hollow" class="css-radio" name="radio" type="radio" value="3">
+                          <label for="shape-Hollow" class="css-radio-label radio-shape">Hollow Cylinder<img src="../assets/images/module/icon-hollow.png"  alt="" /></label>
+                        </div>
+                      </div>
+
+                      <h3 class="pd-item-title">3. Pellet Specification</h3>
+                      <table class="pd-input-table">
+                        <thead>
+                          <tr>
+                            <th scope="col"><label for="input-ps-outer">Diameter (m, outer)</label></th>
+                            <th scope="col"><label for="input-ps-inner">Diameter (m, inner)</label></th>
+                            <th scope="col"><label for="input-ps-height">Height (m)</label></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input type="text" id="input-ps-outer" class="input-base" placeholder="Please enter a value">
+                            </td>
+                            <td>
+                              <input type="text" id="input-ps-inner" class="input-base" placeholder="Please enter a value">
+                            </td>
+                            <td>
+                              <input type="text" id="input-ps-height" class="input-base" placeholder="Please enter a value">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h3 class="pd-item-title">4. Packed Bed Configuration</h3>
+                      <table class="pd-input-table">
+                        <thead>
+                          <tr>
+                            <th scope="col"><label for="input-pd-Dv">Diameter(Dv)</label></th>
+                            <th scope="col"><label for="input-pd-Lv">Length(Lv)</label></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input type="text" id="input-pd-Dv" class="input-base" placeholder="Please enter a value">
+                            </td>
+                            <td>
+                              <input type="text" id="input-pd-Lv" class="input-base" placeholder="Please enter a value">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="pd-btn-wrap">
+                      <button type="reset" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Clear</button>
+                      <button type="button"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> Load Project</button>
+                      <button type="submit"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Save Project</button>
+                      <button type="button" class="btn-calculate">Calculate</button>
+                    </div>
+                  </form>
+                  <!-- //right area -->
+                </div>
+              </div>
+            </div>
+            <!-- //tab#2 : Packed Bed Pressure Drop -->
+
+            <!-- tab#3 : source-code -->
+            <div role="tabpanel" class="tab-pane" id="source-code">
+              <h2 class="text-hide">Source Code</h2><!-- 170517 추가 -->
+              <div class="source-wrap">
+                <div class="source-inner">
+
+                  <div class="source-info">
+                    <!-- 161208 a태그 내용 수정 --><a href="#" data-toggle="tooltip" title="" class="ic-qustion" data-original-title="Development of specific applications frequently requires custom computational code developments.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    To help these activities, various source code modules verified in chemical applications are provided here, starting from the source codes for the computation of 11 thermophysical properties.(as of January 2017)
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    New source codes will be added on a continuous basis.">?</a> What’s Source Code?
+                  </div>
+
+                  <ul class="source-list">
+                    <li>
+                      <div class="source-card">
+                        <a href="module-sub.html">
+                          <h2 class="source-title">Textureless shape matching with scale and rotation undrained peat deposite of the decis...</h2>
+                          <p class="source-text">
+                            The decision to attach a sound bar to the bottom of the screen looks a touch clumsy, though. It can’t be detached, even if you’re planning to run an OLED65E6 with an external audio...
+                          </p>
+                        </a>
+                        <div class="article-btngroup source-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>30</a></li>
+                            <li><i class="icon-inbox" aria-hidden="true" title="Download"></i>65</li>
+                          </ul>
+                          <span class="see-more"><a href="module-sub.html">See More</a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="source-card">
+                        <a href="#">
+                          <h2 class="source-title">Textureless shape matching with scale</h2>
+                          <p class="source-text">
+                            The decision to attach a sound bar to the bottom of the screen looks a touch clumsy, though. It can’t be detached.
+                          </p>
+                        </a>
+                        <div class="article-btngroup source-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                            <li><i class="icon-inbox" aria-hidden="true" title="Download"></i>65</li>
+                          </ul>
+                          <span class="see-more"><a href="#">See More</a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="source-card">
+                        <a href="#">
+                          <h2 class="source-title">Textureless shape matching with scale</h2>
+                          <p class="source-text">
+                            The decision to attach a sound bar to the bottom of the screen looks a touch clumsy, though. It can’t be detached, even if you’re planning to run an OLED65E6 with an external audio...
+                          </p>
+                        </a>
+                        <div class="article-btngroup source-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>30</a></li>
+                            <li><i class="icon-inbox" aria-hidden="true" title="Download"></i>65</li>
+                          </ul>
+                          <span class="see-more"><a href="#">See More</a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="source-card">
+                        <a href="#">
+                          <h2 class="source-title">Textureless shape matching with scale and rotation undrained peat deposite of the decis...</h2>
+                          <p class="source-text">
+                            The decision to attach a sound bar to the bottom of the screen looks a touch clumsy, though.
+                          </p>
+                        </a>
+                        <div class="article-btngroup source-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>30</a></li>
+                            <li><i class="icon-inbox" aria-hidden="true" title="Download"></i>65</li>
+                          </ul>
+                          <span class="see-more"><a href="#">See More</a></span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+
+                  <!-- 더보기 -->
+                  <div class="btn-article-seemore"><a href="#">See More</a></div>
+                </div>
+              </div>
+
+            </div>
+            <!-- //tab#3 : source-code -->
+
+            <!-- tab#4 : other-file paid 추가 -->
+            <div role="tabpanel" class="tab-pane" id="other-file">
+              <h2 class="text-hide">Other file</h2>
+              <div class="source-wrap">
+                <div class="source-inner">
+                  <button type="button" data-toggle="modal" data-target="#upload-other-file" class="btn-base btn-brand-blue btn-add-file">Add a File</button>
+                  <ul class="list-other-file">
+                    <li>
+                      <div class="left-info">
+                        <div class="wrap-tit-other">
+                          <h3 class="title-other-file">
+                            <img src="../assets/images/icon/ico-doc.gif" title="excel"> The First Few Moments That Physics Can't Explain
+                          </h3>
+                          <!-- dropdown -->
+                          <div class="dropdown">
+                            <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                            <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                              <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                                <ul>
+                                  <li><a href="#reportModal" data-toggle="modal">Delete</a></li>
+                                  <li><a href="#reportModal" data-toggle="modal">Report</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //dropdown -->
+                          <!--
+                          <div class="txt_point">
+                            <div class="txt-final-selling">
+                              <strong><em>650</em> <span>point</span></strong>
+                            </div>
+                          </div> -->
+                        </div>
+                        <p class="desc-other-file">
+                          A Stanford University research lab has developed new technologies to tackle two of the world's biggest energy challenges - clean fuel for transportation and grid-scale energy storage. A Stanford University research lab has developed new technologies to tackle two of the world's biggest energy challenges - clean fuel for transportation and grid-scale energy storage. A Stanford University research lab has developed new technologies to tackle two of the world's biggest energy challenges
+                        </p>
+                        <!-- icon group -->
+                        <div class="article-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                            <li><i class="icon-eye" aria-hidden="true"></i>65</li>
+                            <li>
+                              <a href="#" title="bookmark" media="" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- //icon group -->
+
+                        <!-- person info -->
+                        <div class="floatingUI-container">
+                          <a href="#" class="floatingUI-user-info profile-picture-small">
+                            <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-s-img.png">
+                          </a>
+                          <div class="user-profile-contents arrow-menu-top">
+                            <div class="profile-info-box">
+                              <span class="profile-picture-large">
+                                <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png">
+                              </span>
+                              <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                              <p class="user-group">Hashemite University</p>
+                            </div>
+                            <div class="profile-detail-btn">
+                              <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                              <div class="follow-send-btn">
+                                <!-- <button class="btn-brand-blue">follow</button> -->
+                                <span class="toggle-btn btn-following toggle-btn-following">
+                                  <input type="checkbox" checked="">
+                                  <label data-off="Follow" data-on="Following"></label>
+                                </span>
+                                <button class="btn-base btn-brand-blue">Send Message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-name">
+                          <a href="#"><span class="icon-profile-crown"></span>Sunghyun Lee</a>
+                          <span class="creation-date-cheminfo"><i class="fa fa-circle" aria-hidden="true"></i>12 hours ago</span>
+                        </p>
+                        <!-- //person info -->
+                      </div>
+                      <div class="right-down">
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="left-info">
+                        <div class="wrap-tit-other">
+                          <h3 class="title-other-file">
+                            <img src="../assets/images/icon/ico-excel.gif" title="etc"> The First Few Moments That Physics Can't Explain
+                          </h3>
+                          <!-- dropdown -->
+                          <div class="dropdown">
+                            <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                            <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                              <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                                <ul>
+                                  <li><a href="#reportModal" data-toggle="modal">Delete</a></li>
+                                  <li><a href="#reportModal" data-toggle="modal">Report</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //dropdown -->
+                        </div>
+                        <p class="desc-other-file">
+                          A Stanford University research lab has developed new technologies to tackle two of the world's biggest energy challenges - clean fuel for transportation and grid-scale energy storage. A Stanford University research lab has developed new technologies
+                        </p>
+                        <!-- icon group -->
+                        <div class="article-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                            <li><i class="icon-eye" aria-hidden="true"></i>65</li>
+                            <li>
+                              <a href="#" title="bookmark" media="" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- //icon group -->
+
+                        <!-- person info -->
+                        <div class="floatingUI-container">
+                          <a href="#" class="floatingUI-user-info profile-picture-small">
+                            <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-s-img.png">
+                          </a>
+                          <div class="user-profile-contents arrow-menu-top">
+                            <div class="profile-info-box">
+                              <span class="profile-picture-large">
+                                <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png">
+                              </span>
+                              <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                              <p class="user-group">Hashemite University</p>
+                            </div>
+                            <div class="profile-detail-btn">
+                              <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                              <div class="follow-send-btn">
+                                <!-- <button class="btn-brand-blue">follow</button> -->
+                                <span class="toggle-btn btn-following toggle-btn-following">
+                                  <input type="checkbox" checked="">
+                                  <label data-off="Follow" data-on="Following"></label>
+                                </span>
+                                <button class="btn-base btn-brand-blue">Send Message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-name">
+                          <a href="#"><span class="icon-profile-crown"></span>Sunghyun Lee</a>
+                          <span class="creation-date-cheminfo"><i class="fa fa-circle" aria-hidden="true"></i>12 hours ago</span>
+                        </p>
+                        <!-- //person info -->
+                      </div>
+                      <div class="right-down">
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- //tab#4 : other-file -->
+
+
+          </div><!-- //tab-content -->
+
+
+        </article>
+      </section>
+
+      <!-- footer -->
+
+      <footer>
+
+        <div class="footerInner">
+
+          <p class="footer-logo"><a href="index.html">CHEMTOPIA</a></p>
+
+          <div class="footer-menu-wrap">
+
+            <ul class="footer-menu">
+
+              <!-- <li><a href="about.html">About Chemtopia</a></li> -->
+
+              <li><a href="/footer/termsOfService.html">Terms of Service</a></li>
+
+              <li><a href="/footer/privacy.html">Privacy Policy</a></li>
+
+              <li><a href="/footer/membership.html">Membership</a></li>
+
+              <!--  <li><a href="#">Help</a></li>  161017, 161020 삭제 -->
+
+              <li><a href="/footer/contactus.html">Contact Us</a></li>
+
+            </ul>
+
+            <p class="copyright-area">© 2017 ChemEssen, Inc. All rights reserved.</p>
+
+            <!-- 170308 링크 추가 -->
+
+            <ul class="link-language">
+
+              <li><a href="#" class="active">English</a></li><!-- 해당 사이트일 때, active 클래스 추가 -->
+
+              <li><a href="#">中文</a></li>
+
+            </ul>
+
+            <!-- //170308 링크 추가 -->
+
+          </div>
+
+        </div>
+
+        <!-- back to top button : 최초에는 안보이다가 스크롤을 내리는 순간에 보여지게 -->
+
+        <a href="#" class="top-link-block"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+
+      </footer>
+
+      <!-- //footer -->
+
+      
+
+      <!-- 170517 pressure drop modal : compound search -->
+
+      <div class="cheminfo-modal">
+
+        <div class="modal fade" id="pd-compound-search" tabindex="-1" role="dialog">
+
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+
+              <!--header of modal-->
+
+              <div class="modal-header cheminfo-modal-header">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                <p class="cheminfo-add-modal-h1">Add <strong>Component Stock</strong></p>
+
+              </div>
+
+              <!--body of modal-->
+
+              <form>
+
+                <div class="pd-cs-modal">
+
+                  <div class="pd-cs-wrap">
+
+                    <input type="text" id="" class="input-base pd-cs-input" placeholder="Search Component Stock by Chemical name, CAS NUM, Formula, Smiles, Standard Inchi">
+
+                    <button type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+
+                  </div>
+
+                  <!-- 검색 후 노출영역 -->
+
+                  <div class="pd-cs-result">
+
+                     <p class="pd-cd-result-text">results found for : “BENZENE”</p>
+
+                    <div class="pd-cs-table-wrap">
+
+                      <div class="pd-cs-table-area">
+
+                        <table class="pd-input-table pd-cs-table radiogroup">
+
+                          <colgroup>
+
+                            <col class="pd-col5" /><col class="pd-col6" /><col class="pd-col7" /><col class="pd-col8" />
+
+                          </colgroup>
+
+                          <thead>
+
+                            <tr>
+
+                              <th>Select</th>
+
+                              <th>Structure</th>
+
+                              <th>Matched String</th>
+
+                              <th>Formula</th>
+
+                            </tr>
+
+                          </thead>
+
+                          <tbody>
+
+                            <tr>
+
+                              <td>
+
+                                <input checked="checked" id="choose-compound1" class="css-radio" name="radio" type="radio" value="1">
+
+                                <label for="choose-compound1" class="css-radio-label"></label>
+
+                              </td>
+
+                              <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1001431854.png" alt="" /></td>
+
+                              <td>Benzene</td>
+
+                              <td>C7H8N2</td>
+
+                            </tr>
+
+                            <tr>
+
+                              <td>
+
+                                <input id="choose-compound2" class="css-radio" name="radio" type="radio" value="2">
+
+                                <label for="choose-compound2" class="css-radio-label"></label>
+
+                              </td>
+
+                              <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1001508394.png" alt="" /></td>
+
+                              <td>Benzenol</td>
+
+                              <td>C14H19N5O3S</td>
+
+                            </tr>
+
+                            <tr>
+
+                              <td>
+
+                                <input id="choose-compound3" class="css-radio" name="radio" type="radio" value="3">
+
+                                <label for="choose-compound3" class="css-radio-label"></label>
+
+                              </td>
+
+                              <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1001774016.png" alt="" /></td>
+
+                              <td>Benzenamine</td>
+
+                              <td>C6H5NH2</td>
+
+                            </tr>
+
+                            <tr>
+
+                              <td>
+
+                                <input id="choose-compound4" class="css-radio" name="radio" type="radio" value="4">
+
+                                <label for="choose-compound4" class="css-radio-label"></label>
+
+                              </td>
+
+                              <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1001571339.png" alt="" /></td>
+
+                              <td>nitrobenzene</td>
+
+                              <td>C6H5NO2</td>
+
+                            </tr>
+
+                            <tr>
+
+                              <td>
+
+                                <input id="choose-compound5" class="css-radio" name="radio" type="radio" value="5">
+
+                                <label for="choose-compound5" class="css-radio-label"></label>
+
+                              </td>
+
+                              <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1002031407.png" alt="" /></td>
+
+                              <td>phenol</td>
+
+                              <td>C6H6O</td>
+
+                            </tr>
+
+                          </tbody>
+
+                        </table>
+
+                      </div>
+
+                      <!-- no result -->
+
+                      <div class="pd-noresult">
+
+                        <img alt="no result" src="../assets/images/common/search-noresult.png">
+
+                        <p>Your search returned no matches.</p>
+
+                      </div>
+
+                      <!-- //no result -->
+
+                    </div>
+
+                    <!--footer of modal-->
+
+                    <div class="btn-set">
+
+                      <button type="button" class="btn-base btn-brand-gray-b">Cancel</button>
+
+                      <button type="submit" class="btn-base btn-brand-blue">Apply</button>
+
+                    </div>
+
+                  </div>
+
+                  <!-- ~검색 후 노출영역 -->
+
+                </div>
+
+              </form>
+
+            </div><!-- /.modal-content -->
+
+          </div><!-- /.modal-dialog -->
+
+        </div>
+
+      </div>
+
+      <!-- //170517 pressure drop modal : compound search -->
+
+      
+      <!-- upload other file modal - start -->
+      <div class="modal fade modal-pc upload-other-file" id="upload-other-file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title pc-title">Upload File</h4>
+            </div>
+            <div class="modal-body">
+              <p class="txt-notice-upload">No single file can exceed 10 MB. File must be in WORD, PPT, PDF, EXCEL, PNG, JPG, JPEG, or GIF format.</p>
+              <!-- file upload -->
+              <div class="fileinput fileinput-new" data-provides="fileinput">
+                <span class="btn btn-file">
+                  <span>Choose File</span><input type="file">
+                </span>
+                <span class="fileinput-filename"></span>
+                <span class="fileinput-new">No file chosen</span>
+                <a href="#" class="close fileinput-exists" data-dismiss="fileinput"><i class="icon-cross"></i></a>
+              </div>
+              <!-- //file upload -->
+              <input type="text" class="input-base input-title" placeholder="Title">
+              <h5 class="cheminfo-add-modal-h2">Detail description</h5>
+              <textarea rows="4" class="input-base input-textarea" placeholder="Please fill in 400 characters or less"></textarea>
+              <div class="detail-infor-box input-add-box">
+                <h5 class="cheminfo-add-modal-h2">Sale Price</h5>
+                <input type="text" id="sale-point" class="input-base input-payment" placeholder="50 ~ 100,000">
+                <label for="sale-point" class="txt-label-point">Point</label>
+                <div class="txt-final-selling">
+                  <strong>Final selling point price <em>650</em> <span>point</span></strong> <br />(The point you entered + the ChemEssent fee 30%)
+                </div>
+                <p class="txt-sale-price">
+                  The selling point is deducted when other customers view the information you upload Point, and the selling price is determined by attaching a commission to the points you have created. In addition, if another customer buys your information, you will receive the points We will return it to your account.
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer ">
+              <button type="button" class="btn-base btn-brand-gray-b" data-dismiss="modal">Cancle</button>
+              <button type="button" class="btn-base btn-brand-blue">Upload</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <!-- //upload other file - end -->
+      
+
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+
+    /* 170517 pressure drop 관련 수정 및 추가 */
+    function popupLink(popHeight,popWidth,htmlName,browserName){
+    var winHeight = document.body.clientHeight;	// 현재창의 높이
+    var winWidth = document.body.clientWidth;	// 현재창의 너비
+    var winX = window.screenX || window.screenLeft || 0;// 현재창의 x좌표
+    var winY = window.screenY || window.screenTop || 0;	// 현재창의 y좌표
+
+    var popX = winX + (winWidth - popWidth)/2;
+    var popY = winY + (winHeight - popHeight)/2;
+    window.open(htmlName, browserName,"width="+popWidth+"px,height="+popHeight+"px,top="+popY+",left="+popX+", status=no, directories=no, toolbar=no, titlebar=no, location=no, menubar=no, scrollbars=no, resizable=yes");
+    }
+
+    $(function () {
+
+      /* Add Feed tr 추가 삭제 */
+      $('.btn-add-data').on("click", function(){
+
+          var thTbl = $('.pd-add-feed').children('tbody'),
+              rowTag = thTbl.find('tr:last').html();
+
+          thTbl.append("<tr>"+ rowTag +"</tr>");
+          return false;
+      });
+
+      $('.pd-add-feed').on("click", ".btn-feed", function(){
+        $(this).parents('tr').css('display','none');
+      })
+    })
+    /* ~170517 pressure drop 관련 수정 및 추가 */
+    </script>
+  </body>
+</html>

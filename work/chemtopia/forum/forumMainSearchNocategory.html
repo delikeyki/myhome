@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>캠토피아</title>
+    <link href="../assets/css/theme.css" rel="stylesheet">
+    <link href="../assets/css/jquery-confirm.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <div class="modal fade" id="lnbInModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"><!-- 161013 수정 -->
+        <div class="modal-lnb">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <aside class="lnb">
+                <div class="lnb-notification">
+                  <p class="lnb-title">Notification</p>
+                  <ul class="lnb-menu">
+                    <li><a href="#" class="lnbbtn sub-disc" data-lnblink="lnb-sub-msg">Message<span class="count">17</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-foll" data-lnblink="lnb-sub-fourm">Chem Info / Forum<span class="count">2</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-sug" data-lnblink="lnb-sub-foll">Follow<span class="count"></span></a></li>
+                    <li><a href="#" class="lnbbtn sub-msg" data-lnblink="lnb-sub-other">Other<span class="count">99+</span></a></li>
+                  </ul>
+                </div>
+                <div class="lnb-sub-wrap">
+                  <div class="lnb-sub lnb-sub-msg lnb-slide-out">
+                      <p class="lnb-title">Message</p>
+                      <ul class="lnb-sub-list">
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- 161130 div,p 추가 -->
+                      <div class="btn-viewall-wrap">
+                        <!-- 스크롤이 생기면 btn-desc 노출 -->
+                        <p class="btn-desc">To see more of notifications, click "View all"</p>
+                        <a href="notificationsMessage.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                      </div>
+                      <!-- //161130 div,p 추가 -->
+                  </div>
+                  <!-- 161101 수정
+      
+                    // 1. 이름 추가, 내용변경
+                    // 이름, 내용 한줄(27자)이상일 경우 말줄임표시
+                    // lnb-bg-myfourm - fourm일 경우 클래스
+                    // lnb-bg-following  - following일 경우 클래스
+                    // lnb-bg-cheminf  - cheminfg일 경우 클래스
+                  -->
+      
+                  <div class="lnb-sub lnb-sub-fourm lnb-slide-out">
+                    <p class="lnb-title">Chem Info / Forum</p>
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-bg-myfourm">
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Cyrus Helf</strong>
+                            <span>Added 3 Opinions on your post.</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-following">
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>Tamas Mihalovits</strong><!-- 161025 span 추가 -->
+                            <span>Added a topic</span> <!-- 161212 text 수정 -->
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-following">
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>Tamas Mihalovits</strong><!-- 161025 span 추가 -->
+                            <span>Added a Chem Info.</span> <!-- 161212 text 수정 -->
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Minimizing the environmental...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Simulation...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="btn-viewall-wrap">
+                      <!-- 스크롤이 생기면 btn-desc 노출 -->
+                      <p class="btn-desc">To see more of notifications, click "View all"</p>
+                      <a href="notificationsCheminfoForum.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                    </div>
+                  </div>
+                  <!-- //161101 수정 -->
+                  <div class="lnb-sub lnb-sub-foll lnb-slide-out">
+                    <p class="lnb-title">Follow</p>
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-nodata">
+                        <span><i class="icon-bell"></i>No notifications to show</span>
+                      </li>
+                    </ul>
+                    <div class="btn-viewall-wrap">
+                      <!-- 스크롤이 생기면 btn-desc 노출 -->
+                      <p class="btn-desc">To see more of notifications, click "View all"</p>
+                      <a href="notificationsFollow.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                    </div>
+                  </div>
+                  <div class="lnb-sub lnb-sub-other lnb-slide-out">
+                    <p class="lnb-title">Other</p>
+                    <ul class="lnb-sub-list">
+                      <li>
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Joel King</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>sujin Seo</strong> is now following you<br /><!-- 161025 span 추가 -->
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>Terry Park</strong> is now following you<br /><!-- 161025 span 추가 -->
+                            <span class="lnb-time">Yesterday</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Kyunga Kim</strong> is now following you<br />
+                          Nice to meet you. look on the bright...<br />
+                          <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="btn-viewall-wrap">
+                      <!-- 스크롤이 생기면 btn-desc 노출 -->
+                      <p class="btn-desc">To see more of notifications, click "View all"</p>
+                      <a href="notificationsOther.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                    </div>
+                  </div>
+      
+                  <!--<div class="lnb-sub lnb-slide-out">
+                    <p class="lnb-title">Other</p>
+      
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-nodata">
+                        <span><i class="icon-bell"></i>No notifications to show</span>
+                      </li>
+                    </ul>
+                  </div> 알림없는 케이스 -->
+                </div>
+              </aside>
+            </div>
+            <button type="button" class="close" id="lnb-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+      <!-- new header start -->
+      <header class="main-header-fixed light">
+        <div class="header-wrap">
+        <h1 class="logo"><a href="/index.html">chemtopia</a></h1>
+        <div class="gm-wrap">
+          <div class="gm">
+            <a href="/footer/about.html" class="text-what text-upper">What's ChemTopia?</a>
+            <ul>
+              <li><a href="/index.html" class="gm-link text-upper">Home</a></li>
+              <!-- <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link" data-toggle="dropdown" href="#">Chemcast</a>
+      
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-m-gmmenu">
+                      <ul>
+                        <li><a href="#">Chemical Process Reports</a></li>
+                        <li><a href="#">Cast Leading</a></li>
+                        <li><a href="#">VOD</a></li>
+                        <li><a href="#">Job</a></li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                </div>
+              </li> -->
+              <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link text-upper" data-toggle="dropdown" href="#">Break Time</a>
+      
+                  <!--
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-gmmenu">
+                      <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Game</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  -->
+      
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="gnb-wrap">
+          <div class="gnb">
+            <ul>
+              <li><a href="#">Chem Info</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">Proleaders</a></li>
+              <li><a href="#">Modules</a></li>
+              <li><a href="#">ChemCast</a></li>
+            </ul>
+          </div>
+      
+          <div class="snb-wrap">
+            <!-- 로그인 전
+             <ul class="befor-snb">
+               <li><a href="membership/signUpFirst.html" class="btn-base btn-brand-orange btn-snb">Sign Up</a></li>
+              <li><a data-toggle="modal" href="#signInModal">Sign In</a></li>
+            </ul>
+            -->
+      
+            <!-- 로그인 후 -->
+            <!-- 161207 수정 -->
+            <ul class="after-snb">
+              <li>
+                <!-- 일반 사용자 일때  시작 -->
+                <div class="dropdown">
+                  <!-- 이름이 7자 이상일 경우 말줄임표시 -->
+                  <a class="dropdown-toggle dropdown-menu-title " data-toggle="dropdown" href="#">
+                    <span class="profile-picture-exsmall"><img src="../assets/images/sample-img/gnb_navi_testimg3.jpg" /></span>
+                    <!-- <span>Jaehee Kwon</span> --><span class="caret"></span> <!-- 161219 추가 -->
+                  </a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-snbmenu">
+                      <div class="user-menu">
+                        <!-- <span class="profile-picture-large"><img src="assets/images/sample-img/gnb_navi_testimg3.jpg" /></span> -->
+                        <!-- 이름이 35자 이상일 경우 말줄임표시 -->
+                        <p class="user-name"><a href="#">Jaehee Kwon Jaehee Kwon Jaehee Kwon</a></p>
+                      </div>
+                      <ul class="snb-dropmenu">
+                        <!-- <li><p class="user-mail"><a href="#" class="gnb-mail-link">dfdfafdferwrwrerererererererde68@yahoo.co.kr</a></p></li> -->
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 일반 사용자 일때  끝 -->
+                <!-- 전문가 사용자 일때  시작
+                <div class="dropdown">
+                  <a class="dropdown-toggle dropdown-menu-title " data-toggle="dropdown" href="#">
+                    <span class="profile-picture-exsmall"><img src="assets/images/sample-img/gnb_navi_testimg3.jpg" /></span>
+                    Jaehee Kwon<span class="caret"></span>
+                  </a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-snbmenu">
+                      <div class="user-menu">
+                        <span class="profile-picture-large"><img src="assets/images/sample-img/gnb_navi_testimg3.jpg" /></span>
+                        <p class="user-name">Jaehee Kwon</p>
+                      </div>
+                      <ul class="snb-dropmenu">
+                        <li><p class="user-mail"><a href="#" class="gnb-mail-link">dfdfafdferwrwrerererererererde68@yahoo.co.kr</a></p></li>
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">My Proleaders</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                // 전문가 사용자 일때  끝 -->
+            </li>
+            <li><a data-toggle="modal" href="#lnbInModal"><i class="fa fa-bell-o"></i><span class="badge-cust">99</span></a></li>
+            <!-- 알람 뱃시 숫자가 3자리 일때 시작 -->
+            <!-- <li><a data-toggle="modal" href="#lnbInModal"><i class="fa fa-bell-o"></i><span class="badge-cust-3">959</span></a></li> -->
+            <!-- 알람 뱃시 숫자가 3자리 일때 끝 -->
+          </ul>
+          <!-- //161207 수정 -->
+          </div>
+        </div>
+      </div>
+      </header>
+      <!-- // end new header -->
+      
+      <section class="main-section main-section-default">
+        <article class="main-article">
+          <!-- forum search - start -->
+          <div class="forum-search-box search-result-all"><!-- discussion-main-search  -->
+            <div class="inner-main-search">
+              <div class="area-main-search">
+                <div class="discussion-search-form">
+                  <form>
+                    <input class="dis-search-input graystyle" type="search" placeholder="Discover topic" value="ben"/>
+                    <button class="dis-search-submit" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- forum search - end -->
+          <div class="discussion-main-content forumsearch-page">
+            <!-- right side - start -->
+            <aside class="dsc-rnb">
+              <p class="side-title-text">Type of topic opinion best</p>
+              <ul class="side-opinion-list">
+                <li>
+                  <div class="side-profile-picture">
+                    <!-- floating UI - start -->
+                    <div class="floatingUI-container">
+                      <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                      <a href="#" class="floatingUI-user-info profile-picture-medium">
+                        <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-s-img.png">
+                      </a>
+                      <div class="user-profile-contents arrow-menu-top">
+                        <div class="profile-info-box">
+                          <span class="profile-picture-large">
+                            <!-- user profile picture add (size : 48 x 48) :: img code -->
+                            <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png"/>
+                          </span>
+                          <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                          <p class="user-group">Hashemite University</p>
+                        </div>
+                        <div class="profile-detail-btn">
+                          <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                          <div class="follow-send-btn">
+                            <!-- <button class="btn-brand-blue">follow</button> -->
+                            <span class="toggle-btn btn-following toggle-btn-following">
+                              <input type="checkbox" checked/>
+                              <label data-off="Follow" data-on="Following"></label>
+                            </span>
+                            <button class="btn-base btn-brand-blue">Send Message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- floating UI -end -->
+                  </div>
+                  <a href="#">
+                    <div class="interest-user-info">
+                      <span class="interest-category-showbox">Questions</span>
+                      <p>How do I determine the molecular shape of a molecule?</p><!--  maximum line 3 -->
+                      <span class="inter-user-name">Kyunga Kim</span>
+                      <span class="opinion-bubble"><i class="icon-speech-bubble" aria-hidden="true"></i>22 Opinion</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="side-profile-picture">
+                    <!-- floating UI - start -->
+                    <div class="floatingUI-container">
+                      <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                      <a href="#" class="floatingUI-user-info profile-picture-medium">
+                        <img alt="Sebastian Stan" src="../assets/images/gnb_navi_testimg3.jpg">
+                      </a>
+                      <div class="user-profile-contents arrow-menu-top">
+                        <div class="profile-info-box">
+                          <span class="profile-picture-large">
+                            <!-- user profile picture add (size : 48 x 48) :: img code -->
+                            <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png"/>
+                          </span>
+                          <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                          <p class="user-group">Hashemite University</p>
+                        </div>
+                        <div class="profile-detail-btn">
+                          <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                          <div class="follow-send-btn">
+                            <!-- <button class="btn-brand-blue">follow</button> -->
+                            <span class="toggle-btn btn-following toggle-btn-following">
+                              <input type="checkbox" checked/>
+                              <label data-off="Follow" data-on="Following"></label>
+                            </span>
+                            <button class="btn-base btn-brand-blue">Send Message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- floating UI -end -->
+                  </div>
+                  <a href="#">
+                    <div class="interest-user-info">
+                      <span class="interest-category-showbox">Publicize</span>
+                      <p>What's the balanced equation for magnesium and hydrochloric acid?</p><!--  maximum line 3 -->
+                      <span class="inter-user-name">July Endint</span>
+                      <span class="opinion-bubble"><i class="icon-speech-bubble" aria-hidden="true"></i>18 Opinion</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="side-profile-picture">
+                    <!-- floating UI - start -->
+                    <div class="floatingUI-container">
+                      <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                      <a href="#" class="floatingUI-user-info profile-picture-medium">
+                        <img alt="Sebastian Stan" src="../assets/images/gnb_navi_testimg2.jpg">
+                      </a>
+                      <div class="user-profile-contents arrow-menu-top">
+                        <div class="profile-info-box">
+                          <span class="profile-picture-large">
+                            <!-- user profile picture add (size : 48 x 48) :: img code -->
+                            <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png"/>
+                          </span>
+                          <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                          <p class="user-group">Hashemite University</p>
+                        </div>
+                        <div class="profile-detail-btn">
+                          <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                          <div class="follow-send-btn">
+                            <!-- <button class="btn-brand-blue">follow</button> -->
+                            <span class="toggle-btn btn-following toggle-btn-following">
+                              <input type="checkbox" checked/>
+                              <label data-off="Follow" data-on="Following"></label>
+                            </span>
+                            <button class="btn-base btn-brand-blue">Send Message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- floating UI -end -->
+                  </div>
+                  <a href="#">
+                    <div class="interest-user-info">
+                      <span class="interest-category-showbox">Proposal</span>
+                      <p>Light from the sun reaches Earth in 8.3 min. The velocity of light is 3.00 108 m/s. Given gg this...</p><!--  maximum line 3 -->
+                      <span class="inter-user-name">Justin Timberlake</span>
+                      <span class="opinion-bubble"><i class="icon-speech-bubble" aria-hidden="true"></i>42 Opinion</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <div class="side-profile-picture">
+                    <!-- floating UI - start -->
+                    <div class="floatingUI-container">
+                      <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                      <a href="#" class="floatingUI-user-info profile-picture-medium">
+                        <img alt="Sebastian Stan" src="../assets/images/gnb_navi_testimg.jpg">
+                      </a>
+                      <div class="user-profile-contents arrow-menu-top">
+                        <div class="profile-info-box">
+                          <span class="profile-picture-large">
+                            <!-- user profile picture add (size : 48 x 48) :: img code -->
+                            <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png"/>
+                          </span>
+                          <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                          <p class="user-group">Hashemite University</p>
+                        </div>
+                        <div class="profile-detail-btn">
+                          <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                          <div class="follow-send-btn">
+                            <!-- <button class="btn-brand-blue">follow</button> -->
+                            <span class="toggle-btn btn-following toggle-btn-following">
+                              <input type="checkbox" checked/>
+                              <label data-off="Follow" data-on="Following"></label>
+                            </span>
+                            <button class="btn-base btn-brand-blue">Send Message</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- floating UI -end -->
+                  </div>
+                  <a href="#">
+                    <div class="interest-user-info">
+                      <span class="interest-category-showbox">Share</span>
+                      <p>Two intersecting lines will form how many pairs of congruent angles?</p><!--  maximum line 3 -->
+                      <span class="inter-user-name">Thomas William Hiddleston</span>
+                      <span class="opinion-bubble"><i class="icon-speech-bubble" aria-hidden="true"></i>37 Opinion</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            <!--End profile lnb -->
+            </aside>
+            <!-- right side - end -->
+            <div class="dsc-contents">
+              <!-- search result keyword text box - start -->
+              <div class="forum-search-result-text">
+                <p>246 results found for <em>“ben”</em></p>
+              </div>
+              <!-- search result keyword text box - end -->
+
+              <!-- All Topic selectbox - start -->
+              <div class="discussion-header">
+                <div class="dropdown dsc-header-ddmenu">
+                  <a class="dropdown-toggle dropdown-menu-largetitle" data-toggle="dropdown" href="#">All Topic<span class="caret"></span></a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-large">
+                    <div class="chem-arrow-menu dsc-dropmenu-Large">
+                      <ul>
+                        <li><a href="#" class="active">All Topic</a></li>
+                        <li><a href="#">Questions</a></li>
+                        <li><a href="#">Publicize</a></li>
+                        <li><a href="#">Proposal</a></li>
+                        <li><a href="#">Share</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="dsc-header-rmenu">
+                  <div class="check-box-content">
+                    <input type="radio" class="css-checkbox" id="radio1" name="seletor" checked="checked" />
+                    <label for="radio1"  class="css-checkbox-label label-right-margin">Newest</label>
+                    <input type="radio" class="css-checkbox" id="radio2" name="seletor" />
+                    <label for="radio2"  class="css-checkbox-label">Popular</label>
+                  </div>
+               </div>
+              </div>
+              <!-- All Topic selectbox - end -->
+              <!-- start content -->
+              <div class="discussion-list-content">
+                <div class="forum-search-no-contents">
+                  <img alt="Sebastian Stan" src="../assets/images/common/search-noresult.png" />
+                  <p>
+                    There is no applicable information.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- footer -->
+      <footer>
+        <div class="footerInner">
+          <p class="footer-logo"><a href="index.html">CHEMTOPIA</a></p>
+          <div class="footer-menu-wrap">
+            <ul class="footer-menu">
+              <!-- <li><a href="about.html">About Chemtopia</a></li> -->
+              <li><a href="/footer/termsOfService.html">Terms of Service</a></li>
+              <li><a href="/footer/privacy.html">Privacy Policy</a></li>
+              <li><a href="/footer/membership.html">Membership</a></li>
+              <!--  <li><a href="#">Help</a></li>  161017, 161020 삭제 -->
+              <li><a href="/footer/contactus.html">Contact Us</a></li>
+            </ul>
+            <p class="copyright-area">© 2017 ChemEssen, Inc. All rights reserved.</p>
+            <!-- 170308 링크 추가 -->
+            <ul class="link-language">
+              <li><a href="#" class="active">English</a></li><!-- 해당 사이트일 때, active 클래스 추가 -->
+              <li><a href="#">中文</a></li>
+            </ul>
+            <!-- //170308 링크 추가 -->
+          </div>
+        </div>
+        <!-- back to top button : 최초에는 안보이다가 스크롤을 내리는 순간에 보여지게 -->
+        <a href="#" class="top-link-block"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+      </footer>
+      <!-- //footer -->
+      
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+  </body>
+</html>

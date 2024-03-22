@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+
+      <section class="main-section">
+        <article class="main-article">
+          <div class="search-box-lg search-box-proleaders">
+            <div class="inner-search-box">
+              <p class="search-desc background-desc">
+                <span class="search-desc-title">wanna become a Proleader?</span>
+                <span class="search-desc-text">How would you like to be registered?</span>
+              </p>
+              <div  class="tabpanel tab-set1">
+                <ul class="nav">
+                  <li class="active"><a href="#apply" data-toggle="tab">Apply</a></li>
+                  <li><a href="#recommend" data-toggle="tab">Recommend</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- //end chemcast-search -->
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="apply">
+              <!-- paid 추가 -->
+              <div class="radiogroup">
+                <input checked="checked" id="free-charge" class="css-radio" name="radio-paid" type="radio" value="11" />
+                <label for="free-charge" class="css-radio-label">Free of charge</label>
+                <input id="paid-payment" class="css-radio" name="radio-paid" type="radio" value="22" />
+                <label for="paid-payment" class="css-radio-label">Paid for payment</label>
+
+                <div class="radiopanel">
+                </div>
+
+                <div class="radiopanel box-payment input-add-box">
+                  <h2>Sale Price</h2>
+                  <input type="text" id="sale-point" class="input-base input-payment" placeholder="50 ~ 100,000">
+                  <label for="sale-point" class="txt-label-point">Point</label>
+                  <div class="txt-final-selling">
+                    <strong>Final selling point price <em>650 point</em></strong> (The point you entered + the ChemEssent fee 30%)
+                  </div>
+                  <p class="txt-sale-price">
+                    The selling point is deducted when other customers view the information you upload Point, and the selling price is determined by attaching a commission to the points you have created. In addition, if another customer buys your information, you will receive the points We will return it to your account.
+                  </p>
+                </div>
+
+              </div>
+              <!-- //paid 추가 -->
+              <div class="radiogroup">
+                <input checked="checked" id="complete-write" class="css-radio" name="radio" type="radio" value="1" />
+                <label for="complete-write" class="css-radio-label">Write</label>
+                <input id="complete-upload" class="css-radio" name="radio" type="radio" value="2" />
+                <label for="complete-upload" class="css-radio-label">Upload</label>
+                <input id="complete-link" class="css-radio" name="radio" type="radio" value="3" />
+                <label for="complete-link" class="css-radio-label">Link</label>
+
+                <div class="radiopanel complete-write">
+                  <!-- 전문가 신청 입력 -->
+                  <div class="myp-contents myp-contents-full">
+                    <form>
+                      <!-- 161006 .user-profile 수정 -->
+                      <div class="sub-box user-profile">
+                        <!-- ↓ editable-field class 에 active-f 추가 -->
+                        <!-- 이름이 63자 이상일 경우는 말줄임표시 -->
+                        <h1 class="editable-field"><span>Bradley Charles Cooper</span>
+                          <span class="overlay-icon overlay-edit"></span>
+                          <!-- ↓ myp-form-edit class 에 myp-form-edit-view 추가 -->
+                          <div class="myp-form-edit">
+                            <label class="sr-only" for="InputFirstName">input Your Name</label>
+                            <input type="text" class="input-base chem-form-control myp-edit-input" id="InputFirstName" placeholder="First Name">
+                          </div>
+                        </h1>
+                        <div class="my-location">
+                          <!-- ↓ editable-field class 에 active-f 추가 -->
+                          <span class="my-country input-select editable-field input-box"><span>Country</span>
+                            <span class="overlay-icon overlay-edit "></span>
+                            <div class="select-box">
+                              <input type="text" class="input-base datepicker-input" placeholder="Choose date"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                              <ul class="aList">
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                                <li><a href="#3">Bologna </a></li>
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                                <li><a href="#3">Bologna </a></li>
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                                <li><a href="#3">Bologna </a></li>
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                                <li><a href="#3">Bologna </a></li>
+                              </ul>
+                            </div>
+                          </span><span>,</span>
+                          <span class="my-city editable-field"><span>City</span>
+                            <span class="overlay-icon overlay-edit"></span>
+                            <div class="myp-form-edit ">
+                                <label class="sr-only">Add Research area</label>
+                                <input type="text" class="input-base chem-form-control myp-edit-input" isplaceholderinited="true">
+                            </div>
+                          </span>
+                        </div>
+                        <dl class="my-introduce">
+                          <dt>Research area</dt>
+                          <dd>
+                            <!-- 161028 수정 -->
+                            <!-- ↓ editable-field class 에 active-f 추가 -->
+                            <span class="my-country input-select editable-field input-box"><span>Choose area</span>
+                              <span class="overlay-icon overlay-edit "></span>
+                              <div class="select-box">
+                                <input type="text" class="input-base  datepicker-input" placeholder="Choose area"><i class="fa fa-caret-down" aria-hidden="true" title="Choose area"></i>
+                                <ul class="aList">
+                                  <li><a href="#">Petro-Chem</a></li>
+                                  <li><a href="#">Energy-chem</a></li>
+                                  <li><a href="#">Nuclear Chem</a></li>
+                                  <li><a href="#">Environment</a></li>
+                                  <li><a href="#">Waste-chem</a></li>
+                                  <li><a href="#">Materials-chem</a></li>
+                                  <li><a href="#">Astro-chem</a></li>
+                                  <li><a href="#">Mechanic chem</a></li>
+                                  <li><a href="#">Agro-chem</a></li>
+                                  <li><a href="#">Medical chem</a></li>
+                                  <li><a href="#">Food-chem</a></li>
+                                  <li><a href="#">Manufacturing process-chem</a></li>
+                                  <li><a href="#">Other</a></li>
+                                </ul>
+                              </div>
+                            </span><span>,</span>
+                            <span class="my-research editable-field"><span>Detail description about Research area</span>
+                              <span class="overlay-icon overlay-edit"></span>
+                              <div class="myp-form-edit">
+                                  <label class="sr-only">Add Research area</label>
+                                  <input type="text" class="input-base chem-form-control myp-edit-input" isplaceholderinited="true">
+                              </div>
+                            </span>
+                            <!-- //161028 수정 -->
+                          </dd>
+                          <dt>Company Name</dt> <!-- 161212 text 수정 -->
+                          <dd>
+                            <div class="editable-field"><span>+ Add Company Name/Institute Name</span> <!-- 161212 text 수정 -->
+                            <span class="overlay-icon overlay-edit"></span>
+                            <div class="myp-form-edit">
+                                <label class="sr-only" for="">Add Company Name/Institute Name</label> <!-- 161212 text 수정 -->
+                                <input type="text" class="input-base chem-form-control myp-edit-input" id="" size="30" isplaceholderinited="true">
+                            </div>
+                            </div>
+                          </dd>
+                          <!-- 161028 삭제
+                          <dt>Position</dt>
+                          <dd>
+                            <div class="editable-field"><a href="#">+ Add Position</a>
+                              <span class="overlay-icon overlay-edit"></span>
+                              <div class="myp-form-edit">
+                                  <label class="sr-only" for="">+ Add Position</label>
+                                  <input type="text" class="input-base chem-form-control myp-edit-input" size="30" isplaceholderinited="true">
+                              </div>
+                            </div>
+                          </dd>
+                        -->
+                          <dt>Url</dt>
+                          <dd>
+                            <div class="editable-field"><a href="#">+ Add Url</a>
+                              <span class="overlay-icon overlay-edit"></span>
+                              <div class="myp-form-edit">
+                                  <label class="sr-only" for="">Add Url</label>
+                                  <input type="text" class="input-base chem-form-control myp-edit-input" size="30" isplaceholderinited="true">
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="sub-box res-career">
+                        <h2>Education</h2>
+                        <!-- write place -->
+                        <div class="res-career-write">
+                          <div class="gray-box res-career-box">
+                            <button class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                            <dl class="write-list">
+                              <dt>School name</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Subject</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Time period</dt>
+                              <!-- 161007 dd 클래스 삭제 Time period input 아이콘 삭제 -->
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <!-- 161028 달력에 in progress 체크시 input에 disabled 추가 -->
+                                  <div class="input-daterange">
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                    ~
+                                    <input type="text" class="input-base datepicker-input disabled" placeholder="Year / Month / Day" name="end"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                  </div>
+                                  <!-- //161028 달력에 in progress 체크시 input에 disabled 추가 -->
+                                </div>
+                                <div class="check-box-content time-check-lineup">
+                                  <input type="checkbox" class="css-checkbox" id="checkbox1" checked="checked">
+                                  <label for="checkbox1" class="css-checkbox-label">In progress</label>
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                        </div>
+                      </div><!-- /Education -->
+
+                      <div class="sub-box res-career">
+                        <h2>Research Career</h2>
+                        <!-- write place -->
+                        <div class="res-career-write">
+                          <div class="gray-box res-career-box">
+                            <button class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                            <dl class="write-list">
+                              <dt>Time period</dt>
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <div class="input-daterange">
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                    ~
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="end"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                  </div>
+                                </div>
+                                <div class="check-box-content time-check-lineup">
+                                  <input type="checkbox" class="css-checkbox" id="checkbox2">
+                                  <label for="checkbox2" class="css-checkbox-label">In progress</label>
+                                </div>
+                              </dd>
+                              <dt>Position</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                              <dt>Location</dt>
+                              <dd class="res-location">
+                                <div class="input-box">
+                                  <div class="input-select">
+                                    <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="test...." />dfd<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    <div class="input-select-search">
+                                      <p class="input-base datepicker-input input-search">Choose Country<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p> <!-- 161028  type 삭제 -->
+                                      <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    </div>
+                                    <div class="select-box">
+                                      <input type="text" class="input-base datepicker-input" placeholder="Choose Country"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                                      <ul class="aList">
+                                        <li><a href="#1">Apenrade</a></li>
+                                        <li><a href="#2">Frauenbach</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <input type="text" class="input-base datepicker-input" placeholder="City">
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                        </div>
+                      </div><!-- /Research Career -->
+
+                      <div class="sub-box">
+                        <h2>Funded Project</h2>
+                        <!-- write place -->
+                        <div class="res-career-write">
+                          <div class="gray-box res-career-box">
+                            <button class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                            <dl class="write-list">
+                              <dt>Time period</dt>
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <div class="input-daterange">
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                    ~
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="end"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                  </div>
+                                </div>
+                                <div class="check-box-content time-check-lineup">
+                                  <input type="checkbox" class="css-checkbox" id="checkbox2">
+                                  <label for="checkbox2" class="css-checkbox-label">In progress</label>
+                                </div>
+                              </dd>
+                              <dt>Research institute</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Project Title</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                              <dt>Ordering Organization</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Joint Researches</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>URL</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" placeholder="https://">
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                        </div>
+                      </div><!-- /Funded Project -->
+
+                      <div class="sub-box">
+                      	<h2>Honors &amp; Awards</h2>
+                      	<!-- write place -->
+                      	<div class="res-career-write">
+                      		<div class="gray-box res-career-box">
+                            <button class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                      			<dl class="write-list">
+                      				<dt>Type of study</dt>
+                              <dd class="res-location">
+                                <div class="input-box">
+                                  <div class="input-select">
+                                    <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="test...." />dfd<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    <div class="input-select-search">
+                                      <p class="input-base datepicker-input input-search">Select<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p><!-- 161028 type 삭제 -->
+                                      <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    </div>
+                                    <div class="select-box">
+                                      <input type="text" class="input-base datepicker-input" placeholder="Select"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                                      <ul class="aList">
+                                        <li><a href="#1">Type 1</a></li>
+                                        <li><a href="#2">Type 2</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </dd>
+                              <dt>Title</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                      			</dl>
+                      		</div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                      	</div>
+                      </div><!-- /Honors -->
+
+                      <div class="sub-box">
+                      	<h2>Writing Career</h2>
+                      	<!-- write place -->
+                      	<div class="res-career-write">
+                      		<div class="gray-box res-career-box">
+                            <button class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                      			<dl class="write-list">
+                      				<dt>Type of study</dt>
+                              <dd class="res-location">
+                                <div class="input-box">
+                                  <div class="input-select">
+                                    <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="test...." />dfd<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    <div class="input-select-search">
+                                      <p class="input-base datepicker-input input-search">Select<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p><!-- 161028 type 삭제 -->
+                                      <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    </div>
+                                    <div class="select-box">
+                                      <input type="text" class="input-base datepicker-input" placeholder="Select"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                                      <ul class="aList">
+                                        <li><a href="#1">Type 1</a></li>
+                                        <li><a href="#2">Type 2</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </dd>
+                              <dt>Published date</dt>
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                </div>
+                              </dd>
+                              <dt>Title</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                              <dt>Co-Author</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>URL</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" placeholder="http://">
+                              </dd>
+                      			</dl>
+                      		</div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                      	</div>
+                      </div><!-- /Writing Career -->
+
+                      <div class="sub-box">
+                      	<h2>Certificate</h2>
+                      	<!-- write place -->
+                      	<div class="res-career-write">
+                      		<div class="gray-box res-career-box">
+                            <button class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                      			<dl class="write-list">
+                              <dt>Issued date</dt>
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                </div>
+                              </dd>
+                              <dt>Certificate Type</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                              <dt>Certificate Issuer</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                      			</dl>
+                      		</div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                      	</div>
+                      </div><!-- /Certificate -->
+
+                      <div class="sub-box tech-res">
+                        <h2>Advisory Area</h2>
+                        <div class="input-category enter-input">
+                          <div class="input-select">
+                            <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="test...." />dfd<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                            <!-- <div class="input-select-search">
+                              <a class="link-select" data-toggle="modal" href="#AdvisoryareaModal">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></a>
+                            </div> -->
+                            <!-- select box -->
+                            <div class="input-select-search">
+                              <p class="input-base input-search">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p>
+                              <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                            </div>
+                            <div class="select-box">
+                              <!-- <p class="input-base input-search">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p> -->
+                              <input type="text" class="input-base" placeholder="Choose area"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                              <ul class="aList">
+                                <li><a href="#">Petro-Chem</a></li>
+                                <li><a href="#">Energy-chem</a></li>
+                                <li><a href="#">Nuclear Chem</a></li>
+                                <li><a href="#">Environment</a></li>
+                                <li><a href="#">Waste-chem</a></li>
+                                <li><a href="#">Materials-chem</a></li>
+                                <li><a href="#">Astro-chem</a></li>
+                                <li><a href="#">Mechanic chem</a></li>
+                                <li><a href="#">Agro-chem</a></li>
+                                <li><a href="#">Medical chem</a></li>
+                                <li><a href="#">Food-chem</a></li>
+                                <li><a href="#">Manufacturing process-chem</a></li>
+                                <li><a href="#">Other</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="input-text-search">
+                            <input type="text" class="input-base" placeholder="Detailed Description about Advisory Area"><!-- 161212 placeholder 수정 -->
+                            <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Add</button>
+                            <!-- 161005 삭제
+                            <div class="brand-list-group display-opacity">
+                              <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                              <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                              <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                              <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                              <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 전문가 신청 수정 시 -->
+                      <div class="sub-box tech-res">
+                        <h2>Advisory Area</h2>
+                        <div class="input-category enter-input">
+                          <div class="input-select">
+                            <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="test...." />dfd<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                            <!-- <div class="input-select-search">
+                              <a class="link-select" data-toggle="modal" href="#AdvisoryareaModal">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></a>
+                            </div> -->
+                            <!-- select box -->
+                            <div class="input-select-search">
+                              <p class="input-base input-search">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p>
+                              <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                            </div>
+                            <div class="select-box">
+                              <!-- <p class="input-base input-search">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p> -->
+                              <input type="text" class="input-base" placeholder="Choose area"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                              <ul class="aList">
+                                <li><a href="#">Petro-Chem</a></li>
+                                <li><a href="#">Energy-chem</a></li>
+                                <li><a href="#">Nuclear Chem</a></li>
+                                <li><a href="#">Environment</a></li>
+                                <li><a href="#">Waste-chem</a></li>
+                                <li><a href="#">Materials-chem</a></li>
+                                <li><a href="#">Astro-chem</a></li>
+                                <li><a href="#">Mechanic chem</a></li>
+                                <li><a href="#">Agro-chem</a></li>
+                                <li><a href="#">Medical chem</a></li>
+                                <li><a href="#">Food-chem</a></li>
+                                <li><a href="#">Manufacturing process-chem</a></li>
+                                <li><a href="#">Other</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="input-text-search">
+                            <input type="text" class="input-base" placeholder="Detailed Description about Advisory Area"><!-- 161212 placeholder 수정 -->
+                            <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Add</button>
+                            <!-- 161005 삭제
+                            <div class="brand-list-group display-opacity">
+                              <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                              <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                              <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                              <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                              <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                            </div> -->
+                          </div>
+                        </div>
+
+                        <ul class="tech-res-list">
+                          <li>
+                            <span class="tech-like-num">Environment</span>
+                            Formulas and manufacturing recipes
+                            <span class="icon-cross close-tech-res" title="close"></span>
+                          </li>
+                          <li>
+                            <span class="tech-like-num">Manufacturing process-chem</span>
+                              Formulas and manufacturing recipes
+                            <span class="icon-cross close-tech-res" title="close"></span>
+                          </li>
+                          <li>
+                            <span class="tech-like-num">Nuclear Chem</span>
+                            Formulas and manufacturing recipes
+                            <span class="icon-cross close-tech-res" title="close"></span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="sub-box tech-res">
+                        <h2>Language</h2>
+                        <div class="enter-input">
+                          <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Add</button>
+                          <input type="text" class="input-base" placeholder="What language do you speak?">
+                          <!-- 161004 삭제
+                          <div class="brand-list-group display-opacity">
+                            <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                            <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                            <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                            <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                            <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                          </div> -->
+                        </div>
+                      </div>
+
+                      <!-- 전문가 신청 수정 시 -->
+                      <div class="sub-box tech-res">
+                        <h2>Language</h2>
+                        <div class="enter-input">
+                          <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Add</button>
+                          <input type="text" class="input-base" placeholder="What language do you speak?">
+                          <!-- 161004 삭제
+                          <div class="brand-list-group display-opacity">
+                            <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                            <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                            <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                            <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                            <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                          </div> -->
+                        </div>
+
+                        <ul class="tech-res-list">
+                          <li>
+                            Korean
+                            <span class="icon-cross close-tech-res" title="close"></span>
+                          </li>
+                          <li>
+                            Spanish
+                            <span class="icon-cross close-tech-res" title="close"></span>
+                          </li>
+                          <li>
+                            English
+                            <span class="icon-cross close-tech-res" title="close"></span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- 2017-03-29 키워드 추가 -->
+                      <div class="sub-box tech-keyword">
+                        <h2>Research Keyword </h2>
+                        <p class="sub-title">Main keyword</p>
+                        <div class="enter-input">
+                          <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Enter</button>
+                          <input type="text" class="input-base" placeholder="Please choose main keywords up to 5. ">
+                        </div>
+                        <ul class="tech-res-list keyword-list">
+                          <li>
+                            Green Chemistry
+                            <span class="icon-cross close-tech-res" title="close"></span>
+                          </li>
+                        </ul>
+                        <p class="sub-title additional">Additional keyword</p>
+                        <div class="enter-input">
+                          <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Enter</button>
+                          <input type="text" class="input-base" placeholder="Please choose main keywords up to 5. ">
+                        </div>
+                        <ul class="tech-res-list keyword-list">
+                          <li>
+                            Green Chemistry
+                            <span class="icon-cross close-tech-res" title="close"></span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- //2017-03-29 키워드 추가 -->
+
+                      <p class="write-notice bg-w">
+                        <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                        The process of becoming an expert of approval may take a minimum of 5 working days and we will send you the notification when all the process is over.<br />
+                        If you have any questions regarding our policy simply click on <a href="">Contact Us</a>.</p><!-- 161028  customer center를 Contact Us로 수정 -->
+
+                      <div class="btn-send-box">
+                        <button type="button" class="btn-base btn-brand-gray btn-preview">Preview</button>
+                        <button type="button" class="btn-base btn-brand-gray-b btn-savedraft">Save as Draft</button>
+                        <button type="reset" class="btn-base btn-brand-gray-b btn-delete">Cancel</button> <!-- 161013 -->
+                        <button type="submit"class="btn-base btn-brand-blue btn-send">Submit Application</button>
+                      </div>
+                    </div><!-- /.myp-contents 입력 -->
+
+                    <!-- 전문가 신청 미리보기 -->
+                    <div class="myp-contents myp-contents-full">
+                      <div class="sub-box user-profile-preview">
+                        <!-- 이름이 63자 이상일 경우는 말줄임표시 -->
+                        <h1>Bradley</h1>
+                        <h1>Charles Cooper</h1>
+                        <div class="my-location">
+                          <span class="my-country">Seoul,</span>
+                          <span class="my-city">Republic of Korea</span>
+                        </div>
+                        <dl class="my-introduce">
+                          <dt>Research area</dt>
+                          <dd>
+                            <div>+ Add Research area</div>
+                          </dd>
+                          <dt>Company Name</dt> <!-- 161212 text 수정 -->
+                          <dd>
+                            <div>+ Add Company Name/Institute Name</div> <!-- 161212 text 수정 -->
+                          </dd>
+                          <dt>Position</dt>
+                          <dd><a href="">+ Add Position</a>
+                          </dd>
+                          <dt>Url</dt>
+                          <dd><a href="#">+ Add Url</a></dd>
+                        </dl>
+                      </div>
+
+                      <div class="sub-box res-career">
+                        <h2>Education</h2>
+                        <div class="res-career-view res-career-view-show">
+                          <div class="gray-box res-career-box">
+                            <p class="res-box-years">
+                              <span class="res-years">2015 May</span> <!-- 161013  -->
+                            </p>
+                            <dl>
+                              <dt>School name</dt>
+                              <dd>Prestigious Award for distinguished researcher 2015, Scientific </dd>
+                              <dt>Subject</dt>
+                              <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration.</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="sub-box res-career">
+                        <h2>Research Career</h2>
+                        <div class="res-career-view res-career-view-show">
+                          <div class="gray-box res-career-box">
+                            <p class="res-box-years">
+                              <span class="res-years">2015 May</span> ~<br />  <!-- 161013  -->
+                              <span class="res-years">In progress</span>
+                            </p>
+                            <dl>
+                              <dt>Position</dt>
+                              <dd>Head of Departmenty</dd>
+                              <dt>Description</dt>
+                              <dd>In small, focused research groups, students and faculty within WPI’s Chemical Engineering Department go beyond the classroom to solve real-world problems, continuing to make discoveries in areas like environmental protection.</dd>
+                              <dt>Location</dt>
+                              <dd>Jordan, Zarqa</dd>
+                            </dl>
+                          </div>
+                          <div class="res-career-view res-career-view-show">
+                            <div class="gray-box res-career-box">
+                              <!-- 161013  -->
+                              <p class="res-box-years">
+                                <span class="res-years">2012 May</span> ~<br />
+                                <span class="res-years">2016 Aug</span><br />
+                                <span class="res-years-total">(10 Month)</span>
+                              </p>
+                              <dl>
+                                <dt>Position</dt>
+                                <dd>Head of Departmenty</dd>
+                                <dt>Description</dt>
+                                <dd>A chemical engineering degree develops technical and transferable skills that ... Check out the careers section of company websites for more information.</strong</dd>
+                                <dt>Location</dt>
+                                <dd>Seoul, Korea</dd>
+                              </dl>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="sub-box res-career">
+                        <h2>Funded Project</h2>
+                        <div class="res-career-view res-career-view-show">
+                          <div class="gray-box res-career-box">
+                            <p class="res-box-years">
+                              <span class="res-years">2015 Aug</span> ~<br /> <!-- 161013  -->
+                              <span class="res-years">In progress</span>
+                            </p>
+                            <dl>
+                              <dt>Research institutions</dt>
+                              <dd>Seoul National University</dd>
+                              <dt>Title</dt>
+                              <dd>chemical engineering research</dd>
+                              <dt>Description</dt>
+                              <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                              <dt>Ordering organization</dt>
+                              <dd>Seoul National University</dd>
+                              <dt>Joint researches</dt>
+                              <dd>Seoul National University, Brad Pitt</dd>
+                              <dt>URL</dt>
+                              <dd><a href="http://www.jordantimes.com/us-university-scholarships-hashemite-university-students">http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</a></dd>
+                            </dl>
+                          </div>
+                          <div class="gray-box res-career-box">
+                            <p class="res-box-years">
+                              <span class="res-years">2015 Aug</span> ~<br /><!-- 161013  -->
+                              <span class="res-years">In progress</span>
+                            </p>
+                            <dl>
+                              <dt>Research institutions</dt>
+                              <dd>Seoul National University</dd>
+                              <dt>Title</dt>
+                              <dd>chemical engineering research</dd>
+                              <dt>Description</dt>
+                              <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                              <dt>Ordering organization</dt>
+                              <dd>Seoul National University</dd>
+                              <dt>Joint researches</dt>
+                              <dd>Seoul National University, Brad Pitt</dd>
+                              <dt>URL</dt>
+                              <dd><a href="http://www.jordantimes.com/us-university-scholarships-hashemite-university-students">http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</a></dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="sub-box res-career">
+                        <h2>Honors &amp; Awards</h2>
+                        <div class="res-career-view res-career-view-show">
+                          <div class="gray-box res-career-box">
+                            <p class="res-box-years">
+                              <span class="res-years">2015 May</span><!-- 161013  -->
+                            </p>
+                            <dl>
+                              <dt>Title</dt>
+                              <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                              <dt>Description</dt>
+                              <dd>In small, focused research groups, students and faculty within WPI’s Chemical Engineering Department go beyond the classroom to solve real-world problems, continuing to make discoveries in areas like environmental protection.</dd>
+                            </dl>
+                          </div>
+                          <div class="res-career-view res-career-view-show">
+                            <div class="gray-box res-career-box">
+                              <p class="res-box-years">
+                                <span class="res-years">2015 May</span><!-- 161013  -->
+                              </p>
+                              <dl>
+                                <dt>Contents</dt>
+                                <dd>Head of Departmenty</dd>
+                                <dt>Description</dt>
+                                <dd>A chemical engineering degree develops technical and transferable skills that ... Check out the careers section of company websites for more information.</dd>
+                              </dl>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="sub-box res-career">
+                        <h2>Writing Career</h2>
+                        <div class="res-career-view res-career-view-show">
+                          <div class="gray-box res-career-box">
+                            <p class="res-box-years">
+                              <span class="res-years">2015 May</span><!-- 161013  -->
+                            </p>
+                            <dl>
+                              <dt>Type of study</dt>
+                              <dd>Chemical engineering</dd>
+                              <dt>Title</dt>
+                              <dd>Effective Chemical engineering</dd>
+                              <dt>Description</dt>
+                              <dd>Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a ﬁne balance between hydrology, ecology and land-scape morphology (Page et al., 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.</dd>
+                              <dt>Co-Author</dt>
+                              <dd>Micheal Jonas Korse</dd>
+                              <dt>URL</dt>
+                              <dd><a href="http://www.micheal_chemworld.com">http://www.micheal_chemworld.com</a></dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sub-box res-career">
+                        <h2>Certificate</h2>
+                        <div class="res-career-view res-career-view-show">
+                          <div class="gray-box res-career-box">
+                            <p class="res-box-years">
+                              <span class="res-years">2015 May</span><!-- 161013  -->
+                            </p>
+                            <dl>
+                              <dt>Certificate type</dt>
+                              <dd>Chemical engineering</dd>
+                              <dt>Description</dt>
+                              <dd>Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a ﬁne balance between hydrology, ecology and land-scape morphology (Page et al., 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.</dd>
+                              <dt>Certificate issuer</dt>
+                              <dd>Micheal Jonas Korse</dd>
+                            </dl>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="sub-box tech-res tech-res-preview">
+                        <h2>Advisory Area</h2>
+                        <ul class="tech-res-list tech-res-list-view">
+                          <li>
+                            <span class="tech-like-num">Environment</span>
+                            Formulas and manufacturing recipes
+                          </li>
+                          <li>
+                            <span class="tech-like-num">Manufacturing process-chem</span>
+                            Formulas and manufacturing recipes
+                          </li>
+                          <li>
+                            <span class="tech-like-num">Nuclear Chem</span>
+                            Formulas and manufacturing recipes
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="sub-box tech-res tech-res-preview">
+                        <h2>Language</h2>
+                        <ul class="tech-res-list tech-res-list-view">
+                          <li>Korean</li>
+                          <li>Spanish</li>
+                          <li>English</li>
+                        </ul>
+                      </div>
+
+                      <p class="write-notice bg-w">
+                        <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                        The process of becoming an expert of approval may take a minimum of 5 working days and we will send you the notification when all the process is over.<br />
+                        If you have any questions regarding our policy simply click on <a href="">Contact Us</a>.</p><!-- 161028  customer center를 Contact Us로 수정 -->
+
+                      <div class="btn-send-box">
+                        <button type="button" class="btn-base btn-brand-gray btn-edit">Edit</button>
+                        <button type="reset" class="btn-base btn-brand-gray-b btn-delete">Cancel</button> <!-- 161013 -->
+                        <button type="submit" class="btn-base btn-brand-blue btn-send">Submit Application</button>
+                      </div>
+                    </div><!-- /.myp-contents -->
+
+                </div><!-- /.complete-write -->
+
+                <div class="radiopanel complete-upload">
+                  <div class="complete-box">
+                    <img class="complete-img" alt="upload images" src="../assets/images/proleaders/proleaders-expert-upload.gif" />
+                    <div class="complete-desc-area">
+                      <div class="complete-desc">
+                        <p class="complete-desc-title">Upload the resume or portfolio here!</p>
+                        <p class="complete-desc-text">You can upload 1 file in Microsoft Word, Powerpoint, or Excel format.<br />
+                          You can upload a file up to 40MB in size. Please check the file size before upload.<br />
+                          Your resume will be used for our review only - it will not be disclosed to the others.</p>
+                      </div>
+                      <div class="upload-write">
+                        <div class="btn-upload-box">
+                          <form>
+                            <!-- 161014 file input 수정 -->
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                              <span class="btn btn-file">
+                                <span>Choose File</span><input type="file">
+                              </span>
+                              <span class="fileinput-filename"></span>
+                              <span class="fileinput-new">No file chosen</span>
+                              <!-- 161123 추가 -->
+                              <a href="#" class="close fileinput-exists" data-dismiss="fileinput"><i class="icon-cross"></i></a>
+                              <!-- //161123 추가 -->
+                            </div>
+                            <!-- //161014 file input 수정 -->
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2017-03-29 키워드 추가 -->
+                  <div class="sub-box tech-keyword">
+                    <h2>Research Keyword </h2>
+                    <p class="sub-title">Main keyword</p>
+                    <div class="enter-input">
+                      <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Enter</button>
+                      <input type="text" class="input-base" placeholder="Please choose main keywords up to 5. ">
+                    </div>
+                    <ul class="tech-res-list keyword-list">
+                      <li>
+                        Green Chemistry
+                        <span class="icon-cross close-tech-res" title="close"></span>
+                      </li>
+                    </ul>
+                    <p class="sub-title additional">Additional keyword</p>
+                    <div class="enter-input">
+                      <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Enter</button>
+                      <input type="text" class="input-base" placeholder="Please choose main keywords up to 5. ">
+                    </div>
+                    <ul class="tech-res-list keyword-list">
+                      <li>
+                        Green Chemistry
+                        <span class="icon-cross close-tech-res" title="close"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- //2017-03-29 키워드 추가 -->
+                  <p class="write-notice bg-w">
+                    <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                    It may take up to 7 days from your application for us to register you as an expert. We will notify you when the registration process is completed. The information
+                    you have submitted are regarded as private information, thus will not be disclosed to the others. For more information, please contact the <a href="">Contact Us</a>.</p><!-- 161028  customer center를 Contact Us로 수정 -->
+                  <div class="btn-send-box">
+                    <button type="reset" class="btn-base btn-brand-gray-b btn-delete">Cancel</button> <!-- 161020 텍스트 수정 -->
+                    <button type="submit" class="btn-base btn-brand-blue btn-send">Submit Application</button>
+                  </div>
+                </div><!-- /.complete-upload -->
+
+                <div class="radiopanel complete-link">
+                  <div class="complete-box">
+                    <img class="complete-img" alt="link images" src="../assets/images/proleaders/proleaders-expert-link.gif" />
+                    <div class="complete-desc-area">
+                      <div class="complete-desc">
+                        <p class="complete-desc-title">Share the URL address here!</p>
+                        <p class="complete-desc-text">Please enter the URL where your resume can be found.<br />
+                          Your resume will be used for our review only.</p>
+                      </div>
+                      <div class="enter-input">
+                        <!-- 161020 form 추가 -->
+                        <form>
+                          <!-- 161020 삭제
+                          <button type="button" class="btn-base btn-brand-gray rps10" title="Enter">Enter</button> -->
+                          <input type="text" class="input-base" placeholder="https://www.chemtopia.com">
+                          <div class="brand-list-group display-opacity">
+                            <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                            <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                            <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                            <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                            <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                          </div>
+                        </form>
+                        <!-- //161020 form 추가 -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2017-03-29 키워드 추가 -->
+                  <div class="sub-box tech-keyword">
+                    <h2>Research Keyword </h2>
+                    <p class="sub-title">Main keyword</p>
+                    <div class="enter-input">
+                      <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Enter</button>
+                      <input type="text" class="input-base" placeholder="Please choose main keywords up to 5. ">
+                    </div>
+                    <ul class="tech-res-list keyword-list">
+                      <li>
+                        Green Chemistry
+                        <span class="icon-cross close-tech-res" title="close"></span>
+                      </li>
+                    </ul>
+                    <p class="sub-title additional">Additional keyword</p>
+                    <div class="enter-input">
+                      <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Enter</button>
+                      <input type="text" class="input-base" placeholder="Please choose main keywords up to 5. ">
+                    </div>
+                    <ul class="tech-res-list keyword-list">
+                      <li>
+                        Green Chemistry
+                        <span class="icon-cross close-tech-res" title="close"></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- //2017-03-29 키워드 추가 -->
+                  <p class="write-notice bg-w">
+                    <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                    It may take up to 7 days from your application for us to register you as an expert. We will notify you when the registration process is completed. The information you have submitted are regarded as private information, thus will not be disclosed to the others. For more information, please contact the <a href="">Contact Us</a>.</p><!-- 161028  customer center를 Contact Us로 수정 -->
+                  <div class="btn-send-box">
+                    <button type="reset" class="btn-base btn-brand-gray-b btn-delete">Cancel</button><!-- 161020 텍스트 수정 -->
+                    <button type="submit" class="btn-base btn-brand-blue btn-send">Submit Application</button>
+                  </div>
+                </div><!-- /.complete-link -->
+              </div>
+              <!-- 감사글귀 apply-->
+              <div class="proleaders-dsc">
+                <!-- 161013 text 수정, button 수정 -->
+                <p class="proleaders-dsc-title">Thank you for applying!</p>
+                <div class="proleaders-dsc-text">
+                  <p>We will notify you when the registration process is completed.<br />
+                    It may take up to 7 days from your application for us to register you as an expert. </p>
+                  <p>(The information you have submitted are regarded as private information, thus will not be disclosed to the others.)<br />
+                    For more information, please contact the <a href="#">Contact Us</a>.</p><!-- 161028  customer center를 Contact Us로 수정, a 태그 추가 -->
+                </div>
+                <div class="btn-edit-box">
+                  <button type="button" class="btn-base btn-brand-blue btn-send">Back to Expert Page</button>
+                </div>
+                <!-- //161013 text 수정, button 수정 -->
+              </div>
+
+              <!-- 감사글귀 apply-Proleaders인 경우 -->
+              <div class="proleaders-dsc">
+                 <p class="proleaders-dsc-title">Sorry!</p>
+                <div class="proleaders-dsc-text">
+                  <p>You are already a Proleader-member of Chemtopia.<br />
+                    Please check the profile tab above and go to ‘My proleaders’ to access for further information.<br />
+                    Thank you.</p>
+                  <p><a href="#">Contact us</a> for more information.</p>
+                </div>
+                <div class="btn-edit-box">
+                  <button type="button" class="btn-base btn-brand-blue btn-send">Go to Proleaders</button>
+                </div>
+              </div>
+
+              <!-- 감사글귀 apply-Proleaders 신청중인 경우 -->
+              <div class="proleaders-dsc">
+                <!-- 161123 텍스트 수정 -->
+                <p class="proleaders-dsc-title">Thank you.</p>
+                <div class="proleaders-dsc-text">
+                  <p>You have successfully applied as Proleader.<br />
+                    This application is under review by the Admin.<br />
+                    You will be informed about the result as quickly as possible.<br />
+                    </p>
+                  <p><a href="#">Contact us</a> for more information.</p>
+                </div>
+                <!-- //161123 텍스트 수정 -->
+                <div class="btn-edit-box">
+                  <button type="button" class="btn-base btn-brand-blue btn-send">Go to Proleaders</button>
+                </div>
+              </div>
+            </div><!-- /#apply -->
+
+            <div class="tab-pane" id="recommend">
+              <div class="article-box-full recommend-box">
+                <h2>Recommend us a Pro-Leaders!</h2>
+                <p class="title-dsc">Please let us know about the person you want to recommend.<br />
+                  The information you have submitted are regarded as private information, thus will not be disclosed to the others.</p>
+                <div class="recommend-write">
+                  <!-- 161020 form 추가 -->
+                  <form>
+                    <dl>
+                      <dt>Recommended candidate’s information</dt>
+                      <dd>
+                        <input type="text" class="input-base" placeholder="Candidate’s name">
+                      </dd>
+                      <dd>
+                        <input type="text" class="input-base" placeholder="Candidate’s E-mail address">
+                      </dd>
+                      <dd class="write-textarea">
+                        <textarea class="input-base" rows="16" placeholder="Write here the reason why you want to recommend this candidate."></textarea>
+                      </dd>
+                    </dl>
+                    <div class="btn-send-box">
+                      <button type="reset" class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+                      <button type="submit" class="btn-base btn-brand-blue btn-send">Submit Application</button><!--  161006 텍스트 수정 -->
+                    </div>
+                  </form>
+                  <!-- //161020 form 추가 -->
+                </div>
+              </div>
+
+              <!-- 감사글귀 recommend -->
+              <div class="proleaders-dsc">
+                <!-- 161013 text 수정 -->
+                <p class="proleaders-dsc-title">Thank you for recommending!</p>
+                <div class="proleaders-dsc-text">
+                  <p>We will send e-mails to your recommendees’ e-mail addresses.<br />
+                    We will inform you of registration process.</p>
+                  <p>For more information, please contact the <a href="#">Contact Us</a>.</p><!-- 161028  customer center를 Contact Us로 수정, a 태그 추가 -->
+                </div>
+                <!-- //161013 text 수정  -->
+                <div class="btn-edit-box">
+                  <button type="button" class="btn-base btn-brand-blue btn-send">Back to Expert Page</button>
+                </div>
+              </div>
+            </div><!-- /#recommend -->
+          </div>
+        </article>
+      </section>
+
+      <!--=include ../include/footer.html -->
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+
+  </body>
+</html>

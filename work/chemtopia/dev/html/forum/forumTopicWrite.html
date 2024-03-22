@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/modal/file-add-modal.html -->
+      <!--=include ../include/modal/photo-add-modal.html -->
+      <!--=include ../include/lnb.html -->
+      <section class="main-section-dsc">
+        <article class="main-article">
+          <div class="discussion-sub-content">
+            <div class="discussion-write">
+              <h1>Write a Topic</h1>
+              <p class="write-notice" >
+                <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                You can upload <span>up to 4</span> files at once and the total size should not exceed <span>20 MB</span>.
+                You can upload ppt, pdf, word, excel, png, jpg, gif, and zip files."
+              </p>
+              <!-- paid 하단 태그 이동 -->
+              <div class="write-footer write-conference"><!-- paid 클래스 추가 -->
+                <div class="radiogroup">
+                  <p>What kind of topic is it?</p>
+                  <input checked="checked" id="Question" name="radio" type="radio" value="01">
+                  <label for="Question">Question</label>
+                  <input id="Publicize" name="radio" type="radio" value="02">
+                  <label for="Publicize">Publicize</label>
+                  <input id="Proposal" name="radio" type="radio" value="03">
+                  <label for="Proposal">Proposal</label>
+                  <input id="Conference" name="radio" type="radio" value="04"><!-- paid Conference 추가 -->
+                  <label for="Conference">Conference</label>
+                  <input id="Others" name="radio" type="radio" value="05"><!-- paid 위치 이동 -->
+                  <label for="Others">Others</label>
+                  <!-- paid 추가 -->
+                  <div class="radiopanel desc-topic-type">
+                    Post any questions on difficult technical problems or issues and solve together with professional people in ChemTopia. Any simple general issues can be posted as well.
+                  </div>
+                  <div class="radiopanel desc-topic-type">
+                    Post your R&amp;D activities, results, and technologies you have developed to let the world know about them. You can also introduce your R&amp;D team, company or organization.
+                  </div>
+                  <div class="radiopanel desc-topic-type">
+                    Post to request any R&amp;D collaboration or specific tasks to work together. You can propose new R&amp;D projects to develop, or request research funds for your current development and share profits later on. You can also post a proposal to sell your currently owned technologies.
+                  </div>
+                  <div class="radiopanel desc-topic-type">
+                    Post any information related to the conferences or symposiums to be held and let people be informed. Share any important presentations made in the past.
+                  </div>
+                  <div class="radiopanel desc-topic-type">
+                    Post any other events or information you want to share with people.
+                  </div>
+                  <!-- //paid 추가 -->
+                </div>
+                <div class="radiogroup">
+                  <p>Who can see things on my timeline?</p>
+                  <input checked="checked" id="first2" name="radio2" type="radio" value="001">
+                  <label for="first2">Public</label>
+                  <input id="second2" name="radio2" type="radio" value="002">
+                  <label for="second2">Followers only</label>
+                </div>
+              </div>
+              <!-- //paid 하단 태그 이동 -->
+              <div class="write-user-info">
+                <span class="profile-picture-medium">
+                  <img class="user-photo" src="../assets/images/sample-img/gnb_navi_testimg3.jpg" alt="Sebastian Stan" title="Sebastian Stan" />
+                </span>
+                <p>amanda seyfried</p>
+              </div>
+              <!--=include ../include/forum/editor-content.html -->
+              <div class="write-footer">
+                <div class="btn-edit-box border-none"><!-- paid 클래스 추가 -->
+                  <button class="btn-base btn-brand-blue btn-save">Post Topic</button>
+                  <button class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+                </div>
+              </div>
+              <!-- write footer end -->
+            </div>
+          </div>
+        </article>
+      </section>
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!-- Report Modal - Start -->
+<div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="modal-report" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content forum-report-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <P>Report this post</p>
+      </div>
+      <div class="modal-body">
+        <!-- choice default post place -->
+        <div class="choice-post-box">
+          <div class="reporting-guide-text">
+            You can report inappropriate posts, photos, videos, or profiles on Chemptoia, We'll take action on content that we find violates our User Content and Conduct Policy. For example, we might remove content or even ban users.
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="InputLastname">Lastname</label>
+            <div class="post-question-box">
+              <span class="caret"></span>
+              <input type="text" class="chem-form-control" id="InputLastname" placeholder="Why are you reporting this post?"/>
+            </div>
+            <!-- click and down - question list -->
+            <!-- 위 input 를 누르면 나오는 부분 -->
+            <div class="brand-list-group">
+              <a href="#" class="brand-list-group-item">Contains hate speech or attacks an indiviaul</a>
+              <a href="#" class="brand-list-group-item">Violence or harmful behavior</a>
+              <a href="#" class="brand-list-group-item">Sexually explicit content</a>
+              <a href="#" class="brand-list-group-item">Spam or Scam</a>
+              <a href="#" class="brand-list-group-item">Others</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- others post choose place -->
+        <div class="others-post-textarea">
+          <textarea rows="4" class="input-base" placeholder="Please provide details here."></textarea>
+        </div>
+      </div>
+
+      <!-- 버튼 묶음 3가지 중 하나씩 출력 : 이해 안되시면 설명해 드리겠습니다 -->
+      <!-- Report this post 모달 첫화면의 버튼 -->
+      <div class="btn-rightbottom-box">
+        <button class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+        <button class="btn-base btn-brand-blue btn-upload">Report</button><!-- report버튼 클릭시 시스템알림으로 한번더 -->
+      </div>
+
+      <!-- Other 선택시 나오는 Next버튼 : 첫화면엔 안보임 -->
+      <div class="btn-rightbottom-box others-next-btn">
+        <button class="btn-base btn-brand-blue btn-upload">Next</button>
+      </div>
+
+      <!-- Others 선택 후 next버튼 누른후에 나오는 페이지의 버튼들 : 첫화면엔 안보임-->
+      <div class="btn-rightbottom-box others-textarea-btn">
+        <button class="btn-base btn-brand-gray-b btn-cancel">Back</button>
+        <button class="btn-base btn-brand-blue btn-upload">Report</button><!-- report버튼 클릭시 시스템알림으로 한번더 -->
+      </div>
+
+      <div class="report-bottom-text">
+        Please let us know if you find anything that violates our User <span>Content and<br/> Conduct Policy.</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Report Modal - End -->

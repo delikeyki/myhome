@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>캠토피아</title>
+    <link href="../assets/css/theme.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <div class="modal fade" id="lnbInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-lnb">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <aside class="lnb">
+                <div class="lnb-notification">
+            			<p class="lnb-title">Notification</p>
+                  <ul class="lnb-menu">
+              			<li><a href="#" class="lnbbtn sub-disc" data-lnblink="lnb-sub-msg" >Message<span class="count">17</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-foll" data-lnblink="lnb-sub-fourm" >Chem Info / Forum<span class="count"></span></a></li>
+                    <li><a href="#" class="lnbbtn sub-sug" data-lnblink="lnb-sub-foll" >Follow<span class="count">3</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-msg" data-lnblink="lnb-sub-other" >Other<span class="count">99+</span></a></li>
+                  </ul>
+            		</div>
+                <div class="lnb-sub-wrap">
+                  <div class="lnb-sub lnb-sub-msg lnb-slide-out">
+                			<p class="lnb-title">Message</p>
+                      <ul class="lnb-sub-list">
+                        <li>
+                          <a class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong>Joel King</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a>
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong>sujin Seo</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a>
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a>
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                      </ul>
+                      <button class="btn btn-brand-dark-gray btn-viewall">View All</button>
+              		</div>
+                  <div class="lnb-sub lnb-sub-fourm lnb-slide-out">
+                    <p class="lnb-title">Chem Info / Forum</p>
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-bg-myfourm">
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Minimizing the environmental...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-following">
+                        <a class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Tamas Mihalovits</strong>
+                            <span>Added an Topic.</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Minimizing the environmental...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Minimizing the environmental...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn btn-brand-dark-gray btn-viewall">View All</button>
+                  </div>
+                  <div class="lnb-sub lnb-sub-foll lnb-slide-out">
+                    <p class="lnb-title">Follow</p>
+                    <ul class="lnb-sub-list">
+                      <li>
+                        <a class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn btn-brand-dark-gray btn-viewall">View All</button>
+                  </div>
+                  <div class="lnb-sub lnb-sub-other lnb-slide-out">
+                    <p class="lnb-title">Other</p>
+                    <ul class="lnb-sub-list">
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Joel King</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>sujin Seo</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Terry Park</strong> is now following you<br />
+                            <span class="lnb-time">Yesterday</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a>
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Kyunga Kim</strong> is now following you<br />
+                          Nice to meet you. look on the bright...<br />
+                          <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <button class="btn btn-brand-dark-gray btn-viewall">View All</button>
+                  </div>
+                </div>
+              </aside>
+            </div>
+            <button type="button" class="close" id="lnb-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+
+      <!-- new header start -->
+      <header class="main-header-fixed light">
+        <div class="header-wrap">
+        <h1 class="logo"><a href="#">chemtopia</a></h1>
+        <div class="gm-wrap">
+          <div class="gm">
+            <ul>
+              <li><a href="#" class="gm-link">Home</a></li>
+              <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link" data-toggle="dropdown" href="#">ChemCast</a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-m-gmmenu">
+                      <ul>
+                        <li><a href="#">Chemical Process Reports</a></li>
+                        <li><a href="#">Cast Leading</a></li>
+                        <li><a href="#">VOD</a></li>
+                        <li><a href="#">Job</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link" data-toggle="dropdown" href="#">Break Time</a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-gmmenu">
+                      <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Game</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="gnb-wrap">
+          <div class="gnb">
+            <ul>
+              <li><a href="#">Chem Info</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">Proleaders</a></li>
+              <li><a href="#">Modules</a></li>
+            </ul>
+          </div>
+
+          <div class= "snb-wrap">
+            <!-- 로그인 후 -->
+            <ul class="after-snb">
+              <li>
+              <div class="dropdown">
+                <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#">
+                  <img class="user-photo" alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg3.jpg" />
+                  Jaehee Kwon<span class="caret"></span></a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-snbmenu">
+                      <div class="user-menu">
+                        <img class="user-photo" alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg3.jpg" />
+                        <p class="user-name">Jaehee Kwon</p>
+                        <p class="user-mail"><a href="#" class="gnb-mail-link">yunakim@naver.com</a></p>
+                      </div>
+                      <ul class="snb-dropmenu">
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a data-toggle="modal" href="#lnbInModal"><i class="fa fa-bell-o"></i><span class="badge-cust">99</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </header>
+      <!-- // end new header -->
+
+      <section class="main-section">
+        <article class="main-article">
+          <div class="search-box-lg search-box-proleaders">
+            <div class="inner-search-box">
+              <p class="search-desc background-desc">
+                <span class="search-desc-title">wanna become a Proleader?</span>
+                <span class="search-desc-text">How would you like to be registered?</span>
+              </p>
+              <div  class="tabpanel tab-set1">
+                <ul class="nav">
+                  <li class="active"><a href="#apply" data-toggle="tab">Apply</a></li>
+                  <li><a href="#recommend" data-toggle="tab">Recommend</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- //end chemcast-search -->
+
+          <div class="tab-content">
+            <div class="tab-pane active" id="apply">
+              <div class="radiogroup">
+                <input checked="checked" id="complete-write" class="css-radio" name="radio" type="radio" value="1" />
+                <label for="complete-write" class="css-radio-label">Write</label>
+                <input id="complete-upload" class="css-radio" name="radio" type="radio" value="2" />
+                <label for="complete-upload" class="css-radio-label">Upload</label>
+                <input id="complete-link" class="css-radio" name="radio" type="radio" value="3" />
+                <label for="complete-link" class="css-radio-label">Link</label>
+
+                <div class="radiopanel complete-write">
+                  <!-- 전문가 신청 입력 -->
+                  <div class="myp-contents myp-contents-full">
+                    <form>
+                      <!-- 161006 .user-profile 수정 -->
+                      <div class="sub-box user-profile">
+                        <!-- ↓ editable-field class 에 active-f 추가 -->
+                        <!-- 이름이 63자 이상일 경우는 말줄임표시 -->
+                        <h1 class="editable-field"><span>Bradley Charles Cooper </span>
+                          <span class="overlay-icon overlay-edit"></span>
+                          <!-- ↓ myp-form-edit class 에 myp-form-edit-view 추가 -->
+                          <div class="myp-form-edit">
+                            <label class="sr-only" for="InputFirstName">input Your Name</label>
+                            <input type="text" class="input-base chem-form-control myp-edit-input" id="InputFirstName" placeholder="Name">
+                          </div>
+                        </h1>
+                        <div class="my-location">
+                          <!-- ↓ editable-field class 에 active-f 추가 -->
+                          <span class="my-country input-select editable-field input-box"><span>Country</span>
+                            <span class="overlay-icon overlay-edit "></span>
+                            <div class="select-box">
+                              <input type="text" class="input-base datepicker-input" placeholder="Choose Country"><i class="fa fa-caret-down" aria-hidden="true" title="choose Country"></i>
+                              <ul class="aList">
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                                <li><a href="#3">Bologna </a></li>
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                                <li><a href="#3">Bologna </a></li>
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                                <li><a href="#3">Bologna </a></li>
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                                <li><a href="#3">Bologna </a></li>
+                              </ul>
+                            </div>
+                          </span><span>,</span>
+                          <span class="my-city editable-field"><span>City</span>
+                            <span class="overlay-icon overlay-edit"></span>
+                            <div class="myp-form-edit ">
+                                <label class="sr-only">Add Research area</label>
+                                <input type="text" class="input-base chem-form-control myp-edit-input" isplaceholderinited="true">
+                            </div>
+                          </span>
+                        </div>
+                        <dl class="my-introduce">
+                          <dt>Research area</dt>
+                          <dd>
+                            <!-- 161028 수정 -->
+                            <!-- ↓ editable-field class 에 active-f 추가 -->
+                            <span class="my-country input-select editable-field input-box"><span>Choose area</span>
+                              <span class="overlay-icon overlay-edit "></span>
+                              <div class="select-box">
+                                <input type="text" class="input-base datepicker-input" placeholder="Choose area"><i class="fa fa-caret-down" aria-hidden="true" title="Choose area"></i>
+                                <ul class="aList">
+                                  <li><a href="#">Petro-Chem</a></li>
+                                  <li><a href="#">Energy-chem</a></li>
+                                  <li><a href="#">Nuclear Chem</a></li>
+                                  <li><a href="#">Environment</a></li>
+                                  <li><a href="#">Waste-chem</a></li>
+                                  <li><a href="#">Materials-chem</a></li>
+                                  <li><a href="#">Astro-chem</a></li>
+                                  <li><a href="#">Mechanic chem</a></li>
+                                  <li><a href="#">Agro-chem</a></li>
+                                  <li><a href="#">Medical chem</a></li>
+                                  <li><a href="#">Food-chem</a></li>
+                                  <li><a href="#">Manufacturing process-chem</a></li>
+                                  <li><a href="#">Other</a></li>
+                                </ul>
+                              </div>
+                            </span><span>,</span>
+                            <span class="my-research editable-field"><span>Detail description about Research area</span>
+                              <span class="overlay-icon overlay-edit"></span>
+                              <div class="myp-form-edit ">
+                                  <label class="sr-only">Add Research area</label>
+                                  <input type="text" class="input-base chem-form-control myp-edit-input" isplaceholderinited="true">
+                              </div>
+                            </span>
+                            <!-- //161028 수정 -->
+                          </dd>
+                          <dt>Company Name</dt> <!-- 161212 text 수정 -->
+                          <dd>
+                            <div class="editable-field"><span>+ Add Company Name/Institute Name</span> <!-- 161212 text 수정 -->
+                            <span class="overlay-icon overlay-edit"></span>
+                            <div class="myp-form-edit">
+                                <label class="sr-only" for="">Add Company Name/Institute Name</label> <!-- 161212 text 수정 -->
+                                <input type="text" class="input-base chem-form-control myp-edit-input" id="" size="30" isplaceholderinited="true">
+                            </div>
+                            </div>
+                          </dd>
+                          <!-- 161028 삭제
+                          <dt>Position</dt>
+                          <dd>
+                            <div class="editable-field"><a href="#">+ Add Position</a>
+                              <span class="overlay-icon overlay-edit"></span>
+                              <div class="myp-form-edit">
+                                  <label class="sr-only" for="Position">+ Add Position</label>
+                                  <input type="text" class="input-base chem-form-control myp-edit-input" id="Position" size="30" isplaceholderinited="true">
+                              </div>
+                            </div>
+                          </dd>
+                          -->
+                          <dt>Url</dt>
+                          <dd>
+                            <div class="editable-field"><a href="#">+ Add Url</a>
+                              <span class="overlay-icon overlay-edit"></span>
+                              <div class="myp-form-edit">
+                                  <label class="sr-only" for="url">Add Url</label>
+                                  <input type="text" class="input-base chem-form-control myp-edit-input" id="url" size="30" isplaceholderinited="true">
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+
+                      <div class="sub-box res-career">
+                        <h2>Education</h2>
+                        <!-- write place -->
+                        <div class="res-career-write">
+                          <div class="gray-box res-career-box">
+                            <button class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                            <dl class="write-list">
+                              <dt>School name</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Subject</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Time period</dt>
+                              <!-- 161007 dd 클래스 삭제 Time period input 아이콘 삭제 -->
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <!-- 161028 달력에 in progress 체크시 input에 disabled 추가 -->
+                                  <div class="input-daterange">
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                    ~
+                                    <input type="text" class="input-base datepicker-input disabled" placeholder="Year / Month / Day" name="end"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                  </div>
+                                  <!-- //161028 달력에 in progress 체크시 input에 disabled 추가 -->
+                                </div>
+                                <div class="check-box-content time-check-lineup">
+                                  <input type="checkbox" class="css-checkbox" id="checkbox1" checked="checked">
+                                  <label for="checkbox1" class="css-checkbox-label">In progress</label>
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                        </div>
+                      </div><!-- /Education -->
+
+                      <div class="sub-box res-career">
+                        <h2>Research Career</h2>
+                        <!-- write place -->
+                        <div class="res-career-write">
+                          <div class="gray-box res-career-box">
+                            <button class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                            <dl class="write-list">
+                              <dt>Time period</dt>
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <div class="input-daterange">
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                    ~
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="end"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                  </div>
+                                </div>
+                                <div class="check-box-content time-check-lineup">
+                                  <input type="checkbox" class="css-checkbox" id="checkbox2" checked="checked">
+                                  <label for="checkbox2" class="css-checkbox-label">In progress</label>
+                                </div>
+                              </dd>
+                              <dt>Position</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                              <dt>Location</dt>
+                              <dd class="res-location">
+                                <div class="input-box">
+                                  <div class="input-select">
+                                    <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="test...." />dfd<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    <div class="input-select-search">
+                                      <p class="input-base datepicker-input input-search">Choose Country<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p> <!-- 161028 type 삭제 -->
+                                      <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    </div>
+                                    <div class="select-box">
+                                      <input type="text" class="input-base datepicker-input" placeholder="Choose Country"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                                      <ul class="aList">
+                                        <li><a href="#1">Apenrade</a></li>
+                                        <li><a href="#2">Frauenbach</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <input type="text" class="input-base datepicker-input" placeholder="City">
+                                </div>
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                        </div>
+                      </div><!-- /Research Career -->
+
+                      <div class="sub-box">
+                        <h2>Funded Project</h2>
+                        <!-- write place -->
+                        <div class="res-career-write">
+                          <div class="gray-box res-career-box">
+                            <button type="button" class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                            <dl class="write-list">
+                              <dt>Time period</dt>
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <div class="input-daterange">
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                    ~
+                                    <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="end"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                  </div>
+                                </div>
+                                <div class="check-box-content time-check-lineup">
+                                  <input type="checkbox" class="css-checkbox" id="checkbox2" checked="checked">
+                                  <label for="checkbox2" class="css-checkbox-label">In progress</label>
+                                </div>
+                              </dd>
+                              <dt>Research institute</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Project Title</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                              <dt>Ordering Organization</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Joint Researches</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>URL</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" placeholder="https://">
+                              </dd>
+                            </dl>
+                          </div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                        </div>
+                      </div><!-- /Funded Project -->
+
+                      <div class="sub-box">
+                      	<h2>Honors &amp; Awards</h2>
+                      	<!-- write place -->
+                      	<div class="res-career-write">
+                      		<div class="gray-box res-career-box">
+                            <button type="button" class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                      			<dl class="write-list">
+                              <dt>Time period</dt>
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                </div>
+                              </dd>
+                              <dt>Title</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                      			</dl>
+                      		</div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                      	</div>
+                      </div><!-- /Honors -->
+
+                      <div class="sub-box">
+                      	<h2>Writing Career</h2>
+                      	<!-- write place -->
+                      	<div class="res-career-write">
+                      		<div class="gray-box res-career-box">
+                            <button type="button" class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                      			<dl class="write-list">
+                      				<dt>Type of study</dt>
+                              <dd class="res-location">
+                                <div class="input-box">
+                                  <div class="input-select">
+                                    <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="test...." />dfd<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    <div class="input-select-search">
+                                      <p class="input-base datepicker-input input-search">Select<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p> <!-- 161028 type 삭제 -->
+                                      <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                                    </div>
+                                    <div class="select-box">
+                                      <input type="text" class="input-base datepicker-input" placeholder="Select"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                                      <ul class="aList">
+                                        <li><a href="#1">Type 1</a></li>
+                                        <li><a href="#2">Type 2</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </dd>
+                              <dt>Published date</dt>
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                                </div>
+                              </dd>
+                              <dt>Title</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                              <dt>Co-Author</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>URL</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" placeholder="http://">
+                              </dd>
+                      			</dl>
+                      		</div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                      	</div>
+                      </div><!-- /Writing Career -->
+
+                      <div class="sub-box">
+                      	<h2>Certificate</h2>
+                      	<!-- write place -->
+                      	<div class="res-career-write">
+                      		<div class="gray-box res-career-box">
+                            <button type="button" class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">×</span></button>
+                      			<dl class="write-list">
+                              <dt>Issued date</dt>
+                              <dd>
+                                <div class="input-box datepicker-box">
+                                  <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i>-->
+                                </div>
+                              </dd>
+                              <dt>Certificate Type</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                              <dt>Description</dt>
+                              <dd>
+                                <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                              </dd>
+                              <dt>Certificate Issuer</dt>
+                              <dd class="res-position">
+                                <input type="text" class="input-base" isplaceholderinited="true">
+                              </dd>
+                      			</dl>
+                      		</div>
+                          <div class="btn-edit-box btn-right">
+                            <button type="button" class="btn-base btn-brand-gray btn-add">Add</button>
+                          </div>
+                      	</div>
+                      </div><!-- /Certificate -->
+
+                      <div class="sub-box tech-res">
+                        <h2>Advisory Area</h2>
+                        <div class="input-category enter-input">
+                          <div class="input-select">
+                            <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="test...." />dfd<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                            <!-- <div class="input-select-search">
+                              <a class="link-select" data-toggle="modal" href="#AdvisoryareaModal">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></a>
+                            </div> -->
+                            <!-- select box -->
+                            <div class="input-select-search">
+                              <p class="input-base input-search">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p>
+                              <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                            </div>
+                            <div class="select-box">
+                              <!-- <p class="input-base input-search">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p> -->
+                              <input type="text" class="input-base" placeholder="Choose area"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                              <ul class="aList">
+                                <li><a href="#">Petro-Chem</a></li>
+                                <li><a href="#">Energy-chem</a></li>
+                                <li><a href="#">Nuclear Chem</a></li>
+                                <li><a href="#">Environment</a></li>
+                                <li><a href="#">Waste-chem</a></li>
+                                <li><a href="#">Materials-chem</a></li>
+                                <li><a href="#">Astro-chem</a></li>
+                                <li><a href="#">Mechanic chem</a></li>
+                                <li><a href="#">Agro-chem</a></li>
+                                <li><a href="#">Medical chem</a></li>
+                                <li><a href="#">Food-chem</a></li>
+                                <li><a href="#">Manufacturing process-chem</a></li>
+                                <li><a href="#">Other</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="input-text-search">
+                            <input type="text" class="input-base" placeholder="Detailed Description about Advisory Area"><!-- 161212 placeholder 수정 -->
+                            <!-- 161005 삭제
+                            <div class="brand-list-group display-opacity">
+                              <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                              <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                              <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                              <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                              <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div><!-- /Advisory Area -->
+
+                      <div class="sub-box tech-res">
+                        <h2>Language</h2>
+                        <div class="enter-input">
+                          <button type="button" class="btn-base btn-brand-gray rps10" title="Add">Add</button>
+                          <input type="text" class="input-base" placeholder="What language do you speak?">
+                          <!-- 161004 삭제
+                          <div class="brand-list-group display-opacity">
+                            <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                            <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                            <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                            <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                            <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                          </div> -->
+                        </div>
+                      </div><!-- /Language -->
+
+                      <p class="write-notice bg-w">
+                        <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                        The process of becoming an expert of approval may take a minimum of 5 working days and we will send you the notification when all the process is over.<br />
+                        If you have any questions regarding our policy simply click on <a href="#">Contact Us</a>.</p><!-- 161028  customer center를 Contact Us로 수정 -->
+
+                      <div class="btn-send-box">
+                        <button type="button" class="btn-base btn-brand-gray btn-preview">Preview</button>
+                        <button type="button" class="btn-base btn-brand-gray-b btn-savedraft">Save as Draft</button>
+                        <button type="reset" class="btn-base btn-brand-gray-b btn-delete">Cancel</button> <!-- 161013 -->
+                        <button type="submit" class="btn-base btn-brand-blue btn-send">Submit Application</button>
+                      </div>
+                    </div><!-- /.myp-contents 입력 -->
+                  </form>
+                </div><!-- /.complete-write -->
+
+                <div class="radiopanel complete-upload">
+
+                </div><!-- /.complete-upload -->
+
+                <div class="radiopanel complete-link">
+
+                </div><!-- /.complete-link -->
+
+              </div>
+            </div><!-- /#apply -->
+
+            <div class="tab-pane" id="recommend">
+
+            </div><!-- /#recommend -->
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="footerInner">
+          <strong>Copyright © 2016 <a href="#">Chemtopia</a>.</strong> All rights reserved.
+        </div>
+      </footer>
+    </div>
+
+    <!-- 161010 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+
+  </body>
+</html>

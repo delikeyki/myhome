@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/modal/reporter-modal.html -->
+      <!--=include ../include/lnb.html -->
+      <!--=include ../include/modal/vod-add-modal.html -->
+      <!--=include ../include/modal/vod-view-modal.html -->
+      <!--=include ../include/modal/vod-view-modal-case1.html -->
+
+      <!-- VOD list delete modal - start : 170323 -->
+      <div class="modal fade" id="list-delete-modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-vod-delete">
+            <div class="modal-header">
+              <button type="button" class="close close-near" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="title-delete-VOD">Delete VOD</h4>
+            </div>
+            <div class="modal-body">
+              <div class="vod-delete-content">
+                <div class="thumb-VOD thumb-VOD-mypage">
+                  <img src="../assets/images/sample-img/dsc-list-sampleBigimg.jpg" alt="">
+                </div>
+                <div class="VOD-content VOD-content-mypage">
+                  <p class="card-title-VOD card-title-VOD-mypage">VOD preview case Developer Biolo informatics inics...</p>
+                  <p class="card-text-VOD card-text-VOD-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                </div>
+              </div>
+              <p class="text-VOD-sure text-center">Are you sure you want to delete the VOD?</p>
+            </div>
+            <div class="modal-vod-footer">
+              <button type="button" class="btn-base btn-brand-gray-b">Cancel</button>
+              <button type="submit" class="btn-base btn-brand-gray">Delete</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <!-- //VOD list delete modal - end : 170323 -->
+
+      <!-- Recreation list delete modal - start : 170323 -->
+      <div class="modal fade" id="list-delete-Recreation-modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-vod-delete">
+            <div class="modal-header">
+              <button type="button" class="close close-near" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="title-delete-VOD">Delete Recreation</h4>
+            </div>
+            <div class="modal-body">
+              <div class="vod-delete-content">
+                <div class="thumb-VOD thumb-Recreation-mypage">
+                  <img src="../assets/images/sample-img/dsc-list-sampleBigimg.jpg" alt="">
+                </div>
+                <div class="VOD-content VOD-content-mypage">
+                  <p class="card-title-VOD card-title-VOD-mypage">Recreation preview case Developer Biolo informatics...</p>
+                  <p class="card-text-VOD card-text-VOD-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                </div>
+              </div>
+              <p class="text-VOD-sure text-center">Are you sure you want to delete the recreation?</p>
+            </div>
+            <div class="modal-vod-footer">
+              <button type="button" class="btn-base btn-brand-gray-b">Cancel</button>
+              <button type="submit" class="btn-base btn-brand-gray">Delete</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <!-- //Recreation list delete modal - end : 170323 -->
+
+      <!-- VOD list delete & Recreation list delete reason modal - start : 170323 -->
+      <div class="modal fade" id="delete-reason-modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-vod-delete">
+            <div class="modal-header">
+              <button type="button" class="close close-near" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="title-delete-VOD">Hello! <span>Allice</span></h4>
+            </div>
+            <div class="modal-body">
+              <p class="text-VOD-sure">When the Children Crashed Dad’s BBC Interview: The Family Speaks In their first interview, Korea expert Robert Kelly and his wife, Kim Jung-A, describe the circumstances, chaos, and global reaction to their now-infamous home-office…WSJ.COM</p>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <!-- //VOD list delete & Recreation list delete reason modal - end : 170323 -->
+
+      <section class="main-section main-section-default">
+        <article class="main-article mypage-article">
+          <!--=include ../include/mypage/mypage-aside.html -->
+          <!-- 170323 mypage VOD 시작 -->
+          <div class="myp-contents mypage-contents tab-content">
+            <div class="mypageTabmenu">
+              <ul class="Tabmenu">
+                <!-- li class="active"로 탭 기능 -->
+                <li class="active"><a href="#vod" data-toggle="tab">VOD</a></li>
+                <li><a href="#recreation" data-toggle="tab">Recreation</a></li>
+                <li><a href="#no-list" data-toggle="tab">no list case</a></li>
+              </ul>
+            </div>
+
+            <!-- TAB : vod - start -->
+            <div class="tab-pane active" id="vod">
+              <p class="write-notice bg-w">
+                <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                All VOD contents need Admin approval to be listed.  (it will not be approved if it contains any inappropriate content.)<br />
+                If you want to edit the already approved VOD, you need to request admin for change.
+              </p>
+              <div class="article-box">
+                <ul class="mypage-contents-list">
+                  <li>
+                    <a href="#VOD-view-modal" class="VOD-link" data-toggle="modal">
+                      <div class="thumb-VOD thumb-VOD-mypage">
+                        <span class="btn-VOD-play"><i class="fa fa-play"></i></span>
+                        <div class="thumb-layer"></div>
+                        <img src="../assets/images/sample-img/dsc-list-sampleBigimg.jpg" alt="">
+                      </div>
+                      <div class="VOD-content VOD-content-mypage">
+                        <p class="VOD-date">February 23, 2017 4:12 PM</p>
+                        <p class="card-title-VOD card-title-VOD-mypage">VOD preview case Developer Biolo informatics inics...</p>
+                        <p class="card-text-VOD card-text-VOD-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                      </div>
+                    </a>
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#" aria-expanded="true"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#vodaddModal" data-toggle="modal">Edit</a></li>
+                            <li><a href="#list-delete-modal" data-toggle="modal">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="confirm-msg">Deleted</span>
+                  </li>
+                  <li>
+                    <a href="#VOD-view-modal" class="VOD-link" data-toggle="modal">
+                      <div class="thumb-VOD thumb-VOD-mypage">
+                        <span class="btn-VOD-play"><i class="fa fa-play"></i></span>
+                        <div class="thumb-layer"></div>
+                        <img src="../assets/images/sample-img/dsc-list-sampleBigimg.jpg" alt="">
+                      </div>
+                      <div class="VOD-content VOD-content-mypage">
+                        <p class="VOD-date">February 23, 2017 4:12 PM</p>
+                        <p class="card-title-VOD card-title-VOD-mypage">VOD preview case Developer Biolo informatics inics...</p>
+                        <p class="card-text-VOD card-text-VOD-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                      </div>
+                    </a>
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#" aria-expanded="true"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#" data-toggle="modal">Edit</a></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="confirm-msg pending-msg">Pending</span>
+                  </li>
+                  <li>
+                    <a href="#VOD-view-modal" class="VOD-link" data-toggle="modal">
+                      <div class="thumb-VOD thumb-VOD-mypage">
+                        <span class="btn-VOD-play"><i class="fa fa-play"></i></span>
+                        <div class="thumb-layer"></div>
+                        <img src="../assets/images/sample-img/dsc-list-sampleBigimg.jpg" alt="">
+                      </div>
+                      <div class="VOD-content VOD-content-mypage">
+                        <p class="VOD-date">February 23, 2017 4:12 PM</p>
+                        <p class="card-title-VOD card-title-VOD-mypage">VOD preview case Developer Biolo informatics inics...</p>
+                        <p class="card-text-VOD card-text-VOD-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                      </div>
+                    </a>
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#" aria-expanded="true"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#" data-toggle="modal">Edit</a></li>
+                            <li><a href="#" data-toggle="modal">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="confirm-msg confirmed-msg">Confirmed</span>
+                  </li>
+                  <li>
+                    <a href="#VOD-view-modal" class="VOD-link" data-toggle="modal">
+                      <div class="thumb-VOD thumb-VOD-mypage">
+                        <span class="btn-VOD-play"><i class="fa fa-play"></i></span>
+                        <div class="thumb-layer"></div>
+                        <img src="../assets/images/sample-img/dsc-list-sampleBigimg.jpg" alt="">
+                      </div>
+                      <div class="VOD-content VOD-content-mypage">
+                        <p class="VOD-date">February 23, 2017 4:12 PM</p>
+                        <p class="card-title-VOD card-title-VOD-mypage">VOD preview case Developer Biolo informatics inics...</p>
+                        <p class="card-text-VOD card-text-VOD-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                      </div>
+                    </a>
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#" aria-expanded="true"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#" data-toggle="modal">Edit</a></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="confirm-msg" data-toggle="modal" data-target="#delete-reason-modal">Rejected</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-article-seemore"><a href="#">See More</a></div>
+            </div>
+            <!-- //TAB : vod - end -->
+
+            <!-- TAB : recreatioin - start -->
+            <div class="tab-pane" id="recreation">
+              <p class="write-notice bg-w">
+                <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                All Recreation contents need Admin approval to be listed.  (it will not be approved if it contains any inappropriate content.)<br />
+                If you want to edit the already approved Recreation, you need to request admin for change.
+              </p>
+              <div class="article-box">
+                <ul class="mypage-contents-list">
+                  <li>
+                    <a href="#" target="_blank" class="VOD-link">
+                      <div class="thumb-VOD thumb-Recreation-mypage">
+                        <div class="thumb-layer"></div>
+                        <img src="//static.chemtopia.com/files/myfile/jasonkim/1482712234108-8f05e282ab7c491ab389cf146adf559b.png" alt="">
+                      </div>
+                      <div class="VOD-content VOD-content-mypage">
+                        <p class="VOD-date">February 23, 2017 4:12 PM</p>
+                        <p class="card-title-VOD card-title-VOD-mypage">Recreation preview case Developer Biolo informatics inics...</p>
+                        <p class="card-text-VOD card-text-Recreation-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                      </div>
+                    </a>
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#" aria-expanded="true"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#vodaddModal" data-toggle="modal">Edit</a></li>
+                            <li><a href="#list-delete-Recreation-modal" data-toggle="modal">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="confirm-msg">Deleted</span>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="VOD-link">
+                      <div class="thumb-VOD thumb-Recreation-mypage">
+                        <div class="thumb-layer"></div>
+                        <img src="//static.chemtopia.com/files/myfile/jasonkim/1482712328527-fa1483b199dc4cb1860898a79c8850c8.PNG" alt="">
+                      </div>
+                      <div class="VOD-content VOD-content-mypage">
+                        <p class="VOD-date">February 23, 2017 4:12 PM</p>
+                        <p class="card-title-VOD card-title-VOD-mypage">Recreation preview case Developer Biolo informatics inics...</p>
+                        <p class="card-text-VOD card-text-Recreation-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany).</p>
+                      </div>
+                    </a>
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#" aria-expanded="true"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#" data-toggle="modal">Edit</a></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="confirm-msg pending-msg">Pending</span>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="VOD-link">
+                      <div class="thumb-VOD thumb-Recreation-mypage">
+                        <div class="thumb-layer"></div>
+                        <img src="//static.chemtopia.com/files/myfile/jasonkim/1482712180887-2aa0114904164de49b7472c57663410c.PNG" alt="">
+                      </div>
+                      <div class="VOD-content VOD-content-mypage">
+                        <p class="VOD-date">February 23, 2017 4:12 PM</p>
+                        <p class="card-title-VOD card-title-VOD-mypage">Recreation preview case Developer Biolo informatics inics...</p>
+                        <p class="card-text-VOD card-text-Recreation-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                      </div>
+                    </a>
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#" aria-expanded="true"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#" data-toggle="modal">Edit</a></li>
+                            <li><a href="#" data-toggle="modal">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="confirm-msg confirmed-msg">Confirmed</span>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" class="VOD-link">
+                      <div class="thumb-VOD thumb-Recreation-mypage">
+                        <div class="thumb-layer"></div>
+                        <img src="//static.chemtopia.com/files/myfile/jasonkim/1482712234108-8f05e282ab7c491ab389cf146adf559b.png" alt="">
+                      </div>
+                      <div class="VOD-content VOD-content-mypage">
+                        <p class="VOD-date">February 23, 2017 4:12 PM</p>
+                        <p class="card-title-VOD card-title-VOD-mypage">Recreation preview case Developer Biolo informatics inics...</p>
+                        <p class="card-text-VOD card-text-Recreation-mypage">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world.</p>
+                      </div>
+                    </a>
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#" aria-expanded="true"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#" data-toggle="modal">Edit</a></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="confirm-msg" data-toggle="modal" data-target="#delete-reason-modal">Rejected</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="btn-article-seemore"><a href="#">See More</a></div>
+            </div>
+            <!-- //TAB : recreatioin - end -->
+
+            <!-- TAB : 리스트가 없는 경우 -->
+            <div class="tab-pane" id="no-list">
+              <div class="no-contents-box">
+                <img alt="" src="../assets/images/common/search-noresult.png">
+                <p>
+                  No Contents.
+                </p>
+              </div>
+            </div>
+            <!-- //TAB : 리스트가 없는 경우 - end -->
+          </div>
+          <!-- //170323 mypage VOD 끝 -->
+        </article>
+      </section>
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+    <script>
+      // 170306 VOD 댓글 열기 추가
+      $('#vod-comment-view').on('click', function(){
+        //$('#vod-comment-list').css('display','block'); 170322 삭제
+        var vodCommentHeight = $('#modal-body-vod').height();
+        $('#modal-body-vod').animate({scrollTop:vodCommentHeight},'slow');
+      });
+    </script>
+
+  </body>
+</html>

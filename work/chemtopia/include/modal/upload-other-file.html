@@ -1,0 +1,43 @@
+<!-- upload other file modal - start -->
+<div class="modal fade modal-pc upload-other-file" id="upload-other-file" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title pc-title">Upload File</h4>
+      </div>
+      <div class="modal-body">
+        <p class="txt-notice-upload">No single file can exceed 10 MB. File must be in WORD, PPT, PDF, EXCEL, PNG, JPG, JPEG, or GIF format.</p>
+        <!-- file upload -->
+        <div class="fileinput fileinput-new" data-provides="fileinput">
+          <span class="btn btn-file">
+            <span>Choose File</span><input type="file">
+          </span>
+          <span class="fileinput-filename"></span>
+          <span class="fileinput-new">No file chosen</span>
+          <a href="#" class="close fileinput-exists" data-dismiss="fileinput"><i class="icon-cross"></i></a>
+        </div>
+        <!-- //file upload -->
+        <input type="text" class="input-base input-title" placeholder="Title">
+        <h5 class="cheminfo-add-modal-h2">Detail description</h5>
+        <textarea rows="4" class="input-base input-textarea" placeholder="Please fill in 400 characters or less"></textarea>
+        <div class="detail-infor-box input-add-box">
+          <h5 class="cheminfo-add-modal-h2">Sale Price</h5>
+          <input type="text" id="sale-point" class="input-base input-payment" placeholder="50 ~ 100,000">
+          <label for="sale-point" class="txt-label-point">Point</label>
+          <div class="txt-final-selling">
+            <strong>Final selling point price <em>650</em> <span>point</span></strong> <br />(The point you entered + the ChemEssent fee 30%)
+          </div>
+          <p class="txt-sale-price">
+            The selling point is deducted when other customers view the information you upload Point, and the selling price is determined by attaching a commission to the points you have created. In addition, if another customer buys your information, you will receive the points We will return it to your account.
+          </p>
+        </div>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn-base btn-brand-gray-b" data-dismiss="modal">Cancle</button>
+        <button type="button" class="btn-base btn-brand-blue">Upload</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- //upload other file - end -->

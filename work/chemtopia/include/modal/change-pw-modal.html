@@ -1,0 +1,27 @@
+<!-- change-password-modal -->
+<div class="modal fade" id="changePwdModal" tabindex="-2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title-h2">Forgot your password?</p>
+        <p class="modal-base-text fotgot-text">No worries! Type in your email address and<br />
+          we'll send you an email to reset your password.</P>
+      </div>
+      <div class="modal-body">
+        <div class="signin-form-group">
+          <form>
+            <div class="form-group">
+              <label class="sr-only" for="InputEmail">Email address</label>
+              <input type="email" class="chem-form-control" id="InputEmail" placeholder="Email address" />
+              <!-- <span class="ie-searchclear"> </span> -->
+              <div class="text-alert text-alert-danger">We couldn't find that email address.</div>
+            </div>
+            <button class="btn-brand-blue btn-block sentPwdModal" type="submit" data-toggle="modal" data-target="#sentPwdModal">Send reset link</button>
+          </form>
+          <p class="socia-text-link">Back to <a href="#" class="signInModal">Sign in</a></p>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

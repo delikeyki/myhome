@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+
+      <section class="main-section-dsc">
+        <article class="main-article-cheminfo">
+
+          <div class="module-top-area">
+            <div class="inner-visual-bg">
+              <div class="inner-width">
+                <h1 class="inner-title">MODULES</h1>
+                <p class="inner-description">For professional chemical applications</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="break-main-content">
+            <!-- 탭 메뉴 -->
+            <div class="tabpanel tab-set1">
+              <ul class="nav">
+                <li class="active"><a href="#simulation" data-toggle="tab">Unit operation</a></li>
+                <li><a href="#pressure" data-toggle="tab">Packed Bed Pressure Drop</a></li><!-- 170517 추가 -->
+                <li><a href="#source-code" data-toggle="tab">Source Code</a></li>
+                <li><a href="#other-file" data-toggle="tab">Other file</a></li>
+              </ul>
+            </div>
+          </div><!-- //break-main-content -->
+
+          <!-- tab-content -->
+          <div class="tab-content">
+
+            <!-- tab#1 : simulation -->
+            <div role="tabpanel" class="tab-pane active" id="simulation">
+              <h2 class="text-hide">Unit operation</h2><!-- 170517 추가 -->
+              <div class="simulation-wrap">
+                <div class="source-info">
+                  <button class="link-howto" onclick="popupLink(664,1180,'module-howto.html','How to use Unit Operation')"><i class="fa fa-play-circle" aria-hidden="true"></i>How to use Unit Operation</button><!-- 170517 동영상 onclick 수정 -->
+                </div>
+                <!-- 로그인 전 케이스 추가 161213 -->
+                <div class="simulation-need-login">
+                  <h2>NOT SIGNED IN</h2>
+                  <p>Please Sign in to continue to Unit operation</p>
+                  <button type="button" class="btn-base btn-brand-blue">Sign in</button>
+                </div>
+                <!-- //로그인 전 케이스 추가 161213 -->
+                <!-- 로그인후 <iframe src="http://chemtopia.devone.co.kr/apps/Chemtopia/" title="simulation"></iframe> -->
+              </div>
+            </div>
+            <!-- //tab#1 : simulation -->
+
+            <!-- tab#2 : Packed Bed Pressure Drop 170517  -->
+            <div role="tabpanel" class="tab-pane" id="pressure">
+              <h2 class="text-hide">Packed Bed Pressure Drop</h2>
+              <div class="source-wrap">
+                <div class="source-inner">
+                  <div class="source-info">
+                    <button class="link-howto" onclick="popupLink(664,1180,'pressure-howto.html','Packed Bed Pressure Drop movie')"><i class="fa fa-play-circle" aria-hidden="true"></i>What’s Packed Bed Pressure Drop?</button>
+                  </div>
+                  <!-- left area -->
+                  <div class="pressure-left">
+                    <!-- pressure -->
+                    <div class="card-pressure text-center">
+                      <div class="pd-value">
+                        <div class="pd-inout-text">Pressure</div>
+                        <span class="number-psi">156 psi</span>
+                        <span class="number-temperature">120K</span>
+                      </div>
+                      <div class="pd-img">
+                        <div class="pd-Lv"><span class="pd-Lv-text">Reactor Length (Lv)<span class="pd-Lv-num">11,000m</span></span></div>
+                        <div class="pd-Dv">
+                          <span class="pd-Lv-text pd-Dv-text">Reactor Diameter (Dv)</span>
+                          <span class="pd-Lv-num">11,000m</span>
+                        </div>
+                        <div class="pd-shape">
+                          <div class="pd-shape-text">ΔP</div>
+                          <span class="pd-Lv-num">348</span>
+                        </div>
+                      </div>
+                      <div class="pd-value">
+                        <div class="pd-inout-text">Output Pressure</div>
+                        <span class="pd-output">847.4</span>
+                      </div>
+                    </div>
+                    <!-- //pressure -->
+                    <!-- result -->
+                    <div class="pressure-result">
+                      <h4 class="pd-result-title">Result value</h4>
+                      <table class="pd-result-table">
+                        <tbody>
+                          <tr>
+                            <th scope="row">Pressure In</th>
+                            <td><span>2848</span>psi</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Pressure Drop Out</th>
+                            <td><span>848.87</span>psi</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Pressure Drop (ΔP)</th>
+                            <td><span>89</span>psi</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- //result -->
+                  </div>
+                  <!-- //left area -->
+                  <!-- right area -->
+                  <form>
+                    <div class="card-pressure card-pressure-right">
+                      <h3 class="pd-item-title">1. Feed Information</h3>
+                      <div class="pd-input-wrap">
+                        <label for="input-temperature" class="pd-input-name">Temperature</label>
+                        <input type="text" id="input-temperature" class="input-base pd-input-value" placeholder="Please enter temperature" >
+                        <span class="pd-input-unit">K</span>
+                      </div>
+
+                      <div class="pd-input-wrap">
+                        <label for="input-pressure" class="pd-input-name">Pressure</label>
+                        <input type="text" id="input-pressure" class="input-base pd-input-value" placeholder="Please enter pressure" >
+                        <span class="pd-input-unit">psi</span>
+                      </div>
+
+                      <div class="pd-input-wrap">
+                        <h4 class="pd-input-name">Compound Stock</h4>
+                        <div class="pd-input-compound">
+                          <table class="pd-input-table pd-add-feed">
+                            <colgroup>
+                              <col class="pd-col1" /><col class="pd-col2" /><col class="pd-col3" /><col class="pd-col4" />
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col" class="text-formula">Formula</th>
+                                <th scope="col">Structure</th>
+                                <th scope="col">Mass Flowrate (kg/s)</th>
+                                <th scope="col" class="text-hide">delete</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Feed</th>
+                                <td class="td-compound">
+                                  <!-- <input type="text" id="input-pd-structure1" class="input-base" placeholder="Compound Search">
+                                  <button type="button" class="glyphicon glyphicon-search" data-toggle="modal" data-target="#pd-compound-search" title="search"></button> -->
+                                  <div class="select-keyword">
+                                    <img src="//static.chemtopia.com/files/cheminfo/compound/CT1001431854.png" alt="" /> Benzen
+                                  </div>
+                                </td>
+                                <td>
+                                  <input type="text" id="input-pd-mass1" class="input-base" placeholder="Please enter a value">
+                                </td>
+                                <td>&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Feed</th>
+                                <td class="td-compound">
+                                  <input type="text" id="input-pd-structure2" class="input-base" placeholder="Compound Search">
+                                  <button type="button" class="glyphicon glyphicon-search" data-toggle="modal" data-target="#pd-compound-search" title="search"></button>
+                                </td>
+                                <td>
+                                  <input type="text" id="input-pd-mass2" class="input-base" placeholder="Please enter a value">
+                                </td>
+                                <td>
+                                  <button type="button" class="btn-base btn-brand-gray btn-article-close btn-rt btn-feed"><span aria-hidden="true" title="delete">×</span></button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <button class="btn-base btn-add-data"><i class="icon-add-data">+</i>Add Feed</button>
+                        </div>
+                      </div>
+
+                      <h3 class="pd-item-title">2. Pellet Shape</h3>
+                      <div class="radiogroup shape-wrap">
+                        <div class="select-shape">
+                          <input checked="checked" id="shape-Sphere" class="css-radio" name="radio" type="radio" value="1">
+                          <label for="shape-Sphere" class="css-radio-label radio-shape">Sphere<img src="../assets/images/module/icon-sphere.png"  alt="" /></label>
+                        </div>
+                        <div class="select-shape">
+                          <input id="shape-Cylinder" class="css-radio" name="radio" type="radio" value="2">
+                          <label for="shape-Cylinder" class="css-radio-label radio-shape">Cylinder<img src="../assets/images/module/icon-cylinder.png"  alt="" /></label>
+                        </div>
+                        <div class="select-shape">
+                          <input id="shape-Hollow" class="css-radio" name="radio" type="radio" value="3">
+                          <label for="shape-Hollow" class="css-radio-label radio-shape">Hollow Cylinder<img src="../assets/images/module/icon-hollow.png"  alt="" /></label>
+                        </div>
+                      </div>
+
+                      <h3 class="pd-item-title">3. Pellet Specification</h3>
+                      <table class="pd-input-table">
+                        <thead>
+                          <tr>
+                            <th scope="col"><label for="input-ps-outer">Diameter (m, outer)</label></th>
+                            <th scope="col"><label for="input-ps-inner">Diameter (m, inner)</label></th>
+                            <th scope="col"><label for="input-ps-height">Height (m)</label></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input type="text" id="input-ps-outer" class="input-base" placeholder="Please enter a value">
+                            </td>
+                            <td>
+                              <input type="text" id="input-ps-inner" class="input-base" placeholder="Please enter a value">
+                            </td>
+                            <td>
+                              <input type="text" id="input-ps-height" class="input-base" placeholder="Please enter a value">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h3 class="pd-item-title">4. Packed Bed Configuration</h3>
+                      <table class="pd-input-table">
+                        <thead>
+                          <tr>
+                            <th scope="col"><label for="input-pd-Dv">Diameter(Dv)</label></th>
+                            <th scope="col"><label for="input-pd-Lv">Length(Lv)</label></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <input type="text" id="input-pd-Dv" class="input-base" placeholder="Please enter a value">
+                            </td>
+                            <td>
+                              <input type="text" id="input-pd-Lv" class="input-base" placeholder="Please enter a value">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="pd-btn-wrap">
+                      <button type="reset" ><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Clear</button>
+                      <button type="button"><span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> Load Project</button>
+                      <button type="submit"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Save Project</button>
+                      <button type="button" class="btn-calculate">Calculate</button>
+                    </div>
+                  </form>
+                  <!-- //right area -->
+                </div>
+              </div>
+            </div>
+            <!-- //tab#2 : Packed Bed Pressure Drop -->
+
+            <!-- tab#3 : source-code -->
+            <div role="tabpanel" class="tab-pane" id="source-code">
+              <h2 class="text-hide">Source Code</h2><!-- 170517 추가 -->
+              <div class="source-wrap">
+                <div class="source-inner">
+
+                  <div class="source-info">
+                    <!-- 161208 a태그 내용 수정 --><a href="#" data-toggle="tooltip" title="" class="ic-qustion" data-original-title="Development of specific applications frequently requires custom computational code developments.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    To help these activities, various source code modules verified in chemical applications are provided here, starting from the source codes for the computation of 11 thermophysical properties.(as of January 2017)
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    New source codes will be added on a continuous basis.">?</a> What’s Source Code?
+                  </div>
+
+                  <ul class="source-list">
+                    <li>
+                      <div class="source-card">
+                        <a href="module-sub.html">
+                          <h2 class="source-title">Textureless shape matching with scale and rotation undrained peat deposite of the decis...</h2>
+                          <p class="source-text">
+                            The decision to attach a sound bar to the bottom of the screen looks a touch clumsy, though. It can’t be detached, even if you’re planning to run an OLED65E6 with an external audio...
+                          </p>
+                        </a>
+                        <div class="article-btngroup source-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>30</a></li>
+                            <li><i class="icon-inbox" aria-hidden="true" title="Download"></i>65</li>
+                          </ul>
+                          <span class="see-more"><a href="module-sub.html">See More</a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="source-card">
+                        <a href="#">
+                          <h2 class="source-title">Textureless shape matching with scale</h2>
+                          <p class="source-text">
+                            The decision to attach a sound bar to the bottom of the screen looks a touch clumsy, though. It can’t be detached.
+                          </p>
+                        </a>
+                        <div class="article-btngroup source-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                            <li><i class="icon-inbox" aria-hidden="true" title="Download"></i>65</li>
+                          </ul>
+                          <span class="see-more"><a href="#">See More</a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="source-card">
+                        <a href="#">
+                          <h2 class="source-title">Textureless shape matching with scale</h2>
+                          <p class="source-text">
+                            The decision to attach a sound bar to the bottom of the screen looks a touch clumsy, though. It can’t be detached, even if you’re planning to run an OLED65E6 with an external audio...
+                          </p>
+                        </a>
+                        <div class="article-btngroup source-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>30</a></li>
+                            <li><i class="icon-inbox" aria-hidden="true" title="Download"></i>65</li>
+                          </ul>
+                          <span class="see-more"><a href="#">See More</a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="source-card">
+                        <a href="#">
+                          <h2 class="source-title">Textureless shape matching with scale and rotation undrained peat deposite of the decis...</h2>
+                          <p class="source-text">
+                            The decision to attach a sound bar to the bottom of the screen looks a touch clumsy, though.
+                          </p>
+                        </a>
+                        <div class="article-btngroup source-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>30</a></li>
+                            <li><i class="icon-inbox" aria-hidden="true" title="Download"></i>65</li>
+                          </ul>
+                          <span class="see-more"><a href="#">See More</a></span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+
+                  <!-- 더보기 -->
+                  <div class="btn-article-seemore"><a href="#">See More</a></div>
+                </div>
+              </div>
+
+            </div>
+            <!-- //tab#3 : source-code -->
+
+            <!-- tab#4 : other-file paid 추가 -->
+            <div role="tabpanel" class="tab-pane" id="other-file">
+              <h2 class="text-hide">Other file</h2>
+              <div class="source-wrap">
+                <div class="source-inner">
+                  <button type="button" data-toggle="modal" data-target="#upload-other-file" class="btn-base btn-brand-blue btn-add-file">Add a File</button>
+                  <ul class="list-other-file">
+                    <li>
+                      <div class="left-info">
+                        <div class="wrap-tit-other">
+                          <h3 class="title-other-file">
+                            <img src="../assets/images/icon/ico-doc.gif" title="excel"> The First Few Moments That Physics Can't Explain
+                          </h3>
+                          <!-- dropdown -->
+                          <div class="dropdown">
+                            <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                            <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                              <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                                <ul>
+                                  <li><a href="#reportModal" data-toggle="modal">Delete</a></li>
+                                  <li><a href="#reportModal" data-toggle="modal">Report</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //dropdown -->
+                          <!--
+                          <div class="txt_point">
+                            <div class="txt-final-selling">
+                              <strong><em>650</em> <span>point</span></strong>
+                            </div>
+                          </div> -->
+                        </div>
+                        <p class="desc-other-file">
+                          A Stanford University research lab has developed new technologies to tackle two of the world's biggest energy challenges - clean fuel for transportation and grid-scale energy storage. A Stanford University research lab has developed new technologies to tackle two of the world's biggest energy challenges - clean fuel for transportation and grid-scale energy storage. A Stanford University research lab has developed new technologies to tackle two of the world's biggest energy challenges
+                        </p>
+                        <!-- icon group -->
+                        <div class="article-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                            <li><i class="icon-eye" aria-hidden="true"></i>65</li>
+                            <li>
+                              <a href="#" title="bookmark" media="" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- //icon group -->
+
+                        <!-- person info -->
+                        <div class="floatingUI-container">
+                          <a href="#" class="floatingUI-user-info profile-picture-small">
+                            <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-s-img.png">
+                          </a>
+                          <div class="user-profile-contents arrow-menu-top">
+                            <div class="profile-info-box">
+                              <span class="profile-picture-large">
+                                <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png">
+                              </span>
+                              <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                              <p class="user-group">Hashemite University</p>
+                            </div>
+                            <div class="profile-detail-btn">
+                              <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                              <div class="follow-send-btn">
+                                <!-- <button class="btn-brand-blue">follow</button> -->
+                                <span class="toggle-btn btn-following toggle-btn-following">
+                                  <input type="checkbox" checked="">
+                                  <label data-off="Follow" data-on="Following"></label>
+                                </span>
+                                <button class="btn-base btn-brand-blue">Send Message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-name">
+                          <a href="#"><span class="icon-profile-crown"></span>Sunghyun Lee</a>
+                          <span class="creation-date-cheminfo"><i class="fa fa-circle" aria-hidden="true"></i>12 hours ago</span>
+                        </p>
+                        <!-- //person info -->
+                      </div>
+                      <div class="right-down">
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="left-info">
+                        <div class="wrap-tit-other">
+                          <h3 class="title-other-file">
+                            <img src="../assets/images/icon/ico-excel.gif" title="etc"> The First Few Moments That Physics Can't Explain
+                          </h3>
+                          <!-- dropdown -->
+                          <div class="dropdown">
+                            <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                            <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                              <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                                <ul>
+                                  <li><a href="#reportModal" data-toggle="modal">Delete</a></li>
+                                  <li><a href="#reportModal" data-toggle="modal">Report</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //dropdown -->
+                        </div>
+                        <p class="desc-other-file">
+                          A Stanford University research lab has developed new technologies to tackle two of the world's biggest energy challenges - clean fuel for transportation and grid-scale energy storage. A Stanford University research lab has developed new technologies
+                        </p>
+                        <!-- icon group -->
+                        <div class="article-btngroup">
+                          <ul class="btn-article-function">
+                            <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                            <li><i class="icon-eye" aria-hidden="true"></i>65</li>
+                            <li>
+                              <a href="#" title="bookmark" media="" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- //icon group -->
+
+                        <!-- person info -->
+                        <div class="floatingUI-container">
+                          <a href="#" class="floatingUI-user-info profile-picture-small">
+                            <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-s-img.png">
+                          </a>
+                          <div class="user-profile-contents arrow-menu-top">
+                            <div class="profile-info-box">
+                              <span class="profile-picture-large">
+                                <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png">
+                              </span>
+                              <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                              <p class="user-group">Hashemite University</p>
+                            </div>
+                            <div class="profile-detail-btn">
+                              <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                              <div class="follow-send-btn">
+                                <!-- <button class="btn-brand-blue">follow</button> -->
+                                <span class="toggle-btn btn-following toggle-btn-following">
+                                  <input type="checkbox" checked="">
+                                  <label data-off="Follow" data-on="Following"></label>
+                                </span>
+                                <button class="btn-base btn-brand-blue">Send Message</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="user-name">
+                          <a href="#"><span class="icon-profile-crown"></span>Sunghyun Lee</a>
+                          <span class="creation-date-cheminfo"><i class="fa fa-circle" aria-hidden="true"></i>12 hours ago</span>
+                        </p>
+                        <!-- //person info -->
+                      </div>
+                      <div class="right-down">
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- //tab#4 : other-file -->
+
+
+          </div><!-- //tab-content -->
+
+
+        </article>
+      </section>
+
+      <!--=include ../include/footer.html -->
+
+      <!--=include ../include/modal/pd-compound-search.html -->
+      <!--=include ../include/modal/upload-other-file.html --><!-- paid 추가 -->
+
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+
+    /* 170517 pressure drop 관련 수정 및 추가 */
+    function popupLink(popHeight,popWidth,htmlName,browserName){
+    var winHeight = document.body.clientHeight;	// 현재창의 높이
+    var winWidth = document.body.clientWidth;	// 현재창의 너비
+    var winX = window.screenX || window.screenLeft || 0;// 현재창의 x좌표
+    var winY = window.screenY || window.screenTop || 0;	// 현재창의 y좌표
+
+    var popX = winX + (winWidth - popWidth)/2;
+    var popY = winY + (winHeight - popHeight)/2;
+    window.open(htmlName, browserName,"width="+popWidth+"px,height="+popHeight+"px,top="+popY+",left="+popX+", status=no, directories=no, toolbar=no, titlebar=no, location=no, menubar=no, scrollbars=no, resizable=yes");
+    }
+
+    $(function () {
+
+      /* Add Feed tr 추가 삭제 */
+      $('.btn-add-data').on("click", function(){
+
+          var thTbl = $('.pd-add-feed').children('tbody'),
+              rowTag = thTbl.find('tr:last').html();
+
+          thTbl.append("<tr>"+ rowTag +"</tr>");
+          return false;
+      });
+
+      $('.pd-add-feed').on("click", ".btn-feed", function(){
+        $(this).parents('tr').css('display','none');
+      })
+    })
+    /* ~170517 pressure drop 관련 수정 및 추가 */
+    </script>
+  </body>
+</html>

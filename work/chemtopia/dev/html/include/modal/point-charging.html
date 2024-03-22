@@ -1,0 +1,91 @@
+<!-- point charging modal - start -->
+<div class="modal fade modal-pc" id="point-charging" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title pc-title">ChemTopia point charging</h4>
+      </div>
+      <div class="modal-body">
+        <table class="pc-table">
+          <colgroup>
+            <col class="col-harf" /><col class="col-harf" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th class="pc-th">Currently Total Available Points</th>
+              <td class="pc-td">23,456 P</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="pc-table">
+          <caption>Please select a point to recharge</caption>
+          <colgroup>
+            <col class="col1" /><col class="col2" /><col class="col4" /><col class="col2" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Select</th>
+              <th scope="col">Charge point</th>
+              <th scope="col">Details</th>
+              <th scope="col">Amount of<br />payment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="radiogroup"><input class="css-radio" id="pc1" name="radio" type="radio" value="1" checked="checked"><label for="pc1" class="css-radio-label"></label></td>
+              <td class="pc-point pc-alignr">500 P</td>
+              <td class="pc-alignl">500 P</td>
+              <td class="pc-price pc-alignr">$ 5</td>
+            </tr>
+            <tr>
+              <td class="radiogroup"><input class="css-radio" id="pc2" name="radio" type="radio" value="2"><label for="pc2" class="css-radio-label"></label></td>
+              <td class="pc-point pc-alignr">1,100 P</td>
+              <td class="pc-alignl">1,000 P + 100 P(bonus)</td>
+              <td class="pc-price pc-alignr">$ 10</td>
+            </tr>
+            <tr>
+              <td class="radiogroup"><input class="css-radio" id="pc3" name="radio" type="radio" value="3"><label for="pc3" class="css-radio-label"></label></td>
+              <td class="pc-point pc-alignr">2,200 P</td>
+              <td class="pc-alignl">2,000 P + 200 P(bonus)</td>
+              <td class="pc-price pc-alignr">$ 20</td>
+            </tr>
+            <tr>
+              <td class="radiogroup"><input class="css-radio" id="pc4" name="radio" type="radio" value="4"><label for="pc4" class="css-radio-label"></label></td>
+              <td class="pc-point pc-alignr">5,500 P</td>
+              <td class="pc-alignl">5,000 P + 500 P(bonus)</td>
+              <td class="pc-price pc-alignr">$ 50</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="pc-table">
+          <caption>Selected point</caption>
+          <colgroup>
+            <col class="col3" /><col class="col4" /><col class="col3" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Charge point</th>
+              <th scope="col">Details</th>
+              <th scope="col">Amount of<br />payment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="pc-select">500 P</td>
+              <td>500 P</td>
+              <td class="pc-price">$ 5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer ">
+        <button type="button" class="btn-base btn-brand-gray-b" data-dismiss="modal">Cancle</button>
+        <button type="button" class="btn-base btn-brand-blue">Charging</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- point charging - end -->

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:url" content="http://search.molinstincts.com/analysis/analysis.ce?0000-ukiu">
+
+  <title>analysis</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="http://search.molinstincts.com/css/navigator/site_global.css?125220141112"/>
+  <link rel="stylesheet" type="text/css" href="http://search.molinstincts.com/css/navigator/master_a-master.css?4268671863"/>
+  <link rel="stylesheet" type="text/css" href="http://search.molinstincts.com/css/navigator/coordinates.css?3964412108" id="pagesheet"/>
+
+  <link rel="stylesheet" type="text/css"	href="http://search.molinstincts.com/css/jquery/jquery-ui-1.10.4.custom.min.css" />
+  <link rel="stylesheet" type="text/css"	href="http://search.molinstincts.com/css/jquery/jquery-ui.css" />
+
+  <link rel="stylesheet" type="text/css"	href="http://search.molinstincts.com/css/jsmol/jquery-ui_mod.css" />
+  <link rel="stylesheet" type="text/css"	href="http://search.molinstincts.com/css/jsmol/spectrum_mod.min.css" />
+
+  <!-- js -->
+  <script type="text/javascript" src="http://search.molinstincts.com/js/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="http://search.molinstincts.com/js/jquery/jquery-ui-1.10.4.custom.js"></script>
+
+<!-- JSmol javascript -->
+<script type="text/javascript" src="http://search.molinstincts.com/js/jquery/jquery-ui(core-accordion).min.js"></script>
+<script type="text/javascript" src="http://search.molinstincts.com/js/jsmol/JSmol.min.nojq.js"></script>
+<script type="text/javascript" src="http://search.molinstincts.com/js/jsmol/phpProcessingSave.js">/*patch for JSmol saving files with php*/</script>
+<script type="text/javascript" src="http://search.molinstincts.com/js/jsmol/spectrum.min.js"></script>
+
+<!-- left 메뉴 및 property 버튼 script -->
+<script type="text/javascript" src="http://search.molinstincts.com/js/common/commonMenu.js"></script>
+
+<!-- ZeroClipboard -->
+<script type="text/javascript" src="http://search.molinstincts.com/js/ZeroClipboard-2.0.0/ZeroClipboard.js"></script>
+
+
+
+<style type="text/css">
+/* 	#viewer { width:1000px; height:600px; position:relative; } */
+/* 	#viewerTools { width:39%; height:100%; position:absolute; left:0; top:0; overflow:hidden; } */
+/* 	#viewerViewer { width:60%; height:100%; position:absolute; left:40%; top:0; } */
+	#viewer { width:914px; height:600px; position:relative; }
+	#viewerTools { width:320px; height:100%; position:absolute; left:0; top:0; overflow:hidden;}
+	#viewerViewer { width:740px; height:100%; position:absolute; left:336px; top:0; }
+
+	#viewerTools.ui-accordion .ui-accordion-header { padding: 0.15em 0.25em 0.15em 1.5em; }
+	#viewerTools.ui-accordion .ui-accordion-content { font-size:0.85em; padding:0.2em 1ex; }
+
+	#viewerTools .frIndent { text-indent:-4ex; margin-left:4ex; }
+ 	#viewerTools .subSection50 { height:50%; overflow:auto; border-bottom:2px solid #DAECF9; }
+	#viewerTools .subSection { height:100%; overflow:hidden; position:relative; }
+	#viewerTools .subSectionSubTop { position:absolute; overflow:auto; top:0; left:0; right:0;
+		border-bottom:2px solid #DAECF9;
+		/* specify matching bottom: in element */
+	}
+	#viewerTools .subSectionSubBottom { position:absolute; width:100%; bottom:0;
+		/* specify matching height: in element */
+	}
+	#viewerTools .molPropsTable th { font-weight:normal; font-style:italic; background-color:#DAECF9; color:#47AFE4; min-width:3ex; }
+	#viewerTools .molPropsTable td { text-align:right; font-family:"Courier New", Courier, mono; padding:0 0.6ex; }
+	#viewerTools .molPropsTable tr:nth-child(even) { background-color:transparent; }
+	#viewerTools .molPropsTable tr:nth-child(odd) { background-color:#DFE8F0; }
+	#viewerTools textarea { font-size:0.9em; }
+	#viewerTools #viewerVibTab { margin:0; }
+	#viewerTools #viewerVibTab b { font-weight:normal; display:inline-block; width:6ex; }
+	#viewerTools #viewerVibTab input[type=range] { width:10ex; vertical-align:middle;}
+	#viewerTools #viewerVibTab input[type=button] { margin:0.2em 0; }
+	#viewerTools input#viewerMOresol { width:11ex; vertical-align:middle;}
+	#viewerTools #viewerMoTab td { text-align:center; }
+	#viewerTools #viewerMoTab input { width:5ex; }
+	#viewerTools #viewerMoTab .sp-replacer { margin:0 0.5ex; }
+	#viewerTools input[type=button] { margin:0 1ex; }
+	#viewerTools .section {
+		border:2px solid #AED0EA; border-radius:1ex;
+		padding:0.3em 1ex; margin-top:1.3em;
+	}
+	#viewerTools .section h2 {
+		font-size:1.0em; font-weight:normal; font-variant:normal; margin:0; padding:0; margin-bottom:0.1em;
+		margin-top:-1.1em; color:#47AFE4;
+	}
+	#viewerTools .highlightRow { background-color:#FFE000 !important; }
+	#viewerTools #viewerInfoTab b { font-weight:bold; color:#47AFE4; }
+	#viewerTools #viewerCopySaveDiv { margin-top:0.6em; }
+	#viewerTools #viewerClippClose { float:right; color:red; padding-top:1.2em; }
+	#viewerTools #viewerClippClose a { color:inherit; }
+	#viewerTools #viewerClipp { display:none; }
+/* 	#viewerClipdText { width:370px; height:300px; border:1px solid #DDEDF9; border-width:0 6px; } */
+	#viewerClipdText { width:300px; height:300px; border:1px solid #DDEDF9; border-width:0 6px; }
+/* 	#viewerTools #viewerClippText { height:170px; width:350px; } */
+	#viewerTools #viewerClippText { height:285px; width:285px;}
+	#viewerClipdImg { display:none; border:1px solid #DDEDF9; border-width:0 6px; }
+	#viewerClipdTextHeader,
+	#viewerClipdImgHeader,
+	#viewerClipdFooter { font-family:Arial, Helvetica, sans-serif; font-size:0.85em;
+		padding:0.3ex 1ex;
+	}
+	#viewerTools .hint { color:#666; }
+	.viewerDialog {
+ 		display:none; position:absolute; left:1015px; top:10px; z-index:19;
+		box-shadow:3px 3px 6px 6px rgba(80, 80, 80, 0.5);
+		border:1px solid #AED0EA; border-radius:1ex; color:#2779aa;
+		background:#DDEDF9;
+		background:linear-gradient(to bottom, #DAECF9, #EBF4FC, #DAECF9);
+		padding:0.3em 1ex;
+	}
+	.viewerDialog h1 {
+		font-size:1.0em; font-variant:normal; text-align:center; margin:0; padding:0;
+	}
+	.viewerDialog h2 {
+		font-size:1.0em; font-weight:normal; font-variant:normal; margin:0; padding:0; margin-bottom:0.1em;
+		margin-top:-1.1em;
+	}
+	.viewerDialog p,
+	.viewerDialog .p { margin:0; padding:0; text-indent:0; color:black;
+	}
+	.viewerDialog .digits6 { width:7ex; text-align:right; }
+	.viewerDialog div { margin:0.3em 0; }
+	.viewerDialog div.sp-replacer,
+	.viewerDialog div.sp-replacer div { margin:0; }
+	.viewerDialogSection { border:1px solid #AED0EA; border-radius:1ex;
+		padding:0.3em 1ex; margin-top:1.3em !important;
+	}
+	#viewerDialogDcolors h1 { margin-bottom:0.3em; }
+	#viewerDialogDcolors p { margin:0.4em 0; }
+	#viewerDialogOptions input[type=button] { margin:0 0.5ex; }
+	/*	20140710 added */
+	#viewerDialogOptions {
+	  max-width:340px; /*avoid overlap with Jmol*/
+	}
+	.viewerDialog #labelFormat option,
+	.viewerDialog #labelFormat input,
+	.viewerDialog #labelFormat span { font:inherit; font-size:0.9em; }
+	#viewerAtomicTable { margin:0 auto; }
+	#viewerAtomicTable td,
+	#viewerAtomicTable th { text-align:center; font-size:0.95em; font-weight:normal; }
+	#viewerAtomicTable input[type=text] { width:5ex; text-align:right; font-size:1em; }
+	.sp-container { /* prettier Spectrum colorpicker */
+		box-shadow:3px 3px 6px 6px rgba(80, 80, 80, 0.5);
+		border-radius:6px;
+	}
+	.sp-palette { max-width:44px; /* 2 per row */ }
+	.jmolPopupMenu,
+	.jmolPopupMenu a { font-size:13px!important; line-height:1.5em; }
+	#JmolOb_coverdiv { background-color:white!important; }
+	.viewerDialog #viewerVersion { display:none; font-size:0.85em; color:#666666; text-align:center; }
+
+	@media all and (-ms-high-contrast: none) { /* IE10+ */
+		#viewerTools input[type=range] { padding:0.3em 1ex; }
+		#viewerTools input[type=range]::-ms-tooltip { display: none; }
+	}
+	/*	20140710 added */
+	#JmolOb_appletdiv { background-color:black; }
+	#JmolOb_appletdiv #viewerImgApplet { position:absolute; top:0; left:0; }
+	input[type=radio].radioSwitch { display:none; }
+	input[type=radio].radioSwitch + label.radioSwitch {
+		cursor:pointer;
+		height:1em; padding:0.5ex 1ex; margin-left:-1ex;
+		color:gray;
+		background:#ddd;
+		background: linear-gradient(to bottom, #e9e9e9 0%,#d1d1d1 60%,#e9e9e9 100%); }
+	input[type=radio].radioSwitch:checked + label.radioSwitch {
+		color:black; text-shadow:1px 1px #ccc;
+		background:#7FB31D;
+		background: linear-gradient(to bottom, #b4e391 0%,#61c419 60%,#b4e391 100%);
+	}
+	label.radioSwitch { border-width:2px; border-style:solid; border-color:white; border-radius:0; }
+	label.radioSwitchLeft { border-right-width:0; border-radius: 1ex 0 0 1ex; }
+	label.radioSwitchMid { border-left-width:0;border-right-width:0; border-radius:0;  }
+	label.radioSwitchRight { border-left-width:0; border-radius: 0 1ex 1ex 0; }
+</style>
+
+</head>
+<body>
+  <div class="clearfix colelem" id="coordinatesTable" style="width: 1070px;background-color: transparent; margin:20px 0; position: relative; padding: 7px 7px 6px 6px;">
+    	<div id="viewer" style="opacity:1">
+			<div id="viewerClipd" class="viewerDialog">
+				<div id="viewerClipdTextHeader">Copy to clipboard: Ctrl+C or Cmd+C,<br>
+				or right-click, or context menu</div>
+<!-- 				<div id="viewerClipdImgHeader">Copy to clipboard: on the image,<br> -->
+<!-- 				right-click or context menu</div> -->
+				<div id="viewerClipdImgHeader">Copy to clipboard: on the image below,
+				right-click or context menu.
+				 &nbsp;Then, <a href="javascript:void(viewer_ClearClip('d'))">close</a> this panel.
+				</div>
+				<textarea id="viewerClipdText"></textarea>
+				<img id="viewerClipdImg" alt="copied image" src="" style="display:none;">
+				<div id="viewerClipdFooter">Then, <a href="javascript:void(viewer_ClearClip('d'))">close</a> this panel</div>
+		 	</div>
+			<div id="viewerTools" style="" class="ui-accordion ui-widget ui-helper-reset" role="tablist">
+				<h5 id="viewerInfoTitle" class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all" role="tab" aria-controls="viewerInfoTab" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Information, save and copy</h5>
+				<div id="viewerInfoTab" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" aria-labelledby="viewerInfoTitle" role="tabpanel" aria-hidden="true" style="display: none; height: 451.764px; overflow: auto;">
+					<div id="viewerId" class="frIndent hint"><b>Mol·Instincts ID:</b> 0000-ukiu</div>
+					<div id="viewerName" class="frIndent"><b>Name:</b> pentane</div>
+					<div id="viewerFormula" class="frIndent"><b>Formula:</b> C<sub>5</sub>H<sub>12</sub><sub></sub></div>
+					<div id="viewerCopySaveDiv">
+						<p><b>Save</b>
+						<select onchange="viewer_SaveAs(this.options[this.selectedIndex].value);this.selectedIndex=0;" id="viewerSaveMenu">
+						<option value="">.. ..</option>
+						<optgroup label="coordinates and bonds">
+						<option value="mol,server">original (MOL)</option>
+						<option value="mol,tCoord">transformed (MOL)</option>
+						</optgroup>
+						<optgroup label="image">
+						<option value="image,origJpg">original size (JPG)</option>
+						<option value="image,jpg">custom size (JPG)</option>
+						<option value="image,pngT">custom size (PNG transparent bkg)</option>
+						</optgroup>
+						</select>
+						</p>
+						<p><b>Copy</b>
+						<select onchange="viewer_Copy(this.options[this.selectedIndex].value,'panel');this.selectedIndex=0;" id="viewerCopyMenu">
+						<option value="">.. ..</option>
+						<option value="coord,mol">coordinates and bonds (MOL)</option>
+						<option value="coord,mi">coordinates (column format)</option>
+						<option value="coord,tab">coordinates (tab-delimited)</option>
+						<option value="image">image (JPG)</option>
+						</select>
+						</p>
+						<br>
+						<div id="viewerClipp" style="display: none;">
+							<div id="viewerClippClose"><a href="javascript:void(viewer_ClearClip('p'))">Close</a>
+							</div>
+							<div id="viewerClippTextHeader">Copy to clipboard: Ctrl+C or Cmd+C,<br>
+							or right-click, or context menu</div>
+							<div id="viewerClippImgHeader">Copy to clipboard: on the image,<br>
+							right-click or context menu</div>
+							<br>
+							<textarea id="viewerClippText" style="display: none;"></textarea>
+						</div>
+						<img id="viewerClippImg" alt="copied image" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" style="display: none;">
+					</div>
+				</div>
+
+				<h5 id="viewerCoordTitle" class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all" role="tab" aria-controls="ui-accordion-viewerTools-panel-1" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Coordinates</h5>
+				<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-viewerTools-panel-1" aria-labelledby="viewerCoordTitle" role="tabpanel" aria-hidden="true" style="display: none; height: 451.764px; overflow: auto;">
+					<div class="subSection" id="viewerCoordEnv">
+						<div class="subSectionSubTop" style="bottom:1.8em;">
+							<table id="viewerCoord" class="molPropsTable">
+							<tbody><tr>
+							<th title="atom index">N</th>
+							<th title="element symbol">S</th>
+							<th title="X coordinate">X</th>
+							<th title="Y coordinate">Y</th>
+							<th title="Z coordinate">Z</th>
+							</tr>
+							<tr><td>1</td><td>C</td><td>0.000</td><td>2.560</td><td>0.324</td></tr><tr><td>2</td><td>C</td><td>0.000</td><td>1.284</td><td>-0.524</td></tr><tr><td>3</td><td>C</td><td>0.000</td><td>-0.000</td><td>0.316</td></tr><tr><td>4</td><td>C</td><td>-0.000</td><td>-1.284</td><td>-0.524</td></tr><tr><td>5</td><td>C</td><td>-0.000</td><td>-2.560</td><td>0.324</td></tr><tr><td>6</td><td>H</td><td>-0.885</td><td>2.606</td><td>0.971</td></tr><tr><td>7</td><td>H</td><td>0.885</td><td>2.606</td><td>0.971</td></tr><tr><td>8</td><td>H</td><td>0.000</td><td>3.459</td><td>-0.304</td></tr><tr><td>9</td><td>H</td><td>-0.878</td><td>1.283</td><td>-1.185</td></tr><tr><td>10</td><td>H</td><td>0.878</td><td>1.283</td><td>-1.185</td></tr><tr><td>11</td><td>H</td><td>0.879</td><td>-0.000</td><td>0.979</td></tr><tr><td>12</td><td>H</td><td>-0.879</td><td>0.000</td><td>0.979</td></tr><tr><td>13</td><td>H</td><td>-0.878</td><td>-1.283</td><td>-1.185</td></tr><tr><td>14</td><td>H</td><td>0.878</td><td>-1.283</td><td>-1.185</td></tr><tr><td>15</td><td>H</td><td>0.885</td><td>-2.606</td><td>0.971</td></tr><tr><td>16</td><td>H</td><td>-0.885</td><td>-2.606</td><td>0.971</td></tr><tr><td>17</td><td>H</td><td>-0.000</td><td>-3.459</td><td>-0.304</td></tr></tbody></table>
+						</div>
+						<div class="subSectionSubBottom" id="coordBtns" style="visibility: visible; height: 1.7em; text-align: center;">
+							<input type="button" value="Unselect" onclick="viewer_UnselAtoms()" class="btn" style="width:60px;height:20px;">
+						</div>
+					</div>
+				</div>
+
+				<h5 id="viewerMeasTitle" class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all" role="tab" aria-controls="ui-accordion-viewerTools-panel-2" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Measurements</h5>
+				<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-viewerTools-panel-2" aria-labelledby="viewerMeasTitle" role="tabpanel" aria-hidden="true" style="display: none; height: 451.764px; overflow: auto;">
+					<div class="subSection">
+						<div class="subSectionSubTop" style="bottom:4.4em;">
+							<table id="viewerMeasure" class="molPropsTable">
+							<tbody><tr>
+							<th title="type of measurement">type</th>
+							<th title="measured value">value</th>
+							<th title="1st atom involved">1</th>
+							<th title="2nd atom involved">2</th>
+							<th title="3rd atom involved">3</th>
+							<th title="4th atom involved">4</th>
+							</tr>
+							</tbody></table>
+							<p id="measureHint" class="hint" style="margin-top:0.2em; ">
+							To make measurements: &nbsp; <strong>D</strong>ouble-<strong>C</strong>lick on first
+							and last atoms, <strong>S</strong>ingle-<strong>C</strong>lick in between.
+							<br>Distance, 2 atoms: DC, DC.
+							<br>Angle, 3 atoms: DC, SC, DC.
+							<br>Dihedral angle, 4 atoms: DC, SC, SC, DC.
+							</p>
+						</div>
+						<div class="subSectionSubBottom" id="measureBtns" style="visibility:hidden; height:4em; text-align:center;">
+							<input type="button" value="Select all" id="viewerMeasSel" onclick="viewer_OutlineAll(gid('viewerMeasure').rows, 'Smeas'); viewer_HLmeasureAll(true);" class="btn" style="width:80px;height:20px;margin-bottom:7px;">
+							<input type="button" value="Unselect all" id="viewerMeasUnsel" onclick="viewer_OutlineAll(gid('viewerMeasure').rows, false); viewer_HLmeasureAll(false);" class="btn" style="width:80px;height:20px;margin-bottom:7px;">
+							<br style="margin-bottom:0.5em;">
+							<input type="button" value="Delete" id="viewerMeasDel" onclick="viewer_DelMeasure();" class="btn" style="width:80px;height:20px;">
+							<input type="button" value="Delete all" id="viewerMeasDelAll" onclick="viewer_DelMeasure('all');" class="btn" style="width:80px;height:20px;">
+						</div>
+					</div>
+				</div>
+
+				<h5 id="viewerVibTitle" class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-corner-all" role="tab" aria-controls="ui-accordion-viewerTools-panel-3" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Normal mode</h5>
+				<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-accordion-viewerTools-panel-3" aria-labelledby="viewerVibTitle" role="tabpanel" aria-hidden="true" style="display: none; height: 451.764px; overflow: auto;">
+				<div class="subSection50" style="height:75%;margin-bottom:20px;">
+				<table id="viewerVib" class="molPropsTable">
+				<tbody><tr>
+				<th>#</th>
+				<th>frequency</th>
+				<th>intensity</th>
+				</tr>
+				<tr><td>1</td><td>114.20</td><td>0.00</td></tr><tr><td>2</td><td>117.09</td><td>0.00</td></tr><tr><td>3</td><td>177.35</td><td>0.02</td></tr><tr><td>4</td><td>242.97</td><td>0.00</td></tr><tr><td>5</td><td>250.56</td><td>0.00</td></tr><tr><td>6</td><td>395.64</td><td>0.00</td></tr><tr><td>7</td><td>397.75</td><td>0.00</td></tr><tr><td>8</td><td>740.98</td><td>3.96</td></tr><tr><td>9</td><td>774.12</td><td>0.00</td></tr><tr><td>10</td><td>877.17</td><td>1.37</td></tr><tr><td>11</td><td>880.66</td><td>1.05</td></tr><tr><td>12</td><td>933.50</td><td>2.08</td></tr><tr><td>13</td><td>1005.63</td><td>0.00</td></tr><tr><td>14</td><td>1049.04</td><td>1.58</td></tr><tr><td>15</td><td>1052.05</td><td>0.43</td></tr><tr><td>16</td><td>1082.52</td><td>1.05</td></tr><tr><td>17</td><td>1173.03</td><td>1.03</td></tr><tr><td>18</td><td>1223.96</td><td>0.09</td></tr><tr><td>19</td><td>1283.91</td><td>0.00</td></tr><tr><td>20</td><td>1308.60</td><td>6.23</td></tr><tr><td>21</td><td>1343.02</td><td>0.58</td></tr><tr><td>22</td><td>1348.90</td><td>0.00</td></tr><tr><td>23</td><td>1389.07</td><td>0.15</td></tr><tr><td>24</td><td>1424.82</td><td>2.10</td></tr><tr><td>25</td><td>1439.41</td><td>0.30</td></tr><tr><td>26</td><td>1442.29</td><td>1.94</td></tr><tr><td>27</td><td>1516.26</td><td>0.01</td></tr><tr><td>28</td><td>1518.21</td><td>0.78</td></tr><tr><td>29</td><td>1527.61</td><td>0.42</td></tr><tr><td>30</td><td>1528.98</td><td>11.58</td></tr><tr><td>31</td><td>1529.84</td><td>0.00</td></tr><tr><td>32</td><td>1537.29</td><td>1.09</td></tr><tr><td>33</td><td>1544.98</td><td>3.92</td></tr><tr><td>34</td><td>3012.89</td><td>6.06</td></tr><tr><td>35</td><td>3022.78</td><td>0.06</td></tr><tr><td>36</td><td>3030.67</td><td>79.94</td></tr><tr><td>37</td><td>3035.35</td><td>0.25</td></tr><tr><td>38</td><td>3040.69</td><td>45.02</td></tr><tr><td>39</td><td>3041.91</td><td>32.68</td></tr><tr><td>40</td><td>3052.40</td><td>0.00</td></tr><tr><td>41</td><td>3069.74</td><td>53.36</td></tr><tr><td>42</td><td>3105.28</td><td>0.00</td></tr><tr><td>43</td><td>3107.02</td><td>132.25</td></tr><tr><td>44</td><td>3110.18</td><td>33.81</td></tr><tr><td>45</td><td>3110.48</td><td>55.19</td></tr></tbody></table>
+				</div>
+
+				<div id="viewerVibTab">
+					<div style="text-align:center; float:right;">
+						<input type="button" value="Animate" id="viewerVibAnimOn" style="display:inline; width:14ex;height:15px;margin-top:7px;margin-bottom:5px;" onclick="viewer_AnimVib(true);" title="animate the vibration" class="btn" disabled="">
+						<input type="button" value="Stop animation" id="viewerVibAnimOff" style="display:none; width:14ex;height:15px;margin-top:7px;margin-bottom:5px;" onclick="viewer_AnimVib(false);" title="stop animating the vibration" class="btn">
+						<br>
+						<input type="button" value="Hide" id="viewerVibHide" style="display:none; width:7ex;height:15px;margin-top:3px;margin-bottom:5px;" onclick="viewer_DisplayVib(false);" title="hide vibration vectors" class="btn">
+						<input type="button" value="Show" id="viewerVibShow" style="display:inline; width:7ex;height:15px;margin-top:3px;margin-bottom:5px;" onclick="viewer_DisplayVib(true)" title="display vibration vectors" class="btn" disabled="">
+					</div>
+
+					<div style="padding-top:0.5em; margin-top:0.2em;">
+					<b title="length of the vectors and amplitude of the animated vibration" style="width:50px;">Scale:</b><input type="range" id="viewerVibScale" value="2.0" min="0.5" max="10" step="0.5" oninput="viewer_ReflectRange(this,1);" onchange="viewer_ReflectRange(this,1);Jmol.script(JmolOb,viewer_VibScale());">
+					<span id="viewerVibScaleV">2.0</span>
+					<br>
+					<b title="speed of the animated vibration" style="width:50px;">Speed:</b><input type="range" id="viewerVibSpeed" value="3" min="1" max="5" step="1" oninput="viewer_ReflectRange(this,0);" onchange="viewer_ReflectRange(this,0);Jmol.script(JmolOb,viewer_VibSpeed());">
+					<span id="viewerVibSpeedV">3</span>
+					</div>
+
+					<p style="margin-top:0.3em; clear:right;width:280px;">Show:
+					<span style="white-space:nowrap;"><input type="checkbox" id="viewerVibInfo" onclick="viewer_EchoVib(this.checked)" style="vertical-align:middle;"><label for="viewerVibInfo">mode information</label></span>
+					<span style="white-space:nowrap;padding-left:1ex;"><input type="checkbox" id="viewerVib3d" onclick="Jmol.script(JmolOb, viewer_VibStyle3d())" style="vertical-align:middle;" disabled=""><label for="viewerVib3d" id="viewerVib3dLbl" style="color: gray;">3D vectors</label></span>
+					</p>
+				</div>
+				</div>
+
+				<h5 id="viewerMoTitle" class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active ui-corner-top" role="tab" aria-controls="ui-accordion-viewerTools-panel-4" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Orbitals</h5>
+				<div class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" id="ui-accordion-viewerTools-panel-4" aria-labelledby="viewerMoTitle" role="tabpanel" aria-hidden="false" style="display: block; height: 451.764px; overflow: auto;">
+				<div class="subSection50" style="height:43%;margin-bottom:5px;" id="viewerMoEnv">
+				<table id="viewerMo" class="molPropsTable">
+				<tbody><tr>
+				<th title="orbital index">#</th>
+				<th title="alpha energy">Alpha E</th>
+				<th title="beta energy">Beta E</th>
+				<th>Note</th>
+				</tr>
+				<tr><td>1</td><td>-10.176</td><td> </td><td></td></tr><tr><td>2</td><td>-10.176</td><td> </td><td></td></tr><tr><td>3</td><td>-10.174</td><td> </td><td></td></tr><tr><td>4</td><td>-10.170</td><td> </td><td></td></tr><tr><td>5</td><td>-10.170</td><td> </td><td></td></tr><tr><td>6</td><td>-0.794</td><td> </td><td></td></tr><tr><td>7</td><td>-0.744</td><td> </td><td></td></tr><tr><td>8</td><td>-0.670</td><td> </td><td></td></tr><tr><td>9</td><td>-0.594</td><td> </td><td></td></tr><tr><td>10</td><td>-0.570</td><td> </td><td></td></tr><tr><td>11</td><td>-0.469</td><td> </td><td></td></tr><tr><td>12</td><td>-0.431</td><td> </td><td></td></tr><tr><td>13</td><td>-0.427</td><td> </td><td></td></tr><tr><td>14</td><td>-0.397</td><td> </td><td></td></tr><tr><td>15</td><td>-0.390</td><td> </td><td></td></tr><tr><td>16</td><td>-0.373</td><td> </td><td></td></tr><tr><td>17</td><td>-0.349</td><td> </td><td></td></tr><tr><td>18</td><td>-0.332</td><td> </td><td></td></tr><tr><td>19</td><td>-0.322</td><td> </td><td></td></tr><tr><td>20</td><td>-0.317</td><td> </td><td></td></tr><tr class="highlightRow"><td>21</td><td>-0.311</td><td> </td><td>HOMO</td></tr><tr><td>22</td><td>0.094</td><td> </td><td>LUMO</td></tr><tr><td>23</td><td>0.111</td><td> </td><td></td></tr><tr><td>24</td><td>0.128</td><td> </td><td></td></tr><tr><td>25</td><td>0.136</td><td> </td><td></td></tr><tr><td>26</td><td>0.153</td><td> </td><td></td></tr><tr><td>27</td><td>0.175</td><td> </td><td></td></tr><tr><td>28</td><td>0.175</td><td> </td><td></td></tr><tr><td>29</td><td>0.179</td><td> </td><td></td></tr><tr><td>30</td><td>0.197</td><td> </td><td></td></tr><tr><td>31</td><td>0.199</td><td> </td><td></td></tr><tr><td>32</td><td>0.200</td><td> </td><td></td></tr><tr><td>33</td><td>0.206</td><td> </td><td></td></tr><tr><td>34</td><td>0.227</td><td> </td><td></td></tr><tr><td>35</td><td>0.256</td><td> </td><td></td></tr><tr><td>36</td><td>0.276</td><td> </td><td></td></tr><tr><td>37</td><td>0.276</td><td> </td><td></td></tr><tr><td>38</td><td>0.493</td><td> </td><td></td></tr><tr><td>39</td><td>0.515</td><td> </td><td></td></tr><tr><td>40</td><td>0.517</td><td> </td><td></td></tr><tr><td>41</td><td>0.552</td><td> </td><td></td></tr><tr><td>42</td><td>0.559</td><td> </td><td></td></tr><tr><td>43</td><td>0.593</td><td> </td><td></td></tr><tr><td>44</td><td>0.601</td><td> </td><td></td></tr><tr><td>45</td><td>0.652</td><td> </td><td></td></tr><tr><td>46</td><td>0.657</td><td> </td><td></td></tr><tr><td>47</td><td>0.686</td><td> </td><td></td></tr><tr><td>48</td><td>0.720</td><td> </td><td></td></tr><tr><td>49</td><td>0.763</td><td> </td><td></td></tr><tr><td>50</td><td>0.783</td><td> </td><td></td></tr><tr><td>51</td><td>0.813</td><td> </td><td></td></tr><tr><td>52</td><td>0.854</td><td> </td><td></td></tr><tr><td>53</td><td>0.883</td><td> </td><td></td></tr><tr><td>54</td><td>0.894</td><td> </td><td></td></tr><tr><td>55</td><td>0.899</td><td> </td><td></td></tr><tr><td>56</td><td>0.911</td><td> </td><td></td></tr><tr><td>57</td><td>0.931</td><td> </td><td></td></tr><tr><td>58</td><td>0.936</td><td> </td><td></td></tr><tr><td>59</td><td>0.946</td><td> </td><td></td></tr><tr><td>60</td><td>0.955</td><td> </td><td></td></tr><tr><td>61</td><td>0.964</td><td> </td><td></td></tr><tr><td>62</td><td>0.979</td><td> </td><td></td></tr><tr><td>63</td><td>0.992</td><td> </td><td></td></tr><tr><td>64</td><td>1.013</td><td> </td><td></td></tr><tr><td>65</td><td>1.094</td><td> </td><td></td></tr><tr><td>66</td><td>1.326</td><td> </td><td></td></tr><tr><td>67</td><td>1.418</td><td> </td><td></td></tr><tr><td>68</td><td>1.427</td><td> </td><td></td></tr><tr><td>69</td><td>1.460</td><td> </td><td></td></tr><tr><td>70</td><td>1.494</td><td> </td><td></td></tr><tr><td>71</td><td>1.565</td><td> </td><td></td></tr><tr><td>72</td><td>1.701</td><td> </td><td></td></tr><tr><td>73</td><td>1.796</td><td> </td><td></td></tr><tr><td>74</td><td>1.812</td><td> </td><td></td></tr><tr><td>75</td><td>1.899</td><td> </td><td></td></tr><tr><td>76</td><td>1.913</td><td> </td><td></td></tr><tr><td>77</td><td>1.942</td><td> </td><td></td></tr><tr><td>78</td><td>1.974</td><td> </td><td></td></tr><tr><td>79</td><td>1.994</td><td> </td><td></td></tr><tr><td>80</td><td>2.001</td><td> </td><td></td></tr><tr><td>81</td><td>2.010</td><td> </td><td></td></tr><tr><td>82</td><td>2.091</td><td> </td><td></td></tr><tr><td>83</td><td>2.213</td><td> </td><td></td></tr><tr><td>84</td><td>2.228</td><td> </td><td></td></tr><tr><td>85</td><td>2.282</td><td> </td><td></td></tr><tr><td>86</td><td>2.311</td><td> </td><td></td></tr><tr><td>87</td><td>2.326</td><td> </td><td></td></tr><tr><td>88</td><td>2.398</td><td> </td><td></td></tr><tr><td>89</td><td>2.426</td><td> </td><td></td></tr><tr><td>90</td><td>2.426</td><td> </td><td></td></tr><tr><td>91</td><td>2.575</td><td> </td><td></td></tr><tr><td>92</td><td>2.580</td><td> </td><td></td></tr><tr><td>93</td><td>2.736</td><td> </td><td></td></tr><tr><td>94</td><td>2.787</td><td> </td><td></td></tr><tr><td>95</td><td>4.121</td><td> </td><td></td></tr><tr><td>96</td><td>4.211</td><td> </td><td></td></tr><tr><td>97</td><td>4.317</td><td> </td><td></td></tr><tr><td>98</td><td>4.412</td><td> </td><td></td></tr><tr><td>99</td><td>4.540</td><td> </td><td></td></tr></tbody></table>
+				</div>
+
+				<div style="padding-top:0.3em;">
+				<select id="viewerMOalpha" disabled="">
+					<option selected="">Alpha</option>
+					<option>Beta</option>
+				</select>
+		    <input type="button" value="HOMO" onclick="viewer_HomoMO()" title="highest occupied molecular orbital" style="width:8ex;height:17px;" class="btn">
+		    <input type="button" value="Apply" onclick="viewer_LoadMO()" id="viewerMOapply" title="set the index and options to be displayed" style="width:8ex;height:17px;" class="btn">
+		    <input type="button" value="Hide" onclick="viewer_DisplayMO(false)" id="viewerMOhide" style="display:inline; width:7ex;height:17px;" class="btn">
+		    <input type="button" value="Show" onclick="viewer_DisplayMO(true)" id="viewerMOshow" style="display:none; width:7ex;height:17px;" class="btn">
+				</div>
+				<p title="you need to click `Apply´ to see the changes" style="margin-top:10px;">Grid resolution
+				<input type="range" id="viewerMOresol" value="0.20" min="0.09" max="0.28" step="0.01" oninput="viewer_ReflectRange(this,2);" onchange="viewer_ReflectRange(this,2);">
+				<span id="viewerMOresolV" style="display:inline-block;width:4.0ex;text-align:right;">0.19</span>
+
+		    <input type="button" value="Auto" id="viewerMOauto" onclick="gid('viewerMOresol').value=viewerCfg.autoGridResol; gid('viewerMOresol').onchange();" style="margin-bottom:2px;width:7ex;height:17px;margin-left:20px;" class="btn">
+				<!-- or  $('#viewerMOresol').trigger('change'); -->
+				</p>
+				<!-- div class="section">
+					<h2 style="width:6ex; background-color:#F2F5F7;">Include</h2>
+					<input type="checkbox" checked>S
+					<input type="checkbox" checked>P
+					<input type="checkbox" checked>SP
+					<input type="checkbox" checked>D
+					<input type="checkbox" checked>F
+					<br><input type="checkbox">Selected atoms only
+				</div -->
+				<div class="section" style="margin-bottom:0.4em;">
+					<h2 style="width:9ex; background-color:#ECF4F8;">Isosurface</h2>
+					<table id="viewerMoTab" style="margin-bottom:10px;width:267px;border-collapse: separate;border-spacing: 1px;">
+					<tbody><tr>
+					<th style="text-align:center;">E</th>
+					<th style="text-align:center;">P</th>
+					<th style="text-align:center;">Isovalue</th>
+					<th colspan="2" style="text-align:center;">Colors
+					</th>
+					</tr>
+					<tr>
+					<td><input type="checkbox" checked="" id="viewerMOisoE1" onclick="viewer_StyleMO(1)" style="vertical-align:middle;">
+					</td>
+					<td><input type="checkbox" id="viewerMOisoP1" onclick="viewer_StyleMO(1)" style="vertical-align:middle;">
+					</td>
+					<td><input type="text" value="0.020" id="viewerMOisoV1" title="you need to click `Apply´ to see the changes">
+					</td>
+					<td><input type="color" id="viewerMOisoC1p" onchange="viewer_ColorMO(1)" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(253, 24, 25);"></div></div><div class="sp-dd">▼</div></div>
+					</td>
+					<td><input type="color" id="viewerMOisoC1n" onchange="viewer_ColorMO(1)" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(23, 139, 25);"></div></div><div class="sp-dd">▼</div></div>
+					</td>
+					</tr>
+					<tr>
+					<td><input type="checkbox" id="viewerMOisoE2" onclick="viewer_StyleMO(2)" style="vertical-align:middle;">
+					</td>
+					<td><input type="checkbox" id="viewerMOisoP2" onclick="viewer_StyleMO(2)" style="vertical-align:middle;">
+					</td>
+					<td><input type="text" value="0.015" id="viewerMOisoV2" title="you need to click `Apply´ to see the changes">
+					</td>
+					<td><input type="color" id="viewerMOisoC2p" onchange="viewer_ColorMO(2)" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(249, 72, 75);"></div></div><div class="sp-dd">▼</div></div>
+					</td>
+					<td><input type="color" id="viewerMOisoC2n" onchange="viewer_ColorMO(2)" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(70, 162, 75);"></div></div><div class="sp-dd">▼</div></div>
+					</td>
+					</tr>
+					<tr>
+					<td><input type="checkbox" id="viewerMOisoE3" onclick="viewer_StyleMO(3)" style="vertical-align:middle;">
+					</td>
+					<td><input type="checkbox" id="viewerMOisoP3" onclick="viewer_StyleMO(3)" style="vertical-align:middle;">
+					</td>
+					<td><input type="text" value="0.010" id="viewerMOisoV3" title="you need to click `Apply´ to see the changes">
+					</td>
+					<td><input type="color" id="viewerMOisoC3p" onchange="viewer_ColorMO(3)" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(245, 121, 125);"></div></div><div class="sp-dd">▼</div></div>
+					</td>
+					<td><input type="color" id="viewerMOisoC3n" onchange="viewer_ColorMO(3)" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(117, 185, 125);"></div></div><div class="sp-dd">▼</div></div>
+					</td>
+					</tr>
+					<tr>
+					<td><input type="checkbox" id="viewerMOisoE4" onclick="viewer_StyleMO(4)" style="vertical-align:middle;">
+					</td>
+					<td><input type="checkbox" id="viewerMOisoP4" onclick="viewer_StyleMO(4)" style="vertical-align:middle;">
+					</td>
+					<td><input type="text" value="0.005" id="viewerMOisoV4" title="you need to click `Apply´ to see the changes">
+					</td>
+					<td><input type="color" id="viewerMOisoC4p" onchange="viewer_ColorMO(4)" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(240, 170, 176);"></div></div><div class="sp-dd">▼</div></div>
+					</td>
+					<td><input type="color" id="viewerMOisoC4n" onchange="viewer_ColorMO(4)" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(164, 208, 176);"></div></div><div class="sp-dd">▼</div></div>
+					</td>
+					</tr>
+					</tbody></table>
+					<input type="checkbox" checked="" id="viewerMOtrans" onclick="viewer_TransMO()" style="vertical-align:middle;">
+					<label style="margin-left:2px;" for="viewerMOtrans">Semitransparent surfaces</label>
+					<input type="button" value="Default" title="Revert to the default isosurface options" onclick="viewer_ResetMOisoOpts()" style="width:55px;height:17px;" class="btn">
+				</div>
+				</div>
+			</div>
+
+			<div id="viewerViewer" style=""><div id="JmolOb_appletinfotablediv" style="width:100%;height:100%;position:relative;font-size:14px;text-align:left"><div id="JmolOb_coverdiv" style="background-color: red; z-index: 21; width: 100%; height: 100%; display: none; position: absolute; top: 0px; left: 0px;"><img id="JmolOb_coverimage" src="/images/jsmol/cover.png" style="width:100%;height:100%" onclick="Jmol.coverApplet(JmolOb, false)" title="3D model is loading"><img id="JmolOb_coverclickgo" src="/js/jsmol/j2s/img/play_make_live.jpg" style="width:25px;height:25px;position:absolute;bottom:10px;left:10px;z-index:21;opacity:0.5;" onclick="Jmol.coverApplet(JmolOb, false)" title="3D model is loading"></div><div id="JmolOb_appletdiv" style="z-index: 15; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; display: block;"><canvas width="598" height="600" id="JmolOb_canvas2d" style="width: 100%; height: 100%; z-index: 17;"></canvas></div><div id="JmolOb_2dappletdiv" style="position:absolute;width:100%;height:100%;overflow:hidden;display:none"></div><div id="JmolOb_infotablediv" style="width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; display: none;"><div id="JmolOb_infoheaderdiv" style="height: 20px; width: 100%; background: yellow; display: none;"><span id="JmolOb_infoheaderspan">Jmol._Canvas2D (Jmol) "JmolOb"</span><span id="JmolOb_infocheckboxspan" style="position:absolute;text-align:right;right:1px;"><a href="javascript:Jmol.showInfo(JmolOb,false)">[x]</a></span></div><div id="JmolOb_infodiv" style="position:absolute;top:20px;bottom:0px;width:100%;height:100%;overflow:auto"><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/core/package.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/core/core.z.js -- required by ClazzNode</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol JavaScript applet JmolOb__768114694742764__ initializing</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue debug null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue logLevel null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue allowjavascript null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">AppletRegistry.checkIn(JmolOb__768114694742764__)</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">vwrOptions: </span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">{ "name":"JmolOb","applet":true,"documentBase":"http://search.molinstincts.com/analysis/analysis.ce?0000-ukiu","platform":"J.awtjs2d.Platform","fullName":"JmolOb__768114694742764__","measureCallback":"viewer_OnMeasures","pickCallback":"viewer_OnAtomOrBondPicked","codePath":"http:/js/jsmol/j2s/","display":"JmolOb_canvas2d","signedApplet":"true","loadStructCallback":"viewer_OnModelLoad","appletReadyCallback":"Jmol._readyCallback","statusListener":"[J.appletjs.Jmol object]","syncId":"768114694742764","bgcolor":"#000000" }</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">setting document base to "http://search.molinstincts.com/analysis/analysis.ce?0000-ukiu"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">(C) 2012 Jmol Development</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol Version: 14.0.17_2014.06.09  2014-06-09 22:55</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">java.vendor: Java2Script (HTML5)</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">java.version: JSmol 14.1.14 Apr 27, 2014</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">os.name: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Access: ALL</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">memory: 0.0/0.0</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">processors available: 1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">useCommandThread: false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">appletId:JmolOb (signed)</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue emulate null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">defaults = "Jmol"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue boxbgcolor null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue bgcolor #000000</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">backgroundColor = "#000000"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue ANIMFRAMECallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue APPLETREADYCallback Jmol._readyCallback</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">APPLETREADYCallback = "Jmol._readyCallback"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue ATOMMOVEDCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue CLICKCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue ECHOCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue ERRORCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue EVALCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue HOVERCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue LOADSTRUCTCallback viewer_OnModelLoad</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">LOADSTRUCTCallback = "viewer_OnModelLoad"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue MEASURECallback viewer_OnMeasures</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">MEASURECallback = "viewer_OnMeasures"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue MESSAGECallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue MINIMIZATIONCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue PICKCallback viewer_OnAtomOrBondPicked</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">PICKCallback = "viewer_OnAtomOrBondPicked"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue RESIZECallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue SCRIPTCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue SYNCCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue STRUCTUREMODIFIEDCallback null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Loading language resource http:/js/jsmol/idioma/ko.po</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">FileManager opening 1 http://search.molinstincts.com/js/jsmol/idioma/ko.po</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">0 translations loaded</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue doTranslate null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">language=ko</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue popupMenu null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue script null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue loadInline null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol getValue load null</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol applet JmolOb__768114694742764__ ready</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/core/corescript.z.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">script 1 started</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">measurementUnits = "angstroms"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">defaultVDW = "User"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">zoomLarge = false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">imageState = false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">language = "en_US"</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">languageTranslation = false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/shape/Halos.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Setting menu from file /js/jsmol/MolInstincts.menu</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">FileManager opening 1 http://search.molinstincts.com/js/jsmol/MolInstincts.menu</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">bondPicking = true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/render/HalosRenderer.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">cache cleared</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">PNGJ cache cleared</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/core/coretext.z.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;"> Retrieving and  | processing data... </span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JV/DataManager.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/api/JmolDataManager.js -- required by JV.DataManager</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/io/FilesReader.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/api/JmolFilesReaderInterface.js -- required by J.io.FilesReader</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/java/util/zip/ZipInputStream.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/java/util/zip/InflaterInputStream.js -- required by java.util.zip.ZipInputStream</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/InflaterInputStream.js -- required by java.util.zip.InflaterInputStream</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/java/util/zip/ZipConstants.js -- required by java.util.zip.ZipInputStream</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/java/util/zip/CRC32.js -- required by java.util.zip.ZipInputStream</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/CRC32.js -- required by java.util.zip.CRC32</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/Checksum.js -- required by JU.CRC32</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/core/corebinary.z.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/java/util/zip/Inflater.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/Inflater.js -- required by java.util.zip.Inflater</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/ZStream.js -- required by JU.Inflater</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/Adler32.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/Inflate.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/GZIPHeader.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/InfBlocks.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/InfTree.js -- required by JU.InfBlocks</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/InfCodes.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/java/util/zip/ZipEntry.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/java/util/zip/ZipException.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">FileManager opening 1 http://search.molinstincts.com/compounds/28FF8FB9B88DE93AE3456F9953798196/0000-ukiu.qminfo</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">FileManager opening 1 http://search.molinstincts.com/compounds/28FF8FB9B88DE93AE3456F9953798196/0000-ukiu.frequency</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">The Resolver thinks GaussianFchk</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/adapter/readers/quantum/GaussianFchkReader.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/adapter/readers/quantum/GaussianReader.js -- required by J.adapter.readers.quantum.GaussianFchkReader</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/adapter/readers/quantum/MOReader.js -- required by J.adapter.readers.quantum.GaussianReader</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/adapter/readers/quantum/BasisFunctionReader.js -- required by J.adapter.readers.quantum.MOReader</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Charge = 0 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Multiplicity = 1 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberofelectrons = 42 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberofalphaelectrons = 21 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberofbetaelectrons = 21 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberofbasisfunctions = 99 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberofindependantfunctions = 99 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberofpointchargesin/Mol/ = 0 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberoftranslationvectors = 0 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberofcontractedshells = 44 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Highestangularmomentum = 2 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Largestdegreeofcontraction = 6 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberofprimitiveshells = 103 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Pure/Cartesiandshells = 1 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Pure/Cartesianfshells = 0 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">VirialRatio = 2.010527762684921E+00 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">TotalEnergy = 1.977717817073997E+02 false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Atomicnumbers = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Nuclearcharges = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Currentcartesiancoordinates = 51 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">IntAtomTypes = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">MMcharges = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Integeratomicweights = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Realatomicweights = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Atomresidueinfo = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Atomfragmentinfo = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Atomresiduenum = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Nuclearspins = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">NuclearZEff = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">NuclearQMom = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">NuclearGFac = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">MicOpt = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">ConstraintStructure = 51 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">ONIOMCharges = 16 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">ONIOMMultiplicities = 16 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">AtomLayers = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">AtomModifiers = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">IntAtomModifiedTypes = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">LinkAtoms = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">AtomModifiedMMCharges = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">LinkDistances = 68 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">NBond = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">IBond = 68 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">RBond = 68 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Shelltypes = 44 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Numberofprimitivespershell = 44 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Shelltoatommap = 44 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Primitiveexponents = 103 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Contractioncoefficients = 103 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">P(S=P)Contractioncoefficients = 103 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Coordinatesofeachshell = 132 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">AlphaOrbitalEnergies = 99 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">AlphaMOcoefficients = 9801 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">TotalSCFDensity = 4950 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">MagneticFieldP1(GIAO) = 14850 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">CartesianGradient = 51 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">CartesianForceConstants = 1326 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">DipoleMoment = 3 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">NMRshielding = 153 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Spin-rotationtensors = 153 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">QEqcouplingtensors = 102 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">MullikenCharges = 17 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Optpoint1Resultsforeachgeome = 2 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Optpoint1Geometries = 51 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Optpoint1Gradientateachgeome = 51 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">OptimizationNumberofgeometries = 1 true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Energy for model 1 = 197.7717817073997</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">#jmolScript: connect 1.1 {_H} {*} </span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Molecular dipole for model 1 = {1.1063124499999998e-16, -1.3435433300000001e-15, -0.0215093474}</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">44 slater shells read</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">103 gaussian primitives read</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">99 molecular orbitals read in model 1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 2: A2 114.1995 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 3: B1 117.0868 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 4: A1 177.3519 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 5: B1 242.9684 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 6: A2 250.5650 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 7: B2 395.6446 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 8: A1 397.7489 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 9: B1 740.9789 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 10: A2 774.1181 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 11: B1 877.1693 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 12: A1 880.6627 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 13: B2 933.4977 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 14: A2 1005.6326 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 15: B2 1049.0352 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 16: A1 1052.0484 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 17: B2 1082.5191 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 18: A1 1173.0342 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 19: B1 1223.9614 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 20: A2 1283.9091 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 21: B2 1308.5954 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 22: B1 1343.0154 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 23: A2 1348.9004 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 24: A1 1389.0665 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 25: B2 1424.8191 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 26: B2 1439.4052 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 27: A1 1442.2858 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 28: A1 1516.2559 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 29: B2 1518.2129 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 30: A1 1527.6135 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 31: B1 1528.9839 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 32: A2 1529.8416 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 33: B2 1537.2876 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 34: A1 1544.9790 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 35: A1 3012.8919 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 36: B2 3022.7772 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 37: A1 3030.6705 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 38: B1 3035.3453 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 39: B2 3040.6913 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 40: A1 3041.9147 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 41: A2 3052.3986 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 42: B1 3069.7410 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 43: A2 3105.2833 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 44: B1 3107.0179 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 45: B2 3110.1756 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 46: A1 3110.4826 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">openFiles(2) 16097 ms</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">reading 782 atoms</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">ModelSet: haveSymmetry:false haveUnitcells:false haveFractionalCoord:false</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">46 models in this collection. Use getProperty "modelInfo" or getProperty "auxiliaryInfo" to inspect them.</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Default Van der Waals type for model set to Babel</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">782 atoms created</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">ModelSet: not autobonding; use  forceAutobond=true  to force automatic bond creation</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JV/PropertyManager.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/core/coreprop.z.js -- required by JV.PropertyManager</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/core/corescriptmath.z.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/core/corescriptcmd.z.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/shapesurface/MolecularOrbital.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/core/coresurface.z.js -- required by J.shapesurface.MolecularOrbital</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/shape/MeshCollection.js -- required by J.shapesurface.Isosurface</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/shape/Mesh.js -- required by J.shapesurface.IsosurfaceMesh</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/JU/XmlUtil.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/render/MeshRenderer.js -- required by J.rendersurface.IsosurfaceRenderer</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 2: A2 114.1995 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 3: B1 117.0868 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 4: A1 177.3519 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 5: B1 242.9684 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 6: A2 250.5650 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 7: B2 395.6446 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 8: A1 397.7489 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 9: B1 740.9789 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 10: A2 774.1181 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 11: B1 877.1693 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 12: A1 880.6627 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 13: B2 933.4977 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 14: A2 1005.6326 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 15: B2 1049.0352 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 16: A1 1052.0484 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 17: B2 1082.5191 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 18: A1 1173.0342 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 19: B1 1223.9614 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 20: A2 1283.9091 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 21: B2 1308.5954 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 22: B1 1343.0154 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 23: A2 1348.9004 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 24: A1 1389.0665 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 25: B2 1424.8191 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 26: B2 1439.4052 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 27: A1 1442.2858 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 28: A1 1516.2559 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 29: B2 1518.2129 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 30: A1 1527.6135 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 31: B1 1528.9839 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 32: A2 1529.8416 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 33: B2 1537.2876 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 34: A1 1544.9790 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 35: A1 3012.8919 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 36: B2 3022.7772 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 37: A1 3030.6705 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 38: B1 3035.3453 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 39: B2 3040.6913 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 40: A1 3041.9147 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 41: A2 3052.3986 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 42: B1 3069.7410 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 43: A2 3105.2833 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 44: B1 3107.0179 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 45: B2 3110.1756 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">model 46: A1 3110.4826 cm^-1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">&nbsp;</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">&nbsp;</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Adding embedded #jmolscript: connect 1.1 {_H} {*} </span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">46 models</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">99 molecular orbitals in model 1.1</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">&nbsp;</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Script completed</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol script terminated</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">script 2 started</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">782 atoms selected</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">0 atoms selected</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Script completed</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol script terminated</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">script 3 started</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/shape/Axes.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">axesMolecular = true</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">0 atoms selected</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Script completed</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol script terminated</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">script 4 started</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Script completed</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol script terminated</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/g3d/CircleRenderer.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/rendersurface/MolecularOrbitalRenderer.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">loading... /js/jsmol/j2s/J/render/AxesRenderer.js</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">script 5 started</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Script completed</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol script terminated</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">script 6 started</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Script completed</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol script terminated</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">script 7 started</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Script completed</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol script terminated</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">script 8 started</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">&nbsp;</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Script completed</span></div><div style="white-space: nowrap;"><span style="white-space: nowrap;">Jmol script terminated</span></div></div></div></div></div>
+
+		</div>
+
+		<div id="viewerDialogTransform" class="viewerDialog">
+			<h1>Transform</h1>
+			<div class="viewerDialogSection">
+				<h2 style="width:10.5ex; background-color:#E0EEFA;">Translation</h2>
+				  <p>
+				    <input type="text" value="0.000" class="digits6" id="viewerDialogTransformTx">
+				    <input type="text" value="0.000" class="digits6" id="viewerDialogTransformTy">
+				    <input type="text" value="0.000" class="digits6" id="viewerDialogTransformTz">
+				    <input type="button" value="Translate" onclick="viewer_TranslateXYZ()" class="btn" style="margin-left:1ex;margin-bottom:1ex;width:75px;height:15px;">
+		      </p>
+			</div>
+			<div class="viewerDialogSection">
+				<h2 style="width:8.5ex; background-color:#E8F2FB;">Rotation</h2>
+				<p>
+				  <input type="text" value="90.0" class="digits6" id="viewerDialogTransformRot">°
+				  <input type="button" value="Rot X" onclick="viewer_Rotate('x')" class="btn" style="margin-left:1ex;margin-bottom:1ex;width:50px;height:15px;">
+				  <input type="button" value="Rot Y" onclick="viewer_Rotate('y')" class="btn" style="width:50px;height:15px;">
+				  <input type="button" value="Rot Z" onclick="viewer_Rotate('z')" class="btn" style="width:50px;height:15px;">
+			    </p>
+			</div>
+			<div class="viewerDialogSection">
+				<h2 style="width:5.5ex; background-color:#E5F1FA;">Scale</h2>
+				<p>
+				  <input type="text" value="1.10" class="digits6" id="viewerDialogTransformSca">
+				  <input type="button" value="Scale" onclick="viewer_Scale()" class="btn" style="margin-left:1ex;margin-bottom:1ex;width:60px;height:15px;">
+			    </p>
+			</div>
+			<div style="text-align:center;">
+				<input type="button" value="Reset" onclick="Jmol.script(JmolOb, 'reset')" class="btn" style="width:50px;height:15px;">
+				<input type="button" value="Cancel" onclick="viewer_HideDialog('viewerDialogTransform')" style="margin-left:2ex;margin-top:1ex;margin-bottom:1ex;width:50px;height:15px;" class="btn">
+			</div>
+		</div>
+
+		<div id="viewerDialogOptions" class="viewerDialog">
+			<h1 ondblclick="viewer_showVersion()">Options</h1>
+			<div id="viewerVersion" ondblclick="Jmol.script(JmolOb,'console')"></div>
+			<div class="viewerDialogSection">
+				<h2 style="width:16ex; background-color:#DCEDF9;">Molecule options</h2>
+				  <p><input type="checkbox" id="viewerOptShowMeas" checked="">Show measurements</p>
+					<p>Measurement color:
+						<input type="color" id="viewerPickMeasColor" onchange="viewerCfg.measTmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 255, 255);"></div></div><div class="sp-dd">▼</div></div>
+		      </p>
+					<p>Selected measurement color:
+						<input type="color" id="viewerPickSmeasColor" onchange="viewerCfg.SmeasTmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 0, 0);"></div></div><div class="sp-dd">▼</div></div>
+		      </p>
+					<p style="text-align:center;margin-top:5px;margin-bottom:5px;">
+					<input type="button" class="btn" value="Default" onclick="viewer_DefaultOpts('mol')" style="width:60px;height:20px;">
+					</p>
+			</div>
+			<div class="viewerDialogSection">
+				<h2 style="width:13ex;background-color:#E4F0FA;">Atom options</h2>
+					<p>Selected atom color:
+						<input type="color" id="viewerPickAtomColor" onchange="viewerCfg.atomTmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 192, 0);"></div></div><div class="sp-dd">▼</div></div>
+		      </p>
+					<div id="labelFormat" class="p">Labels:<br>
+						<select id="viewerLabelFace" onchange="viewer_LabelSample()">
+						<option style="font-family:Arial, Helvetica, sans-serif;" selected="">SansSerif</option>
+						<option style="font-family:'Times New Roman', Times, serif;">Serif</option>
+						<option style="font-family:'Courier New', Courier, mono;">Monospaced</option>
+						</select>
+						<select id="viewerLabelStyle" onchange="viewer_LabelSample()">
+						<option style="font-weight:normal;">regular</option>
+						<option style="font-weight:bold;" selected="">bold</option>
+						<option style="font-style:italic;">italic</option>
+						<option style="font-weight:bold; font-style:italic;">bold italic</option>
+						</select>
+						<span style="white-space:nowrap; margin-right:1ex;"><input type="text" value="22" style="width:3ex; text-align:right;" id="viewerLabelSize" onchange="viewer_LabelSample()">px</span>
+						<input type="color" id="viewerPickLabelColor" onchange="viewerCfg.lblColorTmp = this.value.replace('#','');viewer_LabelSample();" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 255, 0);"></div></div><div class="sp-dd">▼</div></div>
+						 <div style="text-align:center; margin-top:-0.05em;"><span id="viewerLabelSample" style="display:inline-block; padding:2px 1ex;">&nbsp;</span>
+						 </div>
+		      </div>
+					<p style="text-align:center;margin-top:5px;margin-bottom:5px;">
+						<input type="button" class="btn" value="Atomic constants" onclick="viewer_ShowDialog('viewerDialogAtomic')" style="width:120px;height:20px;">
+					</p>
+					<p style="text-align:center;margin-top:5px;margin-bottom:5px;">
+						<input type="button" class="btn" value="Default" onclick="viewer_LabelSample();viewer_DefaultOpts('atom');" style="width:60px;height:20px;">
+					</p>
+			</div>
+			<div class="viewerDialogSection">
+				<h2 style="width:13ex;background-color:#E8F2FB;">Bond options</h2>
+					<p>Selected bond color:
+						<input type="color" id="viewerPickBondColor" onchange="viewerCfg.bondTmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(0, 250, 154);"></div></div><div class="sp-dd">▼</div></div>
+		      </p>
+					<p style="text-align:center;margin-top:5px;margin-bottom:5px;">
+					<input type="button" class="btn" value="Default" onclick="viewer_DefaultOpts('bond')" style="width:60px;height:20px;">
+					</p>
+			</div>
+			<div class="viewerDialogSection">
+				<h2 style="width:21ex; background-color:#E3F0FA;">Normal mode options</h2>
+					<p>Vectors color:
+						<input type="color" id="viewerPickVecColor" onchange="viewerCfg.vecTmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 255, 0);"></div></div><div class="sp-dd">▼</div></div>
+					  <span style="padding-left:2ex;">3D vectors:</span>
+						<input type="color" id="viewerPickVec3Color" onchange="viewerCfg.vec3Tmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 44, 88);"></div></div><div class="sp-dd">▼</div></div>
+		      </p>
+					<p>Mode information color:
+						<input type="color" id="viewerPickVibColor" onchange="viewerCfg.vibTmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 44, 88);"></div></div><div class="sp-dd">▼</div></div>
+		      </p>
+					<p style="text-align:center;margin-top:5px;margin-bottom:5px;">
+					<input type="button" class="btn" value="Default" onclick="viewer_DefaultOpts('vib')" style="width:60px;height:20px;">
+					</p>
+			</div>
+			<div>
+					<p style="text-align:center; margin-top:0.9em;margin-bottom:5px;">
+					<input type="button" class="btn" value="OK" onclick="viewer_ApplyOpts('opt'); viewer_HideDialog('viewerDialogOptions');" style="width:50px;height:20px;">
+					<input type="button" class="btn" value="Apply" onclick="viewer_ApplyOpts('opt')" style="width:60px;height:20px;">
+					<input type="button" class="btn" value="Cancel" onclick="viewer_HideDialog('viewerDialogOptions')" style="width:60px;height:20px;">
+					</p>
+			</div>
+		</div>
+
+		<div id="viewerDialogAtomic" class="viewerDialog" style="width:250px;height:404px;">
+			<h1>Atomic constants</h1>
+			<table id="viewerAtomicTable" style="width:230px;">
+				<tbody><tr>
+					<th>#</th>
+					<th>Symbol</th>
+					<th>Diameter (Å)</th>
+					<th style="padding:0 1ex;">Color</th>
+				</tr>
+			<tr><td>1</td><td>H</td><td><input type="text" value="0.37" id="viewerPickElemRadius0"></td><td><input type="color" value="#00FF00" class="viewerPickElemColor" id="viewerPickElemColor0" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(0, 255, 0);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>6</td><td>C</td><td><input type="text" value="0.77" id="viewerPickElemRadius1"></td><td><input type="color" value="#909090" class="viewerPickElemColor" id="viewerPickElemColor1" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(144, 144, 144);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>7</td><td>N</td><td><input type="text" value="0.75" id="viewerPickElemRadius2"></td><td><input type="color" value="#2040FF" class="viewerPickElemColor" id="viewerPickElemColor2" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(32, 64, 255);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>8</td><td>O</td><td><input type="text" value="0.73" id="viewerPickElemRadius3"></td><td><input type="color" value="#EF0000" class="viewerPickElemColor" id="viewerPickElemColor3" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(239, 0, 0);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>9</td><td>F</td><td><input type="text" value="0.72" id="viewerPickElemRadius4"></td><td><input type="color" value="#B3FFFF" class="viewerPickElemColor" id="viewerPickElemColor4" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(179, 255, 255);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>14</td><td>Si</td><td><input type="text" value="1.11" id="viewerPickElemRadius5"></td><td><input type="color" value="#008080" class="viewerPickElemColor" id="viewerPickElemColor5" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(0, 128, 128);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>15</td><td>P</td><td><input type="text" value="1.06" id="viewerPickElemRadius6"></td><td><input type="color" value="#FF8000" class="viewerPickElemColor" id="viewerPickElemColor6" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 128, 0);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>16</td><td>S</td><td><input type="text" value="1.02" id="viewerPickElemRadius7"></td><td><input type="color" value="#FFC828" class="viewerPickElemColor" id="viewerPickElemColor7" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 200, 40);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>17</td><td>Cl</td><td><input type="text" value="0.99" id="viewerPickElemRadius8"></td><td><input type="color" value="#1AEF1A" class="viewerPickElemColor" id="viewerPickElemColor8" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(26, 239, 26);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>33</td><td>As</td><td><input type="text" value="1.19" id="viewerPickElemRadius9"></td><td><input type="color" value="#BC80E2" class="viewerPickElemColor" id="viewerPickElemColor9" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(188, 128, 226);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>35</td><td>Br</td><td><input type="text" value="1.14" id="viewerPickElemRadius10"></td><td><input type="color" value="#A52121" class="viewerPickElemColor" id="viewerPickElemColor10" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(165, 33, 33);"></div></div><div class="sp-dd">▼</div></div></td></tr><tr><td>53</td><td>I</td><td><input type="text" value="1.33" id="viewerPickElemRadius11"></td><td><input type="color" value="#930093" class="viewerPickElemColor" id="viewerPickElemColor11" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(147, 0, 147);"></div></div><div class="sp-dd">▼</div></div></td></tr></tbody></table>
+			<script type="text/javascript">
+				viewer_FillAtomicTable();
+			</script>
+			<br>
+			<p style="text-align:center;">
+			<input type="button" class="btn" value="Mol·Ins defaults" onclick="viewer_ChangeAtomicTable('MolIns')" style="width:120px;height:20px;">&nbsp;&nbsp;&nbsp;
+			<input type="button" class="btn" value="Jmol defaults" onclick="viewer_ChangeAtomicTable('Jmol')" style="width:100px;height:20px;">
+			<br><br>
+			<input type="button" class="btn" value="OK" onclick="viewer_HideDialog('viewerDialogAtomic');viewer_ChangeAtomicConst();" style="width:50px;height:20px;">&nbsp;&nbsp;
+			<input type="button" class="btn" value="Apply" onclick="viewer_ChangeAtomicConst();" style="width:60px;height:20px;">&nbsp;&nbsp;
+			<input type="button" class="btn" value="Cancel" onclick="viewer_HideDialog('viewerDialogAtomic');viewer_ChangeAtomicTable();" style="width:60px;height:20px;">
+			</p>
+		</div>
+
+		<div id="viewerDialogDcolors" class="viewerDialog">
+			<h1>Display colors</h1>
+			<p>Axes color:
+			<input type="color" id="viewerPickAxesColor" onchange="viewerCfg.axesTmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 255, 255);"></div></div><div class="sp-dd">▼</div></div>
+			</p>
+			<p>Bounding box color:
+			<input type="color" id="viewerPickBboxColor" onchange="viewerCfg.bboxTmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 255, 255);"></div></div><div class="sp-dd">▼</div></div>
+			</p>
+			<p>Background color:
+			<input type="color" id="viewerPickBkgColor" onchange="viewerCfg.bkgTmp = this.value.replace('#','');" style="display: none;"><div class="sp-replacer sp-light"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(0, 0, 0);"></div></div><div class="sp-dd">▼</div></div>
+			</p>
+			<p style="text-align:center; margin:0.4em 0;">
+			<input type="button" value="Default" onclick="viewer_DefaultOpts('Dcolor')" class="btn" style="width:60px;height:20px;margin-top:10px;margin-bottom:10px;">
+			</p>
+			<p style="text-align:center;">
+			<input type="button" value="OK" onclick="viewer_ApplyOpts('Dcolor'); viewer_HideDialog('viewerDialogDcolors');" class="btn" style="width:60px;height:20px;margin:0px 0px 5px 10px;">
+			<input type="button" value="Apply" onclick="viewer_ApplyOpts('Dcolor')" class="btn" style="width:60px;height:20px;margin:0px 5px 5px 5px;">
+			<input type="button" value="Cancel" onclick="viewer_HideDialog('viewerDialogDcolors')" class="btn" style="width:60px;height:20px;margin:0px 10px 5px 0px;">
+			</p>
+		</div>
+
+		<iframe name="phpProcessingSave" style="display:none;"></iframe>
+    </div>
+
+    <!-- JS includes -->
+ <script type="text/javascript">
+  if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+ <script type="text/javascript">
+  window.jQuery || document.write('\x3Cscript src="http://search.molinstincts.com/js/navigator/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+ <script src="http://search.molinstincts.com/js/navigator/museutils.js?4291592202" type="text/javascript"></script>
+ <script src="http://search.molinstincts.com/js/navigator/jquery.musepolyfill.bgsize.js?291134478" type="text/javascript"></script>
+ <script src="http://search.molinstincts.com/js/navigator/jquery.musemenu.js?3788803530" type="text/javascript"></script>
+ <script src="http://search.molinstincts.com/js/navigator/webpro.js?3903299128" type="text/javascript"></script>
+ <script src="http://search.molinstincts.com/js/navigator/musewpdisclosure.js?4285748861" type="text/javascript"></script>
+ <script src="http://search.molinstincts.com/js/navigator/musewpslideshow.js?138381373" type="text/javascript"></script>
+ <script src="http://search.molinstincts.com/js/navigator/jquery.museoverlay.js?4250894771" type="text/javascript"></script>
+ <script src="http://search.molinstincts.com/js/navigator/touchswipe.js?4156838003" type="text/javascript"></script>
+ <script src="http://search.molinstincts.com/js/navigator/jquery.watch.js?4068933136" type="text/javascript"></script>
+ <link rel="stylesheet" type="text/css" href="http://search.molinstincts.com/js/jquery/1.11.2/themes/smoothness/jquery-ui-1.11.2-smoothness.css?201411110955">
+<script type="text/javascript" src="http://search.molinstincts.com/js/jquery/1.11.2/themes/smoothness/jquery-ui-1.11.2-smoothness.min.js?201411209515"></script>
+
+
+</body>
+</html>

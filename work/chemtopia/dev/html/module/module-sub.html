@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+
+      <section class="main-section-dsc">
+        <article class="main-article-cheminfo">
+
+          <div class="module-top-area">
+            <div class="inner-visual-bg">
+              <div class="inner-width">
+                <h1 class="inner-title">MODULES</h1>
+                <p class="inner-description">For professional chemical applications</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="break-main-content">
+            <!-- 탭 메뉴 -->
+            <div class="tabpanel tab-set1">
+              <ul class="nav">
+                <li><a href="#simulation" data-toggle="tab">Unit operation</a></li>
+                <li class="active"><a href="#source-code" data-toggle="tab">Source Code</a></li>
+              </ul>
+            </div>
+          </div><!-- //break-main-content -->
+
+          <!-- tab-content -->
+          <div class="tab-content">
+            <!-- tab#1 : simulation -->
+            <div role="tabpanel" class="tab-pane" id="simulation">
+              <div class="simulation-wrap">
+                <!-- 로그인 전 케이스 추가 161213 -->
+                <div class="simulation-need-login">
+                  <h2>NOT SIGNED IN</h2>
+                  <p>Please Sign in to continue to Unit operation</p>
+                  <button type="button" class="btn-base btn-brand-blue">Sign in</button>
+                </div>
+                <!-- //로그인 전 케이스 추가 161213 -->
+                <!-- 로그인후 <iframe src="http://chemtopia.devone.co.kr/apps/Chemtopia/" title="simulation"></iframe> -->
+                <!-- <img src="../assets/images/sample-img/simulation-img.gif" alt="" />-->
+              </div>
+            </div>
+            <!-- //tab#1 : simulation -->
+
+            <!-- tab#2 : source-code -->
+            <div role="tabpanel" class="tab-pane active" id="source-code">
+              <div class="back-list-wrap">
+                <div class="cheminfo-inner-width">
+                  <a href="#" class="back-to-text">Back to List</a>
+                </div>
+              </div>
+              <div class="source-inner-sub">
+                <!-- img view : 이미지 미등록시 해당 영역 삭제 -->
+                <div id="carousel-example-generic" class="carousel slide source-carousel-wrap" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators carousel-indicators-source">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner source-carousel" role="listbox">
+                    <div class="item active">
+                      <img src="../assets/images/sample-img/source-img01.png" alt="" />
+                    </div>
+                    <div class="item">
+                      <img src="../assets/images/sample-img/source-img02.png" alt="" />
+                    </div>
+                    <div class="item">
+                      <img src="../assets/images/sample-img/source-img03.png" alt="" />
+                    </div>
+                    <div class="item">
+                      <img src="../assets/images/sample-img/source-img04.gif" alt="" />
+                    </div>
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="source-control source-left" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="source-control source-right" href="#carousel-example-generic" role="button" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <!-- //img view : 이미지 미등록시 해당 영역 삭제 -->
+
+                <div class="source-detail">
+                  <h2 class="source-detail-title">Textureless shape matching with scale</h2>
+                  <p class="source-detail-text">
+                    Undrained peat deposits consist of plant remains (about 10% by weight of peat) and water (90%), accumulated in waterlogged and usually acidic conditions over thousands of years.
+                  </p>
+                  <div class="text-center">
+                    <button class="btn-base btn-brand-blue">Download</button>
+                  </div>
+
+                  <div class="source-detail-description">
+                    A series of podcasts looking at – and listening to – the sounds of the world around us. Sound Matters investigates our noisy cosmos, how we listen to sounds, the stories we tell about them, and all the ideas, inventions, discoveries, possibilities and ideas that live in the realm of the audible. Written and produced by Tim Hinman, with B&amp;O PLAY.<br /><br />
+                    "Without music we’d simply be something other than human beings.” Birthdays, weddings, festivals, funerals and more – pretty much every important human event is marked by music, and our brains take it all in, no matter how distant or vague those memories become. In this episode we meet Paul Robertson, violinist and professor in music and medicine, who has spent years working with people suffering from dementia and brain damage. From a distant childhood memory of a fragment of a song to a mass of rugby fans singing together in harmony, we discover how the music embedded in memories and dreams can be accessed in people whose fabric of identity has come under stress in order to help them find their way back to themselves.
+                  </div>
+
+                  <div class="article-btngroup source-btngroup">
+                    <ul class="btn-article-function">
+                      <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>30</a></li>
+                      <li><i class="icon-inbox" aria-hidden="true" title="Download"></i>65</li>
+                    </ul>
+                  </div>
+
+                </div>
+
+
+              </div>
+            </div><!-- //tab#2 : source-code -->
+          </div><!-- //tab-content -->
+
+        </article>
+      </section>
+
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+  </body>
+</html>

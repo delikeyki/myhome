@@ -1,0 +1,64 @@
+<!-- signin modal - start -->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog signin-container">
+    <div class="modal-content">
+      <div class="modal-header close-btn-reset">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <!-- cheminfo page - start -->
+      <div class="signin-notice-box">
+        <div class="write-notice box-yellow-box">
+          <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+          <p class="notice-first-text"><strong>Sorry!</strong> you must <strong>sign in</strong> to continue!!</p>
+          If you want to upload data, Sign in your account. If you don’t have <br />
+          an account, click below to sign up.
+        </div>
+      </div>
+      <!-- cheminfo page - end -->
+      <div class="modal-content-padding">
+        <div class="modal-header">
+          <p class="modal-title-h1">SIGN IN</p>
+        </div>
+        <!-- china site - start -->
+        <!-- <p class="social-links-tit">Connect now using</p>
+        <div class="social-auth-links2">
+            <a href="#" class="btn-social"><img src="../assets/images/icon/ico-sns-facebook.gif" alt="facebook" /></a>
+            <a href="#" class="btn-social"><img src="../assets/images/icon/ico-sns-google.gif" alt="google" /></a>
+            <a href="#" class="btn-social"><img src="../assets/images/icon/ico-sns-wechat.gif" alt="wechat" /></a>
+            <a href="#" class="btn-social"><img src="../assets/images/icon/ico-sns-weibo.gif" alt="weibo" /></a>
+        </div>
+        <div class="line-through social-or-tit or-tit-margin">Or</div> -->
+        <!-- china site - end -->
+        <div class="modal-body">
+          <div class="signin-form-group">
+            <form>
+              <div class="form-group">
+                <label class="sr-only" for="InputEmail">Email address</label>
+                <input type="email" name="email" class="chem-form-control" id="InputEmail" placeholder="Enter email"/>
+                <!-- <span class="ie-searchclear"> </span> -->
+                <span class="sign-en-icon icon-mail"></span>
+              </div>
+              <div class="form-group margin-bottom-none">
+                <label class="sr-only" for="InputPassword">Password</label>
+                <input type="password" class="chem-form-control" id="InputPassword" placeholder="Password (6 or more characters)"/>
+                <!-- <a href="#" class="input-in-btn">show</a> -->
+                <span class="toggle-btn btn-showhide">
+                          <input type="checkbox" checked/>
+                          <label data-off="Show" data-on="Hide"></label>
+                        </span>
+                <span class="sign-en-icon icon-lock"></span>
+              </div>
+              <span class="checkbox modal-form-ckb"><input type="checkbox" id="autoin" class="ck-style" /><label for ="autoin">Auto Sign in</label></span>
+              <span class="checkbox modal-form-ckb"><input type="checkbox" id="remem" class="ck-style" /><label for ="remem">Remember email</label></span>
+              <p class="modal-form-text"><a href="#" class="openModalChangePwd">Forgot your Password?</a></p>
+              <button class="btn-base btn-brand-blue btn-block" type="submit">Sign in</button>
+            </form>
+            <hr />
+            <p class="signin-text">Don't have an account? <a href="#">Sign up</a></p>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- signin modal - end -->

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+      <section class="main-section">
+        <article class="main-article">
+          <div class="notification-contents">
+            <h1 class="title-report">Setting</h1>
+            <div class="report-contents">
+              <h2 class="sub-title">Change your password</h2>
+              <div class="research-wrap password-box">
+                <form>
+                  <!-- 161019 수정 -->
+                  <!-- 에러 메시지 출력시 input에 alid-error 클래스 추가 -->
+                  <dl class="password-wrap">
+                    <dt class="password-title"><label for="inputOldpassword">Old Password</label></dt>
+                    <dd class="setting-input">
+                      <input type="password" class="chem-form-control valid-error" id="inputOldpassword" maxlength="80" />
+                      <!-- 비밀번호 틀렸을 시 -->
+                      <div class="text-alert text-alert-danger">Invalid password, Please enter your password correctly.</div>
+                    </dd>
+                    <dt class="password-title">
+                      <label for="inputNewpassword" class="password-title">New Password</label>
+                    </dt>
+                    <dd class="setting-input">
+                      <input type="password" class="chem-form-control" id="inputNewpassword" maxlength="80" />
+                      <!-- 비밀번호 최소/최대 입력 수
+                      <div class="text-alert text-alert-danger">Password must be at least 6 and no more than 80 characters.</div>-->
+                    </dd>
+                    <dt class="password-title">
+                      <label for="inputConfirmpassword" class="password-title">Confirm Password</label>
+                    </dt>
+                    <dd class="setting-input">
+                      <input type="password" class="chem-form-control" id="inputConfirmpassword" maxlength="80" />
+                      <!-- 확인 비밀번호 틀렸을 시
+                      <div class="text-alert text-alert-danger">Passwords do not match, please re-enter your password correctly.</div>-->
+                    </dd>
+                    <dt class="password-title"></dt>
+                    <dd class="setting-input">
+                      <button type="submit" class="btn btn-lg-brand-tsize btn-normal btn-password">Change Password</button>
+                    </dd>
+                  </dl>
+                  <!-- //161019 수정 -->
+                </form>
+              </div>
+              <div class="setting-desc-box">
+                <h2 class="sub-title">Message blocking</h2>
+                <div class="setting-desc">What is Message blocking ?<br />
+                  It means to filter an incoming message and outgoing message.<br />
+                  If you want to block an incoming message, select the member to be blocked from the message page and click.</div><!-- 161212 placeholder 수정 -->
+              </div>
+              <div class="setting-list">
+                <h3 class="setting-list-title">Message blocking</h3>
+                <div class="list-box">
+
+                  <!-- 차단 회원이 없을 때 -->
+                  <div class="list-noblocked">No blocked messages</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+
+  </body>
+</html>

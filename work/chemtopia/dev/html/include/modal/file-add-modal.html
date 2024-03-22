@@ -1,0 +1,225 @@
+<!-- File add modal start -->
+<div class="forum-modal">
+  <div class="modal fade" id="fileaddModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content addfile-modal-tap">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#uploadfile" data-toggle="tab">Upload file</a></li>
+            <li><a href="#myfile" data-toggle="tab">My file</a></li>
+          </ul>
+        </div>
+        <div class="modal-body">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- Upload file 탭 부분 - 자신의 컴퓨터에서 파일 업로드 - 시작 -->
+            <div class="tab-pane active" id="uploadfile">
+              <div class="upload-file-firstbox">
+                <ul class="upload-write">
+                  <li class="left-align">
+                    <!--file upload NEW-->
+                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <span class="btn btn-file">
+                              <span>Choose File</span><input type="file" />
+                            </span>
+                      <span class="fileinput-filename"></span>
+                      <span class="fileinput-new">No file chosen</span>
+                      <a href="#" class="close fileinput-exists" data-dismiss="fileinput"><i class="icon-cross"></i></a>
+                    </div>
+                    <!--//file upload NEW-->
+                  </li>
+                  <li>
+                    <p><span>up to 4</span> images can be uploaded. Total upload cannot exceed <span>20 MB.</span></p>
+                  </li>
+                </ul>
+              </div>
+              <div class="upload-file-secondbox">
+                <div class="dsc-write-doc">
+                  <dl class="dsc-write-form">
+                    <dt>File description</dt>
+                    <dd class="res-position">
+                      <input type="text" class="input-base" placeholder="File description"  />
+                    </dd>
+                    <dt>Co-Author</dt>
+                    <dd class="res-position">
+                      <input type="text" class="input-base" placeholder="Co-Author"  />
+                    </dd>
+                    <dt>Co-Researcher</dt>
+                    <dd class="res-position">
+                      <input type="text" class="input-base" placeholder="Co-Researcher"  />
+                    </dd>
+                    <dt>
+                      Date of issuance
+                    <div class="input-box datepicker-box">
+                      <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" />
+                    </div>
+                    </dt>
+                  </dl>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="btn-rightbottom-box">
+                  <button type="button" class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+                  <button type="submit" class="btn-base btn-brand-blue btn-upload">Upload</button>
+                </div>
+              </div>
+            </div>
+            <!-- Upload file 탭 부분 - 자신의 컴퓨터에서 파일 업로드 - 끝 -->
+
+            <!-- My file 탭 부분 (총3개 페이지) - 시작 -->
+            <div class="tab-pane" id="myfile">
+
+              <!-- 1.최초 파일이 아무것도 없을때 -시작 -->
+              <div class="myfile-select-page">
+                <div class="myfile-modal-list-box">
+                  <p class="myfile-no-file">No file.</p>
+                </div>
+                <div class="modal-footer">
+                  <div class="btn-rightbottom-box">
+                    <button class="btn-base btn-brand-gray-b btn-cancel solo-cancel">Cancel</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 1.최초 파일이 아무것도 없을때 -끝 -->
+
+              <!-- 2.등록된 파일이 있을경우 부분 - 시작 -->
+              <div class="myfile-select-page">
+                <div class="myfile-modal-list-box">
+                  <ul>
+                    <li>
+                      <div class="radiogroup" >
+                        <input checked="checked" id="first" class="css-radio" name="radio" type="radio" value="1">
+                        <label for="first" class="css-radio-label">
+                          <img src="../assets/images/icon/ico-etc.gif"/>
+                          <div class="myfile-radio-list">
+                            <p>Static HTML tree dumps for mirroring distribution.doc</p>
+                            <span>March 8, 1986</span>
+                          </div>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radiogroup">
+                        <input checked="checked" id="second" class="css-radio" name="radio" type="radio" value="2">
+                        <label for="second"  class="css-radio-label">
+                          <img src="../assets/images/icon/ico-doc.gif"/>
+                          <div class="myfile-radio-list">
+                            <p>Static HTML tree dumps for mirroring distribut...pdf</p>
+                            <span>March 8, 1986</span>
+                          </div>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radiogroup" >
+                        <input checked="checked" id="third" class="css-radio" name="radio" type="radio" value="3">
+                        <label for="third" class="css-radio-label">
+                          <img src="../assets/images/icon/ico-excel.gif"/>
+                          <div class="myfile-radio-list">
+                            <p>Static HTML tree dumps for mirroring distribution.doc</p>
+                            <span>March 8, 1986</span>
+                          </div>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radiogroup" >
+                        <input checked="checked" id="fourth" class="css-radio" name="radio" type="radio" value="4">
+                        <label for="fourth" class="css-radio-label">
+                          <img src="../assets/images/icon/ico-etc.gif"/>
+                          <div class="myfile-radio-list">
+                            <p>Static HTML tree dumps for mirroring distribut...pdf</p>
+                            <span>March 8, 1986</span>
+                          </div>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radiogroup" >
+                        <input checked="checked" id="fifth" class="css-radio" name="radio" type="radio" value="5">
+                        <label for="fifth" class="css-radio-label">
+                          <img src="../assets/images/icon/ico-doc.gif"/>
+                          <div class="myfile-radio-list">
+                            <p>Static HTML tree dumps for mirroring distribution.doc</p>
+                            <span>March 8, 1986</span>
+                          </div>
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radiogroup" >
+                        <input checked="checked" id="sixth" class="css-radio" name="radio" type="radio" value="6">
+                        <label for="sixth" class="css-radio-label">
+                          <img src="../assets/images/icon/ico-excel.gif"/>
+                          <div class="myfile-radio-list">
+                            <p>Static HTML tree dumps for mirroring distribution.doc</p>
+                            <span>March 8, 1986</span>
+                          </div>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <div class="btn-rightbottom-box">
+                    <button class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+                    <button class="btn-base btn-brand-blue btn-upload">Select</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 2.등록된 파일이 있을경우 부분 - 끝 -->
+
+              <!-- 3.My file 탭에서 Select버튼 누르면 나오는 곳  - 시작 -->
+              <div class="myfile-upload-page">
+                <div class="upload-file-firstbox">
+                  <div class="file-upload">
+                    <div class="file-icon-name-box">
+                      <img src="../assets/images/icon/ico-img.gif" alt="power point document" title="power point document"/>
+                      <p><a class="file-name" data-toggle="modal" href="#fileinformationModal">moisturizes and progects.pptx</a></p>
+                    </div>
+                    <a href="#" title="download"><i class="icon-inbox" aria-hidden="true"></i></a>
+                  </div>
+                </div>
+                <div class="upload-file-secondbox">
+                  <div class="dsc-write-doc">
+                    <dl class="dsc-write-form">
+                      <dt>Title</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" placeholder="Title"  />
+                      </dd>
+                      <dt>Co-Author</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" placeholder="Co-Author"  />
+                      </dd>
+                      <dt>Joint research</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" placeholder="Joint research"  />
+                      </dd>
+                      <dt>
+                        Date of issuance
+                      <div class="input-box datepicker-box">
+                        <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" />
+                      </div>
+                      </dt>
+                    </dl>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="btn-rightbottom-box">
+                    <button class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+                    <button class="btn-base btn-brand-blue btn-upload">Upload</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 3.My file 탭에서 Select버튼 누르면 나오는 곳  - 끝 -->
+            </div>
+            <!-- My file 탭 부분 (총3개 페이지) - 끝 -->
+          </div>
+        </div>
+
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div><!-- /.File add modal -->

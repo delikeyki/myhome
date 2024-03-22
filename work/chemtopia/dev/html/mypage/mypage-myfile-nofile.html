@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+      <section class="main-section main-section-default">
+        <article class="main-article mypage-article">
+          <!--=include ../include/mypage/mypage-aside.html -->
+          <div class="myp-contents">
+            <!-- start content -->
+            <div class="bookmark-content my-file-content">
+              <div class="myfile-top-upload-box">
+                <p class="write-notice bg-w" >
+                  <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                  Total upload cannot exceed <span>100 MB.</span>
+                  No single file can exceed 20 MB. File must be in WORD, PPT, PDF, EXCEL, PNG, JPG, JPEG, or GIF format.
+                </p>
+                <!-- myfile-upload start -->
+                <form>
+                  <div class="gray-box myfile-upload">
+                    <h2>Upload file</h2>
+                    <ul class="upload-write">
+                      <li>
+                        <!--file upload NEW-->
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <span class="btn btn-file">
+                              <span>Choose File</span><input type="file" />
+                            </span>
+                            <span class="fileinput-filename"></span>
+                            <span class="fileinput-new">No file chosen</span>
+                            <a href="#" class="close fileinput-exists" data-dismiss="fileinput"><i class="icon-cross"></i></a>
+                        </div>
+                        <!--//file upload NEW-->
+                      </li>
+                      <li>
+                        <!-- 파일 타이틀 글자수 제한걸어주세요. 띄어쓰기 포함, 영어기준으로 스펠링 140이하 입니다. -->
+                        <input class="input-base" type="text" placeholder="Title"/>
+                      </li>
+                    </ul>
+                    <div class="write-footer">
+                      <p>Who can see things on my timeline?</p>
+                      <div class="radiogroup" >
+                        <input checked="checked" id="first" name="radio" type="radio" value="1">
+                        <label for="first">Public</label>
+                        <input id="second" name="radio" type="radio" value="2">
+                        <label for="second">Following</label>
+                        <input id="third" name="radio" type="radio" value="3">
+                        <label for="third">Only me</label>
+                      </div>
+                      <div class="btn-edit-box">
+                        <button type="button" class="btn-base btn-brand-gray btn-upload">Upload</button>
+                        <button type="button" class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!-- myfile-upload end -->
+              </div>
+            </div><!-- end content -->
+          </div>
+        </article>
+      </section>
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+  </body>
+</html>

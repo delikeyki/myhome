@@ -1,0 +1,769 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>chemtopia markup site map</title>
+  <style>
+    table{width:100%;border:0;border-bottom:1px solid #ccc;border-right:1px solid #ccc;border-spacing:0}
+    table td,table th{border:0;border-top:1px solid #ccc;border-left:1px solid #ccc}
+    table th{background:#eee}
+    caption{visibility:hidden;overflow:hidden;width:1px;height:1px;font-size:0;line-height:0}
+  </style>
+
+</head>
+
+<body>
+  <header>
+    Chemtopia Markup site map -- 작업 후 해당 화면 링크를 기입. <br/>
+     markup path :  <a href="http://front01.chemessen.corp:3000/" target="_blank"> http://markup.chemessen.corp/해당 html 경로</a> <br/>
+  </header>
+  <table cellspacing="0" border="1" summary="markup site map">
+  <caption>markup site map</caption>
+  <colgroup>
+    <col width="10%">
+    <col width="*">
+    <col width="20%">
+    <col width="7%">
+    <col width="7%">
+    <col width="15%">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">화면명</th>
+      <th scope="col">html</th>
+      <th scope="col">html 최종 변경 일</th>
+      <th scope="col">개발 진행 여부</th>
+      <th scope="col">비고</th>
+    </tr>
+  </thead>
+  <tbody>
+ 	 <tr>
+ 	    <td>Common Guide</td>
+      <td>공통컴포넌트,Message-Chat,loading layer</td>
+      <td><a href="mypage/mypage-common.html" target="_blank">mypage/mypage-common.html</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!--
+    <tr>
+      <td>defaultTemplate</td>
+      <td>기본템플릿(GNB,LNB,Footer,Message-Chat)</td>
+      <td><a href="defaultTemplate.html" target="_blank">defaultTemplate.html</a></td>
+      <td>1207</td>
+      <td>&nbsp;</td>
+      <td>
+        - TOP버튼 추가<br /> gnb dropdown 수정<br />
+        - 	list 스크롤 스크립트 추가,<br />
+        버튼 영역 text 추가<br />
+        gnb dropdown 수정
+      </td>
+    </tr>-->
+    <tr>
+      <td>index</td>
+      <td> 메인 화면<br></td>
+      <td><a href="index.html" target="_blank">index.html</a></td>
+      <td>1207</td>
+      <td>이상명(10.05)</td>
+      <td>proleaders와 forum 순서 변경<br />gnb dropdown 수정</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Sign In</td>
+      <td>로그인 창-- index 페이지 내 gnb Sign In버튼 클릭</td>
+      <td rowspan="3"><a href="membership/signIn.html" target="_blank">membership/signIn.html</a></td>
+      <td>1101</td>
+      <td>이상명(10.03)</td>
+      <td>password input 클래스추가(사파리 관련)</td>
+    </tr>
+    <tr>
+        <td>비밀번호 재설정 링크 전송 창-- SignIn 모달 내 'Forget your Password?' )클릭</td>
+        <td>0930</td>
+        <td>이상명(10.03)</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td>비밀번호 재설정 링크 전달 완료 창-- forget your pass word 모달 내 'Send reset link'버튼 클릭</td>
+        <td>0930</td>
+        <td>이상명(10.03)</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Sign up</td>
+      <td>회원가입 폼</td>
+      <td rowspan="2"><a href="membership/signUpFirst.html" target="_blank">membership/signUpFirst.html</a></td>
+      <td>1101</td>
+      <td>이상명(09.26)</td>
+      <td>password input 클래스추가(사파리 관련)</td>
+    </tr>
+      <tr>
+        <td>가입감사 및 인증 요청 창 - 회원가입폼 내 'Next'버튼 클릭</td>
+        <td>0923</td>
+        <td>이상명(09.26)</td>
+        <td>html lang 'en'으로 변경, jquery 버전 수정(3.0)</td>
+      </tr>
+      <tr>
+        <td>관심분야 선택 화면</td>
+        <td rowspan="2"><a href="membership/signUpNext.html" target="_blank">membership/signUpNext.html</a></td>
+        <td>0923</td>
+        <td>이상명(10.11)</td>
+        <td>html lang 'en'으로 변경, jquery 버전 수정(3.0)</td>
+      </tr>
+      <tr>
+        <td>관심분야 other 입력 창 -- 관심분야 선택 화면 내 'other'클릭</td>
+        <td>0923</td>
+        <td>이상명(10.11)</td>
+        <td>html lang 'en'으로 변경, jquery 버전 수정(3.0)</td>
+      </tr>
+      <tr>
+        <td>회원가입 완료 화면</td>
+        <td><a href="membership/signUpCompletion.html" target="_blank">membership/signUpCompletion.html</a></td>
+        <td>0923</td>
+        <td>이상명(09.26)</td>
+        <td>html lang 'en'으로 변경, jquery 버전 수정(3.0)</td>
+      </tr>
+      <tr>
+        <td rowspan="3">chemcast</td>
+        <td>메인 화면</td>
+        <td><a href="chemcast/chemcastMain.html" target="_blank">chemcast/chemcastMain.html</a></td>
+        <td>1117</td>
+        <td>박시웅(09.13)</td>
+        <td>텍스트 수정</td>
+      </tr>
+      <tr>
+        <td>상세 페이지</td>
+        <td><a href="chemcast/chemcastDetail.html" target="_blank">chemcast/chemcastDetail.html</a></td>
+        <td>1011</td>
+        <td>박시웅(09.13)</td>
+        <td>'Properties in Chem Info'(tabmenu) 추가</td>
+      </tr>
+      <tr>
+        <td>메인- 검색 데이터가 없을 경우</td>
+        <td><a href="chemcast/chemcastnoresult.html" target="_blank">chemcast/chemcastnoresult.html</a></td>
+        <td>1011</td>
+        <td>박시웅(09.13)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Breaktime</td>
+        <td>메인</td>
+        <td><a href="breaktime/breaktime.html" target="_blank">breaktime/breaktime.html</a></td>
+        <td>&nbsp;</td>
+        <td>문용상</td>
+        <td>링크영역수정 : 주석 161108 a링크</td>
+      </tr>
+      <!-- 161220 default에 합쳤어요.
+      <tr>
+        <td>LNB</td>
+        <td>lnb 모달</td>
+        <td><a href="lnb.html" target="_blank">lnb.html</a></td>
+        <td>12/07</td>
+        <td>&nbsp;</td>
+        <td>list 스크롤 스크립트 추가,<br />버튼 영역 text 추가<br />gnb dropdown 수정</td>
+      </tr> -->
+      <tr>
+        <td rowspan="9">notifications</td>
+        <td>Message</td>
+        <td><a href="notifications/notificationsMessage.html" target="_blank">notifications/notificationsMessage.html</a></td>
+        <td>1012</td>
+        <td>박미현(10.10)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>검색결과 없을 때</td>
+        <td><a href="notifications/notificationsSearchNoresults.html" target="_blank">notifications/notificationsSearchNoresults.html</a></td>
+        <td>1014</td>
+        <td>>박미현(10.10)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Chem Info/Forum</td>
+        <td><a href="notifications/notificationsCheminfoForum.html" target="_blank">notifications/notificationsCheminfoForum.html</a></td>
+        <td>1025</td>
+        <td>박진우(11.01)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Follow</td>
+        <td><a href="notifications/notificationsFollow.html" target="_blank">notifications/notificationsFollow.html</a></td>
+        <td>1025</td>
+        <td>박진우(11.01)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Other</td>
+        <td><a href="notifications/notificationsOther.html" target="_blank">notifications/notificationsOther.html</a></td>
+        <td>1025</td>
+        <td>박진우(11.01)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>메시지 없을 때</td>
+        <td><a href="notifications/notificationsNoresults.html" target="_blank">notifications/notificationsNoresults.html</a></td>
+        <td>1014</td>
+        <td>박진우(11.01)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Notification Other 상세 페이지</td>
+        <td><a href="notifications/notificationsReport.html" target="_blank">notifications/notificationsReport.html</a></td>
+        <td>1019</td>
+        <td>박진우(11.01)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>setting</td>
+        <td><a href="notifications/notificationsSetting.html" target="_blank">notifications/notificationsSetting.html</a></td>
+        <td>1025</td>
+        <td>박진우(10.19)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>setting - 차단 회원이 없을 때</td>
+        <td><a href="notifications/notificationsSetting-noblocked.html" target="_blank">notifications/notificationsSetting-noblocked.html</a></td>
+        <td>1019</td>
+        <td>박진우(10.19)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td rowspan="2">search</td>
+        <td>통합서치-결과 있을때</td>
+        <td><a href="search.html" target="_blank">search.html</a></td>
+        <td>1031</td>
+        <td>오정국(09.19)</td>
+        <td>people tab 추가</td>
+      </tr>
+      <tr>
+        <td>통합서치- 결과가 하나도 없을때</td>
+        <td><a href="searchNoresult.html" target="_blank">searchNoresult.html</a></td>
+        <td>&nbsp;</td>
+        <td>오정국(09.19)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td rowspan="18">mypage</td>
+        <td>프로필화면</td>
+		    <td rowspan="5"><a href="mypage/mypageProfile.html" target="_blank">mypage/mypageProfile.html</a></td>
+        <td>1125</td>
+        <td>문용상(10.5)</td>
+        <td rowspan="5">Update Profile Picture 모달 추가</td>
+      </tr>
+      <tr>
+        <td>프로필화면 - Follower 모달</td>
+        <td></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>프로필화면 - Following 모달</td>
+        <td></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>프로필화면 - Upload image 모달</td>
+        <td></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>프로필화면 - Matching Skills and Expertise 모달(숫자부분 클릭하면 노출)</td>
+        <td>1025</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr style="background-color:#efefef;">
+        <td>[참고] 프로필화면 - 입력</td>
+		    <td><a href="mypage/mypageProfileWrite.html" target="_blank">mypage/mypageProfileWrite.html</a></td>
+        <td>1028</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr style="background-color:#efefef;">
+        <td>[참고] 프로필화면 - 수정</td>
+		    <td><a href="mypage/mypageProfileEdit.html" target="_blank">mypage/mypageProfileEdit.html</a></td>
+        <td>1028</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr style="background-color:#efefef;">
+        <td>[참고] 프로필화면 - 보기</td>
+		    <td><a href="mypage/mypageProfileView.html" target="_blank">mypage/mypageProfileView.html</a></td>
+        <td>1028</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr style="background-color:#efefef;">
+        <td>[참고] 프로필화면 - 다른 사용자</td>
+		    <td><a href="mypage/mypageProfileViewOther.html" target="_blank">mypage/mypageProfileViewOther.html</a></td>
+        <td>1123</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>마이파일 - 파일업로드 상태</td>
+        <td><a href="mypage/mypage-myfile.html" target="_blank">mypage/mypage-myfile.html</a></td>
+        <td>1026</td>
+        <td>&nbsp;</td>
+        <td>파일 리스트 테이블수정</td>
+      </tr>
+      <tr>
+        <td>마이파일 - 등록된 파일의 Edit버튼으로 들어간 수정페이지</td>
+        <td><a href="mypage/mypage-myfile-modify.html" target="_blank">mypage/mypage-myfile-modify.html</a></td>
+        <td>1026</td>
+        <td>&nbsp;</td>
+        <td>파일 리스트 테이블수정</td>
+      </tr>
+      <tr>
+        <td>마이파일 - 다른사용자/전문가 MyFile 화면<br/>(report 모달은 forumMain.html의 주석참고)</td>
+        <td><a href="mypage/mypage-myfile-anotheruser.html" target="_blank">mypage/mypage-myfile-anotheruser.html</a></td>
+        <td>1026</td>
+        <td>&nbsp;</td>
+        <td>파일 리스트 테이블수정</td>
+      </tr>
+      <tr>
+        <td>마이파일 - 최초 파일등록시 화면(업로드된 파일이 아무것도 없을때)</td>
+        <td><a href="mypage/mypage-myfile-nofile.html" target="_blank">mypage/mypage-myfile-nofile.html</a></td>
+        <td>1025</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>포럼 <br/>(report 모달은 forumMain.html의 주석참고)</td>
+        <td><a href="mypage/mypage-forum.html" target="_blank">mypage/mypage-forum.html</a></td>
+        <td>1025</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>포럼 - 등록된 컨텐츠가 없을때</td>
+        <td><a href="mypage/mypage-forum-nocontents.html" target="_blank">mypage/mypage-forum-nocontents.html</a></td>
+        <td>1025</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>북마크</td>
+        <td><a href="mypage/mypage-bookmark.html" target="_blank">mypage/mypage-bookmark.html</a></td>
+        <td>1025</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>북마크 - 등록된 컨텐츠가 없을때</td>
+        <td><a href="mypage/mypage-bookmark-nocontents.html" target="_blank">mypage/mypage-bookmark-nocontents.html</a></td>
+        <td>1025</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>컨텐츠</td>
+        <td><a href="mypage/mypage-contents.html" target="_blank">mypage/mypage-contents.html</a></td>
+        <td>170323</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td rowspan="16">forum</td>
+        <td>목록(forum main) - report 모달은 여기서 참고</td>
+        <td><a href="forum/forumMain.html" target="_blank">forum/forumMain.html</a></td>
+        <td>1017</td>
+        <td>&nbsp;</td>
+        <td>Newest 추가</td>
+      </tr>
+      <tr>
+        <td>목록(forum main) - 로그아웃 시 우측</td>
+        <td><a href="forum/forumMain-logoutside.html" target="_blank">forum/forumMain-logoutside.html</a></td>
+        <td>1017</td>
+        <td>&nbsp;</td>
+        <td>Newest 추가</td>
+      </tr>
+      <tr>
+        <td>forum 검색 결과 있을때 </td>
+        <td><a href="forum/forumMainSearch.html" target="_blank">forum/forumMainSearch.html</a></td>
+        <td>1017</td>
+        <td>&nbsp;</td>
+        <td>Newest 추가</td>
+      </tr>
+      <tr>
+        <td>forum 검색 결과 하나도 없을때 </td>
+        <td><a href="forum/forumMainSearchNoresult.html" target="_blank">forum/forumMainSearchNoresult.html</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>forum 검색 결과가 카테고리에 없을때</td>
+        <td><a href="forum/forumMainSearchNocategory.html" target="_blank">forum/forumMainSearchNocategory.html</a></td>
+        <td>1017</td>
+        <td>&nbsp;</td>
+        <td>Newest 추가</td>
+      </tr>
+      <tr>
+        <td>Topic 글 쓰기</td>
+        <td rowspan="2"><a href="forum/forumTopicWrite.html" target="_blank">forum/forumTopicWrite.html</a></td>
+        <td>1019</td>
+        <td>&nbsp;</td>
+        <td>사진 모달 추가</td>
+      </tr>
+      <tr>
+        <td>Topic 글 쓰기 - <br />화면 내 좌측 버튼 3개에<br />해당되는 모달 2개 참고</td>
+        <td>1017</td>
+        <td>&nbsp;</td>
+        <td>X버튼 추가</td>
+      </tr>
+    <tr>
+      <td>Topic 글 쓰기</td>
+      <td><a href="forum/forumTopicWrite_new.html" target="_blank">forum/forumTopicWrite_new.html</a></td>
+      <td>1019</td>
+      <td>&nbsp;</td>
+      <td>textarea 를 div contenteditable 로 수정</td>
+    </tr>
+      <tr>
+        <td>Topic 글 보기</td>
+        <td rowspan="2"><a href="forum/forumTopicView.html" target="_blank">forum/forumTopicView.html</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Topic 글 보기 - 문서파일 정보 보기 모달</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Topic 글 수정</td>
+        <td rowspan="2"><a href="forum/forumTopicModify.html" target="_blank">forum/forumTopicModify.html</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Topic 글 수정 화면 내 --- 첨부된 파일명 클릭시 ---> 문서파일 정보 수정 모달</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Opnion 글 쓰기</td>
+        <td><a href="forum/forumOpinionWrite.html" target="_blank">forum/forumOpinionWrite.html</a></td>
+        <td>1017</td>
+        <td>&nbsp;</td>
+        <td>X버튼 추가</td>
+      </tr>
+      <tr>
+        <td>Opnion 글 수정</td>
+        <td><a href="forum/forumOpinionModify.html" target="_blank">forum/forumOpinionModify.html</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Comment 글 쓰기</td>
+        <td><a href="forum/forumCommentWrite.html" target="_blank">forum/forumCommentWrite.html</a></td>
+        <td>1017</td>
+        <td>&nbsp;</td>
+        <td>X버튼 추가</td>
+      </tr>
+      <tr>
+        <td>Comment 글 수정</td>
+        <td><a href="forum/forumCommentModify.html" target="_blank">forum/forumCommentModify.html</a></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+       <tr>
+        <td rowspan="13">proleaders</td>
+        <td>메인(리스트)</td>
+        <td rowspan="2"><a href="proleaders/proleadersMaincard.html" target="_blank">proleaders/proleadersMaincard.html</a></td>
+        <td>1013</td>
+        <td>박시웅(10.04)</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Proleaders 연구이력 미리보기 모달 - 메인 카드내 '더보기' 버튼 클릭</td>
+        <td>1011</td>
+        <td>박시웅(10.04)</td>
+        <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td>Proleaders 상세 페이지(Chemtopia 가입 후 My Page 프로필 정보 미등록시)</td>
+      <td rowspan="2"><a href="proleaders/proleadersExpertDetail.html" target="_blank">proleaders/proleadersExpertDetail.html</a></td>
+      <td>1025</td>
+      <td>박시웅(10.04)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>유사 Proleaders 안내 모달 - 'Similar Expert' 클릭</td>
+      <td>1128</td>
+      <td>박시웅(10.04)</td>
+      <td>스크롤 맨아래 이동시 자동으로 글 목록 더보이기 스크립트 추가</td>
+    </tr>
+    <tr>
+      <td>Proleaders 상세 페이지(Chemtopia 가입 후 My Page 프로필 정보 등록 시)<br />Chemtopia 미가입시 following등 메시지 노출안됨</td>
+      <td><a href="proleaders/proleadersExpertDetailmypage.html" target="_blank">proleaders/proleadersExpertDetailmypage.html</a></td>
+      <td>1011</td>
+      <td>박시웅(10.04)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- <tr>
+      <td>Proleaders 상세 페이지(Chemtopia 미가입시)</td>
+      <td><a href="proleaders/proleadersExpertDetailnone.html" target="_blank">proleaders/proleadersExpertDetailnone.html</a></td>
+      <td>1011</td>
+      <td>박시웅(10.04)</td>
+      <td>&nbsp;</td>
+    </tr> -->
+    <tr>
+      <td>Proleaders 신청 페이지</td>
+      <td rowspan="8"><a href="proleaders/proleadersExpertApplication.html" target="_blank">proleaders/proleadersExpertApplication.html</a></td>
+      <td>1028</td>
+      <td>박시웅</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders Apply 결과 페이지</td>
+      <td>1028</td>
+      <td>박시웅</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders Apply 결과 페이지-Proleaders인 경우</td>
+      <td></td>
+      <td></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders Apply 결과 페이지-Proleaders 신청중인 경우</td>
+      <td></td>
+      <td></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders 신청 upload</td>
+      <td>1028</td>
+      <td>박시웅</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders 신청 Link</td>
+      <td>1028</td>
+      <td>박시웅</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders 신청(다른 사람 추천)</td>
+      <td>1028</td>
+      <td>박시웅</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders Recommend 결과 페이지</td>
+      <td>1013</td>
+      <td>박시웅</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!-- <tr style="background-color:#efefef;">
+      <td>[참고] Proleaders 신청 페이지 (정보 직접 입력)</td>
+      <td><a href="proleaders/proleadersExpertApplicationWrite.html" target="_blank">proleaders/proleadersExpertApplicationWrite.html</a></td>
+      <td>1028</td>
+      <td>박시웅</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr style="background-color:#efefef;">
+      <td>[참고] Proleaders 신청 페이지 (미리보기)</td>
+      <td><a href="proleaders/proleadersExpertApplicationPreview.html" target="_blank">proleaders/proleadersExpertApplicationPreview.html</a></td>
+      <td>1028</td>
+      <td>박시웅</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr style="background-color:#efefef;">
+      <td>[참고] Proleaders 신청 페이지 (수정)</td>
+      <td><a href="proleaders/proleadersExpertApplicationEdit.html" target="_blank">proleaders/proleadersExpertApplicationEdit.html</a></td>
+      <td>1028</td>
+      <td>박시웅</td>
+      <td>&nbsp;</td>
+    </tr> -->
+    <tr>
+      <td rowspan="4">Cheminfo</td>
+      <td>메인</td>
+      <td><a href="cheminfo/cheminfoMain.html" target="_blank">cheminfo/cheminfoMain.html</a></td>
+      <td>&nbsp;</td>
+      <td>오정국(10.05)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>검색결과 리스트</td>
+      <td><a href="cheminfo/cheminfoSearchResult.html" target="_blank">cheminfo/cheminfoSearchResult.html</a></td>
+      <td>1010</td>
+      <td>오정국(10.05)</td>
+      <td>paging 내 span 태그 삭제</td>
+    </tr>
+    <tr>
+      <td>검색결과 리스트 - No Result</td>
+      <td><a href="cheminfo/cheminfoSearchResult-NoResult.html" target="_blank">cheminfo/cheminfoSearchResult-NoResult.html</a></td>
+      <td>&nbsp;</td>
+      <td>오정국(10.27)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>검색결과 상세뷰</td>
+      <td><a href="cheminfo/cheminfoSearchResultView.html" target="_blank">cheminfo/cheminfoSearchResultView.html</a></td>
+      <td>&nbsp;</td>
+      <td>오정국(10.27)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Module</td>
+      <td>메인</td>
+      <td><a href="module/module-main.html" target="_blank">module/module-main.html</a></td>
+      <td>&nbsp;</td>
+      <td>박미현</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>상세뷰</td>
+      <td><a href="module/module-sub.html" target="_blank">module/module-sub.html</a></td>
+      <td>&nbsp;</td>
+      <td>박미현</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Footer landing page</td>
+      <td>About Chemtopia</td>
+      <td><a href="footer/about.html" target="_blank">footer/about.html</a></td>
+      <td>&nbsp;</td>
+      <td>박미현(10.25)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Terms of Service</td>
+      <td><a href="footer/termsOfService.html" target="_blank">footer/termsOfService.html</a></td>
+      <td>&nbsp;</td>
+      <td>박미현(10.25)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Privacy Policy</td>
+      <td><a href="footer/privacy.html" target="_blank">footer/privacy.html</a></td>
+      <td>&nbsp;</td>
+      <td>박미현(10.25)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Membership</td>
+      <td><a href="footer/membership.html" target="_blank">footer/membership.html</a></td>
+      <td>&nbsp;</td>
+      <td>박미현(10.25)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Contact Us</td>
+      <td><a href="footer/contactus.html" target="_blank">footer/contactus.html</a></td>
+      <td>&nbsp;</td>
+      <td>박미현(10.25)</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="2">etc</td>
+      <td>404에러페이지</td>
+      <td><a href="etc/page-error.html" target="_blank">etc/page-error.html</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>sign in 유도페이지</td>
+      <td><a href="etc/page-need-signin.html" target="_blank">etc/page-need-signin.html</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <!--
+    <tr>
+      <td>로딩중...</td>
+      <td><a href="etc/page-loading.html" target="_blank">etc/page-loading.html</a></td>
+      <td>11/23</td>
+      <td>이진수</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>공지팝업(3가지)</td>
+      <td><a href="etc/notice-popup.html" target="_blank">etc/notice-popup.html</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>-->
+    <tr>
+      <td>membership</td>
+      <td>비밀번호 변경 페이지<br/>(아래 "이메일 form - 비밀번호 변경" 에서<br/>Change Password 누르면 나오는페이지)</td>
+      <td><a href="membership/ChangeYourPassword.html" target="_blank">membership/ChangeYourPassword.html</a></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="9">자동메일</td>
+      <td>contact us</td>
+      <td><a href="footer/email-contactus.html" target="_blank">footer/email-contactus.html</a></td>
+      <td>1115</td>
+      <td>장부경</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>비밀번호 변경</td>
+      <td><a href="membership/passwordEmail.html" target="_blank">membership/passwordEmail.html</a></td>
+      <td>1111</td>
+      <td>장부경</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>이메일 주소 인증</td>
+      <td><a href="membership/eamiladdresscheck.html" target="_blank">membership/eamiladdresscheck.html</a></td>
+      <td>1111</td>
+      <td>장부경</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders 승인</td>
+      <td><a href="proleaders/emailOk.html" target="_blank">proleaders/emailOk.html</a></td>
+      <td></td>
+      <td></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders 거절</td>
+      <td><a href="proleaders/emailRefusal.html" target="_blank">proleaders/emailRefusal.html</a></td>
+      <td></td>
+      <td></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>컨텐츠팀에서 등록한 Proleaders에게 해당 메일 발송</td>
+      <td><a href="proleaders/emailRecommand.html" target="_blank">proleaders/emailRecommand.html</a></td>
+      <td></td>
+      <td></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders를 추천했을 경우 추천 대상자에게 해당 메일 발송</td>
+      <td><a href="proleaders/emailRecommandtarget.html" target="_blank">proleaders/emailRecommandtarget.html</a></td>
+      <td></td>
+      <td></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders를 추천 후 추천 대상자가 Chemtopia 가입했을 경우 해당 메일 발송</td>
+      <td><a href="proleaders/emailRecommandconsent.html" target="_blank">proleaders/emailRecommandconsent.html</a></td>
+      <td></td>
+      <td></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proleaders를 추천 감사 메일</td>
+      <td><a href="proleaders/emailRecommandthank.html" target="_blank">proleaders/emailRecommandthank.html</a></td>
+      <td>1125</td>
+      <td></td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+  </table>
+
+</body>
+</html>

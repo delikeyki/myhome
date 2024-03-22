@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="signup-section-noheader signup-bgimg">
+        <article class="signup-noheader">
+          <div class="signup-form-complete text-center">
+            <p class="complete-title">You did a great job.</p>
+            <p class="complete-text">Now enjoy more interesting chemistry at <strong>chemtopia.</strong></p>
+            <button type="button" class="btn-signup-complete">Let's get started!</button>
+          </div>
+        </article>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+    <script>
+    $(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+
+      $('#checkbox-answer-etc').on('change', function(e){
+         if(e.target.checked){
+           $('#myModal').modal();
+         }
+      });
+    });
+  </script>
+
+
+
+  </body>
+</html>

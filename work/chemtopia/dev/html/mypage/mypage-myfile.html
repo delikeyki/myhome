@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+      <section class="main-section main-section-default">
+        <article class="main-article mypage-article">
+          <!--=include ../include/mypage/mypage-aside.html -->
+          <div class="myp-contents">
+            <!-- start content -->
+            <div class="bookmark-content my-file-content">
+              <!--평소엔 숨겨있다가 Add myfile 누르면 나오는 upload 부분 -->
+              <div class="myfile-top-upload-box">
+                <p class="write-notice bg-w" >
+                  <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                  Total upload cannot exceed <span>100 MB.</span>
+                  No single file can exceed 20 MB. File must be in WORD, PPT, PDF, EXCEL, PNG, JPG, JPEG, or GIF format.
+                </p>
+                <!-- myfile-upload start -->
+                <form>
+                  <div class="gray-box myfile-upload">
+                    <a href="#" class="close" title="notice delete"><i class="icon-cross" aria-hidden="true"></i></a>
+                    <h2>Upload file</h2>
+                    <ul class="upload-write">
+                      <li>
+                        <!--file upload NEW-->
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <span class="btn btn-file">
+                              <span>Choose File</span><input type="file" />
+                            </span>
+                            <span class="fileinput-filename"></span>
+                            <span class="fileinput-new">No file chosen</span>
+                            <a href="#" class="close fileinput-exists" data-dismiss="fileinput"><i class="icon-cross"></i></a>
+                        </div>
+                        <!--//file upload NEW-->
+                      </li>
+                      <li>
+                        <!-- 파일 타이틀 글자수 제한걸어주세요. 띄어쓰기 포함, 영어기준으로 스펠링 140이하 입니다. -->
+                        <input class="input-base" type="text" placeholder="Title"/>
+                      </li>
+                    </ul>
+                    <!-- 170921 추가 -->
+                    <div class="write-footer upload-other-file">
+                      <h5 class="cheminfo-add-modal-h2">Sale Price</h5>
+                      <input type="text" id="sale-point" class="input-base input-payment" placeholder="50 ~ 100,000">
+                      <label for="sale-point" class="txt-label-point">Point</label>
+                      <div class="txt-final-selling">
+                        <strong>Final selling point price <em>650</em> <span>point</span></strong> <br>(The point you entered + the ChemEssent fee 30%)
+                      </div>
+                      <p class="txt-sale-price">
+                        The selling point is deducted when other customers view the information you upload Point, and the selling price is determined by attaching a commission to the points you have created. In addition, if another customer buys your information, you will receive the points We will return it to your account.
+                      </p>
+                    </div>
+                    <!-- //170921 추가 -->
+                    <div class="write-footer">
+                      <p>Who can see things on my timeline?</p>
+                      <div class="radiogroup" >
+                        <input class="css-radio" checked="checked" id="first" name="radio" type="radio" value="1">
+                        <label for="first">Public</label>
+                        <input class="css-radio" id="second" name="radio" type="radio" value="2">
+                        <label for="second">Following</label>
+                        <input class="css-radio" id="third" name="radio" type="radio" value="3">
+                        <label for="third">Only me</label>
+                      </div>
+                      <div class="btn-edit-box">
+                        <button type="button" class="btn-base btn-brand-gray btn-upload">Upload</button>
+                        <button type="button" class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- myfile-upload end -->
+
+              <div class="myfile-add-btn">
+                <button type="button" class="btn-base btn-brand-blue btn-block" >Add MyFile</button>
+              </div>
+
+              <!-- myfile-upload item : table의 tr코드 하나당  item 한줄입니다.-->
+              <div class="article-box myfile-list-box">
+                <table class="list-myfile mypage-myfile-list-table">
+                  <colgroup>
+                    <col class="myfile-icon-width" />
+                    <col class="myfile-title-width" />
+                    <col class="myfile-dots-width" />
+                    <col class="myfile-down-width" />
+                  </colgroup>
+                  <tbody>
+                    <!-- item start -->
+                    <tr>
+                      <td class="list-myfile-img">
+                        <img src="../assets/images/icon/ico-doc.gif"/>
+                      </td>
+                      <td class="myfile-subject">
+                        <span class="myfile-title">Static HTML tree dumps for mirroring or CD distribution Static HTML tree dumps for mirroring or CD distribution</span>
+                        <span class="date-update creation-date">March 8, 1986</span>
+                        <span class="creation-date"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <div class="dropdown floatleft">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i> <span class="caret"></span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-public">
+                              <p>Who should see this?</p>
+                              <ul>
+                                <li><a href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i>Public</a></li>
+                                <li><a href="#"><i class="icon-head" aria-hidden="true" title="Friends"></i>Following</a></li>
+                                <li><a href="#"><i class="icon-lock" aria-hidden="true" title="Only me"></i>Only me</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="myfile-edit-btn">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                              <ul>
+                                <li><a href="mypage-myfile-modify.html">Edit</a></li>
+                                <li><a href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                          <p class="myfile-download-num">56</p>
+                        </a>
+                      </td>
+                    </tr>
+                    <!-- item start -->
+                    <tr>
+                      <td class="list-myfile-img">
+                        <img src="../assets/images/icon/ico-excel.gif"/>
+                      </td>
+                      <td class="myfile-subject">
+                        <span class="myfile-title">Offline wikipedia reader</span>
+                        <span class="date-update">March 8, 1986</span>
+                        <span class="creation-date"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <div class="dropdown floatleft">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i> <span class="caret"></span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-public">
+                              <p>Who should see this?</p>
+                              <ul>
+                                <li><a href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i>Public</a></li>
+                                <li><a href="#"><i class="icon-head" aria-hidden="true" title="Friends"></i>Following</a></li>
+                                <li><a href="#"><i class="icon-lock" aria-hidden="true" title="Only me"></i>Only me</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="myfile-edit-btn">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                              <ul>
+                                <li><a href="mypage-myfile-modify.html">Edit</a></li>
+                                <li><a href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                          <p class="myfile-download-num">24</p>
+                        </a>
+                      </td>
+                    </tr>
+                    <!-- item start -->
+                    <tr>
+                      <td class="list-myfile-img">
+                        <img src="../assets/images/icon/ico-etc.gif"/>
+                      </td>
+                      <td class="myfile-subject">
+                        <span class="myfile-title">Offline wikipedia reader</span>
+                        <span class="date-update">March 8, 1986</span>
+                        <span class="creation-date"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <div class="dropdown floatleft">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i> <span class="caret"></span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-public">
+                              <p>Who should see this?</p>
+                              <ul>
+                                <li><a href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i>Public</a></li>
+                                <li><a href="#"><i class="icon-head" aria-hidden="true" title="Friends"></i>Following</a></li>
+                                <li><a href="#"><i class="icon-lock" aria-hidden="true" title="Only me"></i>Only me</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="myfile-edit-btn">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                              <ul>
+                                <li><a href="mypage-myfile-modify.html">Edit</a></li>
+                                <li><a href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                          <p class="myfile-download-num">7</p>
+                        </a>
+                      </td>
+                    </tr>
+                    <!-- item start -->
+                    <tr>
+                      <td class="list-myfile-img">
+                        <img src="../assets/images/icon/ico-pdf.gif"/>
+                      </td>
+                      <td class="myfile-subject">
+                        <span class="myfile-title">Images and other files are available under different terms</span>
+                        <span class="date-update">March 8, 1986</span>
+                        <span class="creation-date"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <div class="dropdown floatleft">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i> <span class="caret"></span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-public">
+                              <p>Who should see this?</p>
+                              <ul>
+                                <li><a href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i>Public</a></li>
+                                <li><a href="#"><i class="icon-head" aria-hidden="true" title="Friends"></i>Following</a></li>
+                                <li><a href="#"><i class="icon-lock" aria-hidden="true" title="Only me"></i>Only me</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="myfile-edit-btn">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                              <ul>
+                                <li><a href="mypage-myfile-modify.html">Edit</a></li>
+                                <li><a href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                          <p class="myfile-download-num">26</p>
+                        </a>
+                      </td>
+                    </tr>
+                    <!-- item start -->
+                    <tr>
+                      <td class="list-myfile-img">
+                        <img src="../assets/images/icon/ico-img.gif"/>
+                      </td>
+                      <td class="myfile-subject">
+                        <span class="myfile-title">Statistics and Machine Learning Toolbox</span>
+                        <span class="date-update">March 8, 1986</span>
+                        <span class="creation-date"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <div class="dropdown floatleft">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i> <span class="caret"></span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-public">
+                              <p>Who should see this?</p>
+                              <ul>
+                                <li><a href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i>Public</a></li>
+                                <li><a href="#"><i class="icon-head" aria-hidden="true" title="Friends"></i>Following</a></li>
+                                <li><a href="#"><i class="icon-lock" aria-hidden="true" title="Only me"></i>Only me</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="myfile-edit-btn">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                              <ul>
+                                <li><a href="mypage-myfile-modify.html">Edit</a></li>
+                                <li><a href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                          <p class="myfile-download-num">15</p>
+                        </a>
+                      </td>
+                    </tr>
+                    <!-- item start -->
+                    <tr>
+                      <td class="list-myfile-img">
+                        <img src="../assets/images/icon/ico-doc.gif"/>
+                      </td>
+                      <td class="myfile-subject">
+                        <span class="myfile-title">Simulink.doc</span>
+                        <span class="date-update">March 8, 1986</span>
+                        <span class="creation-date"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <div class="dropdown floatleft">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i> <span class="caret"></span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-public">
+                              <p>Who should see this?</p>
+                              <ul>
+                                <li><a href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i>Public</a></li>
+                                <li><a href="#"><i class="icon-head" aria-hidden="true" title="Friends"></i>Following</a></li>
+                                <li><a href="#"><i class="icon-lock" aria-hidden="true" title="Only me"></i>Only me</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="myfile-edit-btn">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                              <ul>
+                                <li><a href="mypage-myfile-modify.html">Edit</a></li>
+                                <li><a href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                          <p class="myfile-download-num">13</p>
+                        </a>
+                      </td>
+                    </tr>
+                    <!-- item start -->
+                    <tr>
+                      <td class="list-myfile-img">
+                        <img src="../assets/images/icon/ico-etc.gif"/>
+                      </td>
+                      <td class="myfile-subject">
+                        <span class="myfile-title">Static HTML tree dumps for mirroring or CD distribution</span>
+                        <span class="date-update">March 8, 1986</span>
+                        <span class="creation-date"><i class="fa fa-circle" aria-hidden="true"></i></span>
+                        <div class="dropdown floatleft">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i> <span class="caret"></span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-public">
+                              <p>Who should see this?</p>
+                              <ul>
+                                <li><a href="#"><i class="icon-globe" aria-hidden="true" title="Public"></i>Public</a></li>
+                                <li><a href="#"><i class="icon-head" aria-hidden="true" title="Friends"></i>Following</a></li>
+                                <li><a href="#"><i class="icon-lock" aria-hidden="true" title="Only me"></i>Only me</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="myfile-edit-btn">
+                        <div class="dropdown">
+                          <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                          <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                            <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                              <ul>
+                                <li><a href="mypage-myfile-modify.html">Edit</a></li>
+                                <li><a href="#">Delete</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="#" class="download-box">
+                          <i class="icon-inbox" aria-hidden="true" title="Download"></i>
+                          <p class="myfile-download-num">234</p>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="btn-article-seemore"><a href="#">See More</a></div>
+            </div><!-- end content -->
+          </div>
+        </article>
+      </section>
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+  </body>
+</html>

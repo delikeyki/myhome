@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <!-- 이미지만 있을때 - 공지팝업 -->
+      <div class="modal fade" id="noticeOnlyImg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-noticepopup">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <!-- 아이콘(이미지) 영역 -->
+                <div class="notice-img-box">
+                  <img src="../assets/images/icon/noticepopup-icon-tool.gif" alt="notice-tool-icon" />
+                </div>
+
+                <!-- 하단 버튼과 체크박스 부분은 공통 -->
+                <div class="notice-btn-box">
+                  <button type="button" class="btn-base btn-brand-blue btn-block">Confirm</button>
+                </div>
+                <div class="check-box-content">
+                  <input type="checkbox" id="checkbox1" class="css-checkbox">
+                  <label for="checkbox1" class="css-checkbox-label">Do not show this message Today</label>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal-noticepopup -->
+      </div><!-- /.modal -->
+
+      <!-- 글만 있을때 - 공지팝업 -->
+      <div class="modal fade" id="noticeOnlyText" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-noticepopup">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <!-- 텍스트 영역 -->
+                <div class="notice-text-box">
+                  <p class="date-area">
+                    <strong>3/21/2015</strong>  02:00 AM EST - <strong>3/21/2015</strong>  02:00 AM EST
+                  </p>
+                  <p class="notice-area">
+                    Our web service will not be available during this period. Please plan accordingly. We apologize for any inconvenience to you and your business.
+                  </p>
+                </div>
+
+                <!-- 하단 버튼과 체크박스 부분은 공통 -->
+                <div class="notice-btn-box">
+                  <button type="button" class="btn-base btn-brand-blue btn-block">Confirm</button>
+                </div>
+                <div class="check-box-content">
+                  <input type="checkbox" id="checkbox2" class="css-checkbox">
+                  <label for="checkbox2" class="css-checkbox-label">Do not show this message Today</label>
+                </div>
+
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal-noticepopup -->
+      </div><!-- /.modal -->
+
+      <!-- 둘다 있을때 - 공지팝업 -->
+      <div class="modal fade" id="noticeBoth" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-noticepopup">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+
+                <!-- 아이콘(이미지) 영역 -->
+                <div class="notice-img-box">
+                  <img src="../assets/images/icon/noticepopup-icon-tool.gif" alt="notice-tool-icon" />
+                </div>
+
+                <!-- 텍스트 영역 -->
+                <div class="notice-text-box">
+                  <p class="date-area">
+                    <strong>3/21/2015</strong>  02:00 AM EST - <strong>3/21/2015</strong>  02:00 AM EST
+                  </p>
+                  <p class="notice-area">
+                    Our web service will not be available during this period. Please make sure to plan accordingly. We apologize for any inconvenience to you and your business.
+                  </p>
+                </div>
+
+                <!-- 하단 버튼과 체크박스 부분은 공통 -->
+                <div class="notice-btn-box">
+                  <button type="button" class="btn-base btn-brand-blue btn-block">Confirm</button>
+                </div>
+                <div class="check-box-content">
+                  <input type="checkbox" id="checkbox3" class="css-checkbox">
+                  <label for="checkbox3" class="css-checkbox-label">Do not show this message Today</label>
+                </div>
+
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal-noticepopup -->
+      </div><!-- /.modal -->
+
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+
+      <section class="main-section">
+        <article class="main-article">
+          <aside class="myp-lnb">
+            <div class="profile-lnb">
+              <ul class="profile-lnb-menu">
+                <li><a href="#inputTextarea">input textarea</a></li>
+                <li><a href="#button">button</a></li>
+                <li><a href="#checkbox">checkbox</a></li>
+                <li><a href="#toggleButton">toggle button</a></li>
+                <li><a href="#WriteEdit">Write and Edit</a></li>
+                <li><a href="#noticePopup">공지팝업</a></li>
+                <li><a href="#modal-loading" id="loading-icon" style="position:fixed;z-index:999999">로딩중</a></li>
+              </ul>
+            </div><!--End profile lnb -->
+          </aside>
+
+          <div class="myp-contents">
+            <!-- When no Introduction -->
+            <div id="inputTextarea " class="sub-box common-sample">
+              <h2>Input and Textarea</h2>
+              <textarea rows="4" class="input-base" placeholder="Please input your self indroduction"></textarea>
+              <br /><br />
+              <div class="enter-input">
+                <button class="btn-base btn-brand-gray rps10" title="Enter">Enter</button>
+                <input type="text" class="input-base" placeholder="Title"/>
+                <div class="brand-list-group display-opacity">
+                  <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                  <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                  <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                  <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                  <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                </div>
+              </div>
+              <br />
+
+              <!-- file upload 이전 버전
+              <div class="btn-upload-box">
+                <span class="btn-base btn-brand-gray-light btn-upload">Choose File</span>
+                <input type="file" class="chooseupload" />
+                <input class="input-base upload-input" type="text" placeholder="No file chosen"  />
+              </div>
+              <br />
+              -->
+
+              <!--file upload NEW-->
+              <div class="fileinput fileinput-new" data-provides="fileinput">
+                  <span class="btn btn-file">
+                    <span>Choose File</span><input type="file" />
+                  </span>
+                  <span class="fileinput-filename"></span>
+                  <span class="fileinput-new">No file chosen</span>
+                  <!-- 161123 추가 -->
+                  <a href="#" class="close fileinput-exists" data-dismiss="fileinput"><i class="icon-cross"></i></a>
+                  <!-- //161123 추가 -->
+              </div>
+              <!--//file upload NEW-->
+
+              <br />
+              <div class="input-box">
+                <div class="input-select">
+                  <div class="input-select-search">
+                    <p class="input-base datepicker-input input-search">Choose Country<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p>
+                  </div>
+                  <div class="select-box">
+                    <input type="text" class="input-base datepicker-input" placeholder="Choose Country"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                    <ul class="aList">
+                      <li><a href="#1">Apenrade</a></li>
+                      <li><a href="#2">Frauenbach</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <br />
+              <p>옵션 선택 후</p>
+              <div class="input-box">
+                <div class="input-select">
+                  <div class="input-select-search">
+                    <p class="input-base datepicker-input input-search input-value">Choose Country<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p>
+                  </div>
+                  <div class="select-box">
+                    <input type="text" class="input-base datepicker-input" placeholder="Choose Country"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                    <ul class="aList">
+                      <li><a href="#1">Apenrade</a></li>
+                      <li><a href="#2">Frauenbach</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <br><br>
+
+              <p>신규 셀렉트박스 : key down Case</p>
+              <div class="select-new">
+                <input type="text" class="select-new-input" placeholder="Choose">
+                <ul class="select-new-layer">
+                  <li><a href="#1">Apenrade</a></li>
+                  <li><a href="#2">Frauenbach</a></li>
+                  <li><a href="#3">Korea</a></li>
+                  <li><a href="#4">Japan</a></li>
+                  <li><a href="#5">Taiwan</a></li>
+                  <li><a href="#6">Greece</a></li>
+                  <li><a href="#7">Italy</a></li>
+                  <li><a href="#8">Spain</a></li>
+                </ul>
+              </div>
+
+              <div class="select-new">
+                <input type="text" class="select-new-input" placeholder="Choose">
+                <ul class="select-new-layer">
+                  <li><a href="#1">Apenrade</a></li>
+                  <li><a href="#2">Frauenbach</a></li>
+                  <li><a href="#3">Korea</a></li>
+                  <li><a href="#4">Japan</a></li>
+                </ul>
+              </div>
+
+              <br><br>
+
+              <p>신규 셀렉트박스 : focus Case</p>
+              <div class="select-choose-only">
+                <input type="text" class="select-new-input" placeholder="Choose">
+                <ul class="select-new-layer">
+                  <li><a href="#1">Apenrade</a></li>
+                  <li><a href="#2">Frauenbach</a></li>
+                  <li><a href="#3">Korea</a></li>
+                  <li><a href="#4">Japan</a></li>
+                  <li><a href="#5">Taiwan</a></li>
+                  <li><a href="#6">Greece</a></li>
+                  <li><a href="#7">Italy</a></li>
+                  <li><a href="#8">Spain</a></li>
+                </ul>
+              </div>
+
+              <div class="select-choose-only">
+                <input type="text" class="select-new-input" placeholder="Choose">
+                <ul class="select-new-layer">
+                  <li><a href="#1">Apenrade</a></li>
+                  <li><a href="#2">Frauenbach</a></li>
+                  <li><a href="#3">Korea</a></li>
+                  <li><a href="#4">Japan</a></li>
+                </ul>
+              </div>
+
+
+              <br /><br />
+              1. 달력 하나만<br>
+              <div class="input-box datepicker-box">
+                <input type="text" class="input-base datepicker-input" placeholder="Year, Month, Day" />
+              </div><br><br><br>
+              1. 달력 두개<br>
+              <div class="input-box datepicker-box-month">
+                <div class="input-daterange-month">
+                  <input type="text" class="input-base datepicker-input" placeholder="Year, Month" name="start" />
+                  ~
+                  <input type="text" class="input-base datepicker-input" placeholder="Year, Month" name="end" />
+                </div>
+              </div>
+            </div>
+            <!-- ./self-intro-write -->
+            <!-- When introduction -->
+            <div id="button" class="sub-box common-sample">
+              <h2>Button</h2>
+              <p>*Edit button group</p>
+              <div class="btn-edit-box">
+                <a class="btn-base btn-brand-gray btn-add">Add</a>
+                <button class="btn-base btn-brand-blue btn-save">Save</button>
+                <button class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+              </div>
+              <br /><br />
+              <p>
+                기본 골격만 담은 버튼 css: base-btn<br />
+                예:<button class="btn-base">Add</button><br /><br /><br /><br />
+              </p>
+              <p>*Base button : .active, .hover class는 보여주기 위해 만든 것이므로 불가피한 경우 제외하고 사용 하지 말 것. disabled class는 ie9이하에 적용.</p><br />
+              <table class="table-sample sample-btn">
+                <thead>
+                  <tr>
+                    <th>class명, 사용성</th>
+                    <th>Normal</th>
+                    <th>Hover</th>
+                    <th>Active</th>
+                    <th>Dim</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>btn-brand-blue</th>
+                    <td><button class="btn-base btn-brand-blue">Save</button></td>
+                    <td><button class="btn-base btn-brand-blue hover">Save</button></td>
+                    <td><button class="btn-base btn-brand-blue active">Save</button></td>
+                    <td><button class="btn-base btn-brand-blue btn-dim" disabled="disabled">Save</button></td>
+                  </tr>
+                  <tr>
+                    <th>btn-brand-white<br /> / follow only</th>
+                    <td>
+                      <span class="toggle-btn btn-following toggle-btn-following">
+                      <input type="checkbox" checked />
+                      <label data-off="Follow" data-on="Following"></label>
+                      </span>
+                    </td>
+                    <td>
+                      &nbsp;
+                    </td>
+                    <td>
+                      &nbsp;
+                    </td>
+                    <td>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>btn-brand-gray</th>
+                    <td><button class="btn-base btn-brand-white">Save</button></td>
+                    <td><button class="btn-base btn-brand-gray hover">Save</button></td>
+                    <td><button class="btn-base btn-brand-gray active">Save</button></td>
+                    <td><button class="btn-base btn-brand-gray btn-dim" disabled="disabled">Save</button></td>
+                  </tr>
+                  <tr>
+                    <th>btn-brand-gray-light<br />/ Choose File일때 </th>
+                    <td>
+                      <div class="btn-upload-box">
+                        <span class="btn-base btn-brand-gray-light btn-upload">Choose File</span>
+                        <input type="file" class="chooseupload" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="btn-upload-box">
+                        <span class="btn-base btn-brand-gray-light btn-upload hover">Choose File</span>
+                        <input type="file" class="chooseupload" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="btn-upload-box">
+                        <span class="btn-base btn-brand-gray-light btn-upload active">Choose File</span>
+                        <input type="file" class="chooseupload" />
+                      </div>
+                    </td>
+                    <td>
+                      <div class="btn-upload-box">
+                        <span class="btn-base btn-brand-gray-light btn-upload btn-dim">Choose File</span>
+                        <input type="file" class="chooseupload" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>btn-brand-gray-b <br /> / Cancel only</th>
+                    <td><button class="btn-base btn-brand-gray-b">Cancel</button></td>
+                    <td><button class="btn-base btn-brand-gray-b hover">Cancel</button></td>
+                    <td><button class="btn-base btn-brand-gray-b active">Cancel</button></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>btn-brand-opinion <br /> / Opinion only</th>
+                    <td><button class="btn-base btn-brand-opinion">Opinion</button></td>
+                    <td><button class="btn-base btn-brand-opinion hover">Opinion</button></td>
+                    <td><button class="btn-base btn-brand-opinion active">Opinion</button></td>
+                    <td><button class="btn-base btn-brand-opinion btn-dim" disabled="disabled">Opinion</button></td>
+                  </tr>
+                  <tr>
+                    <th>btn-brand-orange</th>
+                    <td><button class="btn-base btn-brand-orange">Save</button></td>
+                    <td><button class="btn-base btn-brand-orange hover" active="active">Save</button></td>
+                    <td><button class="btn-base btn-brand-orange active">Save</button></td>
+                    <td><button class="btn-base btn-brand-orange btn-dim" disabled="disabled">Save</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- <button class="base-btn-brand-gray btn-add">Add</button>
+              <span class="toggle-btn-following">
+                <input type="checkbox" />
+                <label data-off="following" data-on="follower"></label>
+              </span> -->
+            </div>
+            <!-- ./self-intro -->
+            <!-- Technical-reserves -->
+            <div id="checkbox" class="sub-box tech-res">
+              <h2>Checkbox</h2>
+              <div class="check-box-content">
+                <h3>Radio Button</h3>
+                <input type="radio" class="css-checkbox" id="radio1" name="seletor" checked="checked" />
+                <label for="radio1"  class="css-checkbox-label">Newest</label>
+                <input type="radio" class="css-checkbox" id="radio2" name="seletor" />
+                <label for="radio2"  class="css-checkbox-label">Best</label>
+              </div>
+              <br /><br />
+              <div class="check-box-content">
+                <h3>CheckBox</h3>
+                <input type="checkbox" class="css-checkbox" id="checkbox11" checked="checked" />
+                <label for="checkbox11"  class="css-checkbox-label">Newest</label>
+                <input type="checkbox" class="css-checkbox" id="checkbox22" />
+                <label for="checkbox22"  class="css-checkbox-label">Best</label>
+              </div>
+              <br /><br />
+              <div class="check-box-content">
+                <h3>Radio Toggle Button :  각자 사용 혹은 여러개의 토글 라디오</h3>
+                <input type="radio" class="css-checkbox radio-toggle"  name="rad" id="radio3" checked="checked" data-waschecked="true" />
+                <label for="radio3"  class="css-checkbox-label">Newest</label>
+                <input type="radio" class="css-checkbox radio-toggle"  name="rad2" id="radio4" checked="checked" data-waschecked="true" />
+                <label for="radio4"  class="css-checkbox-label">Toggle radio</label>
+              </div>
+              <br /><br />
+              <div class="check-box-content">
+                <h3>Radio Button</h3>
+                  <div class="radiogroup">
+                    <input checked="checked" id="complete-write" class="css-radio" name="radio" type="radio" value="1">
+                    <label for="complete-write" class="css-radio-label">Write</label>
+                    <input id="complete-upload" class="css-radio" name="radio" type="radio" value="2">
+                    <label for="complete-upload" class="css-radio-label">Upload</label>
+                  </div>
+              </div>
+            </div>
+            <!-- ./Technical-reserves -->
+
+
+            <!-- Research-career -->
+            <div id="toggleButton" class="sub-box res-career">
+              <h2>toggle button</h2>
+              <div class="article-btngroup">
+                <ul class="btn-article-function">
+                  <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                  <li><i class="icon-eye" aria-hidden="true"></i>65</li>
+                  <li>
+                    <div class="dropdown">
+                      <a class="dropdown-toggle share-btn-toggle" data-toggle="dropdown" title="share" href="#">
+                        <i class="icon-share" aria-hidden="true"></i>0</a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-sm">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-share">
+                          <p>Share on</p>
+                          <ul>
+                            <li><a href="#" class="snslink-disabled"><img alt="Weibo" src="../assets/images/icon/ic_sns-weibo.png"/>Upcomming</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <span><a href="#" title="bookmark" media=""class="bookmark-btn-toggle"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></span>
+              </div>
+            </div>
+            <!-- ./Research-career -->
+
+
+
+            <!-- Award Giving Details -->
+            <!-- <div id="WriteEdit" class="sub-box res-career">
+              <h2>Write and edit</h2>
+              <div class="res-career-write">
+                <div class="gray-box res-career-box">
+                  <button class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">&times;</span></button>
+                  <dl>
+                    <dt>Time period</dt>
+                    <dd>
+                      <div class="input-box">
+                        <input type="text" class="input-base datepicker-input" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true"></i>  ~  <input type="text" class="input-base datepicker-input" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      </div>
+                    </dd>
+                    <dt>Title</dt>
+                    <dd class="res-position">
+                      <input type="text" class="input-base" placeholder="Please input your Technical Reserves and press the Enter Key.."  />
+                    </dd>
+                    <dt>Description</dt>
+                    <dd>
+                      <textarea class="input-base" rows="6" placeholder="Please input your Technical Reserves and press the Enter Key.."></textarea>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="btn-edit-box">
+                  <button class="btn-base btn-brand-gray btn-add">Add</button>
+                  <button class="btn-base btn-brand-blue btn-save">Save</button>
+                  <button class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+                </div>
+              </div>
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">May, 2015</span>
+                  </p>
+                  <dl>
+                    <dt>Title</dt>
+                    <dd>Prestigious Award for distinguished researcher 2015, Scientific </dd>
+                    <dt>About</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration.</dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">May, 2015</span>
+                  </p>
+                  <dl>
+                    <dt>Title</dt>
+                    <dd>Prestigious Award for distinguished researcher 2015, Scientific </dd>
+                    <dt>About</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration.
+                      Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration.
+                      Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration.
+                      Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration.
+
+                    </dd>
+                  </dl>
+                </div>
+                <div class="btn-edit-box"><button class="btn-brand-gray btn-edit">Edit</button></div>
+              </div>
+            </div> -->
+            <!-- ./Research-career -->
+            <!-- profile default image - start-->
+            <div id="profile-default-img" class="sub-box res-career">
+              <h2>Profile default image</h2>
+              <br/>
+              <h3>48x48 (대)</h3>
+              <a href="#" class="profile-picture-large"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg2.jpg" /></a>
+                <!-- user profile picture add (size : 48 x 48) :: img code -->
+
+              <h3>42x42 (중)</h3>
+              <a href="#" class="profile-picture-medium"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg2.jpg" /></a>
+                <!-- user profile picture add (size : 42 x 42) :: img code -->
+              <h3>36x36 (소)</h3>
+              <a href="#" class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg2.jpg" /></a>
+                <!-- user profile picture add (size : 36 x 36) :: img code -->
+
+            </div>
+            <!-- profile default image - end -->
+
+            <div id="noticePopup" class="sub-box res-career">
+              <h2>공지 팝업</h2>
+              <a href="#noticeOnlyImg" data-toggle="modal">ㆍ이미지만 있을때</a>
+              <br/>
+              <a href="#noticeOnlyText" data-toggle="modal">ㆍ글만 있을때</a>
+              <br/>
+              <a href="#noticeBoth" data-toggle="modal">ㆍ둘다 있을때</a>
+            </div>
+
+          </div>
+        </article>
+      </section>
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <!-- send a message -->
+    <div class="msg-chat-wrap" id="messagePop">
+      <!-- 상단 부분 -->
+      <div class="msg-chat-header">
+        <!-- profile default image - start -->
+        <div class="sub-box msg-chat-stranger">
+          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg2.jpg" /></span><!-- 170109 클래스명 변경  -->
+          <!-- user profile picture add (size : 42 x 42) :: img code -->
+
+          <!-- 전문가일 경우에만 표시 : 161024 -->
+          <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          <p title="Tea Yun Park Tea Yun Park Tea Yun Park">Tea Yun Park Tea Yun Park Tea Yun Park</p>
+        </div>
+        <!-- profile default image - end -->
+
+        <!-- 우상단 드롭다운 메뉴 : 설정(차단하기), 닫기 -->
+        <div class="msg-chat-btn-group">
+          <ul class="msg-chat-btn-toggle">
+            <li>
+              <div class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" title="block"><span class="icon-cog"></span></a><!-- 170109 msg-chat-btn-topcolor 클래스 삭제 -->
+                <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                  <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu dsc-dropmenu-msgchat">
+                    <ul>
+                      <li><a href="#">Block</a></li>
+                      <li><a href="#">Un block</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="javascript:;" onclick="document.getElementById('messagePop').style.display='none';" class="msg-chat-btn-topcolor" title="close"><i class="icon-cross" title="close"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- //우상단 드롭다운 메뉴 -->
+
+      <!-- 메세지 차단 알림 -->
+      <div class="msg-block-box-area">
+        <div class="msg-block-text-area">
+          <!-- 내가 상대방을 차단 했을 때 -->
+          <p class="msg-block-name">
+            <span>You blocked&nbsp;</span>
+            <span class="block-name">Tae Yun Park Tae Yun Park Tae Yun Park Tae Yun Park Tae Yun Park.</span>
+          </p>
+          <!-- 상대방이 나를 차단 했을 때
+          <p class="msg-block-name">
+            <span>Your message has been blocked.</span>
+          </p> -->
+          <p class="msg-block-date">
+            <span>2016, Sep 28</span>
+          </p>
+        </div>
+      </div>
+      <!-- //메세지 차단 알림 -->
+
+      <!-- 메세지 영역 -->
+      <div class="msg-chat-body">
+        <!-- <div class="msg-chat-box"> 받은메시지 wrap 161220 삭제 -->
+        <!-- 받은메시지 loop 161220 -->
+        <div id="msgId_0" class="msg-received"><!-- 161220 받은메시지 class 변경 -->
+          <span class="msg-date">March 8, 1986</span><!-- 161220 날짜 클래스 추가 -->
+          <p>
+            <span>Retained for yearlong contract to assist R&amp;D chemists with analytical testing projects. Analyzed shipment samples, as well as raw, in-process and finished products.</span>
+            <span class="msg-time">5min ago</span><!-- 161220 메시지타임 클래스 추가 -->
+          </p>
+        </div>
+        <!-- //받은메시지 loop 161220 -->
+        <div id="msgId_1" class="msg-received">
+          <p>
+            <span>Retained for yearlong cont.</span>
+            <span class="msg-time">5min ago</span>
+          </p>
+        </div>
+        <div id="msgId_2" class="msg-received">
+          <p>
+            <span>Awesome!</span>
+            <span class="msg-time">5min ago</span>
+          </p>
+        </div>
+        <div id="msgId_3" class="msg-received">
+          <span class="msg-date">March 8, 1999</span>
+          <p>
+            <span>Retained for yearlong cont.</span>
+            <span class="msg-time">5min ago</span>
+          </p>
+        </div>
+        <div id="msgId_4" class="msg-received">
+          <p>
+            <span>Great</span>
+            <span class="msg-time">Just now</span>
+          </p>
+        </div>
+        <!-- </div> //받은메시지 wrap 161220 삭제 -->
+
+        <!-- 차단히스토리 loop 161220 -->
+        <div class="msg-block-history">
+          <p>Your message has been blocked&nbsp;(<span>March 8, 1986</span>)</p>
+        </div>
+          <!-- //차단메시지 loop 161220 -->
+        <div class="msg-block-history">
+          <p>Your message has been unblocked&nbsp;(<span>March 8, 1986</span>)</p>
+        </div>
+
+        <!--<div class="msg-chat-box msg-from-myself"> 보낸메시지 wrap 161220 삭제 -->
+        <!-- 보낸메시지 loop 161220 -->
+        <div id="msg_sendId_0" class="msg-send">
+          <span class="msg-date">March 16, 1986</span><!-- 161220 날짜 클래스 추가 -->
+          <p>
+            <span>I don't know if I ever understood what you are talking about... well... can you send the original contents so I can</span>
+            <span class="msg-time">5min ago</span><!-- 161220 메시지타임 클래스 추가 -->
+          </p>
+        </div>
+        <!-- //보낸메시지 loop 161220 -->
+        <div id="msg_sendId_1" class="msg-send">
+          <p>
+            <span>Let me know<br />what's goinn</span>
+            <span class="msg-time">5min ago</span>
+          </p>
+        </div>
+        <div id="msg_sendId_2" class="msg-send">
+          <p>
+            <span>K</span>
+            <span class="msg-time">5min ago</span>
+          </p>
+        </div>
+        <div id="msg_sendId_3" class="msg-send">
+          <span class="msg-date">March 16, 1991</span>
+          <p>
+            <span>I don't know if I ever understood</span>
+            <span class="msg-time">5min ago</span>
+          </p>
+        </div>
+        <div id="msg_sendId_4" class="msg-send">
+          <p>
+            <span>I don't know</span>
+            <span class="msg-time">Just now</span>
+          </p>
+        </div>
+        <!-- </div> //보낸메시지 wrap 161220 삭제 -->
+        <!-- 보낸 메세지 -->
+      </div>
+      <!-- //메세지 영역 -->
+
+      <!-- 메세지 입력 -->
+      <div class="msg-chat-inputArea">
+        <textarea rows="2" class="input-base floatleft"></textarea>
+        <a class="msg-chat-btn-enter">Enter</a>
+      </div>
+    </div>
+    <!-- 메세지 입력 -->
+    <!-- //send a message -->
+
+
+    <!-- 161222 로딩중 태그 변경 및 이동 -->
+    <div class="layer-structure fade" id="modal-loading">
+      <div class="loading-wrap">
+        <div class="loading-inner">
+          <img src="../assets/images/common/hourglass.gif" alt="loading">
+        </div>
+      </div>
+      <div class="modal-backdrop fade in bg-structure"></div>
+    </div>
+    <!-- //161222 로딩중 태그 변경 및 이동 -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+    <script>
+    $(function(){
+      //$('#modal-loading').modal('hide',{backdrop: 'static'}); 161222 삭제
+
+      //LoadingIng(); // 로딩중 호출 161222
+
+      //setTimeout(function(){
+        //LoadingOut(); // 로딩중 아웃 161222
+      //}, 800);
+
+      $('#loading-icon').on('click', function(){
+        LoadingIng();
+
+        setTimeout(function(){
+          LoadingOut(); // 로딩중 아웃 161222
+        }, 1000);
+      });
+    });
+    </script>
+  </body>
+</html>

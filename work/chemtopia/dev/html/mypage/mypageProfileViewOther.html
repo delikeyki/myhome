@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/modal/photo-add-modal.html -->
+      <!--=include ../include/modal/matching-skill-modal.html -->
+      <!--=include ../include/modal/interest-area-modal.html -->
+      <!--=include ../include/modal/interest-etc-modal.html -->
+      <!--=include ../include/modal/follower-modal.html -->
+      <!--=include ../include/modal/following-modal.html -->
+      <!--=include ../include/lnb.html -->
+      <section class="main-section main-section-default">
+        <article class="main-article mypage-article">
+          <!--=include ../include/mypage/user-info-aside.html -->
+          <div class="myp-contents">
+            <div class="sub-box user-profile other-profile">
+                <!-- 161025 이름이 40자 이상일 경우 말줄임 표시, 전문가회원일 경우 <span class="icon-profile-crown"></span> 노출 -->
+                <h1 class="editable-field"><span><span class="icon-profile-crown"></span>Bradley Charles Cooper</span></h1>
+                <div class="my-location">
+                  <span class="my-country input-box"><span>Country</span></span>
+                  <span>,</span>
+                  <span class="my-city">City</span>
+                </div>
+                <dl class="my-introduce">
+                  <dt>Research area</dt>
+                  <dd>
+                    <span class="my-country input-box"><span>Choose area</span></span>
+                    <span>,</span>
+                    <span class="my-research"><span>Detail description about Research area</span></span>
+                  </dd>
+                  <dt>Company Name</dt> <!-- 161212 text 수정 -->
+                  <dd>
+                    <div>+ Add Company Name/Institute Name</div> <!-- 161212 text 수정 -->
+                  </dd>
+                  <dt>Url</dt>
+                  <dd>
+                    <div>+ Add Url</div>
+                  </dd>
+                  <dt>Interests area</dt>
+                  <dd class="info-interests">
+                    <div class="editable-field">Organic Chemistry, Energy, Biotechnology, New drug development</div>
+                  </dd>
+                </dl>
+                <div class="follow-box">
+                  <p class="btn-follow"><a data-toggle="modal" href="#FollowerModal"><span>172</span>Follower</a></p>
+                  <p class="btn-follow"><a data-toggle="modal" href="#FollowingModal"><span>123</span>Following</a></p>
+                  <p class="btn-follow"><span>271,928,089</span>Views</p>
+                </div><!--/.follow-box -->
+              </form>
+            </div><!--/.user-profile -->
+
+            <!--Summary - When introduction -->
+            <div class="sub-box self-intro">
+              <h2>Summary</h2>
+              <div>
+                <p class="view-self-intro">Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a  ﬁne balance between hydrology, ecology and land-scape morphology (Page et al 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.\ accumulated in wa-terlogged and usually acidic conditions over thousands of years.</p>
+              </div>
+            </div>
+            <!-- ./self-intro -->
+
+            <!-- Skills & Expertise - start -->
+            <div class="sub-box tech-res">
+              <h2>Skills &amp; Expertise</h2>
+
+              <!-- selected after -->
+              <!-- 161014 모달 링크 추가 -->
+              <ul class="tech-res-list">
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">18</a>
+                  Teaching and Learning
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">128</a>
+                  Strategic Management
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">39</a>
+                  Academic Writing
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">23</a>
+                  Teaching and Learning
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">75</a>
+                  Chemical Engineering and ManagementChemical Engineering and ManagementChemical Engineering and Management
+                </li>
+              </ul>
+              <!-- //161014 모달 링크 추가 -->
+            </div>
+            <!-- Skills & Expertise - end-->
+
+            <!-- Education - start -->
+            <div class="sub-box res-career">
+              <h2>Education</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+                  <dl>
+                    <dt>School name</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences·Department of Educational Foundations and Administration</dd>
+                    <dt>Subject</dt>
+                    <dd>Organic chemistry, Inorganic chemistry and Analytical chemistry.</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Education - end -->
+
+            <!-- Research-career -->
+            <div class="sub-box res-career">
+              <h2>Research Career</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    In progress
+                  </p>
+                  <dl>
+                    <dt>Position</dt>
+                    <dd>Head of Department</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences - Department of Educational Foundations and Adiministration</dd>
+                    <dt>Location</dt>
+                    <dd>Jordan, Zarqa</dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    <span class="res-years">2016, Aug</span><br/>
+                    <span class="res-years-total">(10 Month)</span>
+                  </p>
+                  <dl>
+                    <dt>Position</dt>
+                    <dd>Head of Department</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences - Department of Educational Foundations and Adiministration</dd>
+                    <dt>Location</dt>
+                    <dd>Jordan, Zarqa</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- ./Research-career -->
+
+            <!-- Funded Project - start -->
+            <div class="sub-box">
+              <h2>Funded Project</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    In progress
+                  </p>
+                  <dl>
+                    <dt>Research institutions</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Title</dt>
+                    <dd>Department of Educational Foundations and Administration</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                    <dt>Ordering organization</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Joint researches</dt>
+                    <dd>Hashemite University, Brad Pitt</dd>
+                    <dt>URL</dt>
+                    <dd><a href="http://www.jordantimes.com/us-university-scholarships-hashemite-university-students">http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</a></dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    In progress
+                  </p>
+                  <dl>
+                    <dt>Research institutions</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Title</dt>
+                    <dd>Department of Educational Foundations and Administration</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                    <dt>Ordering organization</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Joint researches</dt>
+                    <dd>Hashemite University, Brad Pitt</dd>
+                    <dt>URL</dt>
+                    <dd><a href="http://www.jordantimes.com/us-university-scholarships-hashemite-university-students">http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Funded Project - end -->
+
+            <!-- Honors & Awards - start -->
+            <div class="sub-box">
+              <h2>Honors &amp; Awards</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+                  <dl>
+                    <dt>Title</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                    <dt>Description</dt>
+                    <dd>The ACS National Awards program is designed to encourage the advancement of chemistry in all its branches, to support research in chemical science and industry, and to promote the careers of chemists. Nominate a Noteworthy Chemist Now! We are currently accepting nominations for the  2018 ACS National Awards.</dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2016, Aug</span>
+                  </p>
+                  <dl>
+                    <dt>Contents</dt>
+                    <dd>Green Chemistry Awards , ACS National Award for Affordable Green Chemistry Kenneth G. Hancock Memorial Award</dd>
+                    <dt>Description</dt>
+                    <dd>One of the goals of the ACS Green Chemistry Institute® is to recognize outstanding contributions in green chemistry in an effort to increase implementation of green chemistry technologies. Awards programs are highly visible mechanisms for informing chemists and the Society at large about the benefits of green chemistry.</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Honors & Awards -end -->
+
+            <!-- Writing Career - start -->
+            <div class="sub-box">
+            	<h2>Writing Career</h2>
+            	<!-- view place -->
+            	<div class="res-career-view">
+            		<div class="gray-box res-career-box">
+            			<p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+            			<dl>
+            				<dt>Type of study</dt>
+            				<dd>Chemical engineering</dd>
+                    <dt>Title</dt>
+            				<dd>Effective Chemical engineering</dd>
+                    <dt>Description</dt>
+            				<dd>The ACS National Awards program is designed to encourage the advancement of chemistry in all its branches, to support research in chemical science and industry, and to promote the careers of chemists. Nominate a Noteworthy Chemist Now! We are currently accepting nominations for the  2018 ACS National Awards. </dd>
+                    <dt>Co-Author</dt>
+            				<dd>Micheal Jonas Korse</dd>
+                    <dt>URL</dt>
+            				<dd><a href="http://www.micheal_chemworld.com">http://www.micheal_chemworld.com</a></dd>
+            			</dl>
+            		</div>
+            	</div>
+            </div>
+            <!-- Writing Career - end -->
+
+            <!-- Certificate - start -->
+            <div class="sub-box">
+            	<h2>Certificate</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+                  <dl>
+                    <dt>Certificate type</dt>
+                    <dd>Chemical engineering</dd>
+                    <dt>Description</dt>
+                    <dd>Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a ﬁne balance between hydrology, ecology and land-scape morphology (Page et al., 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.</dd>
+                    <dt>Certificate issuer</dt>
+                    <dd>Micheal Jonas Korse</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Certificate - end -->
+
+            <!-- Advisory Area - start -->
+            <div class="sub-box tech-res">
+              <h2>Advisory Area</h2>
+
+              <ul class="tech-res-list">
+                <li>
+                  <span class="tech-like-num">Environment</span>
+                  Formulas and manufacturing recipes
+                </li>
+                <li>
+                  <span class="tech-like-num">Manufacturing process-chem</span>
+                  Formulas and manufacturing recipes
+                </li>
+                <li>
+                  <span class="tech-like-num">Nuclear Chem</span>
+                  Formulas and manufacturing recipes
+                </li>
+              </ul>
+            </div>
+            <!-- Advisory Area - start -->
+
+            <!-- Language - start -->
+            <div class="sub-box tech-res">
+              <h2>Language</h2>
+
+              <ul class="tech-res-list">
+                <li>
+                  Korean
+                </li>
+                <li>
+                  Spanish
+                </li>
+                <li>
+                  English
+                </li>
+              </ul>
+            </div>
+            <!-- Language - start -->
+
+            <!-- 2017-03-29 키워드 추가 -->
+            <div class="sub-box tech-keyword">
+              <h2>Research Keyword </h2>
+              <p class="sub-title">Main keyword</p>
+              <ul class="tech-res-list keyword-list">
+                <li>
+                  Green Chemistry
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+              </ul>
+              <p class="sub-title additional">Additional keyword</p>
+              <ul class="tech-res-list keyword-list">
+                <li>
+                  Green Chemistry
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+              </ul>
+            </div>
+            <!-- //2017-03-29 키워드 추가 -->
+
+          </div>
+        </article>
+      </section>
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+
+  </body>
+</html>

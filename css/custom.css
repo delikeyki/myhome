@@ -28,7 +28,7 @@ body {
 }
 
 .text-content {
-    color:#ddd;
+    color:#c9c8c8;
     font-size:1.2rem;
     text-align: center;
     font-weight: 400;
@@ -48,4 +48,13 @@ body {
 
 .text-muted {
     word-break: keep-all;
+}
+
+.title_large {
+    font-size:1.3rem;
+}
+
+.item-intro {
+    font-size:1rem;
+    font-style:normal !important;
 }

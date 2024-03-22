@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body >
+    <div class="wrapper">
+      <!-- lnb -->
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/modal/structure-modal.html -->
+      <!--=include ../include/lnb.html -->
+
+      <section class="main-section">
+        <article class="main-article">
+
+          <!-- cheminfoMain-search -->
+          <div class="cheminfo-search">
+            <div class="cheminfo-main-search">
+              <div class="cheminfo-main-description">
+                <h1 class="cheminfo-main-title">Search the Properties of Chemical Compounds!</h1>
+                <p class="cheminfo-search-description">Search using chemical name or 2D-structure by clicking the left icon.</p><!-- 161213 문구수정 -->
+              </div>
+
+              <div class="area-main-search">
+                <div class="discussion-search-form">
+                  <!-- 161215 삭제  <a href="#structureSearchModal" title="Structure Search" data-toggle="modal" class="structure-search" id="modal-structure-search"><span>Structure Search</span></a>161027 span 태그 추가 161205 title 추가 -->
+                  <!-- 161215 추가 --><a href="#N" class="structure-search" title="Structure Search"><span>Structure Search</span></a>
+                  <form>
+                    <input class="dis-search-input graystyle" type="search" placeholder="Discover compounds"><!-- 161213 문구수정 -->
+                    <button class="dis-search-submit" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                  </form>
+                </div>
+                <p class="popular-keywords">
+                  <span class="popular-keywords-title">Popular Keywords</span><a href="#">Benzene</a><a href="#">Property</a><a href="#">Chemical Engineering</a><a href="#">Quantum Physics</a>
+                </p>
+              </div>
+
+              <div class="cheminfo-example"><!-- 1012: 아래 span에 마우스 오버했을 때, 해당 div에 cheminfo-example-hover 더블클래스 추가 -->
+                <span class="cheminfo-example-text">Examples of Chemical Identifiers <span class="ic-info-white">i</span></span>
+                <div class="cheminfo-example-show">
+                  <ul>
+                    <li><span class="example-title">Chemical Name</span><span class="example-value">furan | formaldehyde</span></li>
+                    <li><span class="example-title">Registry Number</span><span class="example-value">110-00-9 | 50-00-0</span></li>
+                    <li><span class="example-title">SMILES :c1ccoc1</span><span class="example-value">CC(C)=O</span></li>
+                    <li><span class="example-title">(Standard) InChI</span><span class="example-value">InChI=1S/C4H4O/c1-2-4-5-3-1/h1-4H</span></li>
+                    <li><span class="example-title">Standard InChIKey</span><span class="example-value">InChIKey=YLQBMQCUIZJEEH-UHFFFAOYSA-N</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //cheminfoMain-search -->
+
+          <div class="cheminfo-body-copy">
+            <ul class="cheminfo-body-copy-list">
+              <li>
+                <figure class="cheminfo-body-copy-figure cheminfo-body-copy-figure01"></figure>
+                <span class="cheminfo-body-copy-title">Intelligence Networking</span>
+                <p class="cheminfo-body-copy-description">Everyone can upload their own compound data making it possible to share information and communicate with the public.</p><!-- 161213 문구수정 -->
+              </li>
+              <li>
+                <figure class="cheminfo-body-copy-figure cheminfo-body-copy-figure02"></figure>
+                <span class="cheminfo-body-copy-title">Biggest Database</span>
+                <p class="cheminfo-body-copy-description">Over 10 billion sets of data for over <br />2.85 million chemical compounds. <br />Also provides a fast text and chemical structure search tool.</p><!-- 161213 문구수정 -->
+              </li>
+              <li>
+                <figure class="cheminfo-body-copy-figure cheminfo-body-copy-figure03"></figure>
+                <span class="cheminfo-body-copy-title">Various properties</span>
+                <p class="cheminfo-body-copy-description">Extensive database providing <br />thermo-physico-chemical, toxicity, spectra and quantum data.</p><!-- 161213 문구수정 -->
+              </li>
+            </ul>
+          </div><!-- //end .cheminfo-body-copy -->
+        </article>
+      </section>
+      <div class="application-area-wrap">
+        <div class="application-area">
+          <div class="application-area-inner">
+            <h2 class="application-area-h1">Properties &amp; Information Available</h2>
+            <!-- 161026 수정 -->
+            <ul class="application-list">
+              <li>
+                <div class="tooltip-cheminfo-wrap">Compound Information
+                  <div class="tooltip-cheminfo">
+                    <h3>Compound Information provides basic information <br />such as structure, formula, name and various structure <br />identifiers.</h3>
+                    <h4>Compound Information Covered:</h4>
+                    <ul>
+                      <li>2D Structure Image</li>
+                      <li>Molecular Formula</li>
+                      <li>SMILES</li>
+                      <li>IUPAC Name</li>
+                      <li>Molecular Weight</li>
+                      <li>(Standard) InChI</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-cheminfo-wrap">BioActivity
+                  <div class="tooltip-cheminfo">
+                    <h3>Biological activity is the effect of a chemical compound<br /> on living organisms.</h3><!-- 161213 문구수정 -->
+                    <h4>Bioactivity Covered:</h4>
+                    <ul>
+                      <li>Lethal Dose</li>
+                      <li>Lethal Concentration</li>
+                      <li>Effective Dose</li>
+                      <li>Effective Concentration</li>
+                      <li>Concentration of Activity</li>
+                      <li>Growth Concentration</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-cheminfo-wrap">Analysis
+                  <div class="tooltip-cheminfo">
+                    <h3>Analysis information is based on quantum mechanics <br />providing fundamental scientific information <br />of a chemical compound.</h3>
+                    <h4>Analysis Information Covered:</h4>
+                    <ul class="two-block two-block-case1">
+                      <li>3D Optimized Geometry</li>
+                      <li>Bond Length, Bond Angle, Dihedral Angle</li>
+                      <li>Molecular Vibrations</li>
+                      <li>Molecular Orbitals (including HOMO, LUMO)</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-cheminfo-wrap">Physico-Chemical Property
+                  <div class="tooltip-cheminfo">
+                    <h3>Physico-chemical properties have constant, T-dependent and <br />miscellaneous properties. </h3>
+                    <p>Constant property is invariant with temperature, T-dependent property is correlated as a function of<br />temperature, and miscellaneous property is some additional information.</p>
+                    <h4>Temperature Dependent Properties Covered:</h4>
+                    <ul>
+                      <li>Acentric Factor</li>
+                      <li>Ionization Potential</li>
+                      <li>Heat Capacity</li>
+                      <li>Dipole Moment</li>
+                      <li>Electron Affinity</li>
+                      <li>Heat of Vaporization</li>
+                      <li>Heat of Formation</li>
+                      <li>Polarizability</li>
+                      <li>Density</li>
+                      <li>Heat of Fusion</li>
+                      <li>Parachor</li>
+                      <li>Thermal Conductivity</li>
+                      <li>Heat of Combustion</li>
+                      <li>Liquid Molar Volume</li>
+                      <li>Vapor Pressure</li>
+                      <li>Gibbs Free Energy</li>
+                      <li>Refractive Index</li>
+                      <li>Viscosity</li>
+                      <li>Entropy</li>
+                      <li>Solubility Parameter</li>
+                      <li>Surface Tension</li>
+                      <li>Melting Point</li>
+                      <li>Magnetic Susceptibility</li>
+                      <li>Second Virial Coefficient</li>
+                      <li>Normal Boiling Point</li>
+                      <li>Radius of Gyration</li>
+                      <li>Appearance</li>
+                      <li>Critical Properties</li>
+                      <li>van der Waals Area &amp; Volume</li>
+                      <li>Odor</li>
+                      <li>Flash Point</li>
+                      <li>Stability</li>
+                      <li>Flammability Limit</li>
+                      <li>logP</li>
+                      <li>Safety</li>
+                      <li>Autoignition Temperature</li>
+                      <li>logS</li>
+                      <li>Phase (State of the Matter)</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-cheminfo-wrap">Toxicity
+                  <div class="tooltip-cheminfo">
+                    <h3>Toxicity is the degree to which a substance can harm <br />a cell or organism.</h3>
+                    <h4>Toxicity Covered:</h4>
+                    <ul>
+                      <li>Irritation/Corrosion</li>
+                      <li>Carcinogenicity</li>
+                      <li>Genetic Toxicity</li>
+                      <li>Sensitization</li>
+                      <li>Mutagenicity</li>
+                      <li>Bioaccumulation</li>
+                      <li>Acute Toxicity</li>
+                      <li>Degradation</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-cheminfo-wrap">Manufacturer
+                  <div class="tooltip-cheminfo">
+                    <h3>Manufacturer information lists the chemical vendors <br />that sell the compound.</h3>
+                    <h4>Manufacturer Information Covered:</h4>
+                    <ul class="two-block">
+                      <li>Manufacturer / Supplier Name</li>
+                      <li>Information of Company or Products</li>
+                      <li>Website of Vendor or Catalog</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-cheminfo-wrap">Drug related Property
+                  <div class="tooltip-cheminfo">
+                    <h3>Drug information is useful for the tasks related to<br /> drug/medicine/pharmaceutical development.</h3><!-- 161213 문구수정 -->
+                    <h4>Drug Information Covered:</h4>
+                    <ul>
+                      <li>Lipinski's rule of five</li>
+                      <li>Drug-likeness Index</li>
+                      <li>Activity Score</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="tooltip-cheminfo-wrap">Spectra
+                  <div class="tooltip-cheminfo">
+                    <h3>Spectra information is useful in chemical analysis.</h3>
+                    <h4>Spectra Information Covered:</h4>
+                    <ul class="two-block two-block-case2">
+                      <li>NMR (Nuclear Magnetic Resonance)</li>
+                      <li>MS (Mass)</li>
+                      <li>ESR (Electron Spin Resonance)</li><!-- 161213 문구수정 -->
+                      <li>Raman</li>
+                      <li>VCD (Vibrational Circular Dichroism)</li>
+                      <li>IR (Infrared)</li>
+                      <li>UV/VIS (Ultraviolet/Visible)</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- //161026 수정 -->
+          </div>
+        </div>
+      </div><!-- //end .application-area-wrap -->
+
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+    <script>
+    $(function(){
+      $('.cheminfo-example-text').on('mouseover mouseout', function(){
+        $(this).parent('.cheminfo-example').toggleClass('cheminfo-example-hover');
+      });
+
+      /* 161214 막기
+      // 161208 한번 로드 해주기 ~
+      $('#structureSearchModal').modal('show');
+      window.setTimeout(function () {
+     	  $('#structureSearchModal').modal('hide');
+        $('#structureSearchModal').removeClass('iframe_first_load');
+      }, 800);
+      // ~161208 한번 로드 해주기
+      */
+    });
+    </script>
+  </body>
+</html>

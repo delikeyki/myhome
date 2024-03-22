@@ -1,0 +1,54 @@
+<!-- modal : structure-search -->
+<div class="layer-structure fade" id="structureIframe"><!-- 161215 클래스명 변경, id 추가 -->
+  <!-- <div class="modal fade in" id="structureSearchModal" tabindex="-1" role="dialog" aria-labelledby="modal-structure-search" aria-hidden="false"> 161215 삭제 -->
+  <div class="modal-dialog">
+    <div class="modal-content modal-content-common">
+      <div class="modal-header">
+        <button type="button" class="close close-structure" title="Structure Search close" aria-label="Close"><span aria-hidden="true" title="close">&times;</span></button><!-- 161215 close-structure 클래스 추가 data-dismiss 삭제 -->
+        <p class="modal-title-h1">Structure search <span class="modal-description">Need to search with 2D-structure? Draw it in below.</span></p>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="radiogroup">
+            <div class="choose-one"><!-- 1012 span을 div로 변경 -->
+              <input checked="checked" id="ExactStructure-radio" class="css-radio" name="radio" type="radio" value="1">
+              <label for="ExactStructure-radio" class="css-radio-label">Exact Structure Search</label>
+            </div><!-- 1012 : span을 div로 변경 -->
+            <div class="choose-one"><!-- 1012 : span을 div로 변경 -->
+              <input id="SubStructure-radio" class="css-radio" name="radio" type="radio" value="2" >
+              <label for="SubStructure-radio" class="css-radio-label">SubStructure Search</label>
+              <!-- 1012 : 툴팁 UI 추가 -->
+              <div class="tooltip-structure">
+                <div class="chem-arrow-menu write-notice">
+                  <h3 class="tooltip-title">SubStructure Search Notice</h3>
+                  <div class="tooltip-content">
+                    Your broad search can return too many results. Please refine your structure to narrow the results.
+                    <p class="ex-paragraph">ex) Chain structure that might contain a cyclic ring or too simple benzene structure may cause error.</p>
+                    <div class="check-box-content">
+                      <input type="checkbox" id="not-again" class="css-checkbox" />
+                      <label for="not-again" class="css-checkbox-label">Don't warn me again</label>
+                    </div>
+                  </div>
+                  <a href="#" class="close tooltip-close" title="SubStructure Search Notice close"><i class="icon-cross" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <!-- //1012 : 툴팁 UI 추가 -->
+            </div><!-- 1012 : span을 div로 변경 -->
+          </div>
+          <!-- 에디터 넣는 영역 -->
+          <div class="editor-structure">
+            <iframe src="http://search.molinstincts.com/third-party/ketcher-master/ketcher_rt.html" frameborder="0" title="Structure search"></iframe>
+          </div>
+          <!-- //에디터 넣는 영역 -->
+        </div>
+        <div class="modal-footer">
+          <button class="btn-lg-structure btn-brand-gray" type="reset">Reset</button>
+          <button class="btn-lg-structure btn-brand-blue" type="submit">Done</button>
+        </div>
+      </form>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  <div class="modal-backdrop fade in bg-structure"></div><!-- 161215 추가 -->
+  <!-- </div> 161215 삭제 -->
+</div>
+<!-- //modal : structure-search -->

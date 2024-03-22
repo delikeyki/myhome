@@ -1,0 +1,104 @@
+<!-- 170517 pressure drop modal : compound search -->
+<div class="cheminfo-modal">
+  <div class="modal fade" id="pd-compound-search" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--header of modal-->
+        <div class="modal-header cheminfo-modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <p class="cheminfo-add-modal-h1">Add <strong>Component Stock</strong></p>
+        </div>
+        <!--body of modal-->
+        <form>
+          <div class="pd-cs-modal">
+            <div class="pd-cs-wrap">
+              <input type="text" id="" class="input-base pd-cs-input" placeholder="Search Component Stock by Chemical name, CAS NUM, Formula, Smiles, Standard Inchi">
+              <button type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </div>
+            <!-- 검색 후 노출영역 -->
+            <div class="pd-cs-result">
+               <p class="pd-cd-result-text">results found for : “BENZENE”</p>
+              <div class="pd-cs-table-wrap">
+                <div class="pd-cs-table-area">
+                  <table class="pd-input-table pd-cs-table radiogroup">
+                    <colgroup>
+                      <col class="pd-col5" /><col class="pd-col6" /><col class="pd-col7" /><col class="pd-col8" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>Select</th>
+                        <th>Structure</th>
+                        <th>Matched String</th>
+                        <th>Formula</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input checked="checked" id="choose-compound1" class="css-radio" name="radio" type="radio" value="1">
+                          <label for="choose-compound1" class="css-radio-label"></label>
+                        </td>
+                        <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1001431854.png" alt="" /></td>
+                        <td>Benzene</td>
+                        <td>C7H8N2</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="choose-compound2" class="css-radio" name="radio" type="radio" value="2">
+                          <label for="choose-compound2" class="css-radio-label"></label>
+                        </td>
+                        <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1001508394.png" alt="" /></td>
+                        <td>Benzenol</td>
+                        <td>C14H19N5O3S</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="choose-compound3" class="css-radio" name="radio" type="radio" value="3">
+                          <label for="choose-compound3" class="css-radio-label"></label>
+                        </td>
+                        <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1001774016.png" alt="" /></td>
+                        <td>Benzenamine</td>
+                        <td>C6H5NH2</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="choose-compound4" class="css-radio" name="radio" type="radio" value="4">
+                          <label for="choose-compound4" class="css-radio-label"></label>
+                        </td>
+                        <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1001571339.png" alt="" /></td>
+                        <td>nitrobenzene</td>
+                        <td>C6H5NO2</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <input id="choose-compound5" class="css-radio" name="radio" type="radio" value="5">
+                          <label for="choose-compound5" class="css-radio-label"></label>
+                        </td>
+                        <td><img src="//static.chemtopia.com/files/cheminfo/compound/CT1002031407.png" alt="" /></td>
+                        <td>phenol</td>
+                        <td>C6H6O</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- no result -->
+                <div class="pd-noresult">
+                  <img alt="no result" src="../assets/images/common/search-noresult.png">
+                  <p>Your search returned no matches.</p>
+                </div>
+                <!-- //no result -->
+              </div>
+              <!--footer of modal-->
+              <div class="btn-set">
+                <button type="button" class="btn-base btn-brand-gray-b">Cancel</button>
+                <button type="submit" class="btn-base btn-brand-blue">Apply</button>
+              </div>
+            </div>
+            <!-- ~검색 후 노출영역 -->
+          </div>
+        </form>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>
+</div>
+<!-- //170517 pressure drop modal : compound search -->

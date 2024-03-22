@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>캠토피아</title>
+    <link href="../assets/css/theme.css" rel="stylesheet">
+    <link href="../assets/css/jquery-confirm.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="signup-section-noheader signup-bgcolor">
+        <article class="signup-noheader">
+          <!-- -->
+            <div class="signup-form-group">
+              <h2 class="signup-heading">sign up</h2>
+              <p class="social-links-tit">Sign up with social account</p>
+              <div class="social-auth-links2">
+                  <a href="#" class="btn-social"><img src="../assets/images/icon/ico-sns-facebook.gif" alt="facebook" /></a>
+                  <a href="#" class="btn-social"><img src="../assets/images/icon/ico-sns-google.gif" alt="google" /></a>
+                  <!--
+                  <a href="#" class="btn-social"><img src="../assets/images/icon/ico-sns-wechat.gif" alt="wechat" /></a>
+                  <a href="#" class="btn-social"><img src="../assets/images/icon/ico-sns-weibo.gif" alt="weibo" /></a>
+                  -->
+              </div>
+              <div class="line-through social-or-tit ext-padding-top">Or</div>
+              <p class="signup-text-agreement">When you create a Chemtopia Account, we'll send a verification link to the email address you used to create the account. If you don't verify your
+address, you may not be able to access Chemtopia services.</p>
+              <form>
+                <div class="form-group">
+                  <label class="sr-only" for="InputFirstname">Firstname</label>
+                  <!-- 잘못입력시 빨간 테두리는 valid-error 클래스 추가 -->
+                  <input type="text" class="chem-form-control valid-error" id="InputFirstname" placeholder="Enter Your Name" />
+                  <span class="validicon icon-head"></span>
+                  <!-- 이름 미입력 후 벗어났을경우 -->
+                  <div class="text-alert text-alert-danger">This field is required.</div>
+                  <!-- 텍스트 입력 수가 80자 이상 입력 후 벗어났을경우 -->
+                  <div class="text-alert text-alert-danger">Please use between 1 and 80 characters.</div>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="InputEmail">Email address</label>
+                  <!-- 잘못입력시 빨간 테두리는 valid-error 클래스 추가 -->
+                  <input type="email" name="email" class="chem-form-control" id="InputEmail" placeholder="Enter email"/>
+                  <span class="validicon icon-mail"></span>
+                  <!-- 이메일 미입력 후 벗어났을경우 -->
+                  <div class="text-alert text-alert-danger">This field is required.</div>
+                  <!-- 이메일 주소에 @없이 입력후 벗어났을경우 -->
+                  <div class="text-alert text-alert-danger">Please type your e-mail address in the format yourname@example.com.</div>
+                </div>
+                <div class="form-group margin-bottom-none">
+                  <label class="sr-only" for="InputPassword">Password</label>
+                  <!-- 잘못입력시 빨간 테두리는 valid-error 클래스 추가 -->
+                  <input type="password" class="chem-form-control keychain-lineup" id="InputPassword" placeholder="Password (6 or more characters)"/>
+                  <span class="validicon icon-lock"></span>
+                  <span class="toggle-btn btn-showhide btn-showhide-right">
+                    <input type="checkbox" checked/>
+                    <label data-off="Show" data-on="Hide"></label>
+                  </span>
+                  <a href="#" data-toggle="tooltip" title="Since the password is used as the userrname and the same e-mail account password , do not e-mail password." class="ic-info">i</a>
+                  <!-- 비밀번호 미입력 후 벗어났을경우 -->
+                  <div class="text-alert text-alert-danger">This field is required</div>
+                  <!-- 비밀번호 텍스트 입력수가 80자 이상 입력 후 벗어났을때 -->
+                  <div class="text-alert text-alert-danger">Password must be at least 6 and no more than 80 characters.</div>
+                </div>
+                <p class="signup-text-warning">
+                  By clicking Sign up, you agree to the
+                  <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a>
+                </p>
+                <button type="button" class="btn btn-lg-brand-tsize btn-normal btn-block" data-toggle="modal" data-target="#joinConfirm">Next</button>
+              </form>
+                <hr class="only-border1" />
+                <p class="signin-text">Already on Chemtopia? <a href="#">Sign in</a></p>
+              </div>
+
+              <div class="modal fade" id="joinConfirm" tabindex="-1" role="dialog" aria-labelledby="joinConfirm" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <p class="modal-title-h2">Thank you for joining Chemtopia.</p>
+                      <p class="modal-base-text modal-body-text">
+                        Please verify the e-mail we sent for your approval.<br/> We hope you enjoy Chemtopia.
+                      </P>
+                    </div>
+                    <div class="modal-body">
+                      <div class="signin-form-group">
+                          <form>
+                            <button class="btn-brand-blue btn-block sentPwdModal" >Confirm</button>
+                          </form>
+                          <p class="modal-guide-text">
+                            If you do not verify your email within 48 hours,<br/>you must sign up again as a new member.
+                          </p>
+                      </div>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dia-->
+              </div>
+          </article>
+        </section>
+      </div>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="../assets/js/bootstrap.js"></script>
+      <script src="../assets/js/placeholder.js"></script>
+      <script src="../assets/js/chemmarkup.js"></script>
+      <script src="../assets/js/bootstrap-datepicker.js"></script>
+      <script>
+      $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+
+          $('#joinConfirm').on('shown.bs.modal', function () {
+          //  $('#myInput').focus()
+        });
+      });
+    </script>
+
+  </body>
+</html>

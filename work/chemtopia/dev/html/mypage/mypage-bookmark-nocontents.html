@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+      <section class="main-section main-section-default">
+        <article class="main-article mypage-article">
+          <!--=include ../include/mypage/mypage-aside.html -->
+          <div class="myp-contents">
+            <div class="mypageTabmenu">
+              <ul class="Tabmenu">
+                <!-- li class="active" 로 탭 기능 -->
+                <li><a href="#">Chem Info</a></li>
+                <li class="active"><a href="#">Topic</a></li>
+              </ul>
+            </div>
+            <!-- 컨텐츠 없을때 탭 두 곳의 스타일은 같습니다. -->
+            <!-- TAB : topic - start -->
+            <div class="bookmark-topic-tab">
+              <div class="no-contents-box">
+                <img alt="Sebastian Stan" src="../assets/images/common/search-noresult.png" />
+                <p>
+                  No Contents.<br />
+                  Please write your Topic and inspire others!
+                </p>
+              </div>
+            </div>
+            <!-- TAB : topic - end -->
+            <!-- TAB : Chem Info - start -->
+            <div class="bookmark-cheminfo-tab"><!-- 처음에는 안보이는 no contents cheminfo 탭  -->
+              <div class="no-contents-box">
+                <img alt="Sebastian Stan" src="../assets/images/common/search-noresult.png" />
+                <p>
+                  No Contents.<br />
+                  Please write your Topic and inspire others!
+                </p>
+              </div>
+            </div>
+            <!-- TAB : Chem Info - end -->
+        </div><!-- end content -->
+        </article>
+      </section>
+      <!--=include ../include/footer.html -->
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+  </body>
+</html>

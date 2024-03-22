@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+
+      <section class="main-section">
+        <article class="main-article-cheminfo">
+
+          <div class="about-header">
+            <div class="about-header-bg">
+              <div class="about-inner-width">
+                <h1 class="about-head-title">World’s First Intelligence Networking Platform</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-copy">
+            <div class="about-inner-width">
+              <ul class="about-copy-list">
+                <li>
+                  <span class="copy-bg1"></span>
+                  <h2 class="about-list-title">Obtain Professional Data, Information, and Software.</h2>
+                  <p class="about-description">Top quality database, simulators, source codes, reports, journal articles, textbooks, video clips available.</p>
+                </li>
+                <li>
+                  <span class="copy-bg2"></span>
+                  <h2 class="about-list-title">Find and Contact<br />World’s Best Experts.</h2>
+                  <p class="about-description">Obtain the information on the best professionals in your field.<br />Contact them and consult as needed.</p>
+                </li>
+                <li>
+                  <span class="copy-bg3"></span>
+                  <h2 class="about-list-title">Think Together,<br />Work Together.</h2>
+                  <p class="about-description">Exchange ideas. Discuss and solve difficult problems with many experts.<br />Propose collaboration or initiate<br />new projects.</p>
+                </li>
+                <li>
+                  <span class="copy-bg4"></span>
+                  <h2 class="about-list-title">Let the World Know<br />about You and Your Work.</h2>
+                  <p class="about-description"> Globally publicize your work,<br />technology, and R&amp;D activities. </p>
+                </li>
+                <li>
+                  <span class="copy-bg5"></span><!-- 161213 아이콘 변경 -->
+                  <h2 class="about-list-title">Perform Professional<br />Business.</h2>
+                  <p class="about-description">Sell and buy technologies or <br />professional skills. Propose research funds or <br />crowdfund your project or venture.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mail-infomation">
+            <div class="about-inner-width">
+              <p class="mail-info-text">For more information, please send to mail our Contact Us.<br />Members may direct inquiries to <a href="mailto:info@chemtopia.com">info@chemtopia.com</a></p>
+            </div>
+          </div>
+
+        </article>
+      </section>
+
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+
+  <script>
+    var nav = $('.main-header-fixed');
+
+    nav.removeClass('light');
+    nav.addClass('dark');
+
+    $(window).scroll(function () {
+    if ($(this).scrollTop() > 136) {
+        nav.addClass('light').removeClass('dark');
+    } else {
+        nav.addClass('dark').removeClass('light');
+    }
+    });
+  </script>
+
+  </body>
+</html>

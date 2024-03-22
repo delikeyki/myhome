@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <!-- 161013 lnb 전체 a를 a href="#" 으로 변경 -->
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/modal/sign-in-modal.html -->
+      <!--=include ../include/modal/change-pw-modal.html -->
+      <!--=include ../include/modal/sent-pw-modal.html -->
+      <!--=include ../include/lnb.html -->
+      <!--=include ../include/modal/vod-add-modal.html --> <!-- 170308 추가 : VOD와 동일 소스 -->
+
+      <section class="main-section">
+        <article class="main-article">
+          <!-- 이미지 영역 수정 : 161019 -->
+          <div class="break-top-area">
+            <div class="inner-visual-bg">
+              <div class="inner-width">
+                <h1 class="inner-title">BREAK TIME</h1>
+                <p class="inner-description">Take Your Time. Have a Break.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="break-main-content">
+            <!-- 탭 메뉴 -->
+            <div class="tabpanel tab-set1">
+              <ul class="nav">
+                <li class="active"><a href="#technews" data-toggle="tab">Technews</a></li>
+                <li><a href="#recreation" data-toggle="tab">Recreation</a></li>
+                <li><a href="#nolist" data-toggle="tab">no list case</a></li>
+              </ul>
+            </div>
+
+            <!-- tab-content -->
+            <div class="tab-content">
+              <!--tab#1 : technews-->
+              <div role="tabpanel" class="tab-pane active" id="technews">
+                <!-- 160919 dropdown 수정 -->
+                <div class="discussion-header break-dropdown">
+                  <div class="dropdown">
+                    <a class="dropdown-toggle dropdown-menu-largetitle" data-toggle="dropdown" href="#">General<span class="caret"></span></a>
+                    <div class="dropdown-menu chem-dropdown-menu margintop-article">
+                      <div class="chem-arrow-menu dsc-dropmenu-Large">
+                        <ul>
+                          <li><a href="#" class="active">Biological</a></li>
+                          <li><a href="#">Space &amp; Astronomy</a></li>
+                          <li><a href="#">Environment</a></li>
+                          <li><a href="#">Medicine</a></li>
+                          <li><a href="#">Technology</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- //end discussion-header -->
+
+                <div class="break-card-wrap">
+                  <!-- 1개의 article : 기본은 접혀져 있는 스타일. 기본 10개 노출 -->
+                  <div class="break-card">
+                    <span class="break-img-box"><a href="#" target="_blank" ><img src="https://static01.nyt.com/images/2016/06/09/science/-09tb-elements-web2/-09tb-elements-web2-moth.jpg" data-object-fit="cover" alt="" /></a></span><!-- 170421 data-object-fit 추가 -->
+                    <p class="tec-date"><i>September 21, 2016</i></p>
+                    <div class="break-content">
+                      <a href="#">
+                        <!-- 2줄까지만 표시. 이후에는 말줄임(...)표시 -->
+                        <p class="break-title">Detailed molecular structure of silver nanocrystals determined</p>
+                        <!-- 150자까지만 표시. 이후에는 말줄임(...)표시 -->
+                        <p class="break-text">Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characte Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characte</p>
+                      </a>
+                      <!-- see more 클릭 시 해당 url로 이동 -->
+                      <a href="#"><span class="see-more">See More</span></a>
+                    </div>
+                  </div>
+                  <!-- //1개의 article -->
+
+                  <div class="break-card">
+                    <span class="break-img-box"><a href="#" target="_blank"><img src="../assets/images/breaktime/breaktime-tec-img2.jpg" data-object-fit="cover" alt=""  /></a></span>
+                    <p class="tec-date"><i>September 21, 2016</i></p>
+                    <div class="break-content">
+                      <a href="#">
+                        <p class="break-title">Detailed molecular structure of silver nanocrystals determined Detailed molecular structure of silver nanocrystals...</p>
+                        <p class="break-text">A $1.2 billion investment by Masayoshi Son’s conglomerate, SoftBank, is the first step in his promise made in a meeting with Mr. Trump to create thousands of jobs in the United States</p>
+                      </a>
+                      <a href="#"><span class="see-more">See More</span></a>
+                    </div>
+                  </div>
+
+                  <div class="break-card">
+                    <span class="break-img-box"><a href="#" target="_blank"><img src="../assets/images/breaktime/breaktime-tec-img3.jpg" data-object-fit="cover" alt="" /></a></span>
+                    <p class="tec-date"><i>September 21, 2016</i></p>
+                    <div class="break-content">
+                      <a href="#">
+                        <p class="break-title">Detailed molecular structure of silver nanocrystals determined</p>
+                        <p class="break-text">“After five amazing years at Twitter, I’ve decided to leave the company and take some time off,” Mr. Messinger said in the post</p>
+                      </a>
+                      <a href="#"><span class="see-more">See More</span></a>
+                    </div>
+                  </div>
+
+                  <div class="break-card">
+                    <span class="break-img-box"><a href="#" target="_blank"><img src="../assets/images/breaktime/breaktime-tec-img4.jpg" data-object-fit="cover" alt="" /></a></span>
+                    <p class="tec-date"><i>September 21, 2016</i></p>
+                    <div class="break-content">
+                      <a href="#">
+                        <p class="break-title">Detailed molecular structure of silver nanocrystals determined</p>
+                        <p class="break-text">His exit once again raises questions about the stability of Twitter’s executive bench.</p>
+                      </a>
+                      <a href="#"><span class="see-more">See More</span></a>
+                    </div>
+                  </div>
+
+                  <!-- 이미지 없을 때 : 161019 추가 -->
+                  <div class="break-card">
+                    <span class="break-img-box"><img src="../assets/images/noimage.gif" data-object-fit="cover" alt="" /></span>
+                    <p class="tec-date"><i>September 21, 2016</i></p>
+                    <div class="break-content">
+                      <a href="#">
+                        <p class="break-title">Detailed molecular structure of silver nanocrystals determined</p>
+                        <p class="break-text">Mr. Messinger was not the only executive to exit Twitter on Tuesday. Josh McFarland, a vice president of product, said he was departing to join venture-capital firm Greylock Partners. Mr. Messinger was not the only executive to exit Twitter on Tuesday. Josh McFarland, a vice president of product, said he was departing to join venture-capital firm Greylock Partners.</p>
+                      </a>
+                      <a href="#"><span class="see-more">Link More</span></a>
+                    </div>
+                  </div>
+                </div><!-- //break-card-wrap -->
+
+                <!-- 더보기 -->
+                <div class="btn-article-seemore"><a href="#">See More</a></div>
+              </div>
+              <!-- //tab#1 : technews -->
+
+              <!-- tab#2 : recreation -->
+              <div role="tabpanel" class="tab-pane" id="recreation">
+
+                <!-- 170308 기존소스 삭제
+                <div class="break-card-wrap rec-wrap">
+                  1개의 article : 기본은 접혀져 있는 스타일. 기본 10개 노출
+                  <div class="break-card-collapse">
+                    <span class="break-img-box"><a href="#"><img src="../assets/images/breaktime/breaktime-rec-img1.jpg" alt="Recreation image" /></a></span>
+                    <div class="break-content">
+                      <p class="tec-date rec-category"></p>
+                      <a href="#">
+                        <p class="break-title">MahjongChem MahjongChem MahjongChem MahjongChem MahjongChem MahjongChem MahjongChem...</p>
+                      </a>
+                      <p class="break-text" style="display:none;">
+                        Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.
+                      </p>
+                      <p class="break-text" style="display:block;">
+                        Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms. Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.Scientists haver performed characterisation of two large, complex silver nanoclusters of 136 and 374 atoms.
+                      </p>
+                      <p class="btn-goto"><a href="#">Go to<i class="fa fa-angle-right"></i></a></p>
+                    </div>
+                    <span class="see-more" style="display:block"><a href="#">See More</a></span>
+                    <span class="see-more" style="display:none"><a href="#">See Less</a></span>
+                  </div>
+                  //1개의 article
+                </div>
+                 //170308 기존소스 삭제 -->
+
+                 <!-- 170308 추가 -->
+                 <div class="title-recreation">
+                   <div class="align-right">
+                     <button type="button" class="btn-base btn-brand-blue" data-toggle="modal" data-target="#vodaddModal">Add a Recreation</button>
+                   </div>
+                 </div>
+                 <!-- //170308 추가 -->
+
+
+                 <!-- 170308 Recreation 리스트  -->
+                 <div class="card-wrap">
+                   <!-- Card loop -->
+                   <div class="card-VOD-wrap">
+                     <!-- 사용자 정보 -->
+                     <div class="author-info">
+                       <!-- floating UI - start -->
+                       <div class="floatingUI-container">
+                         <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                         <a href="#" class="floatingUI-user-info profile-picture-medium">
+                           <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-s-img.png">
+                         </a>
+                         <div class="user-profile-contents arrow-menu-top">
+                           <div class="profile-info-box">
+                             <span class="profile-picture-large">
+                               <!-- user profile picture add (size : 48 x 48) :: img code -->
+                               <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png">
+                             </span>
+                             <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                             <p class="user-group">Hashemite University</p>
+                           </div>
+                           <div class="profile-detail-btn">
+                             <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                             <div class="follow-send-btn">
+                               <!-- <button class="btn-brand-blue">follow</button> -->
+                               <span class="toggle-btn btn-following toggle-btn-following">
+                                 <input type="checkbox" checked="">
+                                 <label data-off="Follow" data-on="Following"></label>
+                               </span>
+                               <button class="btn-base btn-brand-blue">Send Message</button>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <!-- floating UI -end -->
+                       <p class="user-name"><a href="#"><span class="icon-profile-crown"></span>Sunghyun Lee</a></p>
+                       <div class="article-info">
+                         <p class="creation-date">February 2, 2017 1:46 PM</p>
+                       </div>
+                     </div>
+                     <!-- //사용자 정보 -->
+
+                     <a href="#" class="VOD-link" target="_blank"><!-- 기존 VOD 소스와 다른 부분 : target 지정 -->
+                       <!-- VOD 썸네일 -->
+                       <div class="thumb-VOD thumb-Recreation"><!-- 기존 VOD 소스와 다른 부분  : 추가 클래스 -->
+                         <div class="thumb-layer"></div>
+                         <img src="//static.chemtopia.com/files/myfile/jasonkim/1482712234108-8f05e282ab7c491ab389cf146adf559b.png" alt="" />
+                       </div>
+                       <!-- //VOD 썸네일 -->
+                       <div class="VOD-content">
+                         <p class="VOD-source">Source<span>Mol - Instincts</span></p>
+                         <p class="card-title-VOD">Recreation preview case Developer Biolo informatics</p><!-- 2줄 넘어가게 되면 ... 말줄임 처리 해주세요 -->
+                         <p class="card-text-VOD">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                       </div>
+                     </a>
+                     <div class="article-btngroup">
+                       <ul class="btn-article-function">
+                         <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                         <li><i class="icon-eye" aria-hidden="true"></i>65</li>
+                       </ul>
+                       <span><a href="#" title="bookmark" media="" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></span>
+                     </div>
+                   </div>
+                   <!-- //Card loop -->
+
+                   <div class="card-VOD-wrap">
+                     <!-- 사용자 정보 -->
+                     <div class="author-info">
+                       <!-- floating UI - start -->
+                       <div class="floatingUI-container">
+                         <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                         <a href="#" class="floatingUI-user-info profile-picture-medium">
+                           <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-s-img.png">
+                         </a>
+                         <div class="user-profile-contents arrow-menu-top">
+                           <div class="profile-info-box">
+                             <span class="profile-picture-large">
+                               <!-- user profile picture add (size : 48 x 48) :: img code -->
+                               <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png">
+                             </span>
+                             <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                             <p class="user-group">Hashemite University</p>
+                           </div>
+                           <div class="profile-detail-btn">
+                             <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                             <div class="follow-send-btn">
+                               <!-- <button class="btn-brand-blue">follow</button> -->
+                               <span class="toggle-btn btn-following toggle-btn-following">
+                                 <input type="checkbox" checked="">
+                                 <label data-off="Follow" data-on="Following"></label>
+                               </span>
+                               <button class="btn-base btn-brand-blue">Send Message</button>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <!-- floating UI -end -->
+                       <p class="user-name"><a href="#"><span class="icon-profile-crown"></span>Sunghyun Lee</a></p>
+                       <div class="article-info">
+                         <p class="creation-date">February 2, 2017 1:46 PM</p>
+                       </div>
+                     </div>
+                     <!-- //사용자 정보 -->
+
+                     <a href="#" class="VOD-link" target="_blank">
+                       <!-- VOD 썸네일 -->
+                       <div class="thumb-VOD thumb-Recreation">
+                         <div class="thumb-layer"></div>
+                         <img src="//static.chemtopia.com/files/myfile/jasonkim/1482712328527-fa1483b199dc4cb1860898a79c8850c8.PNG" alt="" />
+                       </div>
+                       <!-- //VOD 썸네일 -->
+                       <div class="VOD-content">
+                         <p class="VOD-source">Source<span>Mol - Instincts</span></p>
+                         <p class="card-title-VOD">VOD view Case</p><!-- 2줄 넘어가게 되면 ... 말줄임 처리 해주세요 -->
+                         <p class="card-text-VOD">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+                       </div>
+                     </a>
+                     <div class="article-btngroup">
+                       <ul class="btn-article-function">
+                         <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                         <li><i class="icon-eye" aria-hidden="true"></i>65</li>
+                       </ul>
+                       <span><a href="#" title="bookmark" media="" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></span>
+                     </div>
+                   </div>
+
+                   <div class="card-VOD-wrap">
+                     <!-- 사용자 정보 -->
+                     <div class="author-info">
+                       <!-- floating UI - start -->
+                       <div class="floatingUI-container">
+                         <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                         <a href="#" class="floatingUI-user-info profile-picture-medium">
+                           <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-s-img.png">
+                         </a>
+                         <div class="user-profile-contents arrow-menu-top">
+                           <div class="profile-info-box">
+                             <span class="profile-picture-large">
+                               <!-- user profile picture add (size : 48 x 48) :: img code -->
+                               <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-profile-48x48.png">
+                             </span>
+                             <a href="#" class="user-name"><span class="icon-profile-crown"></span>Amanda Bunny Your ret your return shipping refun</a>
+                             <p class="user-group">Hashemite University</p>
+                           </div>
+                           <div class="profile-detail-btn">
+                             <p class="user-detail">Petro-chem, Energy-chem,Mecha...</p>
+                             <div class="follow-send-btn">
+                               <!-- <button class="btn-brand-blue">follow</button> -->
+                               <span class="toggle-btn btn-following toggle-btn-following">
+                                 <input type="checkbox" checked="">
+                                 <label data-off="Follow" data-on="Following"></label>
+                               </span>
+                               <button class="btn-base btn-brand-blue">Send Message</button>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                       <!-- floating UI -end -->
+                       <p class="user-name"><a href="#"><span class="icon-profile-crown"></span>Sunghyun Lee</a></p>
+                       <div class="article-info">
+                         <p class="creation-date">February 2, 2017 1:46 PM</p>
+                       </div>
+                     </div>
+                     <!-- //사용자 정보 -->
+
+                     <a href="#" class="VOD-link" target="_blank">
+                       <!-- VOD 썸네일 -->
+                       <div class="thumb-VOD thumb-Recreation">
+                         <div class="thumb-layer"></div>
+                         <img src="//static.chemtopia.com/files/myfile/jasonkim/1482712180887-2aa0114904164de49b7472c57663410c.PNG" alt="" />
+                       </div>
+                       <!-- //VOD 썸네일 -->
+                       <div class="VOD-content">
+                         <p class="VOD-source">Source<span>Mol - Instincts</span></p>
+                         <p class="card-title-VOD">Experiments of water membranes on the internation</p><!-- 2줄 넘어가게 되면 ... 말줄임 처리 해주세요 -->
+                         <p class="card-text-VOD">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked</p>
+                       </div>
+                     </a>
+                     <div class="article-btngroup">
+                       <ul class="btn-article-function">
+                         <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+                         <li><i class="icon-eye" aria-hidden="true"></i>65</li>
+                       </ul>
+                       <span><a href="#" title="bookmark" media="" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></span>
+                     </div>
+                   </div>
+
+                 </div>
+                 <!-- //170308 Recreation 리스트 -->
+
+
+                <!-- 더보기 -->
+                <div class="btn-article-seemore"><a href="#">See More</a></div>
+              </div><!-- //tab#2 : recreation -->
+
+              <!-- tab#3 : 노리스트 케이스입니다. 여기부터 161215-->
+              <div role="tabpanel" class="no-result-box tab-pane" id="nolist">
+                <div class="search-result-title">
+                  <img class="noresult-img" alt="no list" src="../assets/images/common/search-noresult.png">
+                </div>
+                <div class="no-result-text-big">
+                  No contents
+                </div>
+              </div>
+              <!-- //tab#3 ~여기까지 노리스트 케이스입니다. 161215 -->
+
+            </div><!-- //tab-content -->
+
+          </div><!-- //break-main-content -->
+        </article>
+      </section>
+      <script src="../assets/js/objectFitPolyfill.min.js"></script><!-- 170421 추가 -->
+
+      <!--=include ../include/modal/sent-pw-modal.html -->
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+
+
+  </body>
+</html>

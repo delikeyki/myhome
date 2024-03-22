@@ -1,0 +1,158 @@
+<!-- VOD view modal - start -->
+<div class="modal fade" id="VOD-view-modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-vod-view">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+
+      <div class="modal-body" id="modal-body-vod">
+        <div class="modal-vod-content">
+          <!-- 사용자 정보 -->
+          <div class="author-info">
+            <!-- floating UI - start -->
+            <div class="floatingUI-container">
+              <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+              <a href="#" class="floatingUI-user-info profile-picture-medium">
+                <img alt="Sebastian Stan" src="../assets/images/sample-img/sample-s-img.png">
+              </a>
+            </div>
+            <!-- floating UI -end -->
+            <p class="user-name"><a href="#"><span class="icon-profile-crown"></span>Sunghyun Lee</a></p>
+            <div class="article-info">
+              <p class="creation-date">February 2, 2017 1:46 PM</p>
+            </div>
+          </div>
+          <!-- //사용자 정보 -->
+          <div class="vod-area">
+            <video id="" preload="auto" autoplay="autoplay" volume="3" controls poster="http://static.chemtopia.com/assets/images/main/bg_main_movie.jpg">
+              <source src="http://static.chemtopia.com/assets/images/Main_movie.mp4" type="video/mp4">
+              HTML5 video is not supported by this browser or mode
+            </video>
+          </div>
+          <!-- article -->
+          <p class="VOD-source">Source<span>Mol - Instincts</span></p>
+          <p class="card-title-VOD">Bioinformatics Developer Biolo informatics Developer inics...</p><!-- 여기서는 모두 노출 -->
+          <p class="card-text-VOD">Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).Job Description The European Molecular Biology Laboratory (EMBL) is one of the highest ranked scientific research organisations in the world. The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy). The Headquarters Laboratory is located in Heidelberg (Germany), with additional sites in Grenoble (France), Hamburg (Germany), Hinxton (UK) and Monterotondo (Italy).</p>
+          <!-- //article -->
+          <!-- article info -->
+          <div class="article-btngroup">
+            <ul class="btn-article-function">
+              <li><a href="#" title="like" class="like-btn-toggle"><i class="fa fa-heart-o" aria-hidden="true"></i>24</a></li>
+              <li><i class="icon-eye" aria-hidden="true"></i>65</li>
+              <li><a href="#vod-comment-list" title="comment" id="vod-comment-view" data-toggle="collapse" aria-expanded="false" class="collapsed"><i class="icon-speech-bubble" aria-hidden="true"></i>2</a></li><!-- 170322 클래스추가 및 aria-expanded 값 수정 -->
+              <li><a href="#" title="bookmark" media="" class="bookmark-btn-toggle"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+            </ul>
+            <span>
+              <a href="#" class="vod-previous">Previous</a>
+              <a href="#" class="vod-next">Next</a>
+            </span>
+          </div>
+          <!-- //article info -->
+          <!-- 댓글 -->
+          <div class="article-cheminfo article-comment collapse" id="vod-comment-list" aria-expanded="false"><!-- 170322 in 클래스 삭제 및 aria-expanded 값 수정 -->
+            <div class="vod-comment">
+              Comment <span>2</span>
+            </div>
+            <form>
+              <div class="write-comment-cheminfo">
+                <div class="author-info">
+                  <!-- floating UI - start -->
+                  <div class="floatingUI-container">
+                    <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                    <a href="#" class="floatingUI-user-info profile-picture-small">
+                      <!-- <img alt="User Image" src="../assets/images/sample-img/sample-s-img.png"> -->
+                    </a>
+                  </div>
+                  <!-- floating UI -end -->
+                </div>
+                <div class="author-enter-input">
+                  <div class="enter-input">
+                    <button type="button" class="btn-base btn-brand-gray rps10">Enter</button>
+                    <input type="text" class="input-base" placeholder="Signin a Comment"><!-- 로그인하면 placeholder="Write a Comment" -->
+                  </div>
+                </div>
+              </div>
+            </form>
+            <ul class="list-article-comment">
+              <li>
+                <div class="article-header">
+                  <div class="author-info">
+                    <!-- floating UI - start -->
+                    <div class="floatingUI-container">
+                      <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                      <a href="#" class="floatingUI-user-info profile-picture-small">
+                        <img alt="User Image" src="../assets/images/sample-img/gnb_navi_testimg2.jpg">
+                      </a>
+                    </div>
+                    <!-- floating UI -end -->
+
+                    <p class="user-name"><a href="#"><span class="icon-profile-crown"></span>Terminator Rue</a> <span class="creation-date-cheminfo"><i class="fa fa-circle" aria-hidden="true"></i>22 hours ago</span></p>
+                    <p class="article-comment-text">
+                      instead of accepting people being bullied you should be praying for them. instead of accepting people being bullied you should be praying for them. instead of accepting people being bullied you should be praying for them.
+                    </p>
+                  </div><!-- end author-info-->
+
+                  <div class="dropdown article-btngroup">
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#">Delete</a></li>
+                            <li><a href="#">Report</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div><!-- end article-header -->
+              </li>
+              <li>
+                <div class="article-header">
+                  <div class="author-info">
+                    <!-- floating UI - start -->
+                    <div class="floatingUI-container">
+                      <!-- mouseover target - user circle picture (size: 36, 42, 48) :: a code-->
+                      <a href="#" class="floatingUI-user-info profile-picture-small">
+                        <img class="user-photo" alt="User Image" src="../assets/images/sample-img/gnb_navi_testimg3.jpg">
+                      </a>
+                    </div>
+                    <!-- floating UI -end -->
+
+                    <p class="user-name"><a href="#">Jaehee Kwon</a> <span class="creation-date-cheminfo"><i class="fa fa-circle" aria-hidden="true"></i>1 hours ago</span></p>
+                    <p class="article-comment-text">
+                      instead of accepting people being bullied you should be praying for them.
+                    </p>
+                  </div><!-- end author-info-->
+
+                  <div class="dropdown article-btngroup">
+                    <div class="dropdown artice-sort-right">
+                      <a class="dropdown-toggle dropdown-menu-title" data-toggle="dropdown" href="#"><span class="icon-threedot">...</span></a>
+                      <div class="dropdown-menu chem-dropdown-menu margintop-fold">
+                        <div class="chem-arrow-menu dsc-dropmenu-sm-foldmenu">
+                          <ul>
+                            <li><a href="#">Delete</a></li>
+                            <li><a href="#">Report</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div><!-- end article-header -->
+              </li>
+            </ul>
+          </div>
+          <!-- // 댓글 -->
+        </div>
+      </div>
+      <!-- <div class="modal-vod-footer">
+        <button type="button" class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+        <button type="submit" class="btn-base btn-brand-blue btn-upload">Confirm</button>
+      </div> -->
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- //VOD view modal - end -->

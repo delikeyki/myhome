@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/modal/photo-add-modal.html -->
+      <!--=include ../include/modal/matching-skill-modal.html -->
+      <!--=include ../include/modal/interest-area-modal.html -->
+      <!--=include ../include/modal/interest-etc-modal.html -->
+      <!--=include ../include/modal/follower-modal.html -->
+      <!--=include ../include/modal/following-modal.html -->
+      <!--=include ../include/lnb.html -->
+      <section class="main-section main-section-default">
+        <article class="main-article mypage-article">
+          <!--=include ../include/mypage/mypage-aside.html -->
+          <div class="myp-contents">
+            <div class="sub-box user-profile">
+              <form>
+                <!-- ↓ editable-field class 에 active-f 추가  -->
+                <!-- 161025 이름이 40자 이상일 경우 말줄임 표시, 전문가회원일 경우 <span class="icon-profile-crown"></span> 노출 -->
+                <h1 class="editable-field"><span><span class="icon-profile-crown"></span>Bradley Charles Cooper</span>
+                  <span class="overlay-icon overlay-edit"></span>
+                  <!-- ↓ myp-form-edit class 에 myp-form-edit-view 추가 -->
+                  <div class="myp-form-edit">
+                      <label class="sr-only" for="InputFirstName">input Your Name</label>
+                      <input type="text" class="input-base chem-form-control myp-edit-input" id="InputFirstName" placeholder="First Name" />
+                  </div>
+                </h1>
+                <div class="my-location">
+                  <!-- ↓ editable-field class 에 active-f 추가 -->
+                  <span class="my-country input-select editable-field input-box"><span>Country</span>
+                    <span class="overlay-icon overlay-edit "></span>
+                    <div class="select-box">
+                      <input type="text" class="input-base datepicker-input" placeholder="Choose date" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                      <ul class="aList">
+                        <li><a href="#1">Apenrade</a></li>
+                        <li><a href="#2">Frauenbach</a></li>
+                        <li><a href="#3">Bologna </a></li>
+                        <li><a href="#1">Apenrade</a></li>
+                        <li><a href="#2">Frauenbach</a></li>
+                        <li><a href="#3">Bologna </a></li>
+                        <li><a href="#1">Apenrade</a></li>
+                        <li><a href="#2">Frauenbach</a></li>
+                        <li><a href="#3">Bologna </a></li>
+                        <li><a href="#1">Apenrade</a></li>
+                        <li><a href="#2">Frauenbach</a></li>
+                        <li><a href="#3">Bologna </a></li>
+                      </ul>
+                    </div>
+                  </span><span>,</span>
+                  <span class="my-city editable-field">City
+                    <span class="overlay-icon overlay-edit"></span>
+                    <div class="myp-form-edit ">
+                      <label class="sr-only" >Add Research area</label>
+                      <input type="text" class="input-base chem-form-control myp-edit-input" />
+                    </div>
+                  </span>
+                </div>
+                <dl class="my-introduce">
+                  <dt>Research area</dt>
+                  <dd>
+                    <!-- 161028 수정 -->
+                    <!-- ↓ editable-field class 에 active-f 추가 Choose area -->
+                    <span class="my-country input-select editable-field input-box"><span>Manufacturing process-chem</span>
+                      <span class="overlay-icon overlay-edit "></span>
+                      <div class="select-box">
+                        <input type="text" class="input-base datepicker-input" placeholder="Choose area"><i class="fa fa-caret-down" aria-hidden="true" title="Choose area"></i>
+                        <ul class="aList">
+                          <li><a href="#">Petro-Chem</a></li>
+                          <li><a href="#">Energy-chem</a></li>
+                          <li><a href="#">Nuclear Chem</a></li>
+                          <li><a href="#">Environment</a></li>
+                          <li><a href="#">Waste-chem</a></li>
+                          <li><a href="#">Materials-chem</a></li>
+                          <li><a href="#">Astro-chem</a></li>
+                          <li><a href="#">Mechanic chem</a></li>
+                          <li><a href="#">Agro-chem</a></li>
+                          <li><a href="#">Medical chem</a></li>
+                          <li><a href="#">Food-chem</a></li>
+                          <li><a href="#">Manufacturing process-chem</a></li>
+                          <li><a href="#">Other</a></li>
+                        </ul>
+                      </div>
+                    </span><span>,</span>
+                    <span class="my-research editable-field"><span>Detail description about Research area</span>
+                      <span class="overlay-icon overlay-edit"></span>
+                      <div class="myp-form-edit ">
+                          <label class="sr-only">Add Research area</label>
+                          <input type="text" class="input-base chem-form-control myp-edit-input" isplaceholderinited="true">
+                      </div>
+                    </span>
+                    <!-- //161028 수정 -->
+                  </dd>
+                  <dt>Company Name</dt> <!-- 161212 text 수정 -->
+                  <dd>
+                    <div class="editable-field"><span>+ Add Company Name/Institute Name</span> <!-- 161212 text 수정 -->
+                      <span class="overlay-icon overlay-edit"></span>
+                      <div class="myp-form-edit">
+                        <label class="sr-only" for="">Add Company Name/Institute Name</label> <!-- 161212 text 수정 -->
+                        <input type="text" class="input-base chem-form-control myp-edit-input" id="" size="30"  />
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>Url</dt>
+                  <dd>
+                    <div class="editable-field"><a href="#">+ Add Url</a>
+                      <span class="overlay-icon overlay-edit"></span>
+                      <div class="myp-form-edit ">
+                          <label class="sr-only" for="">Add Url</label> <!-- 161212 text 수정 -->
+                          <input type="text" class="input-base chem-form-control myp-edit-input" size="30" />
+                      </div>
+                    </div>
+                  </dd>
+                  <dt>Interests area</dt>
+                  <dd class="info-interests">
+                    <div class="editable-field"><a data-toggle="modal" href="#InterestareaModal">Organic Chemistry, Energy, Biotechnology, New drug development</a>
+                    <span class="overlay-icon overlay-edit"></span>
+                    </div>
+                  </dd>
+                </dl>
+                <div class="follow-box">
+                  <p class="btn-follow"><a data-toggle="modal" href="#FollowerModal"><span>172</span>Follower</a></p>
+                  <p class="btn-follow"><a data-toggle="modal" href="#FollowingModal"><span>123</span>Following</a></p>
+                  <p class="btn-follow"><span>271,928,089</span>Views</p>
+                </div><!--/.follow-box -->
+              </form>
+            </div><!--/.user-profile -->
+
+            <!-- Summary -  When no Introduction -->
+            <div class="sub-box self-intro-write">
+              <h2>Summary</h2>
+              <form>
+                <textarea rows="4" class="input-base" placeholder="Write a summary to highlight your experience and interests."></textarea>
+                <div class="btn-edit-box">
+                  <a href="#" class="btn-base btn-brand-blue ">Save</a>
+                </div>
+              </form>
+            </div>
+            <!-- ./self-intro-write -->
+
+            <!--Summary - When introduction -->
+            <div class="sub-box self-intro">
+              <h2>Summary</h2>
+              <form>
+                <!-- 161114 수정 -->
+                <!-- 161212 수정 -->
+                <div class="editable-field-summary">
+                  <p class="view-self-intro">Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a  ﬁne balance between hydrology, ecology and land-scape morphology (Page et al 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.\ accumulated in wa-terlogged and usually acidic conditions over thousands of years.
+                    Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a  ﬁne balance between hydrology, ecology and land-scape morphology (Page et al 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.\ accumulated in wa-terlogged and usually acidic conditions over thousands of years.
+                  </p>
+                  <div class="btn-edit-box">
+                    <a href="#" class="btn-base btn-brand-gray btn-edit">Edit</a> <!-- 161014  a를 a href="#"로 수정 -->
+                  </div>
+                </div>
+                <!-- //161212 수정 -->
+                <!-- //161114 수정 -->
+              </form>
+            </div>
+            <!-- <div class="sub-box self-intro">
+              <h2>Summary</h2>
+              <form>-->
+                <!-- 161114 수정 -->
+                <!-- <div class="editable-field-summary">
+                  <p class="view-self-intro">Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a  ﬁne balance between hydrology, ecology and land-scape morphology (Page et al 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.\ accumulated in wa-terlogged and usually acidic conditions over thousands of years.
+                  </p>
+                  <span class="overlay-icon overlay-edit"></span>
+                  <div class="myp-form-edit">
+                    <label class="sr-only" for="">Add Occupation </label>
+                    <textarea rows="4" class="input-base myp-edit-input" ></textarea>
+                  </div>
+                  <a href="#" class="btn-base btn-brand-blue">Save</a> <!-- 161014  a를 a href="#"로 수정 -->
+
+                <!--</div>-->
+                <!-- //161114 수정 -->
+              <!--</form>
+            </div> -->
+            <!-- ./self-intro -->
+
+            <!-- 2017-03-29 키워드 추가 -->
+            <div class="sub-box tech-keyword">
+              <h2>Research Keyword </h2>
+              <p class="sub-title">Main keyword</p>
+              <div class="enter-input">
+                <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Enter</button>
+                <input type="text" class="input-base" placeholder="Please choose main keywords up to 5. ">
+              </div>
+              <ul class="tech-res-list keyword-list">
+                <li>
+                  Green Chemistry
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+              </ul>
+              <p class="sub-title additional">Additional keyword</p>
+              <div class="enter-input">
+                <button  type="submit" class="btn-base btn-brand-gray rps10" title="Add">Enter</button>
+                <input type="text" class="input-base" placeholder="Please choose main keywords up to 5. ">
+              </div>
+              <ul class="tech-res-list keyword-list">
+                <li>
+                  Green Chemistry
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+              </ul>
+            </div>
+            <!-- //2017-03-29 키워드 추가 -->
+
+            <!-- Skills & Expertise - start -->
+            <div class="sub-box tech-res">
+              <h2>Skills &amp; Expertise</h2>
+              <div class="enter-input">
+                <form>
+                  <a class="btn-base btn-brand-gray rps10" title="Enter">Enter</a>
+                  <input type="text" class="input-base" placeholder="What is your expertise?"/>
+                  <!-- 161116 삭제
+                   <div class="brand-list-group display-opacity">
+                    <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                    <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                    <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                    <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                    <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                  </div>
+                -->
+                </form>
+              </div>
+
+              <!-- selected after -->
+              <!-- 161014 모달 링크 추가 -->
+              <ul class="tech-res-list">
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">18</a>
+                  Teaching and Learning
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">128</a>
+                  Strategic Management
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">39</a>
+                  Academic Writing
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">23</a>
+                  Teaching and Learning
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">75</a>
+                  Chemical Engineering and ManagementChemical Engineering and ManagementChemical Engineering and Management
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+              </ul>
+              <!-- //161014 모달 링크 추가 -->
+            </div>
+            <!-- Skills & Expertise - end-->
+
+            <!-- Education - start -->
+            <div class="sub-box res-career">
+              <h2>Education</h2>
+              <!-- 아래의 글쓰기는 처음에 아무런 글이 없을 때 입니다. 차이점은 하단 버튼그룹과 x버튼 유무입니다. -->
+              <!-- write place -->
+              <div class="res-career-write">
+                <form>
+                  <div class="gray-box res-career-box">
+                    <dl class="write-list">
+                      <dt>School name</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base"  />
+                      </dd>
+                      <dt>Subject</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base"  />
+                      </dd>
+                      <dt>Time period</dt>
+                      <dd>
+                        <div class="input-box datepicker-box">
+                          <div class="input-daterange">
+                            <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                            ~
+                            <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="end" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                          </div>
+                        </div>
+                        <div class="check-box-content time-check-lineup">
+                          <input type="checkbox" class="css-checkbox" id="checkbox1" checked="checked" />
+                          <label for="checkbox1"  class="css-checkbox-label">In progress</label>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <!-- 161014  a를 a href="#"로 변경 -->
+                  <div class="btn-edit-box">
+                    <a href="#" class="btn-base btn-brand-gray btn-add">Add</a>
+                    <a href="#" class="btn-base btn-brand-blue btn-save">Save</a>
+                    <a href="#" class="btn-base btn-brand-gray-b btn-cancel">Cancel</a>
+                  </div>
+                  <!-- //161014  a를 a href="#"로 변경 -->
+                </form>
+              </div>
+            </div>
+            <div class="sub-box res-career">
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+                  <dl>
+                    <dt>School name</dt>
+                    <dd>HashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemite</dd>
+                    <dt>Subject</dt>
+                    <dd>HashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemite</dd>
+                  </dl>
+                </div>
+                <div class="btn-edit-box"><a href="#" class="btn-base btn-brand-gray btn-edit">Edit</a></div> <!-- 161014 a를 a href="#" -->
+              </div>
+            </div>
+            <!-- Education - end -->
+
+            <!-- Research-career -->
+            <div class="sub-box res-career">
+              <h2>Research Career</h2>
+              <!-- 아래의 글쓰기는 글이 있는 상황에서 추가하고 삭제하는 버튼들이 추가되었을 때 입니다.  -->
+              <!-- write place -->
+              <div class="res-career-write">
+                <form>
+                  <div class="gray-box res-career-box">
+                    <a class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">&times;</span></a>
+                    <dl class="write-list">
+                      <dt>Time period</dt>
+                      <dd>
+                        <div class="input-box datepicker-box">
+                          <div class="input-daterange">
+                            <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                            ~
+                            <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="end" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                          </div>
+                        </div>
+                        <div class="check-box-content time-check-lineup">
+                          <input type="checkbox" class="css-checkbox" id="checkbox2" checked="checked" />
+                          <label for="checkbox2"  class="css-checkbox-label">In progress</label>
+                        </div>
+                      </dd>
+                      <dt>Position</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" />
+                      </dd>
+                      <dt>Description</dt>
+                      <dd>
+                        <textarea class="input-base" rows="6" cols="30"></textarea>
+                      </dd>
+                      <dt>Location</dt>
+                      <dd class="res-location">
+                        <div class="input-box">
+                          <div class="input-select">
+                            <div class="input-select-search">
+                              <p class="input-base datepicker-input input-search" >Choose Country<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p> <!-- 161028 type 삭제 -->
+                            </div>
+                            <div class="select-box">
+                              <input type="text" class="input-base datepicker-input" placeholder="Choose Country" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                              <ul class="aList">
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <input type="text" class="input-base datepicker-input" placeholder="City" />
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <div class="gray-box res-career-box">
+                    <a class="btn-base btn-brand-gray btn-article-close btn-rt"><span aria-hidden="true" title="delete">&times;</span></a>
+                    <dl class="write-list">
+                      <dt>Time period</dt>
+                      <dd>
+                        <div class="input-box datepicker-box">
+                          <div class="input-daterange">
+                            <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                            ~
+                            <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="end" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                          </div>
+                        </div>
+                        <div class="check-box-content time-check-lineup">
+                          <input type="checkbox" class="css-checkbox" id="checkbox3" checked="checked" />
+                          <label for="checkbox3"  class="css-checkbox-label">In progress</label>
+                        </div>
+                      </dd>
+                      <dt>Position</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" />
+                      </dd>
+                      <dt>Description</dt>
+                      <dd>
+                        <textarea class="input-base" rows="6"></textarea>
+                      </dd>
+                      <dt>Location</dt>
+                      <dd class="res-location">
+                        <div class="input-box">
+                          <div class="input-select">
+                            <div class="input-select-search">
+                              <p class="input-base datepicker-input input-search" >Choose Country<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p><!-- 161028 type 삭제 -->
+                            </div>
+                            <div class="select-box">
+                              <input type="text" class="input-base datepicker-input" placeholder="Choose Country" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                              <ul class="aList">
+                                <li><a href="#1">Apenrade</a></li>
+                                <li><a href="#2">Frauenbach</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <input type="text" class="input-base datepicker-input" placeholder="City" />
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <!-- 161014  a를 a href="#"로 변경 -->
+                  <div class="btn-edit-box">
+                    <a href="#" class="btn-base btn-brand-gray btn-add">Add</a>
+                    <a href="#" class="btn-base btn-brand-blue btn-save">Save</a>
+                    <a href="#" class="btn-base btn-brand-gray-b btn-cancel">Cancel</a>
+                  </div>
+                  <!-- //161014  a를 a href="#"로 변경 -->
+                </form>
+              </div>
+            </div>
+            <div class="sub-box res-career">
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    In progress
+                  </p>
+                  <dl>
+                    <dt>Position</dt>
+                    <dd>HashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemiteHashemite</dd>
+                    <dt>Description</dt>
+                    <dd>111115555333388880000022226777777773333888444444999993333333333300000000002222227777777777777777777</dd>
+                    <dt>Location</dt>
+                    <dd>Jordan, Zarqa</dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    <span class="res-years">2016, Aug</span><br/>
+                    <span class="res-years-total">(10 Month)</span>
+                  </p>
+                  <dl>
+                    <dt>Position</dt>
+                    <dd>Head of Department</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences - Department of Educational Foundations and Adiministration</dd>
+                    <dt>Location</dt>
+                    <dd>Jordan, Zarqa</dd>
+                  </dl>
+                </div>
+                <div class="btn-edit-box"><a href="#" class="btn-base btn-brand-gray btn-edit">Edit</a></div> <!-- 161014 a를 a href="#" -->
+              </div>
+            </div>
+            <!-- ./Research-career -->
+
+            <!-- Funded Project - start -->
+            <div class="sub-box">
+              <h2>Funded Project</h2>
+              <!-- write place -->
+              <div class="res-career-write">
+                <form>
+                  <div class="gray-box res-career-box">
+                    <dl class="write-list">
+                      <dt>Time period</dt>
+                      <dd>
+                        <div class="input-box datepicker-box">
+                          <div class="input-daterange">
+                            <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="start" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                            ~
+                            <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" name="end" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                          </div>
+                        </div>
+                        <div class="check-box-content time-check-lineup">
+                          <input type="checkbox" class="css-checkbox" id="checkbox4" checked="checked" />
+                          <label for="checkbox4"  class="css-checkbox-label">In progress</label>
+                        </div>
+                      </dd>
+                      <dt>Research institute</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" />
+                      </dd>
+                      <dt>Project Title</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" />
+                      </dd>
+                      <dt>Description</dt>
+                      <dd>
+                        <textarea class="input-base" rows="6"></textarea>
+                      </dd>
+                      <dt>Ordering Organization</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" />
+                      </dd>
+                      <dt>Joint Researches</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" />
+                      </dd>
+                      <dt>URL</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" placeholder="https://"/>
+                      </dd>
+                    </dl>
+                  </div>
+                  <!-- 161014  a를 a href="#"로 변경 -->
+                  <div class="btn-edit-box">
+                    <a href="#" class="btn-base btn-brand-gray btn-add">Add</a>
+                    <a href="#" class="btn-base btn-brand-blue btn-save">Save</a>
+                    <a href="#" class="btn-base btn-brand-gray-b btn-cancel">Cancel</a>
+                  </div>
+                  <!-- //161014  a를 a href="#"로 변경 -->
+                </form>
+              </div>
+            </div>
+            <div class="sub-box">
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    In progress
+                  </p>
+                  <dl>
+                    <dt>Research institutions</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Title</dt>
+                    <dd>Department of Educational Foundations and Administration</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                    <dt>Ordering organization</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Joint researches</dt>
+                    <dd>Hashemite University, Brad Pitt</dd>
+                    <dt>URL</dt>
+                    <dd>http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    In progress
+                  </p>
+                  <dl>
+                    <dt>Research institutions</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Title</dt>
+                    <dd>Department of Educational Foundations and Administration</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                    <dt>Ordering organization</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Joint researches</dt>
+                    <dd>Hashemite University, Brad Pitt</dd>
+                    <dt>URL</dt>
+                    <dd>http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</dd>
+                  </dl>
+                </div>
+                <div class="btn-edit-box"><a href="#" class="btn-base btn-brand-gray btn-edit">Edit</a></div> <!-- 161014 a를 a href="#" -->
+              </div>
+            </div>
+            <!-- Funded Project - end -->
+
+            <!-- Honors & Awards - start -->
+            <div class="sub-box">
+              <h2>Honors &amp; Awards</h2>
+              <!-- write place -->
+              <div class="res-career-write">
+                <form>
+                  <div class="gray-box res-career-box">
+                    <dl>
+                      <dt>Time period</dt>
+                      <dd>
+                        <div class="input-box datepicker-box">
+                          <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                        </div>
+                      </dd>
+                      <dt>Title</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base"  />
+                      </dd>
+                      <dt>Description</dt>
+                      <dd>
+                        <textarea class="input-base" rows="6" ></textarea>
+                      </dd>
+                    </dl>
+                  </div>
+                  <!-- 161014  a를 a href="#"로 변경 -->
+                  <div class="btn-edit-box">
+                    <a href="#" class="btn-base btn-brand-gray btn-add">Add</a>
+                    <a href="#" class="btn-base btn-brand-blue btn-save">Save</a>
+                    <a href="#" class="btn-base btn-brand-gray-b btn-cancel">Cancel</a>
+                  </div>
+                  <!-- //161014  a를 a href="#"로 변경 -->
+                </form>
+              </div>
+            </div>
+            <div class="sub-box">
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+                  <dl>
+                    <dt>Title</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                    <dt>Description</dt>
+                    <dd>The ACS National Awards program is designed to encourage the advancement of chemistry in all its branches, to support research in chemical science and industry, and to promote the careers of chemists. Nominate a Noteworthy Chemist Now! We are currently accepting nominations for the  2018 ACS National Awards.</dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2016, Aug</span>
+                  </p>
+                  <dl>
+                    <dt>Contents</dt>
+                    <dd>Green Chemistry Awards , ACS National Award for Affordable Green Chemistry Kenneth G. Hancock Memorial Award</dd>
+                    <dt>Description</dt>
+                    <dd>One of the goals of the ACS Green Chemistry Institute® is to recognize outstanding contributions in green chemistry in an effort to increase implementation of green chemistry technologies. Awards programs are highly visible mechanisms for informing chemists and the Society at large about the benefits of green chemistry.</dd>
+                  </dl>
+                </div>
+                <div class="btn-edit-box"><a href="#" class="btn-base btn-brand-gray btn-edit">Edit</a></div> <!-- 161014 a를 a href="#" -->
+              </div>
+            </div>
+            <!-- Honors & Awards -end -->
+
+            <!-- Writing Career - start -->
+            <div class="sub-box">
+            	<h2>Writing Career</h2>
+            	<!-- write place -->
+              <div class="res-career-write">
+                <form>
+              		<div class="gray-box res-career-box">
+              			<dl class="write-list">
+              				<dt>Type of study</dt>
+                      <dd class="res-location">
+                        <div class="input-box">
+                          <div class="input-select">
+                            <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="test...." />dfd<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                            <div class="input-select-search">
+                              <p  class="input-base datepicker-input input-search" >Select<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p><!-- 161028 type 삭제 -->
+                              <!-- <input type="text" class="input-base datepicker-input input-search" placeholder="Year, Month" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i> -->
+                            </div>
+                            <div class="select-box">
+                              <input type="text" class="input-base datepicker-input" placeholder="Select" /><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                              <ul class="aList">
+                                <li><a href="#1">Type 1</a></li>
+                                <li><a href="#2">Type 2</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                      <dt>Published date</dt>
+                      <dd>
+                        <div class="input-box datepicker-box">
+                          <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day" /><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                        </div>
+                      </dd>
+                      <dt>Title</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base"  />
+                      </dd>
+                      <dt>Description</dt>
+                      <dd>
+                        <textarea class="input-base" rows="6"></textarea>
+                      </dd>
+                      <dt>Co-Author</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base"  />
+                      </dd>
+                      <dt>URL</dt>
+                      <dd class="res-position">
+                        <input type="text" class="input-base" placeholder="http://" />
+                      </dd>
+              			</dl>
+              		</div>
+                  <!-- 161014  a를 a href="#"로 변경 -->
+                  <div class="btn-edit-box">
+                    <a href="#" class="btn-base btn-brand-gray btn-add">Add</a>
+                    <a href="#" class="btn-base btn-brand-blue btn-save">Save</a>
+                    <a href="#" class="btn-base btn-brand-gray-b btn-cancel">Cancel</a>
+                  </div>
+                  <!-- //161014  a를 a href="#"로 변경 -->
+                </form>
+              </div>
+            </div>
+            <div class="sub-box">
+            	<!-- view place -->
+            	<div class="res-career-view">
+            		<div class="gray-box res-career-box">
+            			<p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+            			<dl>
+            				<dt>Type of study</dt>
+            				<dd>Chemical engineering</dd>
+                    <dt>Title</dt>
+            				<dd>Effective Chemical engineering</dd>
+                    <dt>Description</dt>
+            				<dd>The ACS National Awards program is designed to encourage the advancement of chemistry in all its branches, to support research in chemical science and industry, and to promote the careers of chemists. Nominate a Noteworthy Chemist Now! We are currently accepting nominations for the  2018 ACS National Awards. </dd>
+                    <dt>Co-Author</dt>
+            				<dd>Micheal Jonas Korse</dd>
+                    <dt>URL</dt>
+            				<dd>http;//www.micheal_chemworld.com</dd>
+            			</dl>
+            		</div>
+                <div class="btn-edit-box"><a class="btn-base btn-brand-gray btn-edit">Edit</a></div>
+            	</div>
+            </div>
+            <!-- Writing Career - end -->
+
+            <!-- Certificate - start -->
+            <div class="sub-box">
+            	<h2>Certificate</h2>
+            	<!-- write place -->
+            	<div class="res-career-write">
+                <div class="gray-box res-career-box">
+                  <dl class="write-list">
+                    <dt>Issued date</dt>
+                    <dd>
+                      <div class="input-box datepicker-box ">
+                        <input type="text" class="input-base datepicker-input" placeholder="Year / Month / Day"><!-- <i class="fa fa-caret-down" aria-hidden="true"></i> -->
+                      </div>
+                    </dd>
+                    <dt>Certificate Type</dt>
+                    <dd class="res-position">
+                      <input type="text" class="input-base" isplaceholderinited="true">
+                    </dd>
+                    <dt>Description</dt>
+                    <dd>
+                      <textarea class="input-base" rows="6" isplaceholderinited="true"></textarea>
+                    </dd>
+                    <dt>Certificate Issuer</dt>
+                    <dd class="res-position">
+                      <input type="text" class="input-base" isplaceholderinited="true">
+                    </dd>
+                  </dl>
+                </div>
+                <!-- 161014  a를 a href="#"로 변경 -->
+                <div class="btn-edit-box">
+                  <a href="#" class="btn-base btn-brand-gray btn-add">Add</a>
+                  <a href="#" class="btn-base btn-brand-blue btn-save">Save</a>
+                  <a href="#" class="btn-base btn-brand-gray-b btn-cancel">Cancel</a>
+                </div>
+                <!-- //161014  a를 a href="#"로 변경 -->
+              </div>
+            </div>
+            <div class="sub-box">
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+                  <dl>
+                    <dt>Certificate type</dt>
+                    <dd>Chemical engineering</dd>
+                    <dt>Description</dt>
+                    <dd>Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a ﬁne balance between hydrology, ecology and land-scape morphology (Page et al., 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.</dd>
+                    <dt>Certificate issuer</dt>
+                    <dd>Micheal Jonas Korse</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Certificate - end -->
+
+            <!-- Advisory Area - start -->
+            <div class="sub-box tech-res">
+              <h2>Advisory Area</h2>
+              <form>
+                <div class="input-category enter-input">
+                  <div class="input-select">
+                    <!-- select box -->
+                    <div class="input-select-search">
+                      <p class="input-base input-search">Choose area<i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i></p>
+                    </div>
+                    <div class="select-box">
+                      <input type="text" class="input-base" placeholder="Choose area"><i class="fa fa-caret-down" aria-hidden="true" title="choose date"></i>
+                      <ul class="aList">
+                        <li><a href="#">Petro-Chem</a></li>
+                        <li><a href="#">Energy-chem</a></li>
+                        <li><a href="#">Nuclear Chem</a></li>
+                        <li><a href="#">Environment</a></li>
+                        <li><a href="#">Waste-chem</a></li>
+                        <li><a href="#">Materials-chem</a></li>
+                        <li><a href="#">Astro-chem</a></li>
+                        <li><a href="#">Mechanic chem</a></li>
+                        <li><a href="#">Agro-chem</a></li>
+                        <li><a href="#">Medical chem</a></li>
+                        <li><a href="#">Food-chem</a></li>
+                        <li><a href="#">Manufacturing process-chem</a></li>
+                        <li><a href="#">Other</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="input-text-search">
+                    <input type="text" class="input-base" placeholder="Detailed Description about Advisory Area"><!-- 161212 placeholder 수정 -->
+                    <!-- <div class="brand-list-group display-opacity">
+                      <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                      <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                      <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                      <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                      <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                    </div> -->
+                  </div>
+                </div>
+
+                <ul class="tech-res-list">
+                  <li>
+                    <span class="tech-like-num">Environment</span>
+                    Formulas and manufacturing recipes
+                    <span class="icon-cross close-tech-res" title="close"></span>
+                  </li>
+                  <li>
+                    <span class="tech-like-num">Manufacturing process-chem</span>
+                    Formulas and manufacturing recipes
+                    <span class="icon-cross close-tech-res" title="close"></span>
+                  </li>
+                  <li>
+                    <span class="tech-like-num">Nuclear Chem</span>
+                    Formulas and manufacturing recipes
+                    <span class="icon-cross close-tech-res" title="close"></span>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <!-- Advisory Area - start -->
+
+            <!-- Language - start -->
+            <div class="sub-box tech-res">
+              <h2>Language</h2>
+              <form>
+                <div class="enter-input">
+                  <a class="btn-base btn-brand-gray rps10" title="Add">Add</a>
+                  <input type="text" class="input-base" placeholder="What language do you speak?">
+                  <!-- <div class="brand-list-group display-opacity">
+                    <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                    <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                    <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                    <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                    <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                  </div> -->
+                </div>
+
+                <ul class="tech-res-list">
+                  <li>
+                    Korean
+                    <span class="icon-cross close-tech-res" title="close"></span>
+                  </li>
+                  <li>
+                    Spanish
+                    <span class="icon-cross close-tech-res" title="close"></span>
+                  </li>
+                  <li>
+                    English
+                    <span class="icon-cross close-tech-res" title="close"></span>
+                  </li>
+                </ul>
+              </form>
+            </div>
+            <!-- Language - start -->
+          </div>
+        </article>
+      </section>
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <!-- loading 161123 -->
+    <div class="modal fade" id="modal-loading">
+      <div class="loading-wrap">
+        <div class="modal-dialog loading-inner">
+          <img src="../assets/images/common/hourglass.gif" alt="loading">
+        </div>
+      </div>
+    </div>
+    <!-- //loading 161123 -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+    <script>
+      $(function() {
+        $('.forum-modal .close').on('click',function(){
+
+        })
+
+        $('button[name="uploadtest"]').click(function(e){
+           e.preventDefault();
+            $('#photoaddmodal').on('hidden.bs.modal', function (e) {
+                   $('#modal-loading').modal('show');
+                   $(this).off('hidden.bs.modal'); // Remove the 'on' event binding
+             }).modal('hide');
+        });
+      })
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!-- Photo add modal start -->
+<div class="forum-modal">
+  <div class="modal fade" id="photoaddmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content addfile-modal-tap">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#uploadfile" data-toggle="tab">Upload image</a></li>
+          </ul>
+        </div>
+        <div class="modal-body photo-modal-body">
+          <div class="upload-file-firstbox">
+            <ul class="upload-write">
+              <li class="left-align">
+                <!--file upload NEW-->
+                <div class="fileinput fileinput-new" data-provides="fileinput">
+                        <span class="btn btn-file">
+                          <span>Choose File</span><input type="file" />
+                        </span>
+                  <span class="fileinput-filename"></span>
+                  <span class="fileinput-new">No file chosen</span>
+                  <a href="#" class="close fileinput-exists" data-dismiss="fileinput"><i class="icon-cross"></i></a>
+                </div>
+                <!--//file upload NEW-->
+              </li>
+              <li>
+                <p><span>up to 4</span> images can be uploaded. Total upload cannot exceed <span>20 MB.</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="btn-rightbottom-box">
+            <button type="button" class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+            <button type="submit" class="btn-base btn-brand-blue btn-upload">Upload</button>
+          </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div><!-- /.photo add modal -->

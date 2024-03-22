@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>캠토피아</title>
+    <link href="../assets/css/theme.css" rel="stylesheet">
+    <link href="../assets/css/jquery-confirm.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- lnb -->
+      <div class="modal fade" id="lnbInModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true"><!-- 161013 수정 -->
+        <div class="modal-lnb">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <aside class="lnb">
+                <div class="lnb-notification">
+                  <p class="lnb-title">Notification</p>
+                  <ul class="lnb-menu">
+                    <li><a href="#" class="lnbbtn sub-disc" data-lnblink="lnb-sub-msg">Message<span class="count">17</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-foll" data-lnblink="lnb-sub-fourm">Chem Info / Forum<span class="count">2</span></a></li>
+                    <li><a href="#" class="lnbbtn sub-sug" data-lnblink="lnb-sub-foll">Follow<span class="count"></span></a></li>
+                    <li><a href="#" class="lnbbtn sub-msg" data-lnblink="lnb-sub-other">Other<span class="count">99+</span></a></li>
+                  </ul>
+                </div>
+                <div class="lnb-sub-wrap">
+                  <div class="lnb-sub lnb-sub-msg lnb-slide-out">
+                      <p class="lnb-title">Message</p>
+                      <ul class="lnb-sub-list">
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="select-lnb">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>Joel King</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong><span class="icon-profile-crown"></span>sujin Seo</strong> sent you a message.<br /><!-- 161025 span 추가 -->
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"></span>
+                            <p class="lnb-sub-text">
+                              <strong>Terry Park</strong> sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                            <p class="lnb-sub-text">
+                              <strong> Krzysztof Kieślowski Krzyssdfa Pie...</strong>
+                              sent you a message.<br />
+                              <span class="lnb-time">3 hours ago</span>
+                            </p>
+                          </a>
+                        </li>
+                      </ul>
+                      <!-- 161130 div,p 추가 -->
+                      <div class="btn-viewall-wrap">
+                        <!-- 스크롤이 생기면 btn-desc 노출 -->
+                        <p class="btn-desc">To see more of notifications, click "View all"</p>
+                        <a href="notificationsMessage.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                      </div>
+                      <!-- //161130 div,p 추가 -->
+                  </div>
+                  <!-- 161101 수정
+      
+                    // 1. 이름 추가, 내용변경
+                    // 이름, 내용 한줄(27자)이상일 경우 말줄임표시
+                    // lnb-bg-myfourm - fourm일 경우 클래스
+                    // lnb-bg-following  - following일 경우 클래스
+                    // lnb-bg-cheminf  - cheminfg일 경우 클래스
+                  -->
+      
+                  <div class="lnb-sub lnb-sub-fourm lnb-slide-out">
+                    <p class="lnb-title">Chem Info / Forum</p>
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-bg-myfourm">
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Cyrus Helf</strong>
+                            <span>Added 3 Opinions on your post.</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-following">
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>Tamas Mihalovits</strong><!-- 161025 span 추가 -->
+                            <span>Added a topic</span> <!-- 161212 text 수정 -->
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-following">
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>Tamas Mihalovits</strong><!-- 161025 span 추가 -->
+                            <span>Added a Chem Info.</span> <!-- 161212 text 수정 -->
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Minimizing the environmental...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li class="lnb-bg-cheminfo">
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <span>Simulation...</span>
+                            <span>3 Opinions and 2 Comments on the...</span>
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="btn-viewall-wrap">
+                      <!-- 스크롤이 생기면 btn-desc 노출 -->
+                      <p class="btn-desc">To see more of notifications, click "View all"</p>
+                      <a href="notificationsCheminfoForum.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                    </div>
+                  </div>
+                  <!-- //161101 수정 -->
+                  <div class="lnb-sub lnb-sub-foll lnb-slide-out">
+                    <p class="lnb-title">Follow</p>
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-nodata">
+                        <span><i class="icon-bell"></i>No notifications to show</span>
+                      </li>
+                    </ul>
+                    <div class="btn-viewall-wrap">
+                      <!-- 스크롤이 생기면 btn-desc 노출 -->
+                      <p class="btn-desc">To see more of notifications, click "View all"</p>
+                      <a href="notificationsFollow.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                    </div>
+                  </div>
+                  <div class="lnb-sub lnb-sub-other lnb-slide-out">
+                    <p class="lnb-title">Other</p>
+                    <ul class="lnb-sub-list">
+                      <li>
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Joel King</strong> is now following you<br />
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>sujin Seo</strong> is now following you<br /><!-- 161025 span 추가 -->
+                            <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="select-lnb">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong><span class="icon-profile-crown"></span>Terry Park</strong> is now following you<br /><!-- 161025 span 추가 -->
+                            <span class="lnb-time">Yesterday</span>
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="profile-picture-small"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg.jpg" /></span>
+                          <p class="lnb-sub-text">
+                            <strong>Kyunga Kim</strong> is now following you<br />
+                          Nice to meet you. look on the bright...<br />
+                          <span class="lnb-time">3 hours ago</span>
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="btn-viewall-wrap">
+                      <!-- 스크롤이 생기면 btn-desc 노출 -->
+                      <p class="btn-desc">To see more of notifications, click "View all"</p>
+                      <a href="notificationsOther.html" class="btn btn-brand-dark-gray btn-viewall">View All</a><!-- 161013 수정 -->
+                    </div>
+                  </div>
+      
+                  <!--<div class="lnb-sub lnb-slide-out">
+                    <p class="lnb-title">Other</p>
+      
+                    <ul class="lnb-sub-list">
+                      <li class="lnb-nodata">
+                        <span><i class="icon-bell"></i>No notifications to show</span>
+                      </li>
+                    </ul>
+                  </div> 알림없는 케이스 -->
+                </div>
+              </aside>
+            </div>
+            <button type="button" class="close" id="lnb-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+      <!-- Photo add modal start -->
+      <div class="forum-modal">
+        <div class="modal fade" id="photoaddmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content addfile-modal-tap">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#uploadfile" data-toggle="tab">Upload image</a></li>
+                </ul>
+              </div>
+              <div class="modal-body photo-modal-body">
+                <div class="upload-file-firstbox">
+                  <ul class="upload-write">
+                    <li class="left-align">
+                      <!--file upload NEW-->
+                      <div class="fileinput fileinput-new" data-provides="fileinput">
+                              <span class="btn btn-file">
+                                <span>Choose File</span><input type="file" />
+                              </span>
+                        <span class="fileinput-filename"></span>
+                        <span class="fileinput-new">No file chosen</span>
+                        <a href="#" class="close fileinput-exists" data-dismiss="fileinput"><i class="icon-cross"></i></a>
+                      </div>
+                      <!--//file upload NEW-->
+                    </li>
+                    <li>
+                      <p><span>up to 4</span> images can be uploaded. Total upload cannot exceed <span>20 MB.</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="btn-rightbottom-box">
+                  <button type="button" class="btn-base btn-brand-gray-b btn-cancel">Cancel</button>
+                  <button type="submit" class="btn-base btn-brand-blue btn-upload">Upload</button>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div><!-- /.photo add modal -->
+      <div class="similar-box">
+        <div class="modal fade" id="MatchingSkillsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content modal-content-common">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" title="close">&times;</span></button>
+                <p class="modal-title-h1">Matching Skills and Expertise <span class="follower-num">(18)</span></p>
+              </div>
+              <div class="modal-body">
+                <div class="follow-group">
+                  <ul>
+                    <li class="follow-list">
+                      <p class="profile-picture-large"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg2.jpg"></p>
+                      <h1>Aieman Ahmad Al-Omari Ah…</h1>
+                      <p class="follow-text">Energetics professor at Harvard…</p>
+                      <button type="button" class="btn-base btn-detail">Detail</button>
+                    </li>
+                    <li class="follow-list">
+                      <p class="profile-picture-large"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg2.jpg"></p>
+                      <h1>Aieman Ahmad Al-Omari Ah…</h1>
+                      <p class="follow-text">Energetics professor at Harvard…</p>
+                      <button type="button" class="btn-base btn-detail">Detail</button>
+                    </li>
+                    <li class="follow-list">
+                      <p class="profile-picture-large"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg2.jpg"></p>
+                      <h1>Aieman Ahmad Al-Omari Ah…</h1>
+                      <p class="follow-text">Energetics professor at Harvard…</p>
+                      <button type="button" class="btn-base btn-detail">Detail</button>
+                    </li>
+                    <li class="follow-list">
+                      <p class="profile-picture-large"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg2.jpg"></p>
+                      <h1>Aieman Ahmad Al-Omari Ah…</h1>
+                      <p class="follow-text">Energetics professor at Harvard…</p>
+                      <button type="button" class="btn-base btn-detail">Detail</button>
+                    </li>
+                    <li class="follow-list">
+                      <p class="profile-picture-large"><img alt="Sebastian Stan" src="../assets/images/sample-img/gnb_navi_testimg2.jpg"></p>
+                      <h1>Aieman Ahmad Al-Omari Ah…</h1>
+                      <p class="follow-text">Energetics professor at Harvard…</p>
+                      <button type="button" class="btn-base btn-detail">Detail</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div><!-- /.similar-box -->
+      <div class="interest-modal">
+        <div class="modal fade" id="InterestareaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content modal-content-common">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <p class="modal-title-h1">Interests area</p>
+              </div>
+              <div class="modal-body">
+                <div class="interest-group">
+                  <!-- 161207 텍스트 수정 -->
+                  <div class="checkbox" >
+                    <label for="cb-test1" class="ckb-label" data-offimg="../assets/images/membership/sign-up-petro.png" data-onimg="../assets/images/membership/sign-up-petro-hover.png" data-activeimg="../assets/images/membership/sign-up-petro-active.png">
+                      <input id="cb-test1" class="ckbox" name="cb-test1" type="checkbox" checked="checked"/>
+                      <p class="answer-text">Petro-Chem</p></label>
+                  </div>
+      
+                  <div class="checkbox" >
+                    <label for="cb-test2" class="ckb-label" data-offimg="../assets/images/membership/sign-up-energy.png" data-onimg="../assets/images/membership/sign-up-energy-hover.png" data-activeimg="../assets/images/membership/sign-up-energy-active.png">
+                      <input id="cb-test2" class="ckbox" name="cb-test2" type="checkbox" checked="checked"/>
+                      <p class="answer-text">Energy-chem</p></label>
+                  </div>
+                  <div class="checkbox" >
+                    <label for="cb-test3" class="ckb-label" data-offimg="../assets/images/membership/sign-up-nuclear.png" data-onimg="../assets/images/membership/sign-up-nuclear-hover.png" data-activeimg="../assets/images/membership/sign-up-nuclear-active.png">
+                      <input id="cb-test3" class="ckbox" name="cb-test3" type="checkbox" checked="checked"/>
+                      <p class="answer-text">Nuclear-Chem</p></label>
+                  </div>
+                  <div class="checkbox" >
+                    <label for="cb-test4" class="ckb-label" data-offimg="../assets/images/membership/sign-up-environment.png" data-onimg="../assets/images/membership/sign-up-environment-hover.png" data-activeimg="../assets/images/membership/sign-up-environment-active.png">
+                      <input id="cb-test4" class="ckbox" name="cb-test4" type="checkbox" />
+                      <p class="answer-text">Environment</p></label>
+                  </div>
+                  <div class="checkbox" >
+                    <label for="cb-test5" class="ckb-label" data-offimg="../assets/images/membership/sign-up-waste.png" data-onimg="../assets/images/membership/sign-up-Waste-hover.png" data-activeimg="../assets/images/membership/sign-up-Waste-active.png">
+                      <input id="cb-test5" class="ckbox" name="cb-test5" type="checkbox" />
+                      <p class="answer-text">Waste-chem</p></label>
+                  </div>
+                  <div class="checkbox" >
+                    <label for="cb-test6" class="ckb-label" data-offimg="../assets/images/membership/sign-up-materials.png" data-onimg="../assets/images/membership/sign-up-materials-hover.png" data-activeimg="../assets/images/membership/sign-up-materials-active.png">
+                      <input id="cb-test6" class="ckbox" name="cb-test6" type="checkbox" />
+                      <p class="answer-text">Materials-chem</p></label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="cb-test7" class="ckb-label"  data-offimg="../assets/images/membership/sign-up-astro.png" data-onimg="../assets/images/membership/sign-up-astro-hover.png" data-activeimg="../assets/images/membership/sign-up-astro-active.png">
+                      <input id="cb-test7" class="ckbox" name="cb-test7" type="checkbox" />
+                      <p class="answer-text">Astro-chem</p></label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="cb-test8" class="ckb-label"  data-offimg="../assets/images/membership/sign-up-mechanic.png" data-onimg="../assets/images/membership/sign-up-mechanic-hover.png" data-activeimg="../assets/images/membership/sign-up-mechanic-active.png">
+                      <input id="cb-test8" class="ckbox" name="cb-test8" type="checkbox" />
+                      <p class="answer-text">Mechanic-chem</p></label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="cb-test9" class="ckb-label"  data-offimg="../assets/images/membership/sign-up-agro.png" data-onimg="../assets/images/membership/sign-up-agro-hover.png" data-activeimg="../assets/images/membership/sign-up-agro-active.png">
+                      <input id="cb-test9" class="ckbox" name="cb-test9" type="checkbox" />
+                      <p class="answer-text">Agro-chem</p></label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="cb-test10" class="ckb-label"  data-offimg="../assets/images/membership/sign-up-medical.png" data-onimg="../assets/images/membership/sign-up-medical-hover.png" data-activeimg="../assets/images/membership/sign-up-medical-active.png">
+                      <input id="cb-test10" class="ckbox" name="cb-test10" type="checkbox" />
+                      <p class="answer-text">Medical-chem</p></label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="cb-test11" class="ckb-label"  data-offimg="../assets/images/membership/sign-up-food.png" data-onimg="../assets/images/membership/sign-up-food-hover.png" data-activeimg="../assets/images/membership/sign-up-food-active.png">
+                      <input id="cb-test11" class="ckbox" name="cb-test11" type="checkbox" />
+                      <p class="answer-text">Food-chem</p></label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="cb-test12" class="ckb-label"  data-offimg="../assets/images/membership/sign-up-manufacturing-.png" data-onimg="../assets/images/membership/sign-up-manufacturing-hover.png" data-activeimg="../assets/images/membership/sign-up-manufacturing-active.png">
+                      <input id="cb-test12" class="ckbox" name="cb-test12" type="checkbox" />
+                      <p class="answer-text">Manufacturing process-chem</p></label>
+                  </div>
+                  <div class="checkbox">
+                    <label for="checkbox-answer-etc" class="ckb-label"  data-offimg="../assets/images/membership/sign-up-imgEtc.png" data-onimg="../assets/images/membership/sign-up-imgEtc-hover.png" data-activeimg="../assets/images/membership/sign-up-imgEtc-active.png">
+                      <input id="checkbox-answer-etc" class="ckbox" name="cb-test9" type="checkbox" />
+                      <p class="answer-text">Other</p>
+                      <!-- 161130 other 눌러 나온 모달에서 쓴 텍스트 내용을 출력 20자이상일 경우 (...)표시 -->
+                      <p class="insert-text">text text text textt...</p>
+                    </label>
+                  </div>
+                </div>
+                <!-- //161207 텍스트 수정 -->
+              </div>
+              <div class="modal-footer">
+                <!-- 161207 수정 -->
+                <!-- <button class="btn btn-sm-brand-tsize btn-normal disabled" type="button" disabled="disabled">Follow more than 1</button> -->
+                <!-- 관심분야 1개 ~ 5개선택 했을때 노출 -->
+                <button class="btn btn-sm-brand-tsize btn-normal" type="submit">Join</button>
+                <!-- //161207 수정 -->
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+      </div><!-- /.interest-group-modal -->
+      <!-- interests etc Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-brand">
+          <div class="modal-brand-content">
+            <div class="modal-brand-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <p class="modal-p-text" id="myModalLabel">What is your interest?</p>
+              <div class="form-group">
+                <label class="sr-only" for="InputLastname">Lastname</label>
+                <input type="text" class="input-base chem-form-control" id="Inputdirectly" placeholder="Enter yours directly"/>
+                <!-- <div class="brand-list-group">
+                  <a href="#" class="brand-list-group-item">Cras justo odio</a>
+                  <a href="#" class="brand-list-group-item">Dapibus ac facilisis in</a>
+                  <a href="#" class="brand-list-group-item">Morbi leo risus</a>
+                  <a href="#" class="brand-list-group-item">Porta ac consectetur ac</a>
+                  <a href="#" class="brand-list-group-item">Vestibulum at eros</a>
+                </div> -->
+              </div>
+            </div>
+            <div class="modal-brand-footer">
+              <button type="button" class="btn btn-normal modalbtn">confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--// interests etc Modal -->
+      <!-- FollowerModal Modal -->
+      <div class="modal fade follow-modal-wrap" id="FollowerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-content-common">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"   title="close">&times;</span></button>
+              <p class="modal-title-h1">Follower <span class="follower-num">(172)</span></p>
+            </div>
+            <div class="modal-body">
+              <div class="follow-group">
+                <ul>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts</h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox" checked/>
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts</h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox" checked/>
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts
+                      <span class="noti-newpost">38 new posts</span>
+                    </h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox" />
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts
+                      <span class="noti-newpost">38 new posts</span>
+                    </h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox" />
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts
+                      <span class="noti-newpost">38 new posts</span>
+                    </h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox" checked/>
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <div class="modal fade follow-modal-wrap" id="FollowingModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-content-common">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <p class="modal-title-h1">Following <span class="follower-num">(123)</span></p>
+            </div>
+            <div class="modal-body">
+              <div class="follow-group">
+                <ul>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts</h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox" checked/>
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts</h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox"/>
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts</h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox"/>
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts</h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox"/>
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                  <li class="follow-list">
+                    <span class="profile-picture-large"><img alt="Julie Fiona Roberts" src="../assets/images/gnb_navi_testimg.jpg" /></span>
+                    <h1>Julie Fiona Roberts</h1>
+                    <p class="follow-text">Biotechnology Chemistry Doctor...</p>
+                    <span class="toggle-btn btn-following toggle-btn-following">
+                            <input type="checkbox"/>
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      <!-- new header start -->
+      <header class="main-header-fixed light">
+        <div class="header-wrap">
+        <h1 class="logo"><a href="/index.html">chemtopia</a></h1>
+        <div class="gm-wrap">
+          <div class="gm">
+            <a href="/footer/about.html" class="text-what text-upper">What's ChemTopia?</a>
+            <ul>
+              <li><a href="/index.html" class="gm-link text-upper">Home</a></li>
+              <!-- <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link" data-toggle="dropdown" href="#">Chemcast</a>
+      
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-m-gmmenu">
+                      <ul>
+                        <li><a href="#">Chemical Process Reports</a></li>
+                        <li><a href="#">Cast Leading</a></li>
+                        <li><a href="#">VOD</a></li>
+                        <li><a href="#">Job</a></li>
+                      </ul>
+                    </div>
+                  </div>
+      
+                </div>
+              </li> -->
+              <li>
+                <div class="dropdown">
+                  <a class="dropdown-toggle gm-link text-upper" data-toggle="dropdown" href="#">Break Time</a>
+      
+                  <!--
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-gmmenu">
+                      <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Game</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  -->
+      
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="gnb-wrap">
+          <div class="gnb">
+            <ul>
+              <li><a href="#">Chem Info</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">Proleaders</a></li>
+              <li><a href="#">Modules</a></li>
+              <li><a href="#">ChemCast</a></li>
+            </ul>
+          </div>
+      
+          <div class="snb-wrap">
+            <!-- 로그인 전
+             <ul class="befor-snb">
+               <li><a href="membership/signUpFirst.html" class="btn-base btn-brand-orange btn-snb">Sign Up</a></li>
+              <li><a data-toggle="modal" href="#signInModal">Sign In</a></li>
+            </ul>
+            -->
+      
+            <!-- 로그인 후 -->
+            <!-- 161207 수정 -->
+            <ul class="after-snb">
+              <li>
+                <!-- 일반 사용자 일때  시작 -->
+                <div class="dropdown">
+                  <!-- 이름이 7자 이상일 경우 말줄임표시 -->
+                  <a class="dropdown-toggle dropdown-menu-title " data-toggle="dropdown" href="#">
+                    <span class="profile-picture-exsmall"><img src="../assets/images/sample-img/gnb_navi_testimg3.jpg" /></span>
+                    <!-- <span>Jaehee Kwon</span> --><span class="caret"></span> <!-- 161219 추가 -->
+                  </a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-snbmenu">
+                      <div class="user-menu">
+                        <!-- <span class="profile-picture-large"><img src="assets/images/sample-img/gnb_navi_testimg3.jpg" /></span> -->
+                        <!-- 이름이 35자 이상일 경우 말줄임표시 -->
+                        <p class="user-name"><a href="#">Jaehee Kwon Jaehee Kwon Jaehee Kwon</a></p>
+                      </div>
+                      <ul class="snb-dropmenu">
+                        <!-- <li><p class="user-mail"><a href="#" class="gnb-mail-link">dfdfafdferwrwrerererererererde68@yahoo.co.kr</a></p></li> -->
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- // 일반 사용자 일때  끝 -->
+                <!-- 전문가 사용자 일때  시작
+                <div class="dropdown">
+                  <a class="dropdown-toggle dropdown-menu-title " data-toggle="dropdown" href="#">
+                    <span class="profile-picture-exsmall"><img src="assets/images/sample-img/gnb_navi_testimg3.jpg" /></span>
+                    Jaehee Kwon<span class="caret"></span>
+                  </a>
+                  <div class="dropdown-menu chem-dropdown-menu margintop-gm">
+                    <div class="chem-arrow-menu dsc-dropmenu-sm-snbmenu">
+                      <div class="user-menu">
+                        <span class="profile-picture-large"><img src="assets/images/sample-img/gnb_navi_testimg3.jpg" /></span>
+                        <p class="user-name">Jaehee Kwon</p>
+                      </div>
+                      <ul class="snb-dropmenu">
+                        <li><p class="user-mail"><a href="#" class="gnb-mail-link">dfdfafdferwrwrerererererererde68@yahoo.co.kr</a></p></li>
+                        <li><a href="#">My Page</a></li>
+                        <li><a href="#">My Proleaders</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Sign Out</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                // 전문가 사용자 일때  끝 -->
+            </li>
+            <li><a data-toggle="modal" href="#lnbInModal"><i class="fa fa-bell-o"></i><span class="badge-cust">99</span></a></li>
+            <!-- 알람 뱃시 숫자가 3자리 일때 시작 -->
+            <!-- <li><a data-toggle="modal" href="#lnbInModal"><i class="fa fa-bell-o"></i><span class="badge-cust-3">959</span></a></li> -->
+            <!-- 알람 뱃시 숫자가 3자리 일때 끝 -->
+          </ul>
+          <!-- //161207 수정 -->
+          </div>
+        </div>
+      </div>
+      </header>
+      <!-- // end new header -->
+      
+      <section class="main-section main-section-default">
+        <article class="main-article mypage-article">
+          <aside class="myp-lnb">
+            <div class="profile-lnb">
+              <div class="profile-photo">
+                <img alt="your profile pic"  src="../assets/images/sample-img/My-space-bookmark-ydg.jpg" />
+              </div>
+              <p class="user-connect">
+                          <span class="btn-connect toggle-btn btn-follow">
+                            <input type="checkbox" checked/>
+                            <label data-off="Follow" data-on="Following"></label>
+                          </span>
+                <a href="#" class="btn-connect">Message</a>
+              </p>
+              <!-- 161025 이름이 17자 이상일 경우 말줄임 표시, 전문가회원일 경우 <span class="icon-profile-crown"></span> 노출 -->
+              <!-- 2017-01-12 기존 profile-name 부분이 수정됨 -->
+              <div class="profile-summary">
+                <p class="name">
+                  <span class="icon-profile-crown"></span>Bradley Charles Cooper
+                </p>
+                <p class="email">bbbb@chemessen.com</p>
+              </div>
+              <!-- //2017-01-12 기존 profile-name 부분이 수정됨 -->
+              <ul class="profile-lnb-menu">
+                <li><a class="active" href="#">Profile</a></li>
+                <li><a class="update-profile" href="#">Forum</a></li>
+                <li><a class="update-profile" href="#">My File</a></li>
+              </ul>
+            </div><!--End profile lnb -->
+          </aside>
+          <div class="myp-contents">
+            <div class="sub-box user-profile other-profile">
+                <!-- 161025 이름이 40자 이상일 경우 말줄임 표시, 전문가회원일 경우 <span class="icon-profile-crown"></span> 노출 -->
+                <h1 class="editable-field"><span><span class="icon-profile-crown"></span>Bradley Charles Cooper</span></h1>
+                <div class="my-location">
+                  <span class="my-country input-box"><span>Country</span></span>
+                  <span>,</span>
+                  <span class="my-city">City</span>
+                </div>
+                <dl class="my-introduce">
+                  <dt>Research area</dt>
+                  <dd>
+                    <span class="my-country input-box"><span>Choose area</span></span>
+                    <span>,</span>
+                    <span class="my-research"><span>Detail description about Research area</span></span>
+                  </dd>
+                  <dt>Company Name</dt> <!-- 161212 text 수정 -->
+                  <dd>
+                    <div>+ Add Company Name/Institute Name</div> <!-- 161212 text 수정 -->
+                  </dd>
+                  <dt>Url</dt>
+                  <dd>
+                    <div>+ Add Url</div>
+                  </dd>
+                  <dt>Interests area</dt>
+                  <dd class="info-interests">
+                    <div class="editable-field">Organic Chemistry, Energy, Biotechnology, New drug development</div>
+                  </dd>
+                </dl>
+                <div class="follow-box">
+                  <p class="btn-follow"><a data-toggle="modal" href="#FollowerModal"><span>172</span>Follower</a></p>
+                  <p class="btn-follow"><a data-toggle="modal" href="#FollowingModal"><span>123</span>Following</a></p>
+                  <p class="btn-follow"><span>271,928,089</span>Views</p>
+                </div><!--/.follow-box -->
+              </form>
+            </div><!--/.user-profile -->
+
+            <!--Summary - When introduction -->
+            <div class="sub-box self-intro">
+              <h2>Summary</h2>
+              <div>
+                <p class="view-self-intro">Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a  ﬁne balance between hydrology, ecology and land-scape morphology (Page et al 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.\ accumulated in wa-terlogged and usually acidic conditions over thousands of years.</p>
+              </div>
+            </div>
+            <!-- ./self-intro -->
+
+            <!-- Skills & Expertise - start -->
+            <div class="sub-box tech-res">
+              <h2>Skills &amp; Expertise</h2>
+
+              <!-- selected after -->
+              <!-- 161014 모달 링크 추가 -->
+              <ul class="tech-res-list">
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">18</a>
+                  Teaching and Learning
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">128</a>
+                  Strategic Management
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">39</a>
+                  Academic Writing
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">23</a>
+                  Teaching and Learning
+                </li>
+                <li>
+                  <a href="#MatchingSkillsModal" data-toggle="modal" class="tech-like-num">75</a>
+                  Chemical Engineering and ManagementChemical Engineering and ManagementChemical Engineering and Management
+                </li>
+              </ul>
+              <!-- //161014 모달 링크 추가 -->
+            </div>
+            <!-- Skills & Expertise - end-->
+
+            <!-- Education - start -->
+            <div class="sub-box res-career">
+              <h2>Education</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+                  <dl>
+                    <dt>School name</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences·Department of Educational Foundations and Administration</dd>
+                    <dt>Subject</dt>
+                    <dd>Organic chemistry, Inorganic chemistry and Analytical chemistry.</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Education - end -->
+
+            <!-- Research-career -->
+            <div class="sub-box res-career">
+              <h2>Research Career</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    In progress
+                  </p>
+                  <dl>
+                    <dt>Position</dt>
+                    <dd>Head of Department</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences - Department of Educational Foundations and Adiministration</dd>
+                    <dt>Location</dt>
+                    <dd>Jordan, Zarqa</dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    <span class="res-years">2016, Aug</span><br/>
+                    <span class="res-years-total">(10 Month)</span>
+                  </p>
+                  <dl>
+                    <dt>Position</dt>
+                    <dd>Head of Department</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences - Department of Educational Foundations and Adiministration</dd>
+                    <dt>Location</dt>
+                    <dd>Jordan, Zarqa</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- ./Research-career -->
+
+            <!-- Funded Project - start -->
+            <div class="sub-box">
+              <h2>Funded Project</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    In progress
+                  </p>
+                  <dl>
+                    <dt>Research institutions</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Title</dt>
+                    <dd>Department of Educational Foundations and Administration</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                    <dt>Ordering organization</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Joint researches</dt>
+                    <dd>Hashemite University, Brad Pitt</dd>
+                    <dt>URL</dt>
+                    <dd><a href="http://www.jordantimes.com/us-university-scholarships-hashemite-university-students">http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</a></dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span> ~<br />
+                    In progress
+                  </p>
+                  <dl>
+                    <dt>Research institutions</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Title</dt>
+                    <dd>Department of Educational Foundations and Administration</dd>
+                    <dt>Description</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                    <dt>Ordering organization</dt>
+                    <dd>Hashemite University</dd>
+                    <dt>Joint researches</dt>
+                    <dd>Hashemite University, Brad Pitt</dd>
+                    <dt>URL</dt>
+                    <dd><a href="http://www.jordantimes.com/us-university-scholarships-hashemite-university-students">http://www.jordantimes.com/us-university-scholarships-hashemite-university-students</a></dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Funded Project - end -->
+
+            <!-- Honors & Awards - start -->
+            <div class="sub-box">
+              <h2>Honors &amp; Awards</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+                  <dl>
+                    <dt>Title</dt>
+                    <dd>Hashemite University, Faculty of Educational Sciences · Department of Educational Foundations and Administration</dd>
+                    <dt>Description</dt>
+                    <dd>The ACS National Awards program is designed to encourage the advancement of chemistry in all its branches, to support research in chemical science and industry, and to promote the careers of chemists. Nominate a Noteworthy Chemist Now! We are currently accepting nominations for the  2018 ACS National Awards.</dd>
+                  </dl>
+                </div>
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2016, Aug</span>
+                  </p>
+                  <dl>
+                    <dt>Contents</dt>
+                    <dd>Green Chemistry Awards , ACS National Award for Affordable Green Chemistry Kenneth G. Hancock Memorial Award</dd>
+                    <dt>Description</dt>
+                    <dd>One of the goals of the ACS Green Chemistry Institute® is to recognize outstanding contributions in green chemistry in an effort to increase implementation of green chemistry technologies. Awards programs are highly visible mechanisms for informing chemists and the Society at large about the benefits of green chemistry.</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Honors & Awards -end -->
+
+            <!-- Writing Career - start -->
+            <div class="sub-box">
+            	<h2>Writing Career</h2>
+            	<!-- view place -->
+            	<div class="res-career-view">
+            		<div class="gray-box res-career-box">
+            			<p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+            			<dl>
+            				<dt>Type of study</dt>
+            				<dd>Chemical engineering</dd>
+                    <dt>Title</dt>
+            				<dd>Effective Chemical engineering</dd>
+                    <dt>Description</dt>
+            				<dd>The ACS National Awards program is designed to encourage the advancement of chemistry in all its branches, to support research in chemical science and industry, and to promote the careers of chemists. Nominate a Noteworthy Chemist Now! We are currently accepting nominations for the  2018 ACS National Awards. </dd>
+                    <dt>Co-Author</dt>
+            				<dd>Micheal Jonas Korse</dd>
+                    <dt>URL</dt>
+            				<dd><a href="http://www.micheal_chemworld.com">http://www.micheal_chemworld.com</a></dd>
+            			</dl>
+            		</div>
+            	</div>
+            </div>
+            <!-- Writing Career - end -->
+
+            <!-- Certificate - start -->
+            <div class="sub-box">
+            	<h2>Certificate</h2>
+              <!-- view place -->
+              <div class="res-career-view">
+                <div class="gray-box res-career-box">
+                  <p class="res-box-years">
+                    <span class="res-years">2015, May</span>
+                  </p>
+                  <dl>
+                    <dt>Certificate type</dt>
+                    <dd>Chemical engineering</dd>
+                    <dt>Description</dt>
+                    <dd>Undrained peat deposits consist of plant remains (about 10%by weight of peat) and water (90%), accumulated in wa-terlogged and usually acidic conditions over thousands of years. The tropical peatlands of Southeast Asia are the re-sult of a ﬁne balance between hydrology, ecology and land-scape morphology (Page et al., 1999). A change in any of these three components will lead inevitably to a change inthe rate of peat accumulation.</dd>
+                    <dt>Certificate issuer</dt>
+                    <dd>Micheal Jonas Korse</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- Certificate - end -->
+
+            <!-- Advisory Area - start -->
+            <div class="sub-box tech-res">
+              <h2>Advisory Area</h2>
+
+              <ul class="tech-res-list">
+                <li>
+                  <span class="tech-like-num">Environment</span>
+                  Formulas and manufacturing recipes
+                </li>
+                <li>
+                  <span class="tech-like-num">Manufacturing process-chem</span>
+                  Formulas and manufacturing recipes
+                </li>
+                <li>
+                  <span class="tech-like-num">Nuclear Chem</span>
+                  Formulas and manufacturing recipes
+                </li>
+              </ul>
+            </div>
+            <!-- Advisory Area - start -->
+
+            <!-- Language - start -->
+            <div class="sub-box tech-res">
+              <h2>Language</h2>
+
+              <ul class="tech-res-list">
+                <li>
+                  Korean
+                </li>
+                <li>
+                  Spanish
+                </li>
+                <li>
+                  English
+                </li>
+              </ul>
+            </div>
+            <!-- Language - start -->
+
+            <!-- 2017-03-29 키워드 추가 -->
+            <div class="sub-box tech-keyword">
+              <h2>Research Keyword </h2>
+              <p class="sub-title">Main keyword</p>
+              <ul class="tech-res-list keyword-list">
+                <li>
+                  Green Chemistry
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+              </ul>
+              <p class="sub-title additional">Additional keyword</p>
+              <ul class="tech-res-list keyword-list">
+                <li>
+                  Green Chemistry
+                  <span class="icon-cross close-tech-res" title="close"></span>
+                </li>
+              </ul>
+            </div>
+            <!-- //2017-03-29 키워드 추가 -->
+
+          </div>
+        </article>
+      </section>
+      <!-- footer -->
+      <footer>
+        <div class="footerInner">
+          <p class="footer-logo"><a href="index.html">CHEMTOPIA</a></p>
+          <div class="footer-menu-wrap">
+            <ul class="footer-menu">
+              <!-- <li><a href="about.html">About Chemtopia</a></li> -->
+              <li><a href="/footer/termsOfService.html">Terms of Service</a></li>
+              <li><a href="/footer/privacy.html">Privacy Policy</a></li>
+              <li><a href="/footer/membership.html">Membership</a></li>
+              <!--  <li><a href="#">Help</a></li>  161017, 161020 삭제 -->
+              <li><a href="/footer/contactus.html">Contact Us</a></li>
+            </ul>
+            <p class="copyright-area">© 2017 ChemEssen, Inc. All rights reserved.</p>
+            <!-- 170308 링크 추가 -->
+            <ul class="link-language">
+              <li><a href="#" class="active">English</a></li><!-- 해당 사이트일 때, active 클래스 추가 -->
+              <li><a href="#">中文</a></li>
+            </ul>
+            <!-- //170308 링크 추가 -->
+          </div>
+        </div>
+        <!-- back to top button : 최초에는 안보이다가 스크롤을 내리는 순간에 보여지게 -->
+        <a href="#" class="top-link-block"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+      </footer>
+      <!-- //footer -->
+      
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+
+  </body>
+</html>

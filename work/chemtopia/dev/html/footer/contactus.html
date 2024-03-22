@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--=include ../include/head-tag.html -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--=include ../include/modal/lnb-in-modal.html -->
+      <!--=include ../include/lnb.html -->
+
+      <section class="main-section-dsc">
+        <article class="main-article">
+
+          <div class="contact-us-wrap">
+            <h1>Contact Us</h1>
+
+            <div class="customer-center">
+              <form>
+                <p class="cs-description">You may ask questions for each item using the following format.</p>
+                <span class="cs-required">*</span><input type="text" class="input-base input-cs-email" placeholder="Your Email Address"><!-- 161202 oninvalid 추가 --><!-- 161206 required oninvalid 삭제 : required oninvalid="this.setCustomValidity('This field is required')" -->
+                <div class="text-alert text-alert-danger">This field is required.</div><!-- 161206 valid text 추가 -->
+                <span class="cs-required">*</span>
+                <!-- 161202 추가 -->
+                <div class="select-choose-only input-cs-box"><!-- 161205 클래스 변경 -->
+                  <input type="text" class="select-new-input" value="" placeholder="I have a general question"><!-- 161202 required oninvalid 추가 -->
+                  <ul class="select-new-layer">
+                    <li><a href="#1">Sign-In/Sign-Up</a></li>
+                    <li><a href="#2">Copyright</a></li>
+                    <li><a href="#3">Proleaders</a></li>
+                    <li><a href="#4">Chemical Information</a></li>
+                    <li><a href="#5">Content Partnership</a></li>
+                    <li><a href="#6">Privacy policy</a></li>
+                    <li><a href="#7">Report a bug</a></li>
+                    <li><a href="#8">etc</a></li>
+                  </ul>
+                </div>
+                <div class="text-alert text-alert-danger">This field is required.</div><!-- 161206 valid text 추가 -->
+                <!-- //161202 추가 -->
+                <!-- 161202 삭제 <div class="input-add-box input-cs-box">
+                  <div class="input-select">
+                    <div class="input-select-search">
+                      <p class="input-base input-search input-cs-q">I have a general question<i class="fa fa-caret-down" aria-hidden="true"></i></p>
+                    </div>
+                    <div class="select-box">
+                      <input type="text" class="cheminfo-select-input input-cs-select" placeholder="I have a general question"><i class="fa fa-caret-down" aria-hidden="true"></i>
+                      <ul class="aList">
+                        <li><a href="">Sign-In/Sign-Up</a></li>
+                        <li><a href="">Copyright</a></li>
+                        <li><a href="">Proleaders</a></li>
+                        <li><a href="">Chemical Information</a></li>
+                        <li><a href="">Content Partnership</a></li>
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Report a bug</a></li>
+                        <li><a href="">etc</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div> -->
+                <span class="cs-required">*</span><input type="text" class="input-base input-cs-subject" placeholder="Subject"><!-- 161202 oninvalid 추가 -->
+                <div class="text-alert text-alert-danger text-alert-subject">This field is required.</div><!-- 161206 valid text 추가 -->
+                <span class="cs-required">*</span><textarea rows="13" class="input-base input-cs-textarea" placeholder="Message..."></textarea><!-- 161202 oninvalid 추가 -->
+                <div class="text-alert text-alert-danger">This field is required.</div><!-- 161206 valid text 추가 -->
+                <div class="fileinput fileinput-new fileinput-cs" data-provides="fileinput">
+                  <span class="btn btn-file">
+                    <span>Choose File</span><input type="file">
+                  </span>
+                  <span class="fileinput-filename"></span>
+                  <span class="fileinput-new">No file chosen</span>
+                  <a href="#" class="close fileinput-exists" data-dismiss="fileinput" title="File delete"><i class="icon-cross"></i></a><!-- 161202 file input 닫기 추가 -->
+                </div>
+                <p class="cs-file-text">Allowed file types : PDF, PNG, JPG, JPEG (up to 10 MB)</p>
+                <p class="cs-text">
+                  We will do our best to process your inquiry as soon as possible.<br />
+                  Please be informed that we may access your information while processing your inquiry.
+                </p>
+                <div class="sub-box">
+                  <button type="submit" class="btn-base btn-brand-blue">Send it</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="office-address">
+              <ul class="office-list">
+                <li>
+                  <h2>USA</h2>
+                  <address>ChemEssen, INC. 14781 Memorial Dr. #1677, Houston, TX 77079 U.S.</address>
+                  <div class="contact-tel"><span>T</span> +1-800-413-5613  <span>F</span> +1-800-413-5613</div>
+                  <a href="mailto:usahelp@chemtopia.com" class="contact-email">usahelp@chemtopia.com</a>
+                </li>
+                <li>
+                  <h2>KOREA</h2>
+                  <address>812, 8th Flr. AceHighTechCity 2-Cha, 25 Seonyu-ro 13-gil, Yeongdeungpo-gu, 150-096 Seoul, Republic of Korea.</address>
+                  <div class="contact-tel"><span>T</span> +82-2-3143-5933  <span>F</span> +82-2-3143-5920</div>
+                  <a href="mailto:koreahelp@chemtopia.com" class="contact-email">koreahelp@chemtopia.com</a><!-- 161213 문구수정 -->
+                </li>
+                <li>
+                  <h2>CHINA</h2>
+                  <address>KOTRA 3110, Maxdo Center, 8 Xingyi-Road, Shanghai, China</address>
+                  <div class="contact-tel"><span>T</span> +86-21-5108-8771(Ext.170)<br /><span>F</span> +86-151-2118-1868</div>
+                  <a href="mailto:chinahelp@chemtopia.com" class="contact-email">chinahelp@chemtopia.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </article>
+      </section>
+
+      <!--=include ../include/footer.html -->
+    </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/placeholder.js"></script>
+    <script src="../assets/js/chemmarkup.js"></script>
+    <script src="../assets/js/bootstrap-datepicker.js"></script>
+
+  </body>
+</html>
